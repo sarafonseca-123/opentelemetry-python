@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608133405209,
+  "lastUpdate": 1608133409050,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -650,6 +650,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000014487776442712458",
             "extra": "mean: 41.34441867697767 usec\nrounds: 7710"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mails@violalyu.com",
+            "name": "Wanqi Lyu",
+            "username": "violalyu"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d8c3c24c347981e8c9ff9e41485f9579a80bc5bb",
+          "message": "Update usage for `Meter.create_counter` in tests and examples, clean up unused imports (#1463)",
+          "timestamp": "2020-12-16T07:40:44-08:00",
+          "tree_id": "7f21ab26c1f7d98c001a91817984a6f0cee49c0d",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/d8c3c24c347981e8c9ff9e41485f9579a80bc5bb"
+        },
+        "date": 1608133399469,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 31271.508096593614,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000045636188640416",
+            "extra": "mean: 31.977990857080844 usec\nrounds: 4375"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 22116.142343215866,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000006970617921352274",
+            "extra": "mean: 45.21584209765001 usec\nrounds: 6979"
           }
         ]
       }
