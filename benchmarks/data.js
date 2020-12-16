@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608093678263,
+  "lastUpdate": 1608133364675,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -190,6 +190,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000005319608692502413",
             "extra": "mean: 43.25779675649623 usec\nrounds: 7646"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mails@violalyu.com",
+            "name": "Wanqi Lyu",
+            "username": "violalyu"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d8c3c24c347981e8c9ff9e41485f9579a80bc5bb",
+          "message": "Update usage for `Meter.create_counter` in tests and examples, clean up unused imports (#1463)",
+          "timestamp": "2020-12-16T07:40:44-08:00",
+          "tree_id": "7f21ab26c1f7d98c001a91817984a6f0cee49c0d",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/d8c3c24c347981e8c9ff9e41485f9579a80bc5bb"
+        },
+        "date": 1608133363737,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 38241.87357224007,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000004244872567851742",
+            "extra": "mean: 26.149346425482253 usec\nrounds: 5525"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 29078.50815474394,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000004963758184270473",
+            "extra": "mean: 34.38965969912929 usec\nrounds: 9042"
           }
         ]
       }
