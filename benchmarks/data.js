@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608133364675,
+  "lastUpdate": 1608133373413,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -420,6 +420,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000012602170712229903",
             "extra": "mean: 48.66119547032731 usec\nrounds: 6579"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mails@violalyu.com",
+            "name": "Wanqi Lyu",
+            "username": "violalyu"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d8c3c24c347981e8c9ff9e41485f9579a80bc5bb",
+          "message": "Update usage for `Meter.create_counter` in tests and examples, clean up unused imports (#1463)",
+          "timestamp": "2020-12-16T07:40:44-08:00",
+          "tree_id": "7f21ab26c1f7d98c001a91817984a6f0cee49c0d",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/d8c3c24c347981e8c9ff9e41485f9579a80bc5bb"
+        },
+        "date": 1608133372446,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 26615.042522672135,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010535235529369258",
+            "extra": "mean: 37.5727372649563 usec\nrounds: 4731"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20606.271971221548,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000013095989863154472",
+            "extra": "mean: 48.52891398291681 usec\nrounds: 7359"
           }
         ]
       }
