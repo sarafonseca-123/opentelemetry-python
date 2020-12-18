@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608326609956,
+  "lastUpdate": 1608326655367,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -1758,6 +1758,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00007368816825040856",
             "extra": "mean: 6.3446844333341055 usec\nrounds: 192308"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1cc23e00af15fe4b795350c21e08f8a266381db1",
+          "message": "Use uppercase if testing in windows (#1484)\n\nFixes #1419",
+          "timestamp": "2020-12-18T13:20:15-08:00",
+          "tree_id": "fd381629b1cce5b1f9638e1676b6513e0b33cd3d",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/1cc23e00af15fe4b795350c21e08f8a266381db1"
+        },
+        "date": 1608326651152,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 218736.31215168812,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00005519536839498765",
+            "extra": "mean: 4.571714637423919 usec\nrounds: 172414"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 149441.76960549067,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000010891801531934093",
+            "extra": "mean: 6.691569583523312 usec\nrounds: 106383"
           }
         ]
       }
