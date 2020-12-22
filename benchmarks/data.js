@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608595922256,
+  "lastUpdate": 1608595926996,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -1220,6 +1220,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000011844187148602819",
             "extra": "mean: 47.6338805700547 usec\nrounds: 8482"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "enowell@amazon.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dbe9d386fcd7b7e8ade2f803766b56deab628738",
+          "message": "Set max number of commits in performance graph (#1498)",
+          "timestamp": "2020-12-21T16:09:05-08:00",
+          "tree_id": "321c4e7dbfbad67811c432512a668160d87011e0",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/dbe9d386fcd7b7e8ade2f803766b56deab628738"
+        },
+        "date": 1608595924905,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 26883.238753039815,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000012181953437616325",
+            "extra": "mean: 37.1978990026611 usec\nrounds: 4713"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20485.87267883866,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000012877451841950647",
+            "extra": "mean: 48.81412745637984 usec\nrounds: 7226"
           }
         ]
       }
