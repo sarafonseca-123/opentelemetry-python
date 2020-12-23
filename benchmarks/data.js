@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608684995309,
+  "lastUpdate": 1608685001496,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -2670,6 +2670,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00001537008062940181",
             "extra": "mean: 8.510400941868395 usec\nrounds: 102041"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "41953604180695852223805efe1e1b0d7372de3d",
+          "message": "Update zipkin exporter status code and error tag (#1486)",
+          "timestamp": "2020-12-22T16:53:43-08:00",
+          "tree_id": "39ccf249260893b50c21a64f5f43c013772c2ce7",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/41953604180695852223805efe1e1b0d7372de3d"
+        },
+        "date": 1608685000507,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 222783.3385386127,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000010289405148101546",
+            "extra": "mean: 4.48866601317531 usec\nrounds: 172414"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 146467.674409388,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000010202829397651536",
+            "extra": "mean: 6.827445059344124 usec\nrounds: 116280"
           }
         ]
       }
