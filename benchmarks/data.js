@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608685760867,
+  "lastUpdate": 1608685767306,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -914,6 +914,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00005213089169479722",
             "extra": "mean: 72.63717234356221 usec\nrounds: 7868"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "enowell@amazon.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8ebd6c80c0475e1d203671a5a3807961e0eb44cf",
+          "message": "Add throughput performance tests for OTLP exporter (#1491)",
+          "timestamp": "2020-12-22T17:06:41-08:00",
+          "tree_id": "7b1127d9443b4809f6a7a1f745a4d50840ffcaf0",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/8ebd6c80c0475e1d203671a5a3807961e0eb44cf"
+        },
+        "date": 1608685766310,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 19777.445839141492,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000017629235207630604",
+            "extra": "mean: 50.562646366645716 usec\nrounds: 4335"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 13941.255746155824,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0001381508548742584",
+            "extra": "mean: 71.72954992061895 usec\nrounds: 6921"
           }
         ]
       }
