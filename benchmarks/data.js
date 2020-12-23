@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608684981997,
+  "lastUpdate": 1608684985223,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -418,6 +418,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000025910690107174023",
             "extra": "mean: 45.825622013919215 usec\nrounds: 8177"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "41953604180695852223805efe1e1b0d7372de3d",
+          "message": "Update zipkin exporter status code and error tag (#1486)",
+          "timestamp": "2020-12-22T16:53:43-08:00",
+          "tree_id": "39ccf249260893b50c21a64f5f43c013772c2ce7",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/41953604180695852223805efe1e1b0d7372de3d"
+        },
+        "date": 1608684981108,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 23433.075658482616,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00001990160082266676",
+            "extra": "mean: 42.67472245530888 usec\nrounds: 4529"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 16876.860926125166,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000029530323750677647",
+            "extra": "mean: 59.25272504035468 usec\nrounds: 9285"
           }
         ]
       }
