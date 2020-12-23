@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608595955858,
+  "lastUpdate": 1608684981997,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -2060,6 +2060,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00001713467749523671",
             "extra": "mean: 57.83580524408629 usec\nrounds: 5263"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "41953604180695852223805efe1e1b0d7372de3d",
+          "message": "Update zipkin exporter status code and error tag (#1486)",
+          "timestamp": "2020-12-22T16:53:43-08:00",
+          "tree_id": "39ccf249260893b50c21a64f5f43c013772c2ce7",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/41953604180695852223805efe1e1b0d7372de3d"
+        },
+        "date": 1608684981013,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 20011.65788022806,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000018374412278112542",
+            "extra": "mean: 49.97087227780469 usec\nrounds: 1699"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 14055.568433737282,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000023749162405398213",
+            "extra": "mean: 71.14617987272015 usec\nrounds: 5187"
           }
         ]
       }
