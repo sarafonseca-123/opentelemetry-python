@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608684992035,
+  "lastUpdate": 1608684995309,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -876,6 +876,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00000171375805842076",
             "extra": "mean: 55.827499763659475 usec\nrounds: 6349"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "41953604180695852223805efe1e1b0d7372de3d",
+          "message": "Update zipkin exporter status code and error tag (#1486)",
+          "timestamp": "2020-12-22T16:53:43-08:00",
+          "tree_id": "39ccf249260893b50c21a64f5f43c013772c2ce7",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/41953604180695852223805efe1e1b0d7372de3d"
+        },
+        "date": 1608684990897,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 20187.885407952643,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000020904854825333614",
+            "extra": "mean: 49.53465802842672 usec\nrounds: 3743"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 13767.055733807476,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00005213089169479722",
+            "extra": "mean: 72.63717234356221 usec\nrounds: 7868"
           }
         ]
       }
