@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609793944287,
+  "lastUpdate": 1609793948827,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -3508,6 +3508,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008894515071201359",
             "extra": "mean: 277.1968279662206 usec\nrounds: 5900"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "90db9dc30609bd192976625465a37b0f5724e943",
+          "message": "Code cleanup (#1503)",
+          "timestamp": "2021-01-04T12:57:26-08:00",
+          "tree_id": "0833b716974d262754c863b9144afab251c26686",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/90db9dc30609bd192976625465a37b0f5724e943"
+        },
+        "date": 1609793947738,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2564.7155405148033,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00008185742028384723",
+            "extra": "mean: 389.90678857089733 usec\nrounds: 175"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4058.986758410468,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007888717197818262",
+            "extra": "mean: 246.36690374215655 usec\nrounds: 4062"
           }
         ]
       }
