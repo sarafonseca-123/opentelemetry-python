@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608685783297,
+  "lastUpdate": 1609780521083,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -2976,6 +2976,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008315660467585326",
             "extra": "mean: 237.69170749859686 usec\nrounds: 5641"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bd8db6e2a461d896c1c0556efd0f4b569106fa96",
+          "message": "Add protobuf via gRPC exporting support for Jaeger (#1471)",
+          "timestamp": "2021-01-04T09:13:16-08:00",
+          "tree_id": "ab66aeae2640c477e711409223dda795b083ee77",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/bd8db6e2a461d896c1c0556efd0f4b569106fa96"
+        },
+        "date": 1609780519722,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3479.8656594885283,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000021485960068571018",
+            "extra": "mean: 287.3674152544671 usec\nrounds: 236"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4824.16470882576,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007985699233464789",
+            "extra": "mean: 207.28977146458337 usec\nrounds: 6371"
           }
         ]
       }
