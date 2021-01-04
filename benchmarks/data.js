@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609793953393,
+  "lastUpdate": 1609793961877,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -3932,6 +3932,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009713580443940751",
             "extra": "mean: 347.52384949531023 usec\nrounds: 4857"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "90db9dc30609bd192976625465a37b0f5724e943",
+          "message": "Code cleanup (#1503)",
+          "timestamp": "2021-01-04T12:57:26-08:00",
+          "tree_id": "0833b716974d262754c863b9144afab251c26686",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/90db9dc30609bd192976625465a37b0f5724e943"
+        },
+        "date": 1609793960332,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2539.714680701487,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00001811872157864053",
+            "extra": "mean: 393.74501694961776 usec\nrounds: 118"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3220.7233932859212,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008833479352116566",
+            "extra": "mean: 310.4892528444539 usec\nrounds: 3955"
           }
         ]
       }
