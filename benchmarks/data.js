@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609780610422,
+  "lastUpdate": 1609783613420,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -3320,6 +3320,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008506755543495347",
             "extra": "mean: 256.711773987534 usec\nrounds: 5013"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "anton@ryzhov.me",
+            "name": "Anton Ryzhov",
+            "username": "anton-ryzhov"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "336af87a095deb46a0de8a9ef39b7f60c87e422c",
+          "message": "Recreate span on every run of a decorated function (#1451)",
+          "timestamp": "2021-01-04T10:05:15-08:00",
+          "tree_id": "9ff9e572cd69a4b7d44eda02d5b94817e12d3646",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/336af87a095deb46a0de8a9ef39b7f60c87e422c"
+        },
+        "date": 1609783612389,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2653.2670895871365,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000014269197206024095",
+            "extra": "mean: 376.8938317309042 usec\nrounds: 208"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3479.4599526241404,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008691015359518085",
+            "extra": "mean: 287.40092244654795 usec\nrounds: 4758"
           }
         ]
       }
