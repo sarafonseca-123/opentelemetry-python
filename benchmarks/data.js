@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609890209675,
+  "lastUpdate": 1609890214390,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -4120,6 +4120,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008634890028207081",
             "extra": "mean: 269.71284011223423 usec\nrounds: 4647"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "87d7ced747177b6d840e069f935734a163216108",
+          "message": "Add support for OTLP v0.6.0 (#1472)",
+          "timestamp": "2021-01-05T15:41:48-08:00",
+          "tree_id": "f5fca2206fc7bd721679294cd397ee47b729dcf2",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/87d7ced747177b6d840e069f935734a163216108"
+        },
+        "date": 1609890208370,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2783.1795298013762,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000010928751090205918",
+            "extra": "mean: 359.3012916674354 usec\nrounds: 120"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3611.740318731618,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008301465964856005",
+            "extra": "mean: 276.87483366777127 usec\nrounds: 4485"
           }
         ]
       }
