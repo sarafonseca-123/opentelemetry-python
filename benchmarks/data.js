@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609890277813,
+  "lastUpdate": 1609995362383,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -4808,6 +4808,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0014198419145730328",
             "extra": "mean: 230.05652313471674 usec\nrounds: 6916"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "shovnik@amazon.com",
+            "name": "Shovnik Bhattacharya",
+            "username": "shovnik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ff1a058f6a4c563716d2e991a0f1e3cccb92c2bd",
+          "message": "Added CodeQL Analysis workflow (#1505)",
+          "timestamp": "2021-01-06T20:54:40-08:00",
+          "tree_id": "62c9c7dd5ed8e07cad6957a648a07e5cfd07e836",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/ff1a058f6a4c563716d2e991a0f1e3cccb92c2bd"
+        },
+        "date": 1609995361234,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1283.4812422654948,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00014173822511224555",
+            "extra": "mean: 779.1309814819598 usec\nrounds: 216"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4710.725124904287,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0011346848625258873",
+            "extra": "mean: 212.28154338984447 usec\nrounds: 7133"
           }
         ]
       }
