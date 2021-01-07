@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609996679076,
+  "lastUpdate": 1610035686050,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -5644,6 +5644,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0012531494123174827",
             "extra": "mean: 261.6604641702471 usec\nrounds: 5875"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cd39fc17b21baf68eddc4ddd0acfe2e80df59eae",
+          "message": "Update Jaeger exporter status code (#1488)",
+          "timestamp": "2021-01-07T08:05:29-08:00",
+          "tree_id": "2d2eb6aea5add7398b0ba85fe8a38da6ff809abb",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/cd39fc17b21baf68eddc4ddd0acfe2e80df59eae"
+        },
+        "date": 1610035683364,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 887.3293711961253,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00014669106904294796",
+            "extra": "mean: 1.1269772335519492 msec\nrounds: 137"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3718.038605293384,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0012957810660632417",
+            "extra": "mean: 268.9590147278989 usec\nrounds: 7740"
           }
         ]
       }
