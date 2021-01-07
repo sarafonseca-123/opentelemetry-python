@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609995394755,
+  "lastUpdate": 1609995400644,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -4730,6 +4730,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007884846631585884",
             "extra": "mean: 262.1225331576683 usec\nrounds: 4554"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "shovnik@amazon.com",
+            "name": "Shovnik Bhattacharya",
+            "username": "shovnik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ff1a058f6a4c563716d2e991a0f1e3cccb92c2bd",
+          "message": "Added CodeQL Analysis workflow (#1505)",
+          "timestamp": "2021-01-06T20:54:40-08:00",
+          "tree_id": "62c9c7dd5ed8e07cad6957a648a07e5cfd07e836",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/ff1a058f6a4c563716d2e991a0f1e3cccb92c2bd"
+        },
+        "date": 1609995396256,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2333.0575788852993,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000021138130907103394",
+            "extra": "mean: 428.6220833340022 usec\nrounds: 108"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3271.8207939322087,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008591521629310101",
+            "extra": "mean: 305.64021166885453 usec\nrounds: 3685"
           }
         ]
       }
