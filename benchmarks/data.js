@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609995388686,
+  "lastUpdate": 1609995394755,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -4500,6 +4500,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008301465964856005",
             "extra": "mean: 276.87483366777127 usec\nrounds: 4485"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "shovnik@amazon.com",
+            "name": "Shovnik Bhattacharya",
+            "username": "shovnik"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ff1a058f6a4c563716d2e991a0f1e3cccb92c2bd",
+          "message": "Added CodeQL Analysis workflow (#1505)",
+          "timestamp": "2021-01-06T20:54:40-08:00",
+          "tree_id": "62c9c7dd5ed8e07cad6957a648a07e5cfd07e836",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/ff1a058f6a4c563716d2e991a0f1e3cccb92c2bd"
+        },
+        "date": 1609995393769,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1949.6176160094242,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00008132109615168862",
+            "extra": "mean: 512.9210937511175 usec\nrounds: 96"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3011.6638895858237,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008651132206697542",
+            "extra": "mean: 332.0423648395652 usec\nrounds: 3851"
           }
         ]
       }
