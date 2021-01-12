@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610482676490,
+  "lastUpdate": 1610482682844,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -5598,6 +5598,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008383824460918492",
             "extra": "mean: 211.472048427517 usec\nrounds: 5596"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "db74594d93b7e42d26ed2061b7672d1ad823f30c",
+          "message": "Update default port for OTLP exporter to 4317 (#1516)",
+          "timestamp": "2021-01-12T12:14:49-08:00",
+          "tree_id": "319abf2aeb7c5ad6e78c5bf358e34232b37ca479",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/db74594d93b7e42d26ed2061b7672d1ad823f30c"
+        },
+        "date": 1610482681416,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3147.5762041584476,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000013140416647588089",
+            "extra": "mean: 317.70477826044095 usec\nrounds: 230"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4539.576635302848,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008265070269730791",
+            "extra": "mean: 220.28485921425295 usec\nrounds: 5931"
           }
         ]
       }
