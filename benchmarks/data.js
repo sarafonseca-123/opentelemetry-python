@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610479602521,
+  "lastUpdate": 1610479607439,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -4264,6 +4264,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000009284238401904949",
             "extra": "mean: 64.98260417590997 usec\nrounds: 6897"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "287efdc3fffd7f27be44af84d59ab22bc99c9af4",
+          "message": "Move b3 propagator out of SDK (#1513)",
+          "timestamp": "2021-01-12T11:24:01-08:00",
+          "tree_id": "5da1da813e0edf701e97f1785bfa562b55ebff95",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/287efdc3fffd7f27be44af84d59ab22bc99c9af4"
+        },
+        "date": 1610479602608,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 22730.261417372043,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000015186462062108914",
+            "extra": "mean: 43.99421465675404 usec\nrounds: 1733"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 15084.692695809188,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000016897556795181868",
+            "extra": "mean: 66.2923680425932 usec\nrounds: 5426"
           }
         ]
       }
