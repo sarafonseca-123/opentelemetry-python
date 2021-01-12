@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610479589542,
+  "lastUpdate": 1610479593679,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -798,6 +798,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00003501441101474941",
             "extra": "mean: 63.58945940211287 usec\nrounds: 8461"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "287efdc3fffd7f27be44af84d59ab22bc99c9af4",
+          "message": "Move b3 propagator out of SDK (#1513)",
+          "timestamp": "2021-01-12T11:24:01-08:00",
+          "tree_id": "5da1da813e0edf701e97f1785bfa562b55ebff95",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/287efdc3fffd7f27be44af84d59ab22bc99c9af4"
+        },
+        "date": 1610479592596,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 32521.977030342645,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000012913684161043172",
+            "extra": "mean: 30.748438173577544 usec\nrounds: 5103"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 22946.973708958547,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000013923042166331106",
+            "extra": "mean: 43.57873123851613 usec\nrounds: 7542"
           }
         ]
       }
