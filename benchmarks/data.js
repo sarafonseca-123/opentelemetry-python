@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610646105802,
+  "lastUpdate": 1610646110051,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -874,6 +874,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000026282360966999035",
             "extra": "mean: 49.88422496543927 usec\nrounds: 7210"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "baa2fcb605a3d4ac95ccf6a509ee2ed4c06cb22b",
+          "message": "Zipkin: Update span boolean attribute conversion (#1509)",
+          "timestamp": "2021-01-14T09:39:02-08:00",
+          "tree_id": "4c21b35c5bfa2fd4f84a1eeb2aa11f05d87d5aa9",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/baa2fcb605a3d4ac95ccf6a509ee2ed4c06cb22b"
+        },
+        "date": 1610646107598,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 29246.510571297866,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000017912976197198902",
+            "extra": "mean: 34.19211319456984 usec\nrounds: 4373"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20671.07080644726,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000025238491383565632",
+            "extra": "mean: 48.37678750962927 usec\nrounds: 6485"
           }
         ]
       }
