@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610646094622,
+  "lastUpdate": 1610646098054,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -7390,6 +7390,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008241378119406718",
             "extra": "mean: 274.57848573500644 usec\nrounds: 5538"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "baa2fcb605a3d4ac95ccf6a509ee2ed4c06cb22b",
+          "message": "Zipkin: Update span boolean attribute conversion (#1509)",
+          "timestamp": "2021-01-14T09:39:02-08:00",
+          "tree_id": "4c21b35c5bfa2fd4f84a1eeb2aa11f05d87d5aa9",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/baa2fcb605a3d4ac95ccf6a509ee2ed4c06cb22b"
+        },
+        "date": 1610646096678,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1936.038547369525,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00047250282102180417",
+            "extra": "mean: 516.5186413042702 usec\nrounds: 92"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3102.0884120391083,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0010153992342176188",
+            "extra": "mean: 322.3634749154896 usec\nrounds: 4146"
           }
         ]
       }
