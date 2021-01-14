@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610646085632,
+  "lastUpdate": 1610646090267,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -7810,6 +7810,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0011191420742719133",
             "extra": "mean: 242.90136718749554 usec\nrounds: 5760"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "baa2fcb605a3d4ac95ccf6a509ee2ed4c06cb22b",
+          "message": "Zipkin: Update span boolean attribute conversion (#1509)",
+          "timestamp": "2021-01-14T09:39:02-08:00",
+          "tree_id": "4c21b35c5bfa2fd4f84a1eeb2aa11f05d87d5aa9",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/baa2fcb605a3d4ac95ccf6a509ee2ed4c06cb22b"
+        },
+        "date": 1610646082202,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 889.6337861565667,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00011263702611963307",
+            "extra": "mean: 1.1240580287763597 msec\nrounds: 139"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3817.9804804860582,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0011598303208649216",
+            "extra": "mean: 261.9185732119543 usec\nrounds: 5928"
           }
         ]
       }
