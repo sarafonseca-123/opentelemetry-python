@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611009432043,
+  "lastUpdate": 1611009467880,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -6280,6 +6280,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000006263263702593743",
             "extra": "mean: 5.730222737623733 usec\nrounds: 133334"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "89fb4e58d0c9d4b3192c91c3371b57007b2d2233",
+          "message": "Move jaeger propagator out of SDK (#1525)",
+          "timestamp": "2021-01-18T14:34:10-08:00",
+          "tree_id": "dbd3ed5648bccf69082094bcbff56adefd756ada",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/89fb4e58d0c9d4b3192c91c3371b57007b2d2233"
+        },
+        "date": 1611009466645,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 230768.98805972084,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00005202944350058624",
+            "extra": "mean: 4.333337890883369 usec\nrounds: 153847"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 154096.40255963578,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000008050957045351769",
+            "extra": "mean: 6.489444162156848 usec\nrounds: 99010"
           }
         ]
       }
