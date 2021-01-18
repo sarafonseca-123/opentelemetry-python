@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610734422072,
+  "lastUpdate": 1611009374620,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -6662,6 +6662,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007879273965247918",
             "extra": "mean: 212.6936047410223 usec\nrounds: 5695"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "89fb4e58d0c9d4b3192c91c3371b57007b2d2233",
+          "message": "Move jaeger propagator out of SDK (#1525)",
+          "timestamp": "2021-01-18T14:34:10-08:00",
+          "tree_id": "dbd3ed5648bccf69082094bcbff56adefd756ada",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/89fb4e58d0c9d4b3192c91c3371b57007b2d2233"
+        },
+        "date": 1611009373561,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2961.312982315865,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00006127130879489829",
+            "extra": "mean: 337.68804782598835 usec\nrounds: 230"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4415.98402776692,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008067335926267956",
+            "extra": "mean: 226.45009440980274 usec\nrounds: 7531"
           }
         ]
       }
