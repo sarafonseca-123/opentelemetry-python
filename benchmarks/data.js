@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611009467880,
+  "lastUpdate": 1611016491164,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -6928,6 +6928,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008067335926267956",
             "extra": "mean: 226.45009440980274 usec\nrounds: 7531"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2fb7dba5e5979386165b978b24271a3530e215e4",
+          "message": "Move opentracing-shim folder out of instrumentation folder (#1533)",
+          "timestamp": "2021-01-18T16:32:54-08:00",
+          "tree_id": "0691a7f491b188c71f1339ad04c30690886f86c0",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/2fb7dba5e5979386165b978b24271a3530e215e4"
+        },
+        "date": 1611016490097,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3530.1205750652693,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007594197772026422",
+            "extra": "mean: 283.27644303807125 usec\nrounds: 237"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4846.574463194382,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008048492184597751",
+            "extra": "mean: 206.3312980320742 usec\nrounds: 5996"
           }
         ]
       }
