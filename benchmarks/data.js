@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611099069578,
+  "lastUpdate": 1611099074329,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -4908,6 +4908,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000060253622073049375",
             "extra": "mean: 65.86630145152303 usec\nrounds: 6545"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c750109dd75b03a9f91dacd1b66b2b8ee140ec0d",
+          "message": "Remove rate property setter from TraceIdRatioBasedSampler (#1536)",
+          "timestamp": "2021-01-19T15:29:02-08:00",
+          "tree_id": "4378974a917e9b5516014e9616da6b7156cd12fa",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c750109dd75b03a9f91dacd1b66b2b8ee140ec0d"
+        },
+        "date": 1611099073042,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 25726.149075144138,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000005103110164006392",
+            "extra": "mean: 38.87095565990368 usec\nrounds: 1917"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 17532.245075315077,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000034867062645265697",
+            "extra": "mean: 57.037760749076725 usec\nrounds: 5768"
           }
         ]
       }
