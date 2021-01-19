@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611029703214,
+  "lastUpdate": 1611029707058,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -2282,6 +2282,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000006356203811680254",
             "extra": "mean: 52.621886220508685 usec\nrounds: 6662"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "98f7b606bc59ac4666e522dd7a40d61b631cd352",
+          "message": "Update InstrumentationInfo tag keys for Jaeger and Zipkin exporters (#1535)",
+          "timestamp": "2021-01-18T20:12:44-08:00",
+          "tree_id": "eab5788fca054e52b5fd5e5c6878c423ce2e44a2",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/98f7b606bc59ac4666e522dd7a40d61b631cd352"
+        },
+        "date": 1611029705635,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 20922.720331511584,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000028363954321850188",
+            "extra": "mean: 47.79493221509566 usec\nrounds: 4352"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 14250.196070413383,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003690442004849808",
+            "extra": "mean: 70.17447304295169 usec\nrounds: 7716"
           }
         ]
       }
