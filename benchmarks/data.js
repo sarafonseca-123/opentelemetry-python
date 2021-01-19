@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611016555983,
+  "lastUpdate": 1611016568811,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -6508,6 +6508,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000008050957045351769",
             "extra": "mean: 6.489444162156848 usec\nrounds: 99010"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2fb7dba5e5979386165b978b24271a3530e215e4",
+          "message": "Move opentracing-shim folder out of instrumentation folder (#1533)",
+          "timestamp": "2021-01-18T16:32:54-08:00",
+          "tree_id": "0691a7f491b188c71f1339ad04c30690886f86c0",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/2fb7dba5e5979386165b978b24271a3530e215e4"
+        },
+        "date": 1611016567637,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 276583.54406528093,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000019378044417266695",
+            "extra": "mean: 3.6155440967376125 usec\nrounds: 40486"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 185756.1699076634,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000011696542902245411",
+            "extra": "mean: 5.383401264663698 usec\nrounds: 131579"
           }
         ]
       }
