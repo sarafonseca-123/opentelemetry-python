@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611099062838,
+  "lastUpdate": 1611099069578,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -9896,6 +9896,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008479082563316826",
             "extra": "mean: 266.74008756372734 usec\nrounds: 4511"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c750109dd75b03a9f91dacd1b66b2b8ee140ec0d",
+          "message": "Remove rate property setter from TraceIdRatioBasedSampler (#1536)",
+          "timestamp": "2021-01-19T15:29:02-08:00",
+          "tree_id": "4378974a917e9b5516014e9616da6b7156cd12fa",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c750109dd75b03a9f91dacd1b66b2b8ee140ec0d"
+        },
+        "date": 1611099061402,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2008.649635360113,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00005149753818049611",
+            "extra": "mean: 497.8469029123234 usec\nrounds: 103"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2980.1410659713356,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008812201921168116",
+            "extra": "mean: 335.5545854585457 usec\nrounds: 4195"
           }
         ]
       }
