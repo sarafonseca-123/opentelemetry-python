@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611029654174,
+  "lastUpdate": 1611029662206,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -8832,6 +8832,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008596130459741074",
             "extra": "mean: 310.0873956328066 usec\nrounds: 4259"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "98f7b606bc59ac4666e522dd7a40d61b631cd352",
+          "message": "Update InstrumentationInfo tag keys for Jaeger and Zipkin exporters (#1535)",
+          "timestamp": "2021-01-18T20:12:44-08:00",
+          "tree_id": "eab5788fca054e52b5fd5e5c6878c423ce2e44a2",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/98f7b606bc59ac4666e522dd7a40d61b631cd352"
+        },
+        "date": 1611029661132,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2781.734082646358,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000008626008169160239",
+            "extra": "mean: 359.4879921263596 usec\nrounds: 127"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3737.766955186421,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008540673042987582",
+            "extra": "mean: 267.5394191209347 usec\nrounds: 4686"
           }
         ]
       }
