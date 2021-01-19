@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611017751946,
+  "lastUpdate": 1611017758714,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -9252,6 +9252,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008465069515464048",
             "extra": "mean: 243.14500482442674 usec\nrounds: 5182"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5184c517605c298b333ed2e54d48c2c86439a693",
+          "message": "Add rationale document with versioning/releasing details (#1460)",
+          "timestamp": "2021-01-18T16:53:54-08:00",
+          "tree_id": "99c50a7179516269aa39a371ec1d98baf6ef6fce",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/5184c517605c298b333ed2e54d48c2c86439a693"
+        },
+        "date": 1611017757577,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1894.3291068152057,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00005230472774615157",
+            "extra": "mean: 527.8913766368852 usec\nrounds: 77"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2831.198659271162,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009276563006442332",
+            "extra": "mean: 353.2072879186199 usec\nrounds: 3890"
           }
         ]
       }
