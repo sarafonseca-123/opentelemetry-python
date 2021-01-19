@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611029693673,
+  "lastUpdate": 1611029699121,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -4490,6 +4490,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000009159194217686862",
             "extra": "mean: 64.55043435069841 usec\nrounds: 5438"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "98f7b606bc59ac4666e522dd7a40d61b631cd352",
+          "message": "Update InstrumentationInfo tag keys for Jaeger and Zipkin exporters (#1535)",
+          "timestamp": "2021-01-18T20:12:44-08:00",
+          "tree_id": "eab5788fca054e52b5fd5e5c6878c423ce2e44a2",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/98f7b606bc59ac4666e522dd7a40d61b631cd352"
+        },
+        "date": 1611029693414,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 22877.381449672506,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000014180301862013152",
+            "extra": "mean: 43.71129633869506 usec\nrounds: 1748"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 15345.08018572999,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000002443513065378482",
+            "extra": "mean: 65.1674665688577 usec\nrounds: 5459"
           }
         ]
       }
