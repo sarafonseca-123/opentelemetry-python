@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611074259673,
+  "lastUpdate": 1611074266234,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -7954,6 +7954,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007864265092643616",
             "extra": "mean: 210.79581841049531 usec\nrounds: 6757"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d994e757cf4dd5a468fa688617f0de213c9c6139",
+          "message": "Adding opentelemetry-distro package and entrypoint (#1482)",
+          "timestamp": "2021-01-19T08:35:16-08:00",
+          "tree_id": "986c82341c8762c79c7a9188ad96e3f5a5bc7905",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/d994e757cf4dd5a468fa688617f0de213c9c6139"
+        },
+        "date": 1611074264977,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2400.9237458392304,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00007302919154757664",
+            "extra": "mean: 416.50635582782957 usec\nrounds: 163"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3699.3424268389617,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008924290765518065",
+            "extra": "mean: 270.3183119099593 usec\nrounds: 5835"
           }
         ]
       }
