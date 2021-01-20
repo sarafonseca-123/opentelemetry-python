@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611186791304,
+  "lastUpdate": 1611186796512,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -12788,6 +12788,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0013513337651051222",
             "extra": "mean: 235.28354801381687 usec\nrounds: 6394"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "db9905a164c1f3604eeb8ce5939243948f5be2a8",
+          "message": "rename instrumentation to shim (#1539)",
+          "timestamp": "2021-01-20T15:51:31-08:00",
+          "tree_id": "9bd1e424fd272c88e39f2a9bf78abc22fb9f429d",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/db9905a164c1f3604eeb8ce5939243948f5be2a8"
+        },
+        "date": 1611186783433,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1105.1486687427516,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00009594025616383001",
+            "extra": "mean: 904.8556346157737 usec\nrounds: 208"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4375.882555117852,
+            "unit": "iter/sec",
+            "range": "stddev: 0.001193010109466553",
+            "extra": "mean: 228.52532886890242 usec\nrounds: 6869"
           }
         ]
       }
