@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611184995690,
+  "lastUpdate": 1611185009115,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -10542,6 +10542,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008562184169365432",
             "extra": "mean: 306.8383453203414 usec\nrounds: 4060"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bbcecaba8597901c7b9614b06ebc1ac4c22682fc",
+          "message": "[pre-release] Update changelogs, version [0.17b0] (#1538)",
+          "timestamp": "2021-01-20T15:21:28-08:00",
+          "tree_id": "f6db133135e0ad81c726698c79cec95a67898e23",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/bbcecaba8597901c7b9614b06ebc1ac4c22682fc"
+        },
+        "date": 1611185004654,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2027.695931814317,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000052664182098111854",
+            "extra": "mean: 493.17059047666584 usec\nrounds: 105"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2876.417837132603,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008987290087597097",
+            "extra": "mean: 347.6546373376908 usec\nrounds: 4012"
           }
         ]
       }
