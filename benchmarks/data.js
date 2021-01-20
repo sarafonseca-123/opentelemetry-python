@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611099116940,
+  "lastUpdate": 1611163481333,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -9324,6 +9324,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008627045433132147",
             "extra": "mean: 266.47463474215465 usec\nrounds: 5325"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1d39f7f819d652dd32eb066dd04bac5ae53b855d",
+          "message": "Fix TraceState to adhere to specs (#1502)",
+          "timestamp": "2021-01-20T09:22:57-08:00",
+          "tree_id": "462a0edc209417f4815d1ff1a599b1410ad6b25d",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/1d39f7f819d652dd32eb066dd04bac5ae53b855d"
+        },
+        "date": 1611163480110,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2930.807886554998,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003403957163192171",
+            "extra": "mean: 341.2028487392412 usec\nrounds: 238"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3979.006614304834,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008393055505063408",
+            "extra": "mean: 251.31900922328788 usec\nrounds: 5421"
           }
         ]
       }
