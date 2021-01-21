@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611249160303,
+  "lastUpdate": 1611249163793,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -10236,6 +10236,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007522675084876024",
             "extra": "mean: 241.51866245563787 usec\nrounds: 5066"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "33c9269b227df473920efc4976b132566d7d1301",
+          "message": "[post-release] updating version to 0.18.dev0 (#1541)",
+          "timestamp": "2021-01-21T09:10:49-08:00",
+          "tree_id": "da745755fc8e6929f953899c2961842a35a2dc1a",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/33c9269b227df473920efc4976b132566d7d1301"
+        },
+        "date": 1611249154194,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2558.1298004622504,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000009990002930272098",
+            "extra": "mean: 390.91057843089175 usec\nrounds: 204"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3318.365524187258,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009191096464286912",
+            "extra": "mean: 301.3531790609241 usec\nrounds: 4451"
           }
         ]
       }
