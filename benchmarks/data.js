@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611251419706,
+  "lastUpdate": 1611251423301,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -8712,6 +8712,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000015730393899704734",
             "extra": "mean: 6.845779408901413 usec\nrounds: 107527"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "enowell@amazon.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4083cac3c0ec107df68cdecb8fc52c00e2684b08",
+          "message": "Add b3 format benchmark tests (#1489)\n\nCo-authored-by: alrex <aboten@lightstep.com>",
+          "timestamp": "2021-01-21T09:47:30-08:00",
+          "tree_id": "0a1b108a48a5ec3b413983d9fb07ecc45f9dc199",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/4083cac3c0ec107df68cdecb8fc52c00e2684b08"
+        },
+        "date": 1611251418426,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 254135.49810179058,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000011421899629742974",
+            "extra": "mean: 3.9349087690199944 usec\nrounds: 172414"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 174360.05584308712,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00000732586067603583",
+            "extra": "mean: 5.735258543963395 usec\nrounds: 112360"
           }
         ]
       }
