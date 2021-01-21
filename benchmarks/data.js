@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611251402096,
+  "lastUpdate": 1611251412902,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -4336,6 +4336,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00006647089878627116",
             "extra": "mean: 63.67031207362457 usec\nrounds: 8796"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "enowell@amazon.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4083cac3c0ec107df68cdecb8fc52c00e2684b08",
+          "message": "Add b3 format benchmark tests (#1489)\n\nCo-authored-by: alrex <aboten@lightstep.com>",
+          "timestamp": "2021-01-21T09:47:30-08:00",
+          "tree_id": "0a1b108a48a5ec3b413983d9fb07ecc45f9dc199",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/4083cac3c0ec107df68cdecb8fc52c00e2684b08"
+        },
+        "date": 1611251406706,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 27688.7880800382,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000016413420298928476",
+            "extra": "mean: 36.115701312363846 usec\nrounds: 4724"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 19581.943912517876,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000002283514230653429",
+            "extra": "mean: 51.06745297951466 usec\nrounds: 7837"
           }
         ]
       }
