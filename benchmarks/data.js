@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611700795604,
+  "lastUpdate": 1611700818474,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -14382,6 +14382,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008570864301967825",
             "extra": "mean: 310.9112348329595 usec\nrounds: 3956"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a600657afd2f3a1c66e016a3ae2691edce6fb260",
+          "message": "Update docs (#1548)",
+          "timestamp": "2021-01-26T14:38:29-08:00",
+          "tree_id": "e3fe1b16beb7da267ad691f2b119951ee396fec5",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a600657afd2f3a1c66e016a3ae2691edce6fb260"
+        },
+        "date": 1611700817114,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2675.81056991343,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00004365542589024979",
+            "extra": "mean: 373.7185327107639 usec\nrounds: 107"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4065.9003724168556,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000736020578786095",
+            "extra": "mean: 245.94798406375588 usec\nrounds: 4016"
           }
         ]
       }
