@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611702068756,
+  "lastUpdate": 1611702075512,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -14800,6 +14800,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000736020578786095",
             "extra": "mean: 245.94798406375588 usec\nrounds: 4016"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f433bc7bbd7e7484b7a84f1876e320c4c90ed0d6",
+          "message": "adding note to check on the stable docs build (#1552)",
+          "timestamp": "2021-01-26T14:59:03-08:00",
+          "tree_id": "b89511c79f824536a2fd23703bbb046fcea7cdc3",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/f433bc7bbd7e7484b7a84f1876e320c4c90ed0d6"
+        },
+        "date": 1611702074010,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1873.8837394531688,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00004462664603584317",
+            "extra": "mean: 533.6510365855552 usec\nrounds: 82"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2681.2315862970618,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009704209733568642",
+            "extra": "mean: 372.9629343137266 usec\nrounds: 4080"
           }
         ]
       }
