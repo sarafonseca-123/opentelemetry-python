@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1611949745868,
+  "lastUpdate": 1611949756269,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -19064,6 +19064,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 2.969574652603284e-7",
             "extra": "mean: 4.714860771405601 usec\nrounds: 78741"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cf8b70e77b65686d6bc40db227e4af63ee336cf5",
+          "message": "updating references to main (#1558)",
+          "timestamp": "2021-01-29T11:47:19-08:00",
+          "tree_id": "ae6f321d40c8c8a8d828fd144a748b33fd2b52db",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/cf8b70e77b65686d6bc40db227e4af63ee336cf5"
+        },
+        "date": 1611949754799,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 85188.45354455707,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000006578792375306238",
+            "extra": "mean: 11.738680048663623 usec\nrounds: 11508"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 192351.8083952423,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000004360184924071107",
+            "extra": "mean: 5.198807374585278 usec\nrounds: 65360"
           }
         ]
       }
