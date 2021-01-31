@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1612116127383,
+  "lastUpdate": 1612116130937,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -19402,6 +19402,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000011607353308425494",
             "extra": "mean: 4.955192263219844 usec\nrounds: 78741"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "enowell@amazon.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5bc23b0b027208e45c80f04ab6d983a9803607b5",
+          "message": "Add resource usage performance tests for creating a span (#1499)",
+          "timestamp": "2021-01-31T10:01:13-08:00",
+          "tree_id": "c5f78b0abff1aeb01ed325b19c1c8d54e441b18d",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/5bc23b0b027208e45c80f04ab6d983a9803607b5"
+        },
+        "date": 1612116119551,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 86059.37365283587,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001981934383304494",
+            "extra": "mean: 11.619884709293926 usec\nrounds: 12707"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 177641.63707202,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001178202205345725",
+            "extra": "mean: 5.62931087825191 usec\nrounds: 65360"
           }
         ]
       }
