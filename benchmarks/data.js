@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1612116195199,
+  "lastUpdate": 1612116263226,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -11714,6 +11714,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000007144713779369595",
             "extra": "mean: 6.269630138382129 usec\nrounds: 99010"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "enowell@amazon.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5bc23b0b027208e45c80f04ab6d983a9803607b5",
+          "message": "Add resource usage performance tests for creating a span (#1499)",
+          "timestamp": "2021-01-31T10:01:13-08:00",
+          "tree_id": "c5f78b0abff1aeb01ed325b19c1c8d54e441b18d",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/5bc23b0b027208e45c80f04ab6d983a9803607b5"
+        },
+        "date": 1612116254636,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 248585.0336945029,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000020715796738737283",
+            "extra": "mean: 4.022768326547506 usec\nrounds: 40485"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 165171.60111223135,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000008012308902009539",
+            "extra": "mean: 6.054309537875804 usec\nrounds: 129871"
           }
         ]
       }
