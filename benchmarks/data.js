@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1612456703215,
+  "lastUpdate": 1612456707704,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -19818,6 +19818,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0012872431738045582",
             "extra": "mean: 241.3694364932849 usec\nrounds: 6456"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b743ab1817a9d2dd10376ec34017ef6f16053ace",
+          "message": "Use environment variables for tracer and meter providers (#1571)",
+          "timestamp": "2021-02-04T08:36:23-08:00",
+          "tree_id": "d2b6cb6fea96bb8927a21ba1ecdf94c3e149ada2",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/b743ab1817a9d2dd10376ec34017ef6f16053ace"
+        },
+        "date": 1612456698768,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 851.4874545428005,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000673243643827955",
+            "extra": "mean: 1.174415424049838 msec\nrounds: 158"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3576.167146332358,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0012441997950470081",
+            "extra": "mean: 279.6289879866435 usec\nrounds: 5577"
           }
         ]
       }
