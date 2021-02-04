@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1612456757808,
+  "lastUpdate": 1612456835344,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -12170,6 +12170,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00003149604962665921",
             "extra": "mean: 12.988006720944613 usec\nrounds: 153847"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b743ab1817a9d2dd10376ec34017ef6f16053ace",
+          "message": "Use environment variables for tracer and meter providers (#1571)",
+          "timestamp": "2021-02-04T08:36:23-08:00",
+          "tree_id": "d2b6cb6fea96bb8927a21ba1ecdf94c3e149ada2",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/b743ab1817a9d2dd10376ec34017ef6f16053ace"
+        },
+        "date": 1612456832002,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 254798.6111928361,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000020206677290968043",
+            "extra": "mean: 3.9246681734978535 usec\nrounds: 39841"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 164499.4300752739,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007249460106522063",
+            "extra": "mean: 6.0790484170213 usec\nrounds: 136987"
           }
         ]
       }
