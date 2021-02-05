@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1612539778589,
+  "lastUpdate": 1612539783590,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -6198,6 +6198,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000003509862044772923",
             "extra": "mean: 50.54309370290605 usec\nrounds: 7321"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b743ab1817a9d2dd10376ec34017ef6f16053ace",
+          "message": "Use environment variables for tracer and meter providers (#1571)",
+          "timestamp": "2021-02-04T08:36:23-08:00",
+          "tree_id": "d2b6cb6fea96bb8927a21ba1ecdf94c3e149ada2",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/b743ab1817a9d2dd10376ec34017ef6f16053ace"
+        },
+        "date": 1612539778031,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 22537.87334549761,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003567856026488808",
+            "extra": "mean: 44.36975861343945 usec\nrounds: 4615"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 15496.871418187344,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003565872995659098",
+            "extra": "mean: 64.52915385400863 usec\nrounds: 9795"
           }
         ]
       }
