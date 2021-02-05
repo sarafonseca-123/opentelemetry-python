@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1612543624747,
+  "lastUpdate": 1612543636557,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -10458,6 +10458,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000019225931070303065",
             "extra": "mean: 65.00553457632532 usec\nrounds: 5900"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9c81fdf34fb4175d322cf677893944d9dd1a627c",
+          "message": "Fix missing wsgi dependency (#1578)",
+          "timestamp": "2021-02-05T08:44:41-08:00",
+          "tree_id": "e5141b5e8f838bcf9b957d5cf9bbfeaf668a19dd",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/9c81fdf34fb4175d322cf677893944d9dd1a627c"
+        },
+        "date": 1612543634686,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 16544.253903546014,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000021592133023035288",
+            "extra": "mean: 60.44394663126301 usec\nrounds: 1499"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 10491.473827612315,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00004387286226868451",
+            "extra": "mean: 95.31549298327548 usec\nrounds: 6057"
           }
         ]
       }
