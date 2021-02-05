@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1612543589001,
+  "lastUpdate": 1612543592517,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -18980,6 +18980,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009647248758922999",
             "extra": "mean: 351.15716191378147 usec\nrounds: 4243"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9c81fdf34fb4175d322cf677893944d9dd1a627c",
+          "message": "Fix missing wsgi dependency (#1578)",
+          "timestamp": "2021-02-05T08:44:41-08:00",
+          "tree_id": "e5141b5e8f838bcf9b957d5cf9bbfeaf668a19dd",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/9c81fdf34fb4175d322cf677893944d9dd1a627c"
+        },
+        "date": 1612543584165,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2531.3004657355796,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000044247310392917774",
+            "extra": "mean: 395.05385217452107 usec\nrounds: 115"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3646.514322650993,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008389320496400553",
+            "extra": "mean: 274.2344912203735 usec\nrounds: 4499"
           }
         ]
       }
