@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1612806610842,
+  "lastUpdate": 1612806614871,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -16316,6 +16316,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009278044675365573",
             "extra": "mean: 332.9469624580505 usec\nrounds: 3889"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "24edd3d81afb394c3b2d1f0416faca59db931b66",
+          "message": "Remove metrics from main branch (#1568)",
+          "timestamp": "2021-02-08T09:48:28-08:00",
+          "tree_id": "c79000662a7e48555805e8cb45557222dadb61db",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/24edd3d81afb394c3b2d1f0416faca59db931b66"
+        },
+        "date": 1612806608523,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2192.4013528449805,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000124822566669962",
+            "extra": "mean: 456.1208643218292 usec\nrounds: 199"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3090.824228019152,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009682861121708383",
+            "extra": "mean: 323.53829471593093 usec\nrounds: 4523"
           }
         ]
       }
