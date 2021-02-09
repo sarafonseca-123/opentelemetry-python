@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1612889213973,
+  "lastUpdate": 1612889217520,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -24194,6 +24194,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000010393769373847603",
             "extra": "mean: 5.404384083688516 usec\nrounds: 59172"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2113d4a52befdc3aedb600c83c2d87d89bc3228a",
+          "message": "Update README.md (#1589)",
+          "timestamp": "2021-02-09T08:45:48-08:00",
+          "tree_id": "6d68820e33bfacfca8dd485f9ffb6467fff78b13",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/2113d4a52befdc3aedb600c83c2d87d89bc3228a"
+        },
+        "date": 1612889208328,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 91215.20529301226,
+            "unit": "iter/sec",
+            "range": "stddev: 9.019788186433688e-7",
+            "extra": "mean: 10.963084463688721 usec\nrounds: 10028"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 179486.80272414334,
+            "unit": "iter/sec",
+            "range": "stddev: 7.266826330072113e-7",
+            "extra": "mean: 5.5714402664853235 usec\nrounds: 67550"
           }
         ]
       }
