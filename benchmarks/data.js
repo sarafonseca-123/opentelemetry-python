@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1612977676760,
+  "lastUpdate": 1612977680105,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -26210,6 +26210,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 3.737802967537181e-7",
             "extra": "mean: 1.2423859530291568 usec\nrounds: 87720"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "78f6949fe29fc544f4d3c7190ebf3254960a0a6c",
+          "message": "adding readable span (#1560)",
+          "timestamp": "2021-02-10T09:19:28-08:00",
+          "tree_id": "556fa22de1d47b81a79dbe0a39307d7e09381c70",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/78f6949fe29fc544f4d3c7190ebf3254960a0a6c"
+        },
+        "date": 1612977677904,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 384675.7847212438,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000004551145461769679",
+            "extra": "mean: 2.5995917593945705 usec\nrounds: 50506"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 804011.3106058592,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000033026945181645005",
+            "extra": "mean: 1.2437635973633832 usec\nrounds: 100001"
           }
         ]
       }
