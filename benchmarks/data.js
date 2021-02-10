@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1612977700846,
+  "lastUpdate": 1612977705823,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -9088,6 +9088,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00002232692028023769",
             "extra": "mean: 91.15552020045914 usec\nrounds: 6386"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "78f6949fe29fc544f4d3c7190ebf3254960a0a6c",
+          "message": "adding readable span (#1560)",
+          "timestamp": "2021-02-10T09:19:28-08:00",
+          "tree_id": "556fa22de1d47b81a79dbe0a39307d7e09381c70",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/78f6949fe29fc544f4d3c7190ebf3254960a0a6c"
+        },
+        "date": 1612977700043,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 17803.05838290052,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003058751709062245",
+            "extra": "mean: 56.170124171500774 usec\nrounds: 1659"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 12148.649986351476,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0001228328768181337",
+            "extra": "mean: 82.31367280508205 usec\nrounds: 5865"
           }
         ]
       }
