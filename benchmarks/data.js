@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613086423929,
+  "lastUpdate": 1613086428644,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -21982,6 +21982,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009086614177189505",
             "extra": "mean: 354.54651783925414 usec\nrounds: 3980"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "06bbb8efaa1cf7b37948d6290d862aa40c9fc54b",
+          "message": "minor fixes to release scripts (#1561)",
+          "timestamp": "2021-02-11T15:32:35-08:00",
+          "tree_id": "4efaa1aa9fb2d17c8343cd27690d62946417e94f",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/06bbb8efaa1cf7b37948d6290d862aa40c9fc54b"
+        },
+        "date": 1613086425840,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1879.580389476608,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000574108141852239",
+            "extra": "mean: 532.0336419760488 usec\nrounds: 81"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2484.8082695255516,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0011062504564485168",
+            "extra": "mean: 402.44553765548267 usec\nrounds: 3625"
           }
         ]
       }
