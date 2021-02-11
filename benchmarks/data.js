@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613086428644,
+  "lastUpdate": 1613086432198,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -20118,6 +20118,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008773355488725549",
             "extra": "mean: 331.89397288216486 usec\nrounds: 4167"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "06bbb8efaa1cf7b37948d6290d862aa40c9fc54b",
+          "message": "minor fixes to release scripts (#1561)",
+          "timestamp": "2021-02-11T15:32:35-08:00",
+          "tree_id": "4efaa1aa9fb2d17c8343cd27690d62946417e94f",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/06bbb8efaa1cf7b37948d6290d862aa40c9fc54b"
+        },
+        "date": 1613086420948,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2289.750715615132,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00010110851180253684",
+            "extra": "mean: 436.72876404423533 usec\nrounds: 89"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3361.1221634252897,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008335851911042691",
+            "extra": "mean: 297.51968282548495 usec\nrounds: 5054"
           }
         ]
       }
