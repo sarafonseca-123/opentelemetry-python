@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613086411210,
+  "lastUpdate": 1613086417672,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -23846,6 +23846,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0011351397333293567",
             "extra": "mean: 292.8085778571646 usec\nrounds: 5600"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "06bbb8efaa1cf7b37948d6290d862aa40c9fc54b",
+          "message": "minor fixes to release scripts (#1561)",
+          "timestamp": "2021-02-11T15:32:35-08:00",
+          "tree_id": "4efaa1aa9fb2d17c8343cd27690d62946417e94f",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/06bbb8efaa1cf7b37948d6290d862aa40c9fc54b"
+        },
+        "date": 1613086415461,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 924.2060529978064,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00020280062046977552",
+            "extra": "mean: 1.0820097928988284 msec\nrounds: 169"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3874.6341257348126,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0011312998369651392",
+            "extra": "mean: 258.0888846660723 usec\nrounds: 6841"
           }
         ]
       }
