@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613081130483,
+  "lastUpdate": 1613081134632,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -21640,6 +21640,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009609156133573256",
             "extra": "mean: 341.9813904928226 usec\nrounds: 4018"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "84b1b0cf2e1121d7e468c4dc0da937c54a520b08",
+          "message": "Rename env vars from OTEL_TRACE -> OTEL_TRACES (#1595)",
+          "timestamp": "2021-02-11T14:04:12-08:00",
+          "tree_id": "ea327a2a095c3fdd5fe1f109e3456d2c18b8c545",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/84b1b0cf2e1121d7e468c4dc0da937c54a520b08"
+        },
+        "date": 1613081121405,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1876.4911619755585,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00019465882619273104",
+            "extra": "mean: 532.9095176484636 usec\nrounds: 85"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2820.5043617249244,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009086614177189505",
+            "extra": "mean: 354.54651783925414 usec\nrounds: 3980"
           }
         ]
       }
