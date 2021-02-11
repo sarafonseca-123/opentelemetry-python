@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613081134632,
+  "lastUpdate": 1613081140964,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -23580,6 +23580,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0012808625398637082",
             "extra": "mean: 295.8210057612138 usec\nrounds: 4860"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "84b1b0cf2e1121d7e468c4dc0da937c54a520b08",
+          "message": "Rename env vars from OTEL_TRACE -> OTEL_TRACES (#1595)",
+          "timestamp": "2021-02-11T14:04:12-08:00",
+          "tree_id": "ea327a2a095c3fdd5fe1f109e3456d2c18b8c545",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/84b1b0cf2e1121d7e468c4dc0da937c54a520b08"
+        },
+        "date": 1613081122361,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 792.6469792794643,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000049270739941338135",
+            "extra": "mean: 1.2615956739140353 msec\nrounds: 138"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3415.200494870104,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0011351397333293567",
+            "extra": "mean: 292.8085778571646 usec\nrounds: 5600"
           }
         ]
       }
