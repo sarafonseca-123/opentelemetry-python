@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613059286513,
+  "lastUpdate": 1613059289987,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -25676,6 +25676,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000004170495226233531",
             "extra": "mean: 5.847872962947603 usec\nrounds: 30865"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "59f5babeb0d2e6bb6f136c295e91077a8cd05a16",
+          "message": "Add urllib to opentelemetry-bootstrap target list (#1584)",
+          "timestamp": "2021-02-11T08:00:37-08:00",
+          "tree_id": "12da9367ddea46f9f8ad78e103a1199a09b8b950",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/59f5babeb0d2e6bb6f136c295e91077a8cd05a16"
+        },
+        "date": 1613059287688,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 79011.96112031057,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000015614965062874246",
+            "extra": "mean: 12.65631159916803 usec\nrounds: 10061"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 158264.11421084843,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000009290971763978865",
+            "extra": "mean: 6.318551776480064 usec\nrounds: 11849"
           }
         ]
       }
