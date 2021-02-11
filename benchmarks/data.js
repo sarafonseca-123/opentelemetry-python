@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613087815976,
+  "lastUpdate": 1613087820833,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -28452,6 +28452,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 2.4641412993300705e-7",
             "extra": "mean: 1.5423897775687783 usec\nrounds: 68966"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8e34a26427098965a2bb7291f5e8acf40c614d89",
+          "message": "update limits as per specification (#1597)",
+          "timestamp": "2021-02-11T15:55:39-08:00",
+          "tree_id": "bc323f01e81512838a62a8d1f9cd780ca3c895f0",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/8e34a26427098965a2bb7291f5e8acf40c614d89"
+        },
+        "date": 1613087818299,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 383857.4086699112,
+            "unit": "iter/sec",
+            "range": "stddev: 3.703539617365264e-7",
+            "extra": "mean: 2.6051340352272034 usec\nrounds: 40649"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 802824.7876144458,
+            "unit": "iter/sec",
+            "range": "stddev: 1.2978833732800266e-7",
+            "extra": "mean: 1.2456017993310542 usec\nrounds: 90091"
           }
         ]
       }
