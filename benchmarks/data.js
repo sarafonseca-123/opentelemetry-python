@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613088985649,
+  "lastUpdate": 1613088989898,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -12358,6 +12358,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00002444299558617631",
             "extra": "mean: 77.95148498805477 usec\nrounds: 5429"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "anton.ryzhov@zalando.de",
+            "name": "Anton Ryzhov",
+            "username": "anton-ryzhov"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5967374f37105d461f27db2013291d8e663e0363",
+          "message": "Flush export queue when it reaches `max_export_batch_size` (#1521)",
+          "timestamp": "2021-02-11T16:14:42-08:00",
+          "tree_id": "669f88bbe7e2d680200a1eb1f09f076cc8bec61c",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/5967374f37105d461f27db2013291d8e663e0363"
+        },
+        "date": 1613088984534,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 14836.985249072273,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000012846392754285583",
+            "extra": "mean: 67.39913690097711 usec\nrounds: 1607"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 9783.906308490012,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000016198079043264348",
+            "extra": "mean: 102.2086647673892 usec\nrounds: 5441"
           }
         ]
       }
