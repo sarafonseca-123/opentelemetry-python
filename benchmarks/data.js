@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613088951632,
+  "lastUpdate": 1613088956234,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -24720,6 +24720,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0012076963881948529",
             "extra": "mean: 265.3664832225826 usec\nrounds: 6020"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "anton.ryzhov@zalando.de",
+            "name": "Anton Ryzhov",
+            "username": "anton-ryzhov"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5967374f37105d461f27db2013291d8e663e0363",
+          "message": "Flush export queue when it reaches `max_export_batch_size` (#1521)",
+          "timestamp": "2021-02-11T16:14:42-08:00",
+          "tree_id": "669f88bbe7e2d680200a1eb1f09f076cc8bec61c",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/5967374f37105d461f27db2013291d8e663e0363"
+        },
+        "date": 1613088949876,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 790.117893258489,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00033097417828750563",
+            "extra": "mean: 1.2656339117646682 msec\nrounds: 136"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3191.400253254345,
+            "unit": "iter/sec",
+            "range": "stddev: 0.001260874824732452",
+            "extra": "mean: 313.3420820469876 usec\nrounds: 5960"
           }
         ]
       }
