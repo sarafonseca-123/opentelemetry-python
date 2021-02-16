@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613512500871,
+  "lastUpdate": 1613512513660,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -32292,6 +32292,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000349483230019288",
             "extra": "mean: 6.363876650256483 usec\nrounds: 67564"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "22cfddd46acbec4136b914fd05d308a7d99c3d1b",
+          "message": "Fix for pylint (#1613)",
+          "timestamp": "2021-02-16T13:53:41-08:00",
+          "tree_id": "29abd7c01d426ae9dbcc2dc81efa3854c3bfe895",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/22cfddd46acbec4136b914fd05d308a7d99c3d1b"
+        },
+        "date": 1613512511056,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 86293.66784276391,
+            "unit": "iter/sec",
+            "range": "stddev: 6.594781783344847e-7",
+            "extra": "mean: 11.588335795647309 usec\nrounds: 11236"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 178214.86733238367,
+            "unit": "iter/sec",
+            "range": "stddev: 4.636968341691164e-7",
+            "extra": "mean: 5.611204132228359 usec\nrounds: 64517"
           }
         ]
       }
