@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613592286483,
+  "lastUpdate": 1613592304215,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -32860,6 +32860,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000011866363806467508",
             "extra": "mean: 961.974852948127 nsec\nrounds: 116280"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rob.knox.dev@gmail.com",
+            "name": "Rob Knox",
+            "username": "robwknox"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "03c6b7391d16236ad5d4e48b0cb0bff786c2e583",
+          "message": "Zipkin exporter add support for v1 api json format (#1411)",
+          "timestamp": "2021-02-17T12:03:29-08:00",
+          "tree_id": "d7a5fe453f77df1d3e7d772741c3e902040de07a",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/03c6b7391d16236ad5d4e48b0cb0bff786c2e583"
+        },
+        "date": 1613592301563,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 441891.88187569514,
+            "unit": "iter/sec",
+            "range": "stddev: 3.2231129584634295e-7",
+            "extra": "mean: 2.262996993190496 usec\nrounds: 57137"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 818880.611206156,
+            "unit": "iter/sec",
+            "range": "stddev: 5.29788061219308e-7",
+            "extra": "mean: 1.2211792370162438 usec\nrounds: 106372"
           }
         ]
       }
