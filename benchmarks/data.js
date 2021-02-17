@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613521530948,
+  "lastUpdate": 1613521548250,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -20534,6 +20534,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.001012895495647518",
             "extra": "mean: 365.25559570823714 usec\nrounds: 4101"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a1a340ee65d1943d7d474ba49f96db23fdbcec67",
+          "message": "[Chore] Update main after 0.18b0 release (#1614)",
+          "timestamp": "2021-02-16T16:24:20-08:00",
+          "tree_id": "b68e46a1b1f0a0f0e7ca29acb94fce233b893e3e",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a1a340ee65d1943d7d474ba49f96db23fdbcec67"
+        },
+        "date": 1613521545855,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2947.5274042577635,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000438922693218463",
+            "extra": "mean: 339.2674139536344 usec\nrounds: 215"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3725.5957001376337,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008086091992656871",
+            "extra": "mean: 268.41345129399235 usec\nrounds: 4250"
           }
         ]
       }
