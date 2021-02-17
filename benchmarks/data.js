@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613592319139,
+  "lastUpdate": 1613592323072,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -23234,6 +23234,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.001005935752848771",
             "extra": "mean: 396.9118468887412 usec\nrounds: 3455"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rob.knox.dev@gmail.com",
+            "name": "Rob Knox",
+            "username": "robwknox"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "03c6b7391d16236ad5d4e48b0cb0bff786c2e583",
+          "message": "Zipkin exporter add support for v1 api json format (#1411)",
+          "timestamp": "2021-02-17T12:03:29-08:00",
+          "tree_id": "d7a5fe453f77df1d3e7d772741c3e902040de07a",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/03c6b7391d16236ad5d4e48b0cb0bff786c2e583"
+        },
+        "date": 1613592320013,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2282.92775002656,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000014931620689167582",
+            "extra": "mean: 438.03401136473366 usec\nrounds: 88"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2831.722227542394,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000958306608630534",
+            "extra": "mean: 353.14198203256814 usec\nrounds: 3395"
           }
         ]
       }
