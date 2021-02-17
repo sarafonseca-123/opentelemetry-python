@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1613592315372,
+  "lastUpdate": 1613592319139,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -2698,6 +2698,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000002569492951705841",
             "extra": "mean: 52.36385049403372 usec\nrounds: 6983"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "rob.knox.dev@gmail.com",
+            "name": "Rob Knox",
+            "username": "robwknox"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "03c6b7391d16236ad5d4e48b0cb0bff786c2e583",
+          "message": "Zipkin exporter add support for v1 api json format (#1411)",
+          "timestamp": "2021-02-17T12:03:29-08:00",
+          "tree_id": "d7a5fe453f77df1d3e7d772741c3e902040de07a",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/03c6b7391d16236ad5d4e48b0cb0bff786c2e583"
+        },
+        "date": 1613592316373,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 32663.665046387803,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00000964659417985952",
+            "extra": "mean: 30.615058003436992 usec\nrounds: 4879"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 22113.490890091034,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000006129595860783475",
+            "extra": "mean: 45.221263570289395 usec\nrounds: 7148"
           }
         ]
       }
