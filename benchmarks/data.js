@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614128643660,
+  "lastUpdate": 1614128647063,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -21142,6 +21142,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008190997959836513",
             "extra": "mean: 272.0934899469783 usec\nrounds: 4327"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "99128b35d1a9cf2ecb04097c6a87d320a552a3e4",
+          "message": "Add minimum Python requirement (#1626)",
+          "timestamp": "2021-02-23T17:02:25-08:00",
+          "tree_id": "828f7efe31b4a20af43c9f451ce089a6c0824c22",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/99128b35d1a9cf2ecb04097c6a87d320a552a3e4"
+        },
+        "date": 1614128644169,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2062.0293081924933,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00006325590884768799",
+            "extra": "mean: 484.95915941978876 usec\nrounds: 207"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2935.163744455754,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009412069245585765",
+            "extra": "mean: 340.6964950043776 usec\nrounds: 4404"
           }
         ]
       }
