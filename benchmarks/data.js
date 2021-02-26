@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614355795324,
+  "lastUpdate": 1614355798987,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -2774,6 +2774,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000043272581686618464",
             "extra": "mean: 62.03270476776755 usec\nrounds: 9606"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "61b63e5606163393567392d5b56342b59e0072e2",
+          "message": "Remove gitter from docs (#1650)\n\n\r\nCo-authored-by: alrex <alrex.boten@gmail.com>",
+          "timestamp": "2021-02-26T08:07:42-08:00",
+          "tree_id": "9a31e750c9c92d3604a7a94668d50ba04712969f",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/61b63e5606163393567392d5b56342b59e0072e2"
+        },
+        "date": 1614355792548,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 26227.184947568934,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000011165263596120196",
+            "extra": "mean: 38.12837717807349 usec\nrounds: 4706"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 18799.41680279076,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000034224402325490065",
+            "extra": "mean: 53.193139472898466 usec\nrounds: 7514"
           }
         ]
       }
