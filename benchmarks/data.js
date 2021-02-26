@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614355771439,
+  "lastUpdate": 1614355774865,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -8402,6 +8402,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000005495075971391555",
             "extra": "mean: 50.021912295836124 usec\nrounds: 7092"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "61b63e5606163393567392d5b56342b59e0072e2",
+          "message": "Remove gitter from docs (#1650)\n\n\r\nCo-authored-by: alrex <alrex.boten@gmail.com>",
+          "timestamp": "2021-02-26T08:07:42-08:00",
+          "tree_id": "9a31e750c9c92d3604a7a94668d50ba04712969f",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/61b63e5606163393567392d5b56342b59e0072e2"
+        },
+        "date": 1614355768856,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 24140.60590750894,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00001254966470086172",
+            "extra": "mean: 41.42398098172631 usec\nrounds: 4890"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 15820.70982351953,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00005490209093224774",
+            "extra": "mean: 63.208289081528484 usec\nrounds: 9461"
           }
         ]
       }
