@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614620345083,
+  "lastUpdate": 1614621551518,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -33122,6 +33122,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000033279834777108807",
             "extra": "mean: 9.120311779395639 usec\nrounds: 47617"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "326b7b0d0e9bc1cfc21d70d3d09e58b38c5cc8a3",
+          "message": "Add `max_tag_value_length` support to Jaeger exporter (#1633)\n\nThis commit adds ability to specifiy maximum length for string\r\nattributes to the Jaeger exporter. This is similar to how Zipkin\r\nexporter supports `max_tag_value_length`.",
+          "timestamp": "2021-03-01T09:56:10-08:00",
+          "tree_id": "5ded5223f11a99a03cd05007da1ffe872d1fb4c8",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/326b7b0d0e9bc1cfc21d70d3d09e58b38c5cc8a3"
+        },
+        "date": 1614621548621,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 53849.103279284966,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000008921490372595726",
+            "extra": "mean: 18.570411373678095 usec\nrounds: 8124"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 122933.2269682411,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000003236851270147089",
+            "extra": "mean: 8.134497276788665 usec\nrounds: 54348"
           }
         ]
       }
