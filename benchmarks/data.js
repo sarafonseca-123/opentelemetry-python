@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614620211558,
+  "lastUpdate": 1614620214706,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -24982,6 +24982,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008446260500677256",
             "extra": "mean: 303.08388534689175 usec\nrounds: 3576"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0c654f25dabf4237fb643ec03169fbed935fea10",
+          "message": "Make TracerProvider's resource private (#1652)",
+          "timestamp": "2021-03-01T09:34:57-08:00",
+          "tree_id": "062ddc6f82c196553319f5cb37c3a52df8a17751",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/0c654f25dabf4237fb643ec03169fbed935fea10"
+        },
+        "date": 1614620199520,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2294.7055544756586,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000017031996940376254",
+            "extra": "mean: 435.78575824230336 usec\nrounds: 91"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3182.5881160418353,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008756995933289797",
+            "extra": "mean: 314.2096820381814 usec\nrounds: 3925"
           }
         ]
       }
