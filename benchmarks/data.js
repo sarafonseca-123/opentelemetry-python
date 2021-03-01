@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614566650333,
+  "lastUpdate": 1614566657013,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -5778,6 +5778,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000014155557782195977",
             "extra": "mean: 55.10911365947541 usec\nrounds: 5886"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e503ef36e62d6cb53da3a6e728c31033ee8db83c",
+          "message": "Rename Resource's create_empty to get_empty (#1653)",
+          "timestamp": "2021-02-28T18:42:00-08:00",
+          "tree_id": "f6ae9b5d192bf243063859f50f56d7d1dd2161c5",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/e503ef36e62d6cb53da3a6e728c31033ee8db83c"
+        },
+        "date": 1614566654112,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 20574.589159435607,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000022878227751493266",
+            "extra": "mean: 48.603643662133344 usec\nrounds: 3811"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 15733.981098705544,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00000186628026850876",
+            "extra": "mean: 63.55670530723285 usec\nrounds: 5935"
           }
         ]
       }
