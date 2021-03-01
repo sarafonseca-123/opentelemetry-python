@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614621663790,
+  "lastUpdate": 1614621668268,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -20228,6 +20228,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009166362262368714",
             "extra": "mean: 274.2321937108579 usec\nrounds: 5565"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "326b7b0d0e9bc1cfc21d70d3d09e58b38c5cc8a3",
+          "message": "Add `max_tag_value_length` support to Jaeger exporter (#1633)\n\nThis commit adds ability to specifiy maximum length for string\r\nattributes to the Jaeger exporter. This is similar to how Zipkin\r\nexporter supports `max_tag_value_length`.",
+          "timestamp": "2021-03-01T09:56:10-08:00",
+          "tree_id": "5ded5223f11a99a03cd05007da1ffe872d1fb4c8",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/326b7b0d0e9bc1cfc21d70d3d09e58b38c5cc8a3"
+        },
+        "date": 1614621658954,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3752.5898002961862,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000009233588952946822",
+            "extra": "mean: 266.4826301881094 usec\nrounds: 265"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4662.369899966077,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007998560204011222",
+            "extra": "mean: 214.4831966265216 usec\nrounds: 6403"
           }
         ]
       }
