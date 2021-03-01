@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614566634848,
+  "lastUpdate": 1614566639957,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -26998,6 +26998,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009829737360058015",
             "extra": "mean: 356.38394030629394 usec\nrounds: 3853"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e503ef36e62d6cb53da3a6e728c31033ee8db83c",
+          "message": "Rename Resource's create_empty to get_empty (#1653)",
+          "timestamp": "2021-02-28T18:42:00-08:00",
+          "tree_id": "f6ae9b5d192bf243063859f50f56d7d1dd2161c5",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/e503ef36e62d6cb53da3a6e728c31033ee8db83c"
+        },
+        "date": 1614566633805,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1921.403085384249,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00006604072715776152",
+            "extra": "mean: 520.4530000013071 usec\nrounds: 78"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2659.6307735931296,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009567176597397717",
+            "extra": "mean: 375.99203992101945 usec\nrounds: 3031"
           }
         ]
       }
