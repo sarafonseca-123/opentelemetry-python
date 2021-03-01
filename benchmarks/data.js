@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614621716717,
+  "lastUpdate": 1614621803430,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -17870,6 +17870,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000013761438341683839",
             "extra": "mean: 6.3388444774379495 usec\nrounds: 188680"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "326b7b0d0e9bc1cfc21d70d3d09e58b38c5cc8a3",
+          "message": "Add `max_tag_value_length` support to Jaeger exporter (#1633)\n\nThis commit adds ability to specifiy maximum length for string\r\nattributes to the Jaeger exporter. This is similar to how Zipkin\r\nexporter supports `max_tag_value_length`.",
+          "timestamp": "2021-03-01T09:56:10-08:00",
+          "tree_id": "5ded5223f11a99a03cd05007da1ffe872d1fb4c8",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/326b7b0d0e9bc1cfc21d70d3d09e58b38c5cc8a3"
+        },
+        "date": 1614621797880,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 259540.49230134446,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00001755492910155386",
+            "extra": "mean: 3.8529633319756846 usec\nrounds: 36765"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 185836.84980626954,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000060147829657266614",
+            "extra": "mean: 5.381064094890093 usec\nrounds: 121952"
           }
         ]
       }
