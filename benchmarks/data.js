@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614635517734,
+  "lastUpdate": 1614635520928,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -32094,6 +32094,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000034052580524666937",
             "extra": "mean: 7.219042931055204 usec\nrounds: 48310"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "489a81e5d33690ec10f2d7606c7137168f85c17a",
+          "message": "rename span processor (#1656)",
+          "timestamp": "2021-03-01T13:50:35-08:00",
+          "tree_id": "751218b16d1b207a159f8647320d17052c1bf15c",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/489a81e5d33690ec10f2d7606c7137168f85c17a"
+        },
+        "date": 1614635513987,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 70582.98918188816,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000003910754755882437",
+            "extra": "mean: 14.167719610500763 usec\nrounds: 10061"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 157220.5586587892,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00000426763424360129",
+            "extra": "mean: 6.360491328429053 usec\nrounds: 61350"
           }
         ]
       }
