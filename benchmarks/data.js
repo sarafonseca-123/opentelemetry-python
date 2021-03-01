@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614637596137,
+  "lastUpdate": 1614637599794,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -30990,6 +30990,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009039641332929947",
             "extra": "mean: 248.60742576265454 usec\nrounds: 5900"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dc59139a3ac82bc6a8d0c738abf0e36676806b5a",
+          "message": "Refactor utils (#1599)",
+          "timestamp": "2021-03-01T14:24:56-08:00",
+          "tree_id": "00f82a2e40fdd44f94c5258dfefcf665c282c369",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/dc59139a3ac82bc6a8d0c738abf0e36676806b5a"
+        },
+        "date": 1614637596423,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3658.42017799923,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000008664965104289758",
+            "extra": "mean: 273.34203053376297 usec\nrounds: 262"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4940.893901997095,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007761295269792811",
+            "extra": "mean: 202.39252650128816 usec\nrounds: 6528"
           }
         ]
       }
