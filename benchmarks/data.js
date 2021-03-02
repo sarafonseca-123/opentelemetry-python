@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614709958634,
+  "lastUpdate": 1614709961709,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -26198,6 +26198,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008961898761688299",
             "extra": "mean: 340.56372105947924 usec\nrounds: 3775"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "74e24415f5f2e91f92532bac5fecc7c879cad3fb",
+          "message": "Rename DefaultSpan to NonRecordingSpan (#1661)",
+          "timestamp": "2021-03-02T10:30:44-08:00",
+          "tree_id": "71f00dece8ec33599850ad8ffa31d47e59cb85e2",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/74e24415f5f2e91f92532bac5fecc7c879cad3fb"
+        },
+        "date": 1614709958700,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2977.6083849401734,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000010806643920588675",
+            "extra": "mean: 335.8400000005683 usec\nrounds: 90"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3455.877543669102,
+            "unit": "iter/sec",
+            "range": "stddev: 0.001008850557566119",
+            "extra": "mean: 289.36210480950695 usec\nrounds: 4408"
           }
         ]
       }
