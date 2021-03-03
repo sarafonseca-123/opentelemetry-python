@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614731821906,
+  "lastUpdate": 1614731849788,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -23878,6 +23878,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008397852138153498",
             "extra": "mean: 283.2020951219418 usec\nrounds: 4100"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a046518d21153070da2933d1e987713df0d4a6c3",
+          "message": "move textmap propagators to opentelemetry.propagators (#1662)",
+          "timestamp": "2021-03-02T16:35:40-08:00",
+          "tree_id": "283734047b5ee2a7d6969ef347e402c8f4e48448",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a046518d21153070da2933d1e987713df0d4a6c3"
+        },
+        "date": 1614731846614,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2051.6597451803154,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00005909291270817151",
+            "extra": "mean: 487.41025520882 usec\nrounds: 192"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2716.372056773505,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0010136688524424661",
+            "extra": "mean: 368.1380823758714 usec\nrounds: 4613"
           }
         ]
       }
