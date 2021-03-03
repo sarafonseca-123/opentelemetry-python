@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614733635191,
+  "lastUpdate": 1614733643410,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -26958,6 +26958,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009479997708725842",
             "extra": "mean: 360.75525364504176 usec\nrounds: 3978"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9bf28fb451a85fd9e9a4f2276c3eebd484e55d02",
+          "message": "rename BaggagePropagator to W3CBaggagePropagator (#1663)\n\n\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>",
+          "timestamp": "2021-03-02T17:05:32-08:00",
+          "tree_id": "3c56d146c21a8f8814fba92f760ae3ecbb0e0915",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/9bf28fb451a85fd9e9a4f2276c3eebd484e55d02"
+        },
+        "date": 1614733640201,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2234.76588033022,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000015631732300546787",
+            "extra": "mean: 447.474166668517 usec\nrounds: 78"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3092.5296806227484,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008803443346353426",
+            "extra": "mean: 323.3598714559882 usec\nrounds: 4162"
           }
         ]
       }
