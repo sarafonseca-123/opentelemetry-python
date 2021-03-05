@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614911257117,
+  "lastUpdate": 1614911276478,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -21748,6 +21748,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008172628480637797",
             "extra": "mean: 240.71264264042918 usec\nrounds: 5272"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1af9f877794d69d37fa27791baa7bac5bfc51088",
+          "message": "Remove 'span' for jaeger and zipkin exporters (#1664)",
+          "timestamp": "2021-03-04T18:26:30-08:00",
+          "tree_id": "5c6bed47acb71e2c623026fadcb68f1f7ca9137a",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/1af9f877794d69d37fa27791baa7bac5bfc51088"
+        },
+        "date": 1614911273585,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2936.1107657022317,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000016880253228171143",
+            "extra": "mean: 340.5866058192901 usec\nrounds: 241"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3965.2983569923153,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009287112351191939",
+            "extra": "mean: 252.18783303824367 usec\nrounds: 6780"
           }
         ]
       }
