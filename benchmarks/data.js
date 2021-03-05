@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614911285329,
+  "lastUpdate": 1614911288104,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -27300,6 +27300,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008803443346353426",
             "extra": "mean: 323.3598714559882 usec\nrounds: 4162"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1af9f877794d69d37fa27791baa7bac5bfc51088",
+          "message": "Remove 'span' for jaeger and zipkin exporters (#1664)",
+          "timestamp": "2021-03-04T18:26:30-08:00",
+          "tree_id": "5c6bed47acb71e2c623026fadcb68f1f7ca9137a",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/1af9f877794d69d37fa27791baa7bac5bfc51088"
+        },
+        "date": 1614911284865,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2572.7089350390065,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000020188040128338702",
+            "extra": "mean: 388.6953500182244 usec\nrounds: 100"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3295.521537534512,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009491309854384679",
+            "extra": "mean: 303.44210729939056 usec\nrounds: 4371"
           }
         ]
       }
