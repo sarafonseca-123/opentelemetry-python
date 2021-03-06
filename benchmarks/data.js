@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615049215339,
+  "lastUpdate": 1615049218526,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -6424,6 +6424,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000004073458834909865",
             "extra": "mean: 58.2911014435761 usec\nrounds: 11287"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "siimkallas@gmail.com",
+            "name": "Siim Kallas",
+            "username": "seemk"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "94e3a4a747b24c546d8c45dd6013805f0d649228",
+          "message": "distro: fix auto instrumentation with otlp OTEL_TRACES_EXPORTER env var (#1657)",
+          "timestamp": "2021-03-06T08:45:06-08:00",
+          "tree_id": "6c6a017ffd4d09411d579814055d38b5462771f0",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/94e3a4a747b24c546d8c45dd6013805f0d649228"
+        },
+        "date": 1615049213518,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 20765.687277743855,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00001288355472542282",
+            "extra": "mean: 48.156364228395894 usec\nrounds: 5222"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 15816.24587151025,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000012565301420194028",
+            "extra": "mean: 63.2261288882273 usec\nrounds: 7844"
           }
         ]
       }
