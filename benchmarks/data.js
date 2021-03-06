@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615049221090,
+  "lastUpdate": 1615049224837,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -24866,6 +24866,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009032153674751268",
             "extra": "mean: 284.404314481377 usec\nrounds: 5676"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "siimkallas@gmail.com",
+            "name": "Siim Kallas",
+            "username": "seemk"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "94e3a4a747b24c546d8c45dd6013805f0d649228",
+          "message": "distro: fix auto instrumentation with otlp OTEL_TRACES_EXPORTER env var (#1657)",
+          "timestamp": "2021-03-06T08:45:06-08:00",
+          "tree_id": "6c6a017ffd4d09411d579814055d38b5462771f0",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/94e3a4a747b24c546d8c45dd6013805f0d649228"
+        },
+        "date": 1615049221036,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1953.0233203997032,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00009256552809998535",
+            "extra": "mean: 512.0266560848548 usec\nrounds: 189"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2655.825341208919,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0010270293412783659",
+            "extra": "mean: 376.53078479355304 usec\nrounds: 3801"
           }
         ]
       }
