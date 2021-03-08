@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615229902584,
+  "lastUpdate": 1615229906769,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -39432,6 +39432,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 8.392368857269191e-7",
             "extra": "mean: 5.674109388727438 usec\nrounds: 61350"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "losinskij@gmail.com",
+            "name": "Jan Losinski",
+            "username": "janLo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6f42def1d3bed5fd1812316f0e8e0e62d02ff76c",
+          "message": "Add possibility to split oversized udp batches (#1500)",
+          "timestamp": "2021-03-08T10:57:06-08:00",
+          "tree_id": "7d8badd1f94b76d5d73d4a27a2f13cb68d1f877b",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/6f42def1d3bed5fd1812316f0e8e0e62d02ff76c"
+        },
+        "date": 1615229902794,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 92866.58441982756,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010160553575178375",
+            "extra": "mean: 10.768135882754553 usec\nrounds: 9074"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 179741.62528299633,
+            "unit": "iter/sec",
+            "range": "stddev: 7.423032487594401e-7",
+            "extra": "mean: 5.563541547070903 usec\nrounds: 57140"
           }
         ]
       }
