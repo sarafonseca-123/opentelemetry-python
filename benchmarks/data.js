@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615235746007,
+  "lastUpdate": 1615235748785,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -25968,6 +25968,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009130594748492815",
             "extra": "mean: 321.691876627675 usec\nrounds: 4377"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaronabbott@google.com",
+            "name": "Aaron Abbott",
+            "username": "aabmass"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a3a5e55721823f0c6148d62de82beb7f460cd8d5",
+          "message": "fixed changelog formatting issues (#1679)",
+          "timestamp": "2021-03-08T12:33:20-08:00",
+          "tree_id": "0e567648d63dc1e7e3288f5d4fa38fbb84033f2f",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a3a5e55721823f0c6148d62de82beb7f460cd8d5"
+        },
+        "date": 1615235743665,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1992.6570883650961,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00011009774669822926",
+            "extra": "mean: 501.8424925386757 usec\nrounds: 201"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3096.6621615096146,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009254021189135389",
+            "extra": "mean: 322.92834924960067 usec\nrounds: 4398"
           }
         ]
       }
