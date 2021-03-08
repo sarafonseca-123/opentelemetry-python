@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615233467815,
+  "lastUpdate": 1615233618361,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -20112,6 +20112,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000012453851648174262",
             "extra": "mean: 6.357606189678103 usec\nrounds: 117648"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c387aa382cc31e2e2afb777fa93e579ca60776ad",
+          "message": "Document how to work with fork process web server models(Gunicorn, uWSGI etc...) (#1609)",
+          "timestamp": "2021-03-08T11:55:13-08:00",
+          "tree_id": "ae3d05248137fd5942186e1b6c26579fc9cf6833",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c387aa382cc31e2e2afb777fa93e579ca60776ad"
+        },
+        "date": 1615233614488,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 175550.4301208408,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000016396437332025534",
+            "extra": "mean: 5.696368840062917 usec\nrounds: 128206"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 82236.34972672853,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000277622030354247",
+            "extra": "mean: 12.160072806283363 usec\nrounds: 138889"
           }
         ]
       }
