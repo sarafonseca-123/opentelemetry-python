@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615225088617,
+  "lastUpdate": 1615225097341,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -16272,6 +16272,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000405609649546817",
             "extra": "mean: 99.86236004768864 usec\nrounds: 5041"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9254c170d644c853f7824e27e733e0930b4ee8f2",
+          "message": "Move `use_span()` method from Tracer to `opentelemetry.trace.use_span()` (#1668)\n\nFixes: #1630",
+          "timestamp": "2021-03-08T09:34:01-08:00",
+          "tree_id": "9ecc0b7ca049daaea4d01470ba39b169ea6ab001",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/9254c170d644c853f7824e27e733e0930b4ee8f2"
+        },
+        "date": 1615225093644,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 18566.344365625053,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000016253627078383073",
+            "extra": "mean: 53.86089907130375 usec\nrounds: 1615"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 12581.718539977235,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001992779204526442",
+            "extra": "mean: 79.48039823197391 usec\nrounds: 4864"
           }
         ]
       }
