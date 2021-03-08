@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615233449017,
+  "lastUpdate": 1615233458073,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -10074,6 +10074,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000003478526443799829",
             "extra": "mean: 47.02113257090333 usec\nrounds: 7083"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c387aa382cc31e2e2afb777fa93e579ca60776ad",
+          "message": "Document how to work with fork process web server models(Gunicorn, uWSGI etc...) (#1609)",
+          "timestamp": "2021-03-08T11:55:13-08:00",
+          "tree_id": "ae3d05248137fd5942186e1b6c26579fc9cf6833",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c387aa382cc31e2e2afb777fa93e579ca60776ad"
+        },
+        "date": 1615233454320,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 26649.83954328144,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000013553057552819955",
+            "extra": "mean: 37.52367808353672 usec\nrounds: 5051"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 18760.17665270814,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000017167078829349865",
+            "extra": "mean: 53.30440211263385 usec\nrounds: 6911"
           }
         ]
       }
