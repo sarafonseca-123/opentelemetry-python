@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615229958252,
+  "lastUpdate": 1615229961510,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -3268,6 +3268,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000005832596561264422",
             "extra": "mean: 49.66157737836586 usec\nrounds: 7179"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "losinskij@gmail.com",
+            "name": "Jan Losinski",
+            "username": "janLo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6f42def1d3bed5fd1812316f0e8e0e62d02ff76c",
+          "message": "Add possibility to split oversized udp batches (#1500)",
+          "timestamp": "2021-03-08T10:57:06-08:00",
+          "tree_id": "7d8badd1f94b76d5d73d4a27a2f13cb68d1f877b",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/6f42def1d3bed5fd1812316f0e8e0e62d02ff76c"
+        },
+        "date": 1615229954076,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 28653.069066979206,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000023547759028021884",
+            "extra": "mean: 34.90027534790103 usec\nrounds: 5030"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20125.489106173256,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000004501350048788428",
+            "extra": "mean: 49.688233400164265 usec\nrounds: 7485"
           }
         ]
       }
