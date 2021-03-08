@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615241872286,
+  "lastUpdate": 1615241875396,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -23800,6 +23800,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008954507143591483",
             "extra": "mean: 287.4076719440264 usec\nrounds: 5432"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6087aea507e5acd974e965e2b16884df02612e57",
+          "message": "expose StatusCode from opentelemetry.trace (#1681)",
+          "timestamp": "2021-03-08T14:15:58-08:00",
+          "tree_id": "8cdba8ede37736f73416e5d39b034c9586cfca34",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/6087aea507e5acd974e965e2b16884df02612e57"
+        },
+        "date": 1615241868946,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2161.641609709268,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00014217768132305367",
+            "extra": "mean: 462.61137623756974 usec\nrounds: 202"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3405.4141973347873,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009082368921987367",
+            "extra": "mean: 293.65003551774697 usec\nrounds: 5631"
           }
         ]
       }
