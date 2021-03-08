@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615229939512,
+  "lastUpdate": 1615229942245,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -22508,6 +22508,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008504666774100314",
             "extra": "mean: 249.07857225544888 usec\nrounds: 5356"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "losinskij@gmail.com",
+            "name": "Jan Losinski",
+            "username": "janLo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6f42def1d3bed5fd1812316f0e8e0e62d02ff76c",
+          "message": "Add possibility to split oversized udp batches (#1500)",
+          "timestamp": "2021-03-08T10:57:06-08:00",
+          "tree_id": "7d8badd1f94b76d5d73d4a27a2f13cb68d1f877b",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/6f42def1d3bed5fd1812316f0e8e0e62d02ff76c"
+        },
+        "date": 1615229937839,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2173.0918238138433,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00010814649039018143",
+            "extra": "mean: 460.17383574936514 usec\nrounds: 207"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3292.263605088618,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009522810436293447",
+            "extra": "mean: 303.7423851645327 usec\nrounds: 6444"
           }
         ]
       }
