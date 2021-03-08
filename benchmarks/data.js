@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615239987376,
+  "lastUpdate": 1615240004910,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -26538,6 +26538,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0010941426411208524",
             "extra": "mean: 431.25065986242276 usec\nrounds: 4213"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "50d0bc04400e9cbbd35b2185da4b1f24515d99f9",
+          "message": "Use opentelemetry-proto 0.7.0 (#1674)",
+          "timestamp": "2021-03-08T13:45:04-08:00",
+          "tree_id": "5728916bfb889d813088dbdbc7de84c649f92bd2",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/50d0bc04400e9cbbd35b2185da4b1f24515d99f9"
+        },
+        "date": 1615240001154,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2428.1196864634953,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000018412244490532392",
+            "extra": "mean: 411.8413130847264 usec\nrounds: 214"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3212.8719669896323,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008977849038915662",
+            "extra": "mean: 311.24800809817856 usec\nrounds: 4075"
           }
         ]
       }
