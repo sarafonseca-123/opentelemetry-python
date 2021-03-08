@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615233390792,
+  "lastUpdate": 1615233393820,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -36160,6 +36160,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 8.238260495767264e-7",
             "extra": "mean: 6.888714693708547 usec\nrounds: 58821"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c387aa382cc31e2e2afb777fa93e579ca60776ad",
+          "message": "Document how to work with fork process web server models(Gunicorn, uWSGI etc...) (#1609)",
+          "timestamp": "2021-03-08T11:55:13-08:00",
+          "tree_id": "ae3d05248137fd5942186e1b6c26579fc9cf6833",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c387aa382cc31e2e2afb777fa93e579ca60776ad"
+        },
+        "date": 1615233388073,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 56609.17270356014,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000015000269067669001",
+            "extra": "mean: 17.664981702463745 usec\nrounds: 7542"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 141597.936357724,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007703064584090745",
+            "extra": "mean: 7.062249816082516 usec\nrounds: 54348"
           }
         ]
       }
