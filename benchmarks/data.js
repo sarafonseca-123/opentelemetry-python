@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615240017031,
+  "lastUpdate": 1615240020852,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -29618,6 +29618,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0010287616676562933",
             "extra": "mean: 403.7525504756896 usec\nrounds: 3784"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "50d0bc04400e9cbbd35b2185da4b1f24515d99f9",
+          "message": "Use opentelemetry-proto 0.7.0 (#1674)",
+          "timestamp": "2021-03-08T13:45:04-08:00",
+          "tree_id": "5728916bfb889d813088dbdbc7de84c649f92bd2",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/50d0bc04400e9cbbd35b2185da4b1f24515d99f9"
+        },
+        "date": 1615240014436,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2186.794974874105,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000029484520380804553",
+            "extra": "mean: 457.290240507147 usec\nrounds: 79"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2862.803272565968,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009617346093664832",
+            "extra": "mean: 349.3079701224761 usec\nrounds: 3916"
           }
         ]
       }
