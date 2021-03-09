@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615319608497,
+  "lastUpdate": 1615319611049,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -42776,6 +42776,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000015867674944499734",
             "extra": "mean: 6.54989197088821 usec\nrounds: 59521"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fb1ae06026d648d867461396a6d1b5c37cbb3a31",
+          "message": "Span Status: only set description for ERROR status code. (#1673)\n\n\r\nCo-authored-by: alrex <aboten@lightstep.com>",
+          "timestamp": "2021-03-09T11:50:57-08:00",
+          "tree_id": "2c1d4ec0cb4b7612400b7323d00c47fc2cc663d8",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/fb1ae06026d648d867461396a6d1b5c37cbb3a31"
+        },
+        "date": 1615319601820,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 92045.08284799747,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010316018118356108",
+            "extra": "mean: 10.864241402785112 usec\nrounds: 11806"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 175433.28670036557,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000002782230848506883",
+            "extra": "mean: 5.70017252032659 usec\nrounds: 59877"
           }
         ]
       }
