@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615396354729,
+  "lastUpdate": 1615396359312,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -30948,6 +30948,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008947445418481275",
             "extra": "mean: 292.92617201637916 usec\nrounds: 4517"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0cd037fdd396f68a8080f84b3a71ecea49c1a393",
+          "message": "docs: update documentation to reflect default (#1676)",
+          "timestamp": "2021-03-10T09:10:37-08:00",
+          "tree_id": "c8a72eee7059069d84b207c368d6985248a3d0d9",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/0cd037fdd396f68a8080f84b3a71ecea49c1a393"
+        },
+        "date": 1615396354813,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1856.2625709347603,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00008482785626602889",
+            "extra": "mean: 538.7168904108371 usec\nrounds: 73"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2680.312631313496,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009252550540479113",
+            "extra": "mean: 373.0908060191273 usec\nrounds: 3954"
           }
         ]
       }
