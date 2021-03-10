@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615393538278,
+  "lastUpdate": 1615393543405,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -24446,6 +24446,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009754976702546364",
             "extra": "mean: 303.80309527157226 usec\nrounds: 4272"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5cc7ec5763d3567cd46f65cc296c3cd3a7b5a261",
+          "message": "Remove time_ns from API (#1602)",
+          "timestamp": "2021-03-10T08:21:50-08:00",
+          "tree_id": "7626c77733b18bfaf9ba24cb74a8d5fd917be653",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/5cc7ec5763d3567cd46f65cc296c3cd3a7b5a261"
+        },
+        "date": 1615393537222,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2660.073496342924,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000010923382775191445",
+            "extra": "mean: 375.9294626162783 usec\nrounds: 214"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3510.374627735118,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00102951335583079",
+            "extra": "mean: 284.8698802968493 usec\nrounds: 5121"
           }
         ]
       }
