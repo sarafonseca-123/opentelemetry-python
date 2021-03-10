@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615401234293,
+  "lastUpdate": 1615401244212,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -24826,6 +24826,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00124660655029636",
             "extra": "mean: 371.61490680653526 usec\nrounds: 4099"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c81fd5e19ee91ecbed2e3d09804cc1137704d419",
+          "message": "Hide certain implementation specific classes/variables (#1684)",
+          "timestamp": "2021-03-10T10:32:30-08:00",
+          "tree_id": "566d48dffc438f2518d95b4eb2fd647fdef31dc7",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c81fd5e19ee91ecbed2e3d09804cc1137704d419"
+        },
+        "date": 1615401240308,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2609.4643787959703,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00010071553185473532",
+            "extra": "mean: 383.22040650403846 usec\nrounds: 246"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4214.676016785171,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008291066820007478",
+            "extra": "mean: 237.26616138878697 usec\nrounds: 7200"
           }
         ]
       }
