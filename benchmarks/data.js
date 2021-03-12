@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615517835507,
+  "lastUpdate": 1615517837933,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -11252,6 +11252,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000034413949993296415",
             "extra": "mean: 61.883170217923855 usec\nrounds: 8354"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a46b4c2039275b4c480b3ef3a3ca530fd443c0a2",
+          "message": "Update docs to specify to use Resource APIs to work with Resource (#1686)",
+          "timestamp": "2021-03-11T18:55:08-08:00",
+          "tree_id": "7ae56ab818db51d52dbcaf0b79c773239f4b8595",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a46b4c2039275b4c480b3ef3a3ca530fd443c0a2"
+        },
+        "date": 1615517830921,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 26999.48153445349,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000025599674973649414",
+            "extra": "mean: 37.03774825171811 usec\nrounds: 4719"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 18813.560171038764,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000030369039747501285",
+            "extra": "mean: 53.15315075449574 usec\nrounds: 6892"
           }
         ]
       }
