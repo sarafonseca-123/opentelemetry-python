@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615511886417,
+  "lastUpdate": 1615511888566,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -38666,6 +38666,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009442459829469758",
             "extra": "mean: 269.7416246824016 usec\nrounds: 5510"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaronabbott@google.com",
+            "name": "Aaron Abbott",
+            "username": "aabmass"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "58a8e8c3a61474b20eb31722f93b14a32b5236de",
+          "message": "Cleanup OTLP exporter compression options, add tests (#1671)",
+          "timestamp": "2021-03-11T17:15:44-08:00",
+          "tree_id": "3f6e277ddcff897ca2eefef316db8542e40c9246",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/58a8e8c3a61474b20eb31722f93b14a32b5236de"
+        },
+        "date": 1615511875464,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2279.92884186257,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00004948209576060709",
+            "extra": "mean: 438.61018012433135 usec\nrounds: 161"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3440.3486099350207,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009547058962019492",
+            "extra": "mean: 290.668218073077 usec\nrounds: 5865"
           }
         ]
       }
