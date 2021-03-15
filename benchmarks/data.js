@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615830856590,
+  "lastUpdate": 1615830859297,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -36156,6 +36156,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009059794093937381",
             "extra": "mean: 331.3025716183726 usec\nrounds: 3763"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaronabbott@google.com",
+            "name": "Aaron Abbott",
+            "username": "aabmass"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7662d83f3b8b64e208909f8b1acb97b45b14ce00",
+          "message": "Improve documentation around environment variables (#1680)",
+          "timestamp": "2021-03-15T10:53:01-07:00",
+          "tree_id": "d5036c53ffe32c0c2f85194632656b71dd786a73",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/7662d83f3b8b64e208909f8b1acb97b45b14ce00"
+        },
+        "date": 1615830849418,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2017.6824120608733,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00007677135624379347",
+            "extra": "mean: 495.6181379301383 usec\nrounds: 87"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2992.928821432271,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009058796768192951",
+            "extra": "mean: 334.1208761260979 usec\nrounds: 1776"
           }
         ]
       }
