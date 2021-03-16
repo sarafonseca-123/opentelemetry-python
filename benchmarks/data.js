@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615922231455,
+  "lastUpdate": 1615922234450,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -36916,6 +36916,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009107634718027721",
             "extra": "mean: 336.0068692504687 usec\nrounds: 3870"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "55284676+dmarar@users.noreply.github.com",
+            "name": "Dilip M",
+            "username": "dmarar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c61a7126445f57748af8f7ffd1b7fc0cdadd5476",
+          "message": "Remove service name (#1669)",
+          "timestamp": "2021-03-16T12:15:48-07:00",
+          "tree_id": "131241d7867d1006332e310badb15ef2a61130ae",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c61a7126445f57748af8f7ffd1b7fc0cdadd5476"
+        },
+        "date": 1615922228882,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2144.677226793461,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000012351791888592847",
+            "extra": "mean: 466.27062921496815 usec\nrounds: 89"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2945.977535207702,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009556680785858376",
+            "extra": "mean: 339.44590141944053 usec\nrounds: 3875"
           }
         ]
       }
