@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615922264939,
+  "lastUpdate": 1615922303041,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -19016,44 +19016,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "rob.knox.dev@gmail.com",
-            "name": "Rob Knox",
-            "username": "robwknox"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "9cfe5559ce6c015eea04f66fb9a4ece596f775b3",
-          "message": "Adding support for array attributes to Zipkin exporter (#1285)",
-          "timestamp": "2020-12-15T20:38:24-08:00",
-          "tree_id": "e9a7b62d8a75ebd757b49b580a4debc56e5f8bd2",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/9cfe5559ce6c015eea04f66fb9a4ece596f775b3"
-        },
-        "date": 1608093644421,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 278649.7689361246,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000018019320922050986",
-            "extra": "mean: 3.58873435932847 usec\nrounds: 40481"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 193867.39911388492,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000006282175568374536",
-            "extra": "mean: 5.158164831068698 usec\nrounds: 140826"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "mails@violalyu.com",
             "name": "Wanqi Lyu",
             "username": "violalyu"
@@ -22810,6 +22772,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000685534697730346",
             "extra": "mean: 6.803742931175819 usec\nrounds: 181819"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "55284676+dmarar@users.noreply.github.com",
+            "name": "Dilip M",
+            "username": "dmarar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c61a7126445f57748af8f7ffd1b7fc0cdadd5476",
+          "message": "Remove service name (#1669)",
+          "timestamp": "2021-03-16T12:15:48-07:00",
+          "tree_id": "131241d7867d1006332e310badb15ef2a61130ae",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c61a7126445f57748af8f7ffd1b7fc0cdadd5476"
+        },
+        "date": 1615922298411,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 285826.6691964089,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00001640901535803244",
+            "extra": "mean: 3.4986238436443675 usec\nrounds: 40321"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 181908.2650372031,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000005773348883632668",
+            "extra": "mean: 5.497276332086859 usec\nrounds: 131579"
           }
         ]
       }
