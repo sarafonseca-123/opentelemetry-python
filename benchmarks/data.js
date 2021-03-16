@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615909893370,
+  "lastUpdate": 1615909897488,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -42202,6 +42202,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 9.65084040338004e-7",
             "extra": "mean: 6.986362042144319 usec\nrounds: 57137"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c2d974f4640d4e482a6dd023cf60659722c7dd32",
+          "message": "don't copy baggage for each call to get (#1697)",
+          "timestamp": "2021-03-16T08:50:36-07:00",
+          "tree_id": "1f5b2b76ee9f5d18e927f3d3949eebaf62ed6934",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c2d974f4640d4e482a6dd023cf60659722c7dd32"
+        },
+        "date": 1615909892213,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 71291.88688250848,
+            "unit": "iter/sec",
+            "range": "stddev: 7.937153197356015e-7",
+            "extra": "mean: 14.026841534549856 usec\nrounds: 9775"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 144281.24849827975,
+            "unit": "iter/sec",
+            "range": "stddev: 4.893221088488266e-7",
+            "extra": "mean: 6.930907587841694 usec\nrounds: 60241"
           }
         ]
       }
