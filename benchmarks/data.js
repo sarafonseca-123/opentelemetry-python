@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616000716482,
+  "lastUpdate": 1616000724268,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -11412,44 +11412,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "mails@violalyu.com",
-            "name": "Wanqi Lyu",
-            "username": "violalyu"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "d8c3c24c347981e8c9ff9e41485f9579a80bc5bb",
-          "message": "Update usage for `Meter.create_counter` in tests and examples, clean up unused imports (#1463)",
-          "timestamp": "2020-12-16T07:40:44-08:00",
-          "tree_id": "7f21ab26c1f7d98c001a91817984a6f0cee49c0d",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/d8c3c24c347981e8c9ff9e41485f9579a80bc5bb"
-        },
-        "date": 1608133393013,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 20523.958193620823,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000018909031827176695",
-            "extra": "mean: 48.723544969547646 usec\nrounds: 1312"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 14395.948826097192,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000021527871996646043",
-            "extra": "mean: 69.46398685352263 usec\nrounds: 5781"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "55284676+dmarar@users.noreply.github.com",
             "name": "Dilip M",
             "username": "dmarar"
@@ -15206,6 +15168,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000002191629447906665",
             "extra": "mean: 78.91180959783682 usec\nrounds: 5147"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "77ff0702c405805cb732d621109364e79ba944fa",
+          "message": "split otlp exporter (#1695)",
+          "timestamp": "2021-03-17T10:02:51-07:00",
+          "tree_id": "5be6951148eea31a5559ab9d869c66beaf5fa9da",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/77ff0702c405805cb732d621109364e79ba944fa"
+        },
+        "date": 1616000717965,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 14189.522157423486,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00002289657769180115",
+            "extra": "mean: 70.47453669726526 usec\nrounds: 1526"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 9760.385910681134,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000022991079521574842",
+            "extra": "mean: 102.45496532116263 usec\nrounds: 5450"
           }
         ]
       }
