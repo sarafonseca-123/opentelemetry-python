@@ -1,46 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615993549894,
+  "lastUpdate": 1615993553208,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
-      {
-        "commit": {
-          "author": {
-            "email": "rob.knox.dev@gmail.com",
-            "name": "Rob Knox",
-            "username": "robwknox"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "9cfe5559ce6c015eea04f66fb9a4ece596f775b3",
-          "message": "Adding support for array attributes to Zipkin exporter (#1285)",
-          "timestamp": "2020-12-15T20:38:24-08:00",
-          "tree_id": "e9a7b62d8a75ebd757b49b580a4debc56e5f8bd2",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/9cfe5559ce6c015eea04f66fb9a4ece596f775b3"
-        },
-        "date": 1608093640759,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 32201.966882370925,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000034930096137207275",
-            "extra": "mean: 31.05400373998439 usec\nrounds: 4813"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 23117.219899782005,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000005319608692502413",
-            "extra": "mean: 43.25779675649623 usec\nrounds: 7646"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -3800,6 +3762,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000004227225797351272",
             "extra": "mean: 52.0978949787578 usec\nrounds: 6313"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f92431e90d258ad6f0f4f496b2e9b778bcb1f627",
+          "message": "split jaeger exporter for proto/thrift (#1694)",
+          "timestamp": "2021-03-17T08:03:18-07:00",
+          "tree_id": "c597134d7c2876685fd73d614d5b42689f4f1025",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/f92431e90d258ad6f0f4f496b2e9b778bcb1f627"
+        },
+        "date": 1615993541428,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 21857.94957898811,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00004616284368468983",
+            "extra": "mean: 45.749945409394336 usec\nrounds: 4433"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 15431.311271318824,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000043944868308497686",
+            "extra": "mean: 64.80330688803065 usec\nrounds: 8130"
           }
         ]
       }
