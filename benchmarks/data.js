@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616008275055,
+  "lastUpdate": 1616008281905,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -30148,6 +30148,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009778578266604644",
             "extra": "mean: 348.282284301485 usec\nrounds: 3943"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "724c7920e71c7cce77cc331ee24659c30d42526c",
+          "message": "Populate service_name from exporting span in JaegerExporters (#1703)",
+          "timestamp": "2021-03-17T12:09:50-07:00",
+          "tree_id": "466840bd239ad516e9904ae7f0cd07d357710c2b",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/724c7920e71c7cce77cc331ee24659c30d42526c"
+        },
+        "date": 1616008276369,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2755.2117945808736,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000066682859885618104",
+            "extra": "mean: 362.94850434615 usec\nrounds: 230"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3661.47946278336,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008158994166608466",
+            "extra": "mean: 273.1136444064134 usec\nrounds: 4702"
           }
         ]
       }
