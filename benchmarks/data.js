@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616008325047,
+  "lastUpdate": 1616080596165,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -44064,6 +44064,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000011708112969455307",
             "extra": "mean: 7.3792634674109925 usec\nrounds: 58140"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d21793d1249ee6e41180dc9a33755c6dcc0e94a1",
+          "message": "remove python 3.5 support (#1706)",
+          "timestamp": "2021-03-18T08:15:22-07:00",
+          "tree_id": "a455fa7a11ccda44805c8fef6353c070bb8c59fd",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/d21793d1249ee6e41180dc9a33755c6dcc0e94a1"
+        },
+        "date": 1616080590714,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 64055.477890071794,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000008071507966189395",
+            "extra": "mean: 15.611467323936616 usec\nrounds: 10650"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 126048.3300837277,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007457168500732829",
+            "extra": "mean: 7.9334648807782635 usec\nrounds: 56180"
           }
         ]
       }
