@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616083158921,
+  "lastUpdate": 1616083163328,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -49806,6 +49806,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00001145619105693668",
             "extra": "mean: 6.853943682761946 usec\nrounds: 60976"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "73838995+dmolenda-sumo@users.noreply.github.com",
+            "name": "Dominika Molenda",
+            "username": "dmolenda-sumo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f5d10d456ba0e9deaf9d2b25bb9c9b1fdcd93bda",
+          "message": "Upgrade Mypy to version 0.812 (#1705)",
+          "timestamp": "2021-03-18T08:56:28-07:00",
+          "tree_id": "bd6a47346d47386198d9c854ec6a710e7ef41153",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/f5d10d456ba0e9deaf9d2b25bb9c9b1fdcd93bda"
+        },
+        "date": 1616083152279,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 88608.82082298235,
+            "unit": "iter/sec",
+            "range": "stddev: 6.98688540966659e-7",
+            "extra": "mean: 11.28555814999212 usec\nrounds: 11049"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 171619.4074530795,
+            "unit": "iter/sec",
+            "range": "stddev: 4.457010400068119e-7",
+            "extra": "mean: 5.826846828342527 usec\nrounds: 59874"
           }
         ]
       }
