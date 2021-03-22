@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616428292194,
+  "lastUpdate": 1616428295744,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -26574,6 +26574,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00099044730714869",
             "extra": "mean: 303.82906397421135 usec\nrounds: 5596"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "daisuketaniwaki@gmail.com",
+            "name": "Daisuke Taniwaki",
+            "username": "dtaniwaki"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "320d69f4f0f28b6df91047f31f810e0aa5731038",
+          "message": "Fix get exporter names condition (#1707)",
+          "timestamp": "2021-03-22T08:49:36-07:00",
+          "tree_id": "d0ede1f544642aa0e162905433b85b8007ff1211",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/320d69f4f0f28b6df91047f31f810e0aa5731038"
+        },
+        "date": 1616428289532,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1938.2485513300785,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0003500402601018188",
+            "extra": "mean: 515.9297032951595 usec\nrounds: 182"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3122.5392407887703,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000988613053390098",
+            "extra": "mean: 320.25218032084507 usec\nrounds: 4797"
           }
         ]
       }
