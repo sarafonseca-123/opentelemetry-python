@@ -1,46 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616431936822,
+  "lastUpdate": 1616431939805,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
-      {
-        "commit": {
-          "author": {
-            "email": "srikanth.chekuri92@gmail.com",
-            "name": "Srikanth Chekuri",
-            "username": "lonewolf3739"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "41953604180695852223805efe1e1b0d7372de3d",
-          "message": "Update zipkin exporter status code and error tag (#1486)",
-          "timestamp": "2020-12-22T16:53:43-08:00",
-          "tree_id": "39ccf249260893b50c21a64f5f43c013772c2ce7",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/41953604180695852223805efe1e1b0d7372de3d"
-        },
-        "date": 1608684981108,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 23433.075658482616,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00001990160082266676",
-            "extra": "mean: 42.67472245530888 usec\nrounds: 4529"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 16876.860926125166,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000029530323750677647",
-            "extra": "mean: 59.25272504035468 usec\nrounds: 9285"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -3800,6 +3762,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000017017015793504603",
             "extra": "mean: 55.32327384923741 usec\nrounds: 10776"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4fb02197bcd22afd808599ccacbe85d2e45a9683",
+          "message": "rename package to opentelemetry-exporter-jaeger-proto-grpc (#1709)",
+          "timestamp": "2021-03-22T09:50:09-07:00",
+          "tree_id": "64c9d7d1a43ae33bc161e9a78a857b5ee1b34e18",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/4fb02197bcd22afd808599ccacbe85d2e45a9683"
+        },
+        "date": 1616431932729,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 26814.59512391682,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000020658911396539634",
+            "extra": "mean: 37.29312321811143 usec\nrounds: 4910"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20655.382225684752,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000047336844041641345",
+            "extra": "mean: 48.41353159548461 usec\nrounds: 7327"
           }
         ]
       }
