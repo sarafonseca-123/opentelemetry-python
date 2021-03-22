@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616431967326,
+  "lastUpdate": 1616431969512,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -26620,44 +26620,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "srikanth.chekuri92@gmail.com",
-            "name": "Srikanth Chekuri",
-            "username": "lonewolf3739"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "bd8db6e2a461d896c1c0556efd0f4b569106fa96",
-          "message": "Add protobuf via gRPC exporting support for Jaeger (#1471)",
-          "timestamp": "2021-01-04T09:13:16-08:00",
-          "tree_id": "ab66aeae2640c477e711409223dda795b083ee77",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/bd8db6e2a461d896c1c0556efd0f4b569106fa96"
-        },
-        "date": 1609780558471,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 3055.4179431459147,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000068088712980054",
-            "extra": "mean: 327.2874672492044 usec\nrounds: 229"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3895.4193041748067,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0008506755543495347",
-            "extra": "mean: 256.711773987534 usec\nrounds: 5013"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "anton@ryzhov.me",
             "name": "Anton Ryzhov",
             "username": "anton-ryzhov"
@@ -30414,6 +30376,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009987869841785613",
             "extra": "mean: 361.6262753411453 usec\nrounds: 4104"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4fb02197bcd22afd808599ccacbe85d2e45a9683",
+          "message": "rename package to opentelemetry-exporter-jaeger-proto-grpc (#1709)",
+          "timestamp": "2021-03-22T09:50:09-07:00",
+          "tree_id": "64c9d7d1a43ae33bc161e9a78a857b5ee1b34e18",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/4fb02197bcd22afd808599ccacbe85d2e45a9683"
+        },
+        "date": 1616431959565,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1996.2276416108805,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00007679601582845582",
+            "extra": "mean: 500.94487179480075 usec\nrounds: 195"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2893.192387446427,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009566619014538155",
+            "extra": "mean: 345.63895727743653 usec\nrounds: 4143"
           }
         ]
       }
