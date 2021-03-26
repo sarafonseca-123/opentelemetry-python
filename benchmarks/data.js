@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616442022200,
+  "lastUpdate": 1616729020121,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -59008,6 +59008,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00002747232290857621",
             "extra": "mean: 10.142462621697751 usec\nrounds: 46297"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c533ac111f6f551cf18679c954e8addac5f47e32",
+          "message": "Fix link in rationale.md (#1717)",
+          "timestamp": "2021-03-25T20:22:51-07:00",
+          "tree_id": "bf0623137529a5e7390b6bd7e5c817c616abee68",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c533ac111f6f551cf18679c954e8addac5f47e32"
+        },
+        "date": 1616729015413,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 74568.47674290037,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00000208197409302038",
+            "extra": "mean: 13.410492525518963 usec\nrounds: 10235"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 152495.63948078238,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000012010541956650532",
+            "extra": "mean: 6.5575645533524956 usec\nrounds: 67115"
           }
         ]
       }
