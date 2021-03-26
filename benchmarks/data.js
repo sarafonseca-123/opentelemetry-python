@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616729100933,
+  "lastUpdate": 1616729152673,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -19016,44 +19016,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "srikanth.chekuri92@gmail.com",
-            "name": "Srikanth Chekuri",
-            "username": "lonewolf3739"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "bd8db6e2a461d896c1c0556efd0f4b569106fa96",
-          "message": "Add protobuf via gRPC exporting support for Jaeger (#1471)",
-          "timestamp": "2021-01-04T09:13:16-08:00",
-          "tree_id": "ab66aeae2640c477e711409223dda795b083ee77",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/bd8db6e2a461d896c1c0556efd0f4b569106fa96"
-        },
-        "date": 1609780605483,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 242761.96147190718,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00004606352949167964",
-            "extra": "mean: 4.119261493591621 usec\nrounds: 181819"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 179282.90783214621,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000009462084171083779",
-            "extra": "mean: 5.577776554897531 usec\nrounds: 128206"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "anton@ryzhov.me",
             "name": "Anton Ryzhov",
             "username": "anton-ryzhov"
@@ -22810,6 +22772,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000056297537865045095",
             "extra": "mean: 5.752792405876641 usec\nrounds: 103093"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c533ac111f6f551cf18679c954e8addac5f47e32",
+          "message": "Fix link in rationale.md (#1717)",
+          "timestamp": "2021-03-25T20:22:51-07:00",
+          "tree_id": "bf0623137529a5e7390b6bd7e5c817c616abee68",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c533ac111f6f551cf18679c954e8addac5f47e32"
+        },
+        "date": 1616729146775,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 242614.21322727037,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000041791025326857934",
+            "extra": "mean: 4.121770059131877 usec\nrounds: 178572"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 164257.17366929614,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00000650710867332803",
+            "extra": "mean: 6.088014164990625 usec\nrounds: 100000"
           }
         ]
       }
