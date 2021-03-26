@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616779279930,
+  "lastUpdate": 1616779283284,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -56270,6 +56270,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000003555406352039347",
             "extra": "mean: 5.443537793457641 usec\nrounds: 57801"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "25edfefd70f2d2fd8f6c6a90293d598a358fbb96",
+          "message": "Make setters and getters optional (#1690)\n\nCo-authored-by: alrex <aboten@lightstep.com>",
+          "timestamp": "2021-03-26T10:20:20-07:00",
+          "tree_id": "f1d5619bc1644a8927639cc103f8c7d10c9754e7",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/25edfefd70f2d2fd8f6c6a90293d598a358fbb96"
+        },
+        "date": 1616779276640,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 81436.29285540804,
+            "unit": "iter/sec",
+            "range": "stddev: 9.669927822563838e-7",
+            "extra": "mean: 12.279537352903851 usec\nrounds: 10548"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 175804.93163568905,
+            "unit": "iter/sec",
+            "range": "stddev: 4.919963364036737e-7",
+            "extra": "mean: 5.6881225725353675 usec\nrounds: 58137"
           }
         ]
       }
