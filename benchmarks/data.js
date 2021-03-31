@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617213079466,
+  "lastUpdate": 1617213082226,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -53684,6 +53684,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 9.634013583123775e-7",
             "extra": "mean: 1.3862563906103762 usec\nrounds: 77520"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mrcn.zrmb@gmail.com",
+            "name": "Marcin Zaremba",
+            "username": "marcinzaremba"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "442af037621919f777087e1fbb58841d940c8269",
+          "message": "Make B3 propagator spec compliant (#1728)",
+          "timestamp": "2021-03-31T10:49:39-07:00",
+          "tree_id": "32e58b6ab4fa6889727c530a4639d04d47ffef1d",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/442af037621919f777087e1fbb58841d940c8269"
+        },
+        "date": 1617213074480,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 339104.39083805383,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000004804832048838136",
+            "extra": "mean: 2.948944416581072 usec\nrounds: 47847"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 582567.2140476092,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000025597274944648816",
+            "extra": "mean: 1.7165401277083636 usec\nrounds: 77520"
           }
         ]
       }
