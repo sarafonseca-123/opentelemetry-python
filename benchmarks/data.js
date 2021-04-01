@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617290504032,
+  "lastUpdate": 1617290506269,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -11412,44 +11412,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "srikanth.chekuri92@gmail.com",
-            "name": "Srikanth Chekuri",
-            "username": "lonewolf3739"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "87d7ced747177b6d840e069f935734a163216108",
-          "message": "Add support for OTLP v0.6.0 (#1472)",
-          "timestamp": "2021-01-05T15:41:48-08:00",
-          "tree_id": "f5fca2206fc7bd721679294cd397ee47b729dcf2",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/87d7ced747177b6d840e069f935734a163216108"
-        },
-        "date": 1609890239409,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 22659.15246765075,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000021525267228457047",
-            "extra": "mean: 44.13227729623365 usec\nrounds: 1154"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 15244.055220949907,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000017293578663656819",
-            "extra": "mean: 65.59934253096249 usec\nrounds: 4204"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "shovnik@amazon.com",
             "name": "Shovnik Bhattacharya",
             "username": "shovnik"
@@ -15206,6 +15168,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000017907191785443976",
             "extra": "mean: 59.7915899736615 usec\nrounds: 5685"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "manojpandey1996@gmail.com",
+            "name": "Manoj Pandey",
+            "username": "manojpandey"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4027dae7b7418b02630c82ecfc2cfe154f6560d2",
+          "message": "Add type stub for dropped in BoundedList/BoundedDict (#1725)",
+          "timestamp": "2021-04-01T08:19:46-07:00",
+          "tree_id": "44c121e268de7296a8376f8bf028618ba3980527",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/4027dae7b7418b02630c82ecfc2cfe154f6560d2"
+        },
+        "date": 1617290499620,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 20149.722207761268,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000005953352230606682",
+            "extra": "mean: 49.628475752128246 usec\nrounds: 1629"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 13930.846875199057,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000005870706659615089",
+            "extra": "mean: 71.78314491276835 usec\nrounds: 4934"
           }
         ]
       }
