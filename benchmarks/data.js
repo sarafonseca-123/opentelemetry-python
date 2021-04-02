@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617394738410,
+  "lastUpdate": 1617394743137,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -3818,44 +3818,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "db74594d93b7e42d26ed2061b7672d1ad823f30c",
-          "message": "Update default port for OTLP exporter to 4317 (#1516)",
-          "timestamp": "2021-01-12T12:14:49-08:00",
-          "tree_id": "319abf2aeb7c5ad6e78c5bf358e34232b37ca479",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/db74594d93b7e42d26ed2061b7672d1ad823f30c"
-        },
-        "date": 1610482699944,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 26672.804222388895,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000011220874197085041",
-            "extra": "mean: 37.491371048290816 usec\nrounds: 3005"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 19253.36877680092,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000013365503372693073",
-            "extra": "mean: 51.93896255729212 usec\nrounds: 6757"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "srikanth.chekuri92@gmail.com",
-            "name": "Srikanth Chekuri",
-            "username": "lonewolf3739"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "baa2fcb605a3d4ac95ccf6a509ee2ed4c06cb22b",
           "message": "Zipkin: Update span boolean attribute conversion (#1509)",
           "timestamp": "2021-01-14T09:39:02-08:00",
@@ -7602,6 +7564,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000005027535665311143",
             "extra": "mean: 62.88256427440904 usec\nrounds: 6270"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "chi.jonathanwong@gmail.com",
+            "name": "Jonathan Wong",
+            "username": "joncwong"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7054b534404fc69199e368cbe62a4e7570cc46ea",
+          "message": "Include new `service_name` workflow (#1739)\n\nChanges from https://github.com/open-telemetry/opentelemetry-python/pull/1669/ have not been reflected in the docs",
+          "timestamp": "2021-04-02T13:17:07-07:00",
+          "tree_id": "c67570b8fe38fe1f7b62ca65576b7e5e8065af75",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/7054b534404fc69199e368cbe62a4e7570cc46ea"
+        },
+        "date": 1617394716683,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 21091.440884456937,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000016022400311822543",
+            "extra": "mean: 47.41259762565283 usec\nrounds: 4717"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 15506.869959130554,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000018525134502861008",
+            "extra": "mean: 64.48754665742155 usec\nrounds: 5744"
           }
         ]
       }
