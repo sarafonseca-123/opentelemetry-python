@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617636454648,
+  "lastUpdate": 1617636482730,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -54254,6 +54254,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000003247337767775971",
             "extra": "mean: 1.453780001039169 usec\nrounds: 76924"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "austin@lightstep.com",
+            "name": "Austin Parker",
+            "username": "austinlparker"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b1939da2fdd6c5ec58609ca63f0c20a82a64e593",
+          "message": "Add opentelemetry.io docs (#1724)",
+          "timestamp": "2021-04-05T08:26:26-07:00",
+          "tree_id": "5cecb99d43a50d1f31485fa882238dfe897ea8fb",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/b1939da2fdd6c5ec58609ca63f0c20a82a64e593"
+        },
+        "date": 1617636476313,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 446182.88457491435,
+            "unit": "iter/sec",
+            "range": "stddev: 2.8714961025214026e-7",
+            "extra": "mean: 2.241233437164951 usec\nrounds: 57472"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 894584.2042134952,
+            "unit": "iter/sec",
+            "range": "stddev: 2.006065145286926e-7",
+            "extra": "mean: 1.1178377566806406 usec\nrounds: 108696"
           }
         ]
       }
