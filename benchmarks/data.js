@@ -1,46 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617746979377,
+  "lastUpdate": 1617746986473,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
-      {
-        "commit": {
-          "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "89fb4e58d0c9d4b3192c91c3371b57007b2d2233",
-          "message": "Move jaeger propagator out of SDK (#1525)",
-          "timestamp": "2021-01-18T14:34:10-08:00",
-          "tree_id": "dbd3ed5648bccf69082094bcbff56adefd756ada",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/89fb4e58d0c9d4b3192c91c3371b57007b2d2233"
-        },
-        "date": 1611009389268,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 32471.035387047723,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000001010106965454996",
-            "extra": "mean: 30.796677348911615 usec\nrounds: 4556"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 23142.05334142092,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000001372090541679659",
-            "extra": "mean: 43.21137736771806 usec\nrounds: 7184"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -3800,6 +3762,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000817459260266102",
             "extra": "mean: 75.88057439910347 usec\nrounds: 8320"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "96fd84f024adb745e8380626168184b3ac37f27d",
+          "message": "Fixed B3 Propagator (#1750)",
+          "timestamp": "2021-04-06T15:08:21-07:00",
+          "tree_id": "2008127213ed080f0c027a9e4945c6b6b0076844",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/96fd84f024adb745e8380626168184b3ac37f27d"
+        },
+        "date": 1617746978476,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 35819.69747433966,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000004497710743858658",
+            "extra": "mean: 27.917600384994184 usec\nrounds: 5195"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20381.373729437084,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00015731060539151922",
+            "extra": "mean: 49.06440622084698 usec\nrounds: 7491"
           }
         ]
       }
