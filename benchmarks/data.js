@@ -1,46 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617808105017,
+  "lastUpdate": 1617808108930,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
-      {
-        "commit": {
-          "author": {
-            "email": "lechen@microsoft.com",
-            "name": "Leighton Chen",
-            "username": "lzchen"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "2fb7dba5e5979386165b978b24271a3530e215e4",
-          "message": "Move opentracing-shim folder out of instrumentation folder (#1533)",
-          "timestamp": "2021-01-18T16:32:54-08:00",
-          "tree_id": "0691a7f491b188c71f1339ad04c30690886f86c0",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/2fb7dba5e5979386165b978b24271a3530e215e4"
-        },
-        "date": 1611016532953,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 31130.616326939566,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000008948760722243202",
-            "extra": "mean: 32.122717696874766 usec\nrounds: 4481"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 19671.514996955735,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00008396665790416767",
-            "extra": "mean: 50.83492553343019 usec\nrounds: 8299"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -3800,6 +3762,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00015731060539151922",
             "extra": "mean: 49.06440622084698 usec\nrounds: 7491"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "87742769baba1c874405a9da8749ae0d02beafaf",
+          "message": "Prototype proxy tracer/provider to enable lazy setup of tracing pipeline (#1726)",
+          "timestamp": "2021-04-07T08:05:34-07:00",
+          "tree_id": "67cf6110d4ccec4662ecf07c08ce8b9a1fe9bed3",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/87742769baba1c874405a9da8749ae0d02beafaf"
+        },
+        "date": 1617808099465,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 23780.49056843266,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00005884471583499951",
+            "extra": "mean: 42.05127716446048 usec\nrounds: 5163"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 15372.70772965438,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00004496532860762519",
+            "extra": "mean: 65.05034881206856 usec\nrounds: 8334"
           }
         ]
       }
