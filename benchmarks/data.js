@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1617808115325,
+  "lastUpdate": 1617808131391,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -51326,6 +51326,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 9.982065194889676e-7",
             "extra": "mean: 5.6362750341529395 usec\nrounds: 58480"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "87742769baba1c874405a9da8749ae0d02beafaf",
+          "message": "Prototype proxy tracer/provider to enable lazy setup of tracing pipeline (#1726)",
+          "timestamp": "2021-04-07T08:05:34-07:00",
+          "tree_id": "67cf6110d4ccec4662ecf07c08ce8b9a1fe9bed3",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/87742769baba1c874405a9da8749ae0d02beafaf"
+        },
+        "date": 1617808124368,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 99956.33902861003,
+            "unit": "iter/sec",
+            "range": "stddev: 6.60120347170422e-7",
+            "extra": "mean: 10.004368004252084 usec\nrounds: 13038"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 167450.3684945385,
+            "unit": "iter/sec",
+            "range": "stddev: 4.8905592307171e-7",
+            "extra": "mean: 5.97191877802655 usec\nrounds: 56819"
           }
         ]
       }
