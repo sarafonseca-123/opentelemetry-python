@@ -1,46 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1618498926363,
+  "lastUpdate": 1618498941345,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
-      {
-        "commit": {
-          "author": {
-            "email": "srikanth.chekuri92@gmail.com",
-            "name": "Srikanth Chekuri",
-            "username": "lonewolf3739"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "c750109dd75b03a9f91dacd1b66b2b8ee140ec0d",
-          "message": "Remove rate property setter from TraceIdRatioBasedSampler (#1536)",
-          "timestamp": "2021-01-19T15:29:02-08:00",
-          "tree_id": "4378974a917e9b5516014e9616da6b7156cd12fa",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c750109dd75b03a9f91dacd1b66b2b8ee140ec0d"
-        },
-        "date": 1611099075054,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 31867.658922531078,
-            "unit": "iter/sec",
-            "range": "stddev: 9.953227258958553e-7",
-            "extra": "mean: 31.379776042882767 usec\nrounds: 5126"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 22696.47676760168,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000002335212900297768",
-            "extra": "mean: 44.05970187529107 usec\nrounds: 8000"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -3800,6 +3762,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00003981649292787909",
             "extra": "mean: 64.4207928552091 usec\nrounds: 7502"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "71e3a7a192c0fc8a7503fac967ada36a74b79e58",
+          "message": "Change `should_sample` parameters to be spec compliant (#1764)",
+          "timestamp": "2021-04-15T08:00:08-07:00",
+          "tree_id": "12d36e05be2134920c1002c1b8008c1e700079fc",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/71e3a7a192c0fc8a7503fac967ada36a74b79e58"
+        },
+        "date": 1618498933432,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 22184.10151556025,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00002943843936036787",
+            "extra": "mean: 45.077327080323066 usec\nrounds: 4531"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 15385.395889583333,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00005118281666959531",
+            "extra": "mean: 64.99670253380019 usec\nrounds: 8643"
           }
         ]
       }
