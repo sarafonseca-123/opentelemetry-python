@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1618595140150,
+  "lastUpdate": 1618595144403,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -59500,6 +59500,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000013583475476979395",
             "extra": "mean: 6.085821459579044 usec\nrounds: 54055"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "49c5c2fe1291bf7ab8c8733bc660b71de0821b6a",
+          "message": "fix issue in opentracing shim causing span to be wrapped unnecessarily (#1776)",
+          "timestamp": "2021-04-16T10:44:46-07:00",
+          "tree_id": "4d828085b6ca5bd15c7e7b647f6023a11313301b",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/49c5c2fe1291bf7ab8c8733bc660b71de0821b6a"
+        },
+        "date": 1618595136390,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 71801.31138412515,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00011544701687294459",
+            "extra": "mean: 13.927322227447425 usec\nrounds: 8404"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 169490.92243666083,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00004379317085859435",
+            "extra": "mean: 5.900020990054511 usec\nrounds: 54645"
           }
         ]
       }
