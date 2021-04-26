@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1619481196824,
+  "lastUpdate": 1619481207499,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -7610,44 +7610,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "ewan.higgs@gmail.com",
-            "name": "Ewan Higgs",
-            "username": "ehiggs"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "c026c0f6a53adae1af6cf36fb4bb830a31c6ffc9",
-          "message": "1542. Allow missing carrier headers to continue without raising AttributeError (#1545)",
-          "timestamp": "2021-01-27T08:31:32-08:00",
-          "tree_id": "cd2a50fa811d6310e1d6bf9b75512412d2a30766",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c026c0f6a53adae1af6cf36fb4bb830a31c6ffc9"
-        },
-        "date": 1611765245616,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 31809.9119205387,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000011687395533127222",
-            "extra": "mean: 31.436742185832028 usec\nrounds: 5023"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 22555.27259974025,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000014738231615713278",
-            "extra": "mean: 44.33553155156796 usec\nrounds: 6735"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "srikanth.chekuri92@gmail.com",
             "name": "Srikanth Chekuri",
             "username": "lonewolf3739"
@@ -11404,6 +11366,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00008328801980456124",
             "extra": "mean: 67.70010717066276 usec\nrounds: 7698"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5b33a8c9e50882d5889b82f3ef3da7cd6b615c15",
+          "message": "Remove extra docs (#1802)",
+          "timestamp": "2021-04-26T16:52:08-07:00",
+          "tree_id": "689c660b2023a7076f01b61b2977c055d2285f0e",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/5b33a8c9e50882d5889b82f3ef3da7cd6b615c15"
+        },
+        "date": 1619481200178,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 28333.64500139118,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000012372457022050709",
+            "extra": "mean: 35.29372941430233 usec\nrounds: 4542"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20530.493686996026,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000013672601619198117",
+            "extra": "mean: 48.70803475288069 usec\nrounds: 6532"
           }
         ]
       }
