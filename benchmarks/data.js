@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1619650998515,
+  "lastUpdate": 1619651004838,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -7610,44 +7610,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "srikanth.chekuri92@gmail.com",
-            "name": "Srikanth Chekuri",
-            "username": "lonewolf3739"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "18761d78e30a4293abd65a897129b57fbf0c0a15",
-          "message": "Update Resource merge key conflict precedence (#1544)",
-          "timestamp": "2021-01-28T09:20:50-08:00",
-          "tree_id": "aa5e34bdc6bcc45b3961ba96d824d9cefdeb6a26",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/18761d78e30a4293abd65a897129b57fbf0c0a15"
-        },
-        "date": 1611854647295,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 31025.610662493833,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000012665343263011957",
-            "extra": "mean: 32.23143650187287 usec\nrounds: 5008"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 22295.218141451678,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000013473146729209716",
-            "extra": "mean: 44.8526672246719 usec\nrounds: 8369"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "aboten@lightstep.com",
             "name": "alrex",
             "username": "codeboten"
@@ -11404,6 +11366,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000013672601619198117",
             "extra": "mean: 48.70803475288069 usec\nrounds: 6532"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hakon@aamdal.com",
+            "name": "Håkon Åmdal",
+            "username": "hawkaa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "46c6eb58b5ae25ca5798073c62e5d167811924c8",
+          "message": "Add \"Typing :: Typed\" tags to all packages with py.types (#1798)\n\nPypi defines a typed classifer (https://pypi.org/classifiers/) that we can use\r\nfor all packages that contain types and the py.types file.",
+          "timestamp": "2021-04-28T16:02:01-07:00",
+          "tree_id": "c4b04c347c4d05081b14a2080bb63802347bbe3b",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/46c6eb58b5ae25ca5798073c62e5d167811924c8"
+        },
+        "date": 1619650996350,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 23939.605058223802,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000018331534865982625",
+            "extra": "mean: 41.771783518060886 usec\nrounds: 4296"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 16172.46243784392,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000024246448729448047",
+            "extra": "mean: 61.833502711372994 usec\nrounds: 7746"
           }
         ]
       }
