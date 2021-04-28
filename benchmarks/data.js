@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1619651020034,
+  "lastUpdate": 1619651026085,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -11412,44 +11412,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "f433bc7bbd7e7484b7a84f1876e320c4c90ed0d6",
-          "message": "adding note to check on the stable docs build (#1552)",
-          "timestamp": "2021-01-26T14:59:03-08:00",
-          "tree_id": "b89511c79f824536a2fd23703bbb046fcea7cdc3",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/f433bc7bbd7e7484b7a84f1876e320c4c90ed0d6"
-        },
-        "date": 1611702134115,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 15974.571740486188,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000009759322360645323",
-            "extra": "mean: 62.599487250452256 usec\nrounds: 1451"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 9813.46674065451,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00007507804447763203",
-            "extra": "mean: 101.90078862317567 usec\nrounds: 6065"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "lechen@microsoft.com",
             "name": "Leighton Chen",
             "username": "lzchen"
@@ -15206,6 +15168,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000030084900194339818",
             "extra": "mean: 105.28072984811394 usec\nrounds: 4801"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hakon@aamdal.com",
+            "name": "Håkon Åmdal",
+            "username": "hawkaa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "46c6eb58b5ae25ca5798073c62e5d167811924c8",
+          "message": "Add \"Typing :: Typed\" tags to all packages with py.types (#1798)\n\nPypi defines a typed classifer (https://pypi.org/classifiers/) that we can use\r\nfor all packages that contain types and the py.types file.",
+          "timestamp": "2021-04-28T16:02:01-07:00",
+          "tree_id": "c4b04c347c4d05081b14a2080bb63802347bbe3b",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/46c6eb58b5ae25ca5798073c62e5d167811924c8"
+        },
+        "date": 1619651012836,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 13551.916941441432,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003557300334879266",
+            "extra": "mean: 73.7902987688793 usec\nrounds: 1543"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 9138.876844423114,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00007269999386655815",
+            "extra": "mean: 109.42263661318925 usec\nrounds: 5468"
           }
         ]
       }
