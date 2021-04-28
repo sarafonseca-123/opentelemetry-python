@@ -1,46 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1619650987415,
+  "lastUpdate": 1619650993727,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
-      {
-        "commit": {
-          "author": {
-            "email": "ewan.higgs@gmail.com",
-            "name": "Ewan Higgs",
-            "username": "ehiggs"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "c026c0f6a53adae1af6cf36fb4bb830a31c6ffc9",
-          "message": "1542. Allow missing carrier headers to continue without raising AttributeError (#1545)",
-          "timestamp": "2021-01-27T08:31:32-08:00",
-          "tree_id": "cd2a50fa811d6310e1d6bf9b75512412d2a30766",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c026c0f6a53adae1af6cf36fb4bb830a31c6ffc9"
-        },
-        "date": 1611765283088,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 28173.933935136825,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000020249431511169253",
-            "extra": "mean: 35.49380084095606 usec\nrounds: 4519"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 20346.36459275167,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000003012508481088274",
-            "extra": "mean: 49.148829287972504 usec\nrounds: 7375"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -3800,6 +3762,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000017788534559097918",
             "extra": "mean: 67.67006711771944 usec\nrounds: 7837"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "hakon@aamdal.com",
+            "name": "Håkon Åmdal",
+            "username": "hawkaa"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "46c6eb58b5ae25ca5798073c62e5d167811924c8",
+          "message": "Add \"Typing :: Typed\" tags to all packages with py.types (#1798)\n\nPypi defines a typed classifer (https://pypi.org/classifiers/) that we can use\r\nfor all packages that contain types and the py.types file.",
+          "timestamp": "2021-04-28T16:02:01-07:00",
+          "tree_id": "c4b04c347c4d05081b14a2080bb63802347bbe3b",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/46c6eb58b5ae25ca5798073c62e5d167811924c8"
+        },
+        "date": 1619650986797,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 33555.27719518804,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000011899211745333281",
+            "extra": "mean: 29.801571722477203 usec\nrounds: 5354"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 24158.210959587115,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010699646274220035",
+            "extra": "mean: 41.39379367424362 usec\nrounds: 7241"
           }
         ]
       }
