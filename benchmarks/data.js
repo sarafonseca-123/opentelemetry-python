@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1619710751935,
+  "lastUpdate": 1619710755826,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -59584,44 +59584,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "cf8b70e77b65686d6bc40db227e4af63ee336cf5",
-          "message": "updating references to main (#1558)",
-          "timestamp": "2021-01-29T11:47:19-08:00",
-          "tree_id": "ae6f321d40c8c8a8d828fd144a748b33fd2b52db",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/cf8b70e77b65686d6bc40db227e4af63ee336cf5"
-        },
-        "date": 1611949711469,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 45732.60753000961,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000021433685770680445",
-            "extra": "mean: 21.866236237323722 usec\nrounds: 7048"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 120917.10132103303,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00000973137965322546",
-            "extra": "mean: 8.27012878306614 usec\nrounds: 56498"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "mario.jonke@dynatrace.com",
             "name": "Mario Jonke",
             "username": "mariojonke"
@@ -63378,6 +63340,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000025039764172517415",
             "extra": "mean: 9.93750638396358 usec\nrounds: 43860"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a4a5b0a7e8c2a404a85b8ad40c4e60d8c1dfde3b",
+          "message": "Zipkin exporter: Add timeout support and implement shutdown (#1799)\n\nCo-authored-by: alrex <aboten@lightstep.com>",
+          "timestamp": "2021-04-29T08:38:01-07:00",
+          "tree_id": "5d9b39f45c2f5d85f360abd7da7bebcc71c393bf",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a4a5b0a7e8c2a404a85b8ad40c4e60d8c1dfde3b"
+        },
+        "date": 1619710741008,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 67974.7843412653,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000002742084738183197",
+            "extra": "mean: 14.711337589237957 usec\nrounds: 9242"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 130772.85639248244,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000028892235822029724",
+            "extra": "mean: 7.646846811992443 usec\nrounds: 53764"
           }
         ]
       }
