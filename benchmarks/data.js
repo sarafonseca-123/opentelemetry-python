@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1619802353470,
+  "lastUpdate": 1619802358778,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -11412,44 +11412,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "ewan.higgs@gmail.com",
-            "name": "Ewan Higgs",
-            "username": "ehiggs"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "c026c0f6a53adae1af6cf36fb4bb830a31c6ffc9",
-          "message": "1542. Allow missing carrier headers to continue without raising AttributeError (#1545)",
-          "timestamp": "2021-01-27T08:31:32-08:00",
-          "tree_id": "cd2a50fa811d6310e1d6bf9b75512412d2a30766",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c026c0f6a53adae1af6cf36fb4bb830a31c6ffc9"
-        },
-        "date": 1611765267100,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 20357.25522588234,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000026498937524209864",
-            "extra": "mean: 49.12253586763474 usec\nrounds: 1631"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 13842.862653117303,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000037089521017348957",
-            "extra": "mean: 72.23939332915421 usec\nrounds: 4917"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "srikanth.chekuri92@gmail.com",
             "name": "Srikanth Chekuri",
             "username": "lonewolf3739"
@@ -15206,6 +15168,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00004739158220163301",
             "extra": "mean: 99.11089365241878 usec\nrounds: 6601"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d598ab434be3e69207dd359fc6ee5115252df0ee",
+          "message": "Explain usage of --noreload (#1795)",
+          "timestamp": "2021-04-30T10:04:15-07:00",
+          "tree_id": "2f7fd9f3fbce0180f1c6627f392693a4d203a677",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/d598ab434be3e69207dd359fc6ee5115252df0ee"
+        },
+        "date": 1619802345392,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 13503.603658766562,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00007005700946607003",
+            "extra": "mean: 74.05430618891116 usec\nrounds: 1535"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 9671.342397836503,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00005719636120178216",
+            "extra": "mean: 103.39826250218395 usec\nrounds: 5859"
           }
         ]
       }
