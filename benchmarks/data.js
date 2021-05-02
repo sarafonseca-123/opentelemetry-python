@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1619994644745,
+  "lastUpdate": 1619994652854,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -30422,44 +30422,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "enowell@amazon.com",
-            "name": "(Eliseo) Nathaniel Ruiz Nowell",
-            "username": "NathanielRN"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "5bc23b0b027208e45c80f04ab6d983a9803607b5",
-          "message": "Add resource usage performance tests for creating a span (#1499)",
-          "timestamp": "2021-01-31T10:01:13-08:00",
-          "tree_id": "c5f78b0abff1aeb01ed325b19c1c8d54e441b18d",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/5bc23b0b027208e45c80f04ab6d983a9803607b5"
-        },
-        "date": 1612116152313,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2355.2056135221846,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000058820687829382314",
-            "extra": "mean: 424.591379308285 usec\nrounds: 116"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3197.6833556585093,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000890545747390239",
-            "extra": "mean: 312.72639870062017 usec\nrounds: 5079"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "ocelotl@users.noreply.github.com",
             "name": "Diego Hurtado",
             "username": "ocelotl"
@@ -34216,6 +34178,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008925107018449671",
             "extra": "mean: 344.2960151860274 usec\nrounds: 3951"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "way@whoop.com",
+            "name": "Marcus Way",
+            "username": "marcusway"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "300ce1bc601440e5560523296b426592f54bf7c5",
+          "message": "Update example collector-config.yaml (#1805)\n\nIt seems that there have been some changes to the open-telemetry collector image that cause issues in running this example. I updated the config file to avoid these, but an alternative would be to pin the image to a specific version rather than using the `latest` tag.\r\n\r\nAnyway, the issues I ran into running the image with the given yaml file were:\r\n\r\n1.  Empty configuration for the OLTP receiver\r\n```Error: cannot load configuration: error reading receivers configuration for otlp: empty config for OTLP receiver```, which is fixed by adding the \r\n```protocols:\r\n    grpc:\r\n    http:\r\n```\r\nbit.\r\n\r\n2.  `unknown processors type \"queued_retry\" for queued_retry`. It looks like this processor was [removed](https://github.com/open-telemetry/opentelemetry-operator/issues/18) from the collector, so I just dropped the references to it.",
+          "timestamp": "2021-05-02T15:28:39-07:00",
+          "tree_id": "6a947f2bae4d0864fbafa8aeb36a84e73a67fd80",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/300ce1bc601440e5560523296b426592f54bf7c5"
+        },
+        "date": 1619994643209,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2228.2707666270444,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000012489553949527654",
+            "extra": "mean: 448.77849450662137 usec\nrounds: 91"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2853.1057660839806,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009716345625933121",
+            "extra": "mean: 350.495243424693 usec\nrounds: 3574"
           }
         ]
       }
