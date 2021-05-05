@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1620254272993,
+  "lastUpdate": 1620254278164,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -59600,44 +59600,6 @@ window.BENCHMARK_DATA = {
           "tree_id": "d2b6cb6fea96bb8927a21ba1ecdf94c3e149ada2",
           "url": "https://github.com/open-telemetry/opentelemetry-python/commit/b743ab1817a9d2dd10376ec34017ef6f16053ace"
         },
-        "date": 1612456646900,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 75604.91696942183,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000002063775914753372",
-            "extra": "mean: 13.22665297555246 usec\nrounds: 9276"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 153858.96396015576,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000013157487056056543",
-            "extra": "mean: 6.49945881774536 usec\nrounds: 66667"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "ocelotl@users.noreply.github.com",
-            "name": "Diego Hurtado",
-            "username": "ocelotl"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "b743ab1817a9d2dd10376ec34017ef6f16053ace",
-          "message": "Use environment variables for tracer and meter providers (#1571)",
-          "timestamp": "2021-02-04T08:36:23-08:00",
-          "tree_id": "d2b6cb6fea96bb8927a21ba1ecdf94c3e149ada2",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/b743ab1817a9d2dd10376ec34017ef6f16053ace"
-        },
         "date": 1612539703402,
         "tool": "pytest",
         "benches": [
@@ -63378,6 +63340,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000017734661440466527",
             "extra": "mean: 8.509558606638517 usec\nrounds: 48544"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "4fd46819bd7550d201a2642b962ccc38018ec123",
+          "message": "Added `eachdist.py format` command (#1812)",
+          "timestamp": "2021-05-05T15:36:45-07:00",
+          "tree_id": "0dcacf430ab59122417d6428105ea5af813b4f7c",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/4fd46819bd7550d201a2642b962ccc38018ec123"
+        },
+        "date": 1620254268251,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 43073.12010980266,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000053316521530717134",
+            "extra": "mean: 23.216335325854843 usec\nrounds: 6859"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 87125.41826885394,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00017759661394076872",
+            "extra": "mean: 11.477706734378861 usec\nrounds: 42736"
           }
         ]
       }
