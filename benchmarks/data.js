@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1620435193428,
+  "lastUpdate": 1620435198314,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -30422,44 +30422,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "lechen@microsoft.com",
-            "name": "Leighton Chen",
-            "username": "lzchen"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "806d4d6c796d326a64dba1ee744e762033581306",
-          "message": "Update versioning doc (#1588)",
-          "timestamp": "2021-02-10T08:43:06-08:00",
-          "tree_id": "11521056703f80ba21e0ac1fe6934d1b34800c0f",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/806d4d6c796d326a64dba1ee744e762033581306"
-        },
-        "date": 1612975583113,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 3117.668540835603,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00003991621778476378",
-            "extra": "mean: 320.75250684987134 usec\nrounds: 146"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 4229.113550254969,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000713792862600799",
-            "extra": "mean: 236.45617175252036 usec\nrounds: 4850"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "aboten@lightstep.com",
             "name": "alrex",
             "username": "codeboten"
@@ -34216,6 +34178,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008867574289267764",
             "extra": "mean: 327.33422369769767 usec\nrounds: 3916"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mario.jonke@dynatrace.com",
+            "name": "Mario Jonke",
+            "username": "mariojonke"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8a1cbf7cea2abe35bb68b8d02786a42ab19621d6",
+          "message": "Make propagators conform to spec (#1811)\n\n* do not modify / set an invalid span in the passed context in case\r\n  a propagator did not manage to extract\r\n* in case no context is passed to propagator.extract assume the root\r\n  context as default so that a new trace is started instead of continung\r\n  the current active trace in case extraction fails\r\n* fix also jaeger propagator which compared int with str trace/span ids\r\n  when checking for validity in extract",
+          "timestamp": "2021-05-07T17:50:59-07:00",
+          "tree_id": "d84c37beb92094ea00da87b230ada2f15b300b7a",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/8a1cbf7cea2abe35bb68b8d02786a42ab19621d6"
+        },
+        "date": 1620435183362,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1880.919541164272,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00004263424797470166",
+            "extra": "mean: 531.6548518502865 usec\nrounds: 27"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 2556.908055568817,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009971043755813219",
+            "extra": "mean: 391.09736379532706 usec\nrounds: 4005"
           }
         ]
       }
