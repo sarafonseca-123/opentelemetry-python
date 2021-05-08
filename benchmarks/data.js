@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1620435198314,
+  "lastUpdate": 1620435260692,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -19016,44 +19016,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "lechen@microsoft.com",
-            "name": "Leighton Chen",
-            "username": "lzchen"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "24edd3d81afb394c3b2d1f0416faca59db931b66",
-          "message": "Remove metrics from main branch (#1568)",
-          "timestamp": "2021-02-08T09:48:28-08:00",
-          "tree_id": "c79000662a7e48555805e8cb45557222dadb61db",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/24edd3d81afb394c3b2d1f0416faca59db931b66"
-        },
-        "date": 1612806751103,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 221457.75456484448,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000117380708661693",
-            "extra": "mean: 4.515533908329196 usec\nrounds: 136987"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 150568.69139408699,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00006873218894052511",
-            "extra": "mean: 6.641486956824752 usec\nrounds: 181819"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "aboten@lightstep.com",
             "name": "alrex",
             "username": "codeboten"
@@ -22810,6 +22772,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000005295456508164345",
             "extra": "mean: 5.836425316646037 usec\nrounds: 120482"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mario.jonke@dynatrace.com",
+            "name": "Mario Jonke",
+            "username": "mariojonke"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8a1cbf7cea2abe35bb68b8d02786a42ab19621d6",
+          "message": "Make propagators conform to spec (#1811)\n\n* do not modify / set an invalid span in the passed context in case\r\n  a propagator did not manage to extract\r\n* in case no context is passed to propagator.extract assume the root\r\n  context as default so that a new trace is started instead of continung\r\n  the current active trace in case extraction fails\r\n* fix also jaeger propagator which compared int with str trace/span ids\r\n  when checking for validity in extract",
+          "timestamp": "2021-05-07T17:50:59-07:00",
+          "tree_id": "d84c37beb92094ea00da87b230ada2f15b300b7a",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/8a1cbf7cea2abe35bb68b8d02786a42ab19621d6"
+        },
+        "date": 1620435251045,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 208461.88516937458,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000012144551018519887",
+            "extra": "mean: 4.79703999216693 usec\nrounds: 158731"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 118518.58016632902,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000016857931373219642",
+            "extra": "mean: 8.43749561120796 usec\nrounds: 192308"
           }
         ]
       }
