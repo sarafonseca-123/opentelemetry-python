@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1620435119138,
+  "lastUpdate": 1620435136423,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -51980,44 +51980,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "lechen@microsoft.com",
-            "name": "Leighton Chen",
-            "username": "lzchen"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "806d4d6c796d326a64dba1ee744e762033581306",
-          "message": "Update versioning doc (#1588)",
-          "timestamp": "2021-02-10T08:43:06-08:00",
-          "tree_id": "11521056703f80ba21e0ac1fe6934d1b34800c0f",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/806d4d6c796d326a64dba1ee744e762033581306"
-        },
-        "date": 1612975627181,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 352808.59246731084,
-            "unit": "iter/sec",
-            "range": "stddev: 7.607074838283528e-7",
-            "extra": "mean: 2.8343980882286752 usec\nrounds: 40486"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 804902.8545129362,
-            "unit": "iter/sec",
-            "range": "stddev: 3.737802967537181e-7",
-            "extra": "mean: 1.2423859530291568 usec\nrounds: 87720"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "aboten@lightstep.com",
             "name": "alrex",
             "username": "codeboten"
@@ -55774,6 +55736,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000004190567498559121",
             "extra": "mean: 1.3993839565226498 usec\nrounds: 104167"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mario.jonke@dynatrace.com",
+            "name": "Mario Jonke",
+            "username": "mariojonke"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8a1cbf7cea2abe35bb68b8d02786a42ab19621d6",
+          "message": "Make propagators conform to spec (#1811)\n\n* do not modify / set an invalid span in the passed context in case\r\n  a propagator did not manage to extract\r\n* in case no context is passed to propagator.extract assume the root\r\n  context as default so that a new trace is started instead of continung\r\n  the current active trace in case extraction fails\r\n* fix also jaeger propagator which compared int with str trace/span ids\r\n  when checking for validity in extract",
+          "timestamp": "2021-05-07T17:50:59-07:00",
+          "tree_id": "d84c37beb92094ea00da87b230ada2f15b300b7a",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/8a1cbf7cea2abe35bb68b8d02786a42ab19621d6"
+        },
+        "date": 1620435127081,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 594855.7900041589,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000023085042693526996",
+            "extra": "mean: 1.681079711761779 usec\nrounds: 83334"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 753385.8149838283,
+            "unit": "iter/sec",
+            "range": "stddev: 3.2759204802885095e-7",
+            "extra": "mean: 1.3273411578916867 usec\nrounds: 106383"
           }
         ]
       }
