@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1620680820934,
+  "lastUpdate": 1620680826275,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -55792,44 +55792,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "06bbb8efaa1cf7b37948d6290d862aa40c9fc54b",
-          "message": "minor fixes to release scripts (#1561)",
-          "timestamp": "2021-02-11T15:32:35-08:00",
-          "tree_id": "4efaa1aa9fb2d17c8343cd27690d62946417e94f",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/06bbb8efaa1cf7b37948d6290d862aa40c9fc54b"
-        },
-        "date": 1613086403862,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 72706.05670294975,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000012440140667403284",
-            "extra": "mean: 13.754012325075376 usec\nrounds: 5761"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 170742.35154858176,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00004412284473310804",
-            "extra": "mean: 5.856777717597894 usec\nrounds: 57472"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "8e34a26427098965a2bb7291f5e8acf40c614d89",
           "message": "update limits as per specification (#1597)",
           "timestamp": "2021-02-11T15:55:39-08:00",
@@ -59576,6 +59538,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000005768967597599824",
             "extra": "mean: 5.96875333996476 usec\nrounds: 49027"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kristian@spritelink.net",
+            "name": "Kristian Larsson",
+            "username": "plajjan"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cc18b730f9bb7c3ddfa396e06bf91c32a354b405",
+          "message": "Include parent span in Jaeger gRPC export (#1809)\n\nThis extracts the parent span and adds it as a CHILD_OF reference in the\r\ngRPC export, so that we get the expected hierarchy of spans.\r\n\r\nTest case is updated to cover this case.",
+          "timestamp": "2021-05-10T14:05:19-07:00",
+          "tree_id": "598f509ec219a2883043583941df1ba3329b84d2",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/cc18b730f9bb7c3ddfa396e06bf91c32a354b405"
+        },
+        "date": 1620680811935,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 87760.21656061987,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007090104556718627",
+            "extra": "mean: 11.394684735186992 usec\nrounds: 13246"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 168989.93060103248,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000010059312006807663",
+            "extra": "mean: 5.9175123419684414 usec\nrounds: 53476"
           }
         ]
       }
