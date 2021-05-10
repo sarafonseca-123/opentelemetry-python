@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1620680867941,
+  "lastUpdate": 1620680871797,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -22828,44 +22828,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "06bbb8efaa1cf7b37948d6290d862aa40c9fc54b",
-          "message": "minor fixes to release scripts (#1561)",
-          "timestamp": "2021-02-11T15:32:35-08:00",
-          "tree_id": "4efaa1aa9fb2d17c8343cd27690d62946417e94f",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/06bbb8efaa1cf7b37948d6290d862aa40c9fc54b"
-        },
-        "date": 1613086418561,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2803.3149651758813,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000010229210602362331",
-            "extra": "mean: 356.72052995203114 usec\nrounds: 217"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3654.332021566487,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0009307574052258206",
-            "extra": "mean: 273.64782239226696 usec\nrounds: 5225"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "8e34a26427098965a2bb7291f5e8acf40c614d89",
           "message": "update limits as per specification (#1597)",
           "timestamp": "2021-02-11T15:55:39-08:00",
@@ -26612,6 +26574,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009767858847630677",
             "extra": "mean: 320.2787203458062 usec\nrounds: 5092"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kristian@spritelink.net",
+            "name": "Kristian Larsson",
+            "username": "plajjan"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cc18b730f9bb7c3ddfa396e06bf91c32a354b405",
+          "message": "Include parent span in Jaeger gRPC export (#1809)\n\nThis extracts the parent span and adds it as a CHILD_OF reference in the\r\ngRPC export, so that we get the expected hierarchy of spans.\r\n\r\nTest case is updated to cover this case.",
+          "timestamp": "2021-05-10T14:05:19-07:00",
+          "tree_id": "598f509ec219a2883043583941df1ba3329b84d2",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/cc18b730f9bb7c3ddfa396e06bf91c32a354b405"
+        },
+        "date": 1620680853301,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1950.5077196033649,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0006937807692462111",
+            "extra": "mean: 512.6870249984705 usec\nrounds: 40"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3828.3269606642743,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008775420315489652",
+            "extra": "mean: 261.2107090838669 usec\nrounds: 5108"
           }
         ]
       }
