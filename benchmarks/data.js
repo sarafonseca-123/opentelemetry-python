@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1620745732768,
+  "lastUpdate": 1620747683872,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -55782,44 +55782,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "anton.ryzhov@zalando.de",
-            "name": "Anton Ryzhov",
-            "username": "anton-ryzhov"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "5967374f37105d461f27db2013291d8e663e0363",
-          "message": "Flush export queue when it reaches `max_export_batch_size` (#1521)",
-          "timestamp": "2021-02-11T16:14:42-08:00",
-          "tree_id": "669f88bbe7e2d680200a1eb1f09f076cc8bec61c",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/5967374f37105d461f27db2013291d8e663e0363"
-        },
-        "date": 1613088932705,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 86213.01607517498,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000003948625698158446",
-            "extra": "mean: 11.599176615373626 usec\nrounds: 11375"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 181646.45478152964,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000004736867821586919",
-            "extra": "mean: 5.505199653925109 usec\nrounds: 69921"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "ocelotl@users.noreply.github.com",
             "name": "Diego Hurtado",
             "username": "ocelotl"
@@ -59576,6 +59538,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 2.4047432069098474e-7",
             "extra": "mean: 4.9453186187887335 usec\nrounds: 68028"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "271f01548a726521d7250fe95f216add62222502",
+          "message": "Fix otlp exporter translating sequence types (#1818)",
+          "timestamp": "2021-05-11T08:40:17-07:00",
+          "tree_id": "fc3bc13ba76d8d5c30b7885a38094669feb7b4c6",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/271f01548a726521d7250fe95f216add62222502"
+        },
+        "date": 1620747675060,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 112989.46081958183,
+            "unit": "iter/sec",
+            "range": "stddev: 5.69879681139137e-7",
+            "extra": "mean: 8.850382971530149 usec\nrounds: 14599"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 201962.44112496334,
+            "unit": "iter/sec",
+            "range": "stddev: 3.545510773351097e-7",
+            "extra": "mean: 4.951415691104935 usec\nrounds: 59881"
           }
         ]
       }
