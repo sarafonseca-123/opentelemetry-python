@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1621010482320,
+  "lastUpdate": 1621010579798,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -19026,44 +19026,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "a3d23a892d591da00833a2ee8406fe89c0536bc9",
-          "message": "Update main after 1.0.0rc1 release (#1603)",
-          "timestamp": "2021-02-16T09:35:08-08:00",
-          "tree_id": "955877fa1ef236c0bc5357a2621d2540607422d4",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a3d23a892d591da00833a2ee8406fe89c0536bc9"
-        },
-        "date": 1613497145034,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 245646.43361389756,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00000937512781494772",
-            "extra": "mean: 4.0708915871002676 usec\nrounds: 153847"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 163871.91992935457,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00000614502892773722",
-            "extra": "mean: 6.102326746590273 usec\nrounds: 101011"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "lechen@microsoft.com",
-            "name": "Leighton Chen",
-            "username": "lzchen"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "22cfddd46acbec4136b914fd05d308a7d99c3d1b",
           "message": "Fix for pylint (#1613)",
           "timestamp": "2021-02-16T13:53:41-08:00",
@@ -22810,6 +22772,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000019460756002395946",
             "extra": "mean: 8.536659790992875 usec\nrounds: 156251"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f816287e5ff0e2d18a1001e11fd0ad7e070e3b2e",
+          "message": "Update transient errors retry timeout and retryable status codes (#1842)",
+          "timestamp": "2021-05-14T09:38:38-07:00",
+          "tree_id": "97ff8dfdbb66a35afe06c2400fbcfa2d5ed5d8d1",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/f816287e5ff0e2d18a1001e11fd0ad7e070e3b2e"
+        },
+        "date": 1621010566858,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 192296.1431121777,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000053811527685082076",
+            "extra": "mean: 5.200312309002688 usec\nrounds: 131562"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 136035.2962511962,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00001646825867064623",
+            "extra": "mean: 7.351033353530897 usec\nrounds: 178572"
           }
         ]
       }
