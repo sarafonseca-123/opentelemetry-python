@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1621628177827,
+  "lastUpdate": 1621628201231,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -51980,44 +51980,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "rob.knox.dev@gmail.com",
-            "name": "Rob Knox",
-            "username": "robwknox"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "03c6b7391d16236ad5d4e48b0cb0bff786c2e583",
-          "message": "Zipkin exporter add support for v1 api json format (#1411)",
-          "timestamp": "2021-02-17T12:03:29-08:00",
-          "tree_id": "d7a5fe453f77df1d3e7d772741c3e902040de07a",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/03c6b7391d16236ad5d4e48b0cb0bff786c2e583"
-        },
-        "date": 1613592301563,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 441891.88187569514,
-            "unit": "iter/sec",
-            "range": "stddev: 3.2231129584634295e-7",
-            "extra": "mean: 2.262996993190496 usec\nrounds: 57137"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 818880.611206156,
-            "unit": "iter/sec",
-            "range": "stddev: 5.29788061219308e-7",
-            "extra": "mean: 1.2211792370162438 usec\nrounds: 106372"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "aboten@lightstep.com",
             "name": "alrex",
             "username": "codeboten"
@@ -55774,6 +55736,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000038545933644117685",
             "extra": "mean: 1.2403580092387874 usec\nrounds: 91744"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "elindy26@gmail.com",
+            "name": "Eddy Lin",
+            "username": "eddyleelin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2098c5644588cd4e766eb8e31a1ca26c4e00ea46",
+          "message": "Change AttributeValue sequences from optional to nonoptional (#1855)",
+          "timestamp": "2021-05-21T13:15:12-07:00",
+          "tree_id": "ef1aa5379043deef6a2713f10f164c02fed1930f",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/2098c5644588cd4e766eb8e31a1ca26c4e00ea46"
+        },
+        "date": 1621628191405,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 652015.4646463201,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000024850112920056216",
+            "extra": "mean: 1.5337059536501743 usec\nrounds: 83327"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 856709.3620173947,
+            "unit": "iter/sec",
+            "range": "stddev: 3.1449895492964855e-7",
+            "extra": "mean: 1.167257000256331 usec\nrounds: 108696"
           }
         ]
       }
