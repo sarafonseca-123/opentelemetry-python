@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1621895099518,
+  "lastUpdate": 1621895121152,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -37884,44 +37884,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "61b63e5606163393567392d5b56342b59e0072e2",
-          "message": "Remove gitter from docs (#1650)\n\n\r\nCo-authored-by: alrex <alrex.boten@gmail.com>",
-          "timestamp": "2021-02-26T08:07:42-08:00",
-          "tree_id": "9a31e750c9c92d3604a7a94668d50ba04712969f",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/61b63e5606163393567392d5b56342b59e0072e2"
-        },
-        "date": 1614355768403,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2560.6700382020927,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00008590236716109147",
-            "extra": "mean: 390.5227870366787 usec\nrounds: 216"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3681.7385360769786,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0009094244283014228",
-            "extra": "mean: 271.61081380470193 usec\nrounds: 4216"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "lechen@microsoft.com",
-            "name": "Leighton Chen",
-            "username": "lzchen"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "290478e3312debd023f179fe403ede025fbbefc7",
           "message": "Rename IdsGenerator to IdGenerator (#1651)",
           "timestamp": "2021-02-26T14:56:23-08:00",
@@ -41668,6 +41630,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008649877907506038",
             "extra": "mean: 282.23041878989585 usec\nrounds: 3768"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "eda57f7705333fa58c0e0422b809e1b683d0a2cf",
+          "message": "Apply validation of attributes to `Resource`, move attribute related logic to util package (#1834)",
+          "timestamp": "2021-05-24T15:22:50-07:00",
+          "tree_id": "d1b4c3374a93dafae42e55d7c73e049ee4e27895",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/eda57f7705333fa58c0e0422b809e1b683d0a2cf"
+        },
+        "date": 1621895109400,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 1999.5782066154852,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00006062575570479039",
+            "extra": "mean: 500.1054705895272 usec\nrounds: 34"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 3103.3793039384896,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009818666719792757",
+            "extra": "mean: 322.2293835403564 usec\nrounds: 5152"
           }
         ]
       }
