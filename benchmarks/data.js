@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1622154083319,
+  "lastUpdate": 1622154095373,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -7610,44 +7610,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "owais@users.noreply.github.com",
-            "name": "Owais Lone",
-            "username": "owais"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "326b7b0d0e9bc1cfc21d70d3d09e58b38c5cc8a3",
-          "message": "Add `max_tag_value_length` support to Jaeger exporter (#1633)\n\nThis commit adds ability to specifiy maximum length for string\r\nattributes to the Jaeger exporter. This is similar to how Zipkin\r\nexporter supports `max_tag_value_length`.",
-          "timestamp": "2021-03-01T09:56:10-08:00",
-          "tree_id": "5ded5223f11a99a03cd05007da1ffe872d1fb4c8",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/326b7b0d0e9bc1cfc21d70d3d09e58b38c5cc8a3"
-        },
-        "date": 1614621690815,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 22586.59142199017,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00002075987489554824",
-            "extra": "mean: 44.274055403791735 usec\nrounds: 4025"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 15527.637714966875,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00003246313441328289",
-            "extra": "mean: 64.40129647255446 usec\nrounds: 9242"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "aboten@lightstep.com",
             "name": "alrex",
             "username": "codeboten"
@@ -11404,6 +11366,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000018536688656330828",
             "extra": "mean: 63.61805161585463 usec\nrounds: 6219"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cec5c077f96c76c3768d9e2210e6289e4cefc060",
+          "message": "update base version of python to 3.9 (#1874)",
+          "timestamp": "2021-05-27T15:19:55-07:00",
+          "tree_id": "171e2e8f75beba72d86ffbadeb156f2ce24b5d87",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/cec5c077f96c76c3768d9e2210e6289e4cefc060"
+        },
+        "date": 1622154084511,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 24696.682378749912,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000032427720396073294",
+            "extra": "mean: 40.49126861106021 usec\nrounds: 4352"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 18747.557285851806,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000015582155959495276",
+            "extra": "mean: 53.340282403333084 usec\nrounds: 8803"
           }
         ]
       }
