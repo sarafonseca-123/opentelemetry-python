@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1622562158938,
+  "lastUpdate": 1622562162457,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -48188,44 +48188,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "a046518d21153070da2933d1e987713df0d4a6c3",
-          "message": "move textmap propagators to opentelemetry.propagators (#1662)",
-          "timestamp": "2021-03-02T16:35:40-08:00",
-          "tree_id": "283734047b5ee2a7d6969ef347e402c8f4e48448",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a046518d21153070da2933d1e987713df0d4a6c3"
-        },
-        "date": 1614731803523,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 105494.36698356248,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00001064320530682825",
-            "extra": "mean: 9.479179112528485 usec\nrounds: 13003"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 194416.34226787862,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000009256215842771593",
-            "extra": "mean: 5.143600524189162 usec\nrounds: 79359"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "9bf28fb451a85fd9e9a4f2276c3eebd484e55d02",
           "message": "rename BaggagePropagator to W3CBaggagePropagator (#1663)\n\n\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>",
           "timestamp": "2021-03-02T17:05:32-08:00",
@@ -51972,6 +51934,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 2.771805417378707e-7",
             "extra": "mean: 4.925251519988137 usec\nrounds: 62500"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "dgetu00@gmail.com",
+            "name": "Daniel Getu",
+            "username": "dgetu"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "56495ede2d59e6eb4f3cbced8ea2fd7c29918e5b",
+          "message": "Add schema_url to Resource (#1871)",
+          "timestamp": "2021-06-01T08:29:53-07:00",
+          "tree_id": "49ab0d80ec595908779388e720c891a45208e2cd",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/56495ede2d59e6eb4f3cbced8ea2fd7c29918e5b"
+        },
+        "date": 1622562148680,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 103481.35035847288,
+            "unit": "iter/sec",
+            "range": "stddev: 5.884089465503093e-7",
+            "extra": "mean: 9.663577026545072 usec\nrounds: 13755"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 160389.20252773268,
+            "unit": "iter/sec",
+            "range": "stddev: 4.543928597871279e-7",
+            "extra": "mean: 6.234833668601173 usec\nrounds: 53189"
           }
         ]
       }
