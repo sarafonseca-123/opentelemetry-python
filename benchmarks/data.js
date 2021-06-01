@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1622564284717,
+  "lastUpdate": 1622564288745,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -3808,44 +3808,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "9bf28fb451a85fd9e9a4f2276c3eebd484e55d02",
-          "message": "rename BaggagePropagator to W3CBaggagePropagator (#1663)\n\n\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>",
-          "timestamp": "2021-03-02T17:05:32-08:00",
-          "tree_id": "3c56d146c21a8f8814fba92f760ae3ecbb0e0915",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/9bf28fb451a85fd9e9a4f2276c3eebd484e55d02"
-        },
-        "date": 1614733662024,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 17936.066608096266,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000222090003925498",
-            "extra": "mean: 55.753584208290356 usec\nrounds: 4382"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 12927.81445204499,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00003115969540739277",
-            "extra": "mean: 77.35259534466901 usec\nrounds: 7819"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "lechen@microsoft.com",
             "name": "Leighton Chen",
             "username": "lzchen"
@@ -7602,6 +7564,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000007763313139914728",
             "extra": "mean: 67.88245773124623 usec\nrounds: 6021"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0c1fc964f6a9b04e7059f3b6434a518a7d706a08",
+          "message": "Introduce SpanLimits class to tracing SDK (#1877)",
+          "timestamp": "2021-06-01T09:01:28-07:00",
+          "tree_id": "39f49371ac10830429346c0b89cc40b82a2e75b3",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/0c1fc964f6a9b04e7059f3b6434a518a7d706a08"
+        },
+        "date": 1622564271262,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 18270.922629690558,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000017310878373518315",
+            "extra": "mean: 54.73177355449926 usec\nrounds: 4341"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 13946.012754223824,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000002023074356528861",
+            "extra": "mean: 71.70508285223892 usec\nrounds: 5890"
           }
         ]
       }
