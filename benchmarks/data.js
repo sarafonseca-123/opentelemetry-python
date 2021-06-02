@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1622597078081,
+  "lastUpdate": 1622597081674,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -3808,44 +3808,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "losinskij@gmail.com",
-            "name": "Jan Losinski",
-            "username": "janLo"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "6f42def1d3bed5fd1812316f0e8e0e62d02ff76c",
-          "message": "Add possibility to split oversized udp batches (#1500)",
-          "timestamp": "2021-03-08T10:57:06-08:00",
-          "tree_id": "7d8badd1f94b76d5d73d4a27a2f13cb68d1f877b",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/6f42def1d3bed5fd1812316f0e8e0e62d02ff76c"
-        },
-        "date": 1615229994741,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 14633.042023233262,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00017464712647025313",
-            "extra": "mean: 68.33849027510985 usec\nrounds: 3959"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 10278.801171624109,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00007920961264917491",
-            "extra": "mean: 97.28761003380653 usec\nrounds: 6498"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "srikanth.chekuri92@gmail.com",
             "name": "Srikanth Chekuri",
             "username": "lonewolf3739"
@@ -7602,6 +7564,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00001614816892329209",
             "extra": "mean: 81.08925830923162 usec\nrounds: 6318"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2b7592dbf948df712594137a3383fab5ab418bbb",
+          "message": "Release for V1.3.0 and 0.22b0, update release script (#1883)",
+          "timestamp": "2021-06-01T18:23:13-07:00",
+          "tree_id": "4ad67082b5db143a2a8b59bb2597841b3f16b227",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/2b7592dbf948df712594137a3383fab5ab418bbb"
+        },
+        "date": 1622597068268,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 19295.010829451523,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000006597297802853998",
+            "extra": "mean: 51.82686907195822 usec\nrounds: 4407"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 14378.050182744957,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007218279082779407",
+            "extra": "mean: 69.55045971393925 usec\nrounds: 5945"
           }
         ]
       }
