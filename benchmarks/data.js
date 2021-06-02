@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1622650655537,
+  "lastUpdate": 1622650663534,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -3808,44 +3808,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "srikanth.chekuri92@gmail.com",
-            "name": "Srikanth Chekuri",
-            "username": "lonewolf3739"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "c387aa382cc31e2e2afb777fa93e579ca60776ad",
-          "message": "Document how to work with fork process web server models(Gunicorn, uWSGI etc...) (#1609)",
-          "timestamp": "2021-03-08T11:55:13-08:00",
-          "tree_id": "ae3d05248137fd5942186e1b6c26579fc9cf6833",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c387aa382cc31e2e2afb777fa93e579ca60776ad"
-        },
-        "date": 1615233442878,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 20105.17962755992,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000016502708905049245",
-            "extra": "mean: 49.7384265410498 usec\nrounds: 4785"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 13797.732303599838,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00012376325655632",
-            "extra": "mean: 72.47567774155897 usec\nrounds: 6411"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "aaronabbott@google.com",
             "name": "Aaron Abbott",
             "username": "aabmass"
@@ -7602,6 +7564,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000007218279082779407",
             "extra": "mean: 69.55045971393925 usec\nrounds: 5945"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ea4cdfe42435dda7c39a264612e89dae09eac620",
+          "message": "[chore] update main after 1.3.0 release (#1886)",
+          "timestamp": "2021-06-02T09:16:22-07:00",
+          "tree_id": "3293645575148c7d8ac6924017255c1f605f0dff",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/ea4cdfe42435dda7c39a264612e89dae09eac620"
+        },
+        "date": 1622650651904,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 20712.405133701435,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000014757594024041012",
+            "extra": "mean: 48.28024527064153 usec\nrounds: 4546"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 15737.456697827187,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000016314895463573947",
+            "extra": "mean: 63.54266888232749 usec\nrounds: 6469"
           }
         ]
       }
