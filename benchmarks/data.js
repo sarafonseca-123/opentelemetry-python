@@ -1,46 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1622830117588,
+  "lastUpdate": 1622830121313,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
-      {
-        "commit": {
-          "author": {
-            "email": "srikanth.chekuri92@gmail.com",
-            "name": "Srikanth Chekuri",
-            "username": "lonewolf3739"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "c387aa382cc31e2e2afb777fa93e579ca60776ad",
-          "message": "Document how to work with fork process web server models(Gunicorn, uWSGI etc...) (#1609)",
-          "timestamp": "2021-03-08T11:55:13-08:00",
-          "tree_id": "ae3d05248137fd5942186e1b6c26579fc9cf6833",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c387aa382cc31e2e2afb777fa93e579ca60776ad"
-        },
-        "date": 1615233442860,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 27190.902130406103,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000024047382244780923",
-            "extra": "mean: 36.77700707405933 usec\nrounds: 5089"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 19189.96906198796,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000022041659985225877",
-            "extra": "mean: 52.1105582176695 usec\nrounds: 7429"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -3800,6 +3762,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000037007026613382356",
             "extra": "mean: 72.98214363269479 usec\nrounds: 8104"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7f7151572045281ba186ac3ccf8de3e0dd0d36bd",
+          "message": "Add support for OTEL_EXPORTER_JAEGER_TIMEOUT (#1863)",
+          "timestamp": "2021-06-04T11:06:57-07:00",
+          "tree_id": "8a83e4d59043559f327a25258419eb1d65931bd3",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/7f7151572045281ba186ac3ccf8de3e0dd0d36bd"
+        },
+        "date": 1622830105510,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 17010.211743768235,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000020715037589397656",
+            "extra": "mean: 58.78821587076094 usec\nrounds: 4146"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 12588.690130361141,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003662372600783763",
+            "extra": "mean: 79.43638215291524 usec\nrounds: 7497"
           }
         ]
       }
