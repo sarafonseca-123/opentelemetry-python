@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1624289255410,
+  "lastUpdate": 1624289281748,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -59584,44 +59584,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "826a79055753c81bbb8dc4b42492d00a3ae8e6e1",
-          "message": "add otlp grpc exporter test (#1692)",
-          "timestamp": "2021-03-15T09:22:09-07:00",
-          "tree_id": "3c8bee7d4abaa9aeb0e303a8ab0d6be98ed1ce2a",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/826a79055753c81bbb8dc4b42492d00a3ae8e6e1"
-        },
-        "date": 1615825421219,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 44072.20181670175,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000009983231421978309",
-            "extra": "mean: 22.69003949834511 usec\nrounds: 3747"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 105743.50078346119,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000007241251416499273",
-            "extra": "mean: 9.456845977208323 usec\nrounds: 44844"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "aaronabbott@google.com",
             "name": "Aaron Abbott",
             "username": "aabmass"
@@ -63378,6 +63340,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000008105376541855375",
             "extra": "mean: 9.016523016231396 usec\nrounds: 43100"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "raj.nishtala@gmail.com",
+            "name": "Raj Nishtala",
+            "username": "rnishtala"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a83b6f1d40eb6db45b76d98cfd02742729d17c96",
+          "message": "Issue-1147 Adding description to the environment variables (#1898)",
+          "timestamp": "2021-06-21T08:26:20-07:00",
+          "tree_id": "80df928f1d45cfc3efefb093a3de2b8387110e57",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a83b6f1d40eb6db45b76d98cfd02742729d17c96"
+        },
+        "date": 1624289267315,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 77565.44142878303,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000019025574085762093",
+            "extra": "mean: 12.892339443696113 usec\nrounds: 12438"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 123531.24023495468,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000015659938435040544",
+            "extra": "mean: 8.09511827209064 usec\nrounds: 43104"
           }
         ]
       }
