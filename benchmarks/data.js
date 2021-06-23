@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1624406894793,
+  "lastUpdate": 1624406897592,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -22818,44 +22818,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "aaronabbott@google.com",
-            "name": "Aaron Abbott",
-            "username": "aabmass"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "7662d83f3b8b64e208909f8b1acb97b45b14ce00",
-          "message": "Improve documentation around environment variables (#1680)",
-          "timestamp": "2021-03-15T10:53:01-07:00",
-          "tree_id": "d5036c53ffe32c0c2f85194632656b71dd786a73",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/7662d83f3b8b64e208909f8b1acb97b45b14ce00"
-        },
-        "date": 1615830849297,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2130.4415756675016,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00008491042314379221",
-            "extra": "mean: 469.38625842705113 usec\nrounds: 178"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3009.4092247322606,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0010418800410980221",
-            "extra": "mean: 332.29113268534206 usec\nrounds: 5351"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "lechen@microsoft.com",
             "name": "Leighton Chen",
             "username": "lzchen"
@@ -26612,6 +26574,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008898181247492404",
             "extra": "mean: 243.0203069855378 usec\nrounds: 5225"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nathanielruiz98@gmail.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1e600f385a81e340a2a4bbb7d10075f113149a21",
+          "message": "Update Zoom meeting link to match calendar (#1920)",
+          "timestamp": "2021-06-22T17:06:26-07:00",
+          "tree_id": "6456cf9943990f258013b4a1b130117b0a1c0408",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/1e600f385a81e340a2a4bbb7d10075f113149a21"
+        },
+        "date": 1624406879286,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3057.3997530659185,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000011465279952104976",
+            "extra": "mean: 327.07531914896435 usec\nrounds: 47"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4294.218052761412,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008093680369886887",
+            "extra": "mean: 232.87126729788358 usec\nrounds: 5492"
           }
         ]
       }
