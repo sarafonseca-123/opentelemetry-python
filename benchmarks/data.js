@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1624406839097,
+  "lastUpdate": 1624406842099,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -59584,44 +59584,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "aaronabbott@google.com",
-            "name": "Aaron Abbott",
-            "username": "aabmass"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "7662d83f3b8b64e208909f8b1acb97b45b14ce00",
-          "message": "Improve documentation around environment variables (#1680)",
-          "timestamp": "2021-03-15T10:53:01-07:00",
-          "tree_id": "d5036c53ffe32c0c2f85194632656b71dd786a73",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/7662d83f3b8b64e208909f8b1acb97b45b14ce00"
-        },
-        "date": 1615830836437,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 54066.0609482295,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000008242723173637607",
-            "extra": "mean: 18.495891553067676 usec\nrounds: 9092"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 121173.81063059634,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000005776221316832496",
-            "extra": "mean: 8.252608338352449 usec\nrounds: 56822"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "lechen@microsoft.com",
             "name": "Leighton Chen",
             "username": "lzchen"
@@ -63378,6 +63340,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000015659938435040544",
             "extra": "mean: 8.09511827209064 usec\nrounds: 43104"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nathanielruiz98@gmail.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1e600f385a81e340a2a4bbb7d10075f113149a21",
+          "message": "Update Zoom meeting link to match calendar (#1920)",
+          "timestamp": "2021-06-22T17:06:26-07:00",
+          "tree_id": "6456cf9943990f258013b4a1b130117b0a1c0408",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/1e600f385a81e340a2a4bbb7d10075f113149a21"
+        },
+        "date": 1624406828548,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 75740.44894955428,
+            "unit": "iter/sec",
+            "range": "stddev: 5.416685462060099e-7",
+            "extra": "mean: 13.202984849826201 usec\nrounds: 11287"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 124311.39969118868,
+            "unit": "iter/sec",
+            "range": "stddev: 4.87987951019315e-7",
+            "extra": "mean: 8.04431453981031 usec\nrounds: 44643"
           }
         ]
       }
