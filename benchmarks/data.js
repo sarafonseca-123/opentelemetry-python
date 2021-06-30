@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1625093228285,
+  "lastUpdate": 1625093232014,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -48178,44 +48178,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "srikanth.chekuri92@gmail.com",
-            "name": "Srikanth Chekuri",
-            "username": "lonewolf3739"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "3e2bf0e4fdef04ab870f18513931ff9a2000ea79",
-          "message": "Remove insecure param from exporters constructor and OTEL_EXPORTER_*_ INSECURE env var (#1682)",
-          "timestamp": "2021-03-16T09:45:12-07:00",
-          "tree_id": "549af4789585200d502917315df063a4535e0be2",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/3e2bf0e4fdef04ab870f18513931ff9a2000ea79"
-        },
-        "date": 1615913174762,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 118398.35426944631,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000016522022174120937",
-            "extra": "mean: 8.446063344125877 usec\nrounds: 13624"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 221352.6506791936,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000011068663061188297",
-            "extra": "mean: 4.517677999028347 usec\nrounds: 75183"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "lechen@microsoft.com",
             "name": "Leighton Chen",
             "username": "lzchen"
@@ -51972,6 +51934,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 5.494449055894862e-7",
             "extra": "mean: 5.83419271041162 usec\nrounds: 58824"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d724573ef91abb880f0e1bd3c4431eb2a5ab0313",
+          "message": "Report dropped attributes/events/links for otlp/jaeger/zipkin exporters (#1893)",
+          "timestamp": "2021-06-30T15:46:07-07:00",
+          "tree_id": "1de05015661b6ae07aa102ac5ec74273c48f7af0",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/d724573ef91abb880f0e1bd3c4431eb2a5ab0313"
+        },
+        "date": 1625093217945,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 124696.47713828656,
+            "unit": "iter/sec",
+            "range": "stddev: 3.378285465141909e-7",
+            "extra": "mean: 8.019472746539702 usec\nrounds: 17007"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 190361.7353518101,
+            "unit": "iter/sec",
+            "range": "stddev: 3.853862779717501e-7",
+            "extra": "mean: 5.253156566112861 usec\nrounds: 60607"
           }
         ]
       }
