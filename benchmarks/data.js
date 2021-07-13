@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1626191128255,
+  "lastUpdate": 1626191188980,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -19016,44 +19016,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "d21793d1249ee6e41180dc9a33755c6dcc0e94a1",
-          "message": "remove python 3.5 support (#1706)",
-          "timestamp": "2021-03-18T08:15:22-07:00",
-          "tree_id": "a455fa7a11ccda44805c8fef6353c070bb8c59fd",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/d21793d1249ee6e41180dc9a33755c6dcc0e94a1"
-        },
-        "date": 1616080766464,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 236780.29777978203,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00004521511070837586",
-            "extra": "mean: 4.223324361767852 usec\nrounds: 151516"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 143031.67496172147,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000012620007657102004",
-            "extra": "mean: 6.99145836240555 usec\nrounds: 181819"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "73838995+dmolenda-sumo@users.noreply.github.com",
             "name": "Dominika Molenda",
             "username": "dmolenda-sumo"
@@ -22810,6 +22772,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000027724790543544764",
             "extra": "mean: 12.61023124051288 usec\nrounds: 147059"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nathanielruiz98@gmail.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0f6699d966677c86fc7ad658c60e6a497bdc3434",
+          "message": "Generate semconv constants update for OTel Spec 1.5.0 (#1946)",
+          "timestamp": "2021-07-13T08:37:47-07:00",
+          "tree_id": "c075d8d78c0e2db9b48b85e5d79ca44ccb290863",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/0f6699d966677c86fc7ad658c60e6a497bdc3434"
+        },
+        "date": 1626191174346,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 262449.36721022526,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000010055611466938045",
+            "extra": "mean: 3.8102587582121594 usec\nrounds: 188680"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 174470.97169476564,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003964009796334756",
+            "extra": "mean: 5.731612487087451 usec\nrounds: 125001"
           }
         ]
       }
