@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1626190866245,
+  "lastUpdate": 1626190872301,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -59584,44 +59584,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "d21793d1249ee6e41180dc9a33755c6dcc0e94a1",
-          "message": "remove python 3.5 support (#1706)",
-          "timestamp": "2021-03-18T08:15:22-07:00",
-          "tree_id": "a455fa7a11ccda44805c8fef6353c070bb8c59fd",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/d21793d1249ee6e41180dc9a33755c6dcc0e94a1"
-        },
-        "date": 1616080596002,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 42326.39107236352,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00002495156758051295",
-            "extra": "mean: 23.625921668831747 usec\nrounds: 7047"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 98582.19865878324,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000015421579641282577",
-            "extra": "mean: 10.14381920473534 usec\nrounds: 43104"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "73838995+dmolenda-sumo@users.noreply.github.com",
             "name": "Dominika Molenda",
             "username": "dmolenda-sumo"
@@ -63378,6 +63340,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000008010853536109525",
             "extra": "mean: 9.58807184465776 usec\nrounds: 24038"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nathanielruiz98@gmail.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0f6699d966677c86fc7ad658c60e6a497bdc3434",
+          "message": "Generate semconv constants update for OTel Spec 1.5.0 (#1946)",
+          "timestamp": "2021-07-13T08:37:47-07:00",
+          "tree_id": "c075d8d78c0e2db9b48b85e5d79ca44ccb290863",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/0f6699d966677c86fc7ad658c60e6a497bdc3434"
+        },
+        "date": 1626190859229,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 75891.86742769228,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000016874880467437896",
+            "extra": "mean: 13.176642424206689 usec\nrounds: 10560"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 126234.62353164755,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000017841765417086817",
+            "extra": "mean: 7.9217569001526424 usec\nrounds: 50506"
           }
         ]
       }
