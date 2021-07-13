@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1626210057575,
+  "lastUpdate": 1626210064583,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -7610,44 +7610,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "73838995+dmolenda-sumo@users.noreply.github.com",
-            "name": "Dominika Molenda",
-            "username": "dmolenda-sumo"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "f5d10d456ba0e9deaf9d2b25bb9c9b1fdcd93bda",
-          "message": "Upgrade Mypy to version 0.812 (#1705)",
-          "timestamp": "2021-03-18T08:56:28-07:00",
-          "tree_id": "bd6a47346d47386198d9c854ec6a710e7ef41153",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/f5d10d456ba0e9deaf9d2b25bb9c9b1fdcd93bda"
-        },
-        "date": 1616083164908,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 25455.5557744777,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000026275829601223877",
-            "extra": "mean: 39.28415505280863 usec\nrounds: 4592"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 18219.583067434007,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000025165287054651296",
-            "extra": "mean: 54.88599801097628 usec\nrounds: 8547"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "daisuketaniwaki@gmail.com",
             "name": "Daisuke Taniwaki",
             "username": "dtaniwaki"
@@ -11404,6 +11366,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00001995674135837251",
             "extra": "mean: 66.68875561664322 usec\nrounds: 5831"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "60111015+kuerbis-martin@users.noreply.github.com",
+            "name": "kuerbis-martin",
+            "username": "kuerbis-martin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "eed804e28a64f4829ede1bfeede1772713941d67",
+          "message": "Fix formatting errors in Django instrumentation example docs (#1940)",
+          "timestamp": "2021-07-13T13:59:27-07:00",
+          "tree_id": "07636dc703e6770fbbb2760788dd7c6d35ec3a96",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/eed804e28a64f4829ede1bfeede1772713941d67"
+        },
+        "date": 1626210050278,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 27215.329100463896,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010251538846664207",
+            "extra": "mean: 36.743998072136286 usec\nrounds: 5187"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 19704.46912908285,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00001874464162076894",
+            "extra": "mean: 50.74990822889251 usec\nrounds: 6854"
           }
         ]
       }
