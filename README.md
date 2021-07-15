@@ -47,6 +47,7 @@ Unless otherwise noted, all published artifacts support Python 3.6 or higher. Se
 
 The goal of OpenTelemetry is to provide a single set of APIs to capture distributed traces and metrics from your application and send them to an observability platform. This project lets you do just that for applications written in Python.
 
+    
 This repository includes multiple installable packages. The `opentelemetry-api`
 package includes abstract classes and no-op implementations that comprise the OpenTelemetry API following the
 [OpenTelemetry specification](https://github.com/open-telemetry/opentelemetry-specification).
