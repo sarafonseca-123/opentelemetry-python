@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1627062810539,
+  "lastUpdate": 1627062815343,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -55792,44 +55792,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "58521be7cd294bd30e9d0a9892ac52a3ce526c48",
-          "message": "Update bootstrap cmd to use exact version when installing (#1722)",
-          "timestamp": "2021-04-01T15:53:15-07:00",
-          "tree_id": "712acd7d0c991afe0832f9fc5e3e78d840a7c252",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/58521be7cd294bd30e9d0a9892ac52a3ce526c48"
-        },
-        "date": 1617317653425,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 68244.1846126322,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000007405526652164822",
-            "extra": "mean: 14.653263214678324 usec\nrounds: 9251"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 154774.56555033952,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000005192641527317674",
-            "extra": "mean: 6.461009898133138 usec\nrounds: 49505"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "owais@users.noreply.github.com",
-            "name": "Owais Lone",
-            "username": "owais"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "0c0466e4cd2cfda986e526f833ce1c4f5310d960",
           "message": "Remove unnecessary warning when (not) setting status description (#1721)",
           "timestamp": "2021-04-02T08:17:00-07:00",
@@ -59576,6 +59538,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 5.267662607568588e-7",
             "extra": "mean: 5.852245855183879 usec\nrounds: 54345"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nathanielruiz98@gmail.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "191a55ce0478822cb054c48495a4ed227a4579d8",
+          "message": "Default configurators do more for distros (#1937)",
+          "timestamp": "2021-07-23T10:40:08-07:00",
+          "tree_id": "77efa28fe6bf96de07ee251c0fa29ef5f004608e",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/191a55ce0478822cb054c48495a4ed227a4579d8"
+        },
+        "date": 1627062798600,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 113203.18288933084,
+            "unit": "iter/sec",
+            "range": "stddev: 4.190964164364777e-7",
+            "extra": "mean: 8.833673881569348 usec\nrounds: 13814"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 201902.69407109922,
+            "unit": "iter/sec",
+            "range": "stddev: 2.5741572355505527e-7",
+            "extra": "mean: 4.952880914247999 usec\nrounds: 54952"
           }
         ]
       }
