@@ -1,46 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1627062764386,
+  "lastUpdate": 1627062810539,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
-      {
-        "commit": {
-          "author": {
-            "email": "mrcn.zrmb@gmail.com",
-            "name": "Marcin Zaremba",
-            "username": "marcinzaremba"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "442af037621919f777087e1fbb58841d940c8269",
-          "message": "Make B3 propagator spec compliant (#1728)",
-          "timestamp": "2021-03-31T10:49:39-07:00",
-          "tree_id": "32e58b6ab4fa6889727c530a4639d04d47ffef1d",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/442af037621919f777087e1fbb58841d940c8269"
-        },
-        "date": 1617213068987,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 21810.4840082605,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000028140583616703923",
-            "extra": "mean: 45.84950978718584 usec\nrounds: 4649"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 14893.375334769476,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00011326228877902611",
-            "extra": "mean: 67.14394672277145 usec\nrounds: 8803"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -3800,6 +3762,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000005880918381322585",
             "extra": "mean: 51.35126154087093 usec\nrounds: 6477"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nathanielruiz98@gmail.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "191a55ce0478822cb054c48495a4ed227a4579d8",
+          "message": "Default configurators do more for distros (#1937)",
+          "timestamp": "2021-07-23T10:40:08-07:00",
+          "tree_id": "77efa28fe6bf96de07ee251c0fa29ef5f004608e",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/191a55ce0478822cb054c48495a4ed227a4579d8"
+        },
+        "date": 1627062796786,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 27399.205849945905,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010531228926729645",
+            "extra": "mean: 36.49740819046309 usec\nrounds: 5250"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20417.921026520613,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000016076394939054925",
+            "extra": "mean: 48.97658281179122 usec\nrounds: 7028"
           }
         ]
       }
