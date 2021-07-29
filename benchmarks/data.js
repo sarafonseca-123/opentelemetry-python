@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1627580191244,
+  "lastUpdate": 1627580225502,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -3808,44 +3808,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "chi.jonathanwong@gmail.com",
-            "name": "Jonathan Wong",
-            "username": "joncwong"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "7054b534404fc69199e368cbe62a4e7570cc46ea",
-          "message": "Include new `service_name` workflow (#1739)\n\nChanges from https://github.com/open-telemetry/opentelemetry-python/pull/1669/ have not been reflected in the docs",
-          "timestamp": "2021-04-02T13:17:07-07:00",
-          "tree_id": "c67570b8fe38fe1f7b62ca65576b7e5e8065af75",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/7054b534404fc69199e368cbe62a4e7570cc46ea"
-        },
-        "date": 1617394716683,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 21091.440884456937,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000016022400311822543",
-            "extra": "mean: 47.41259762565283 usec\nrounds: 4717"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 15506.869959130554,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000018525134502861008",
-            "extra": "mean: 64.48754665742155 usec\nrounds: 5744"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "austin@lightstep.com",
             "name": "Austin Parker",
             "username": "austinlparker"
@@ -7602,6 +7564,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00008226468994804704",
             "extra": "mean: 91.45446738772233 usec\nrounds: 6010"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9d55e64bd2bbfccb99e4ad478e36ad68964dacc3",
+          "message": "Add support for OTLP Exporter Protobuf over HTTP (#1868)",
+          "timestamp": "2021-07-29T10:34:45-07:00",
+          "tree_id": "3692e4e79cfe017d903cf6a77705600cae7aec86",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/9d55e64bd2bbfccb99e4ad478e36ad68964dacc3"
+        },
+        "date": 1627580211837,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 20737.156760195918,
+            "unit": "iter/sec",
+            "range": "stddev: 9.644041483998017e-7",
+            "extra": "mean: 48.22261853753534 usec\nrounds: 4855"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 15674.405212664013,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000014471104719286512",
+            "extra": "mean: 63.798274092854115 usec\nrounds: 5925"
           }
         ]
       }
