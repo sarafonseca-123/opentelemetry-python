@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1627580166135,
+  "lastUpdate": 1627580170125,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -59584,44 +59584,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "chi.jonathanwong@gmail.com",
-            "name": "Jonathan Wong",
-            "username": "joncwong"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "7054b534404fc69199e368cbe62a4e7570cc46ea",
-          "message": "Include new `service_name` workflow (#1739)\n\nChanges from https://github.com/open-telemetry/opentelemetry-python/pull/1669/ have not been reflected in the docs",
-          "timestamp": "2021-04-02T13:17:07-07:00",
-          "tree_id": "c67570b8fe38fe1f7b62ca65576b7e5e8065af75",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/7054b534404fc69199e368cbe62a4e7570cc46ea"
-        },
-        "date": 1617394675900,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 50254.51755656093,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000009387779547405306",
-            "extra": "mean: 19.89870858623825 usec\nrounds: 7419"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 110057.77210831051,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000006217081225945857",
-            "extra": "mean: 9.086137042787634 usec\nrounds: 44643"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "austin@lightstep.com",
             "name": "Austin Parker",
             "username": "austinlparker"
@@ -63378,6 +63340,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000001932375311251056",
             "extra": "mean: 7.935211185861196 usec\nrounds: 51547"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9d55e64bd2bbfccb99e4ad478e36ad68964dacc3",
+          "message": "Add support for OTLP Exporter Protobuf over HTTP (#1868)",
+          "timestamp": "2021-07-29T10:34:45-07:00",
+          "tree_id": "3692e4e79cfe017d903cf6a77705600cae7aec86",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/9d55e64bd2bbfccb99e4ad478e36ad68964dacc3"
+        },
+        "date": 1627580153795,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 69840.49462335902,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000023640823119660833",
+            "extra": "mean: 14.318340747626056 usec\nrounds: 10835"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 113939.2457368429,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000011935786089055487",
+            "extra": "mean: 8.776607160535594 usec\nrounds: 48544"
           }
         ]
       }
