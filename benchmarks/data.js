@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1628616960243,
+  "lastUpdate": 1628616969842,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -30432,44 +30432,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "96fd84f024adb745e8380626168184b3ac37f27d",
-          "message": "Fixed B3 Propagator (#1750)",
-          "timestamp": "2021-04-06T15:08:21-07:00",
-          "tree_id": "2008127213ed080f0c027a9e4945c6b6b0076844",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/96fd84f024adb745e8380626168184b3ac37f27d"
-        },
-        "date": 1617747015648,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2067.1013719629614,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00014707615320866328",
-            "extra": "mean: 483.76921111052224 usec\nrounds: 90"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 2987.436489865549,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0009097625060875875",
-            "extra": "mean: 334.7351494809537 usec\nrounds: 4335"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "owais@users.noreply.github.com",
-            "name": "Owais Lone",
-            "username": "owais"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "87742769baba1c874405a9da8749ae0d02beafaf",
           "message": "Prototype proxy tracer/provider to enable lazy setup of tracing pipeline (#1726)",
           "timestamp": "2021-04-07T08:05:34-07:00",
@@ -34216,6 +34178,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0009374225914231571",
             "extra": "mean: 252.9312399348733 usec\nrounds: 4893"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "93aad21a097a7b8740c9e8345f4fcf5d2e55a0e2",
+          "message": "Add Nathaniel to approvers list (#2028)\n\nCo-authored-by: alrex <aboten@lightstep.com>\r\nCo-authored-by: (Eliseo) Nathaniel Ruiz Nowell <enruizno@uwaterloo.ca>",
+          "timestamp": "2021-08-10T10:29:30-07:00",
+          "tree_id": "e81960150dd083c7aa221ec5482d0c61066fe694",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/93aad21a097a7b8740c9e8345f4fcf5d2e55a0e2"
+        },
+        "date": 1628616952822,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2556.505639316138,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000014940561599019507",
+            "extra": "mean: 391.1589259265232 usec\nrounds: 27"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4013.6377835177022,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009590354762830133",
+            "extra": "mean: 249.15053473598772 usec\nrounds: 5038"
           }
         ]
       }
