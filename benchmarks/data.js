@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1628617846267,
+  "lastUpdate": 1628617898526,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -41676,44 +41676,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "owais@users.noreply.github.com",
-            "name": "Owais Lone",
-            "username": "owais"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "87742769baba1c874405a9da8749ae0d02beafaf",
-          "message": "Prototype proxy tracer/provider to enable lazy setup of tracing pipeline (#1726)",
-          "timestamp": "2021-04-07T08:05:34-07:00",
-          "tree_id": "67cf6110d4ccec4662ecf07c08ce8b9a1fe9bed3",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/87742769baba1c874405a9da8749ae0d02beafaf"
-        },
-        "date": 1617808076294,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 79020.54415351278,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00001190947183484155",
-            "extra": "mean: 12.654936899160116 usec\nrounds: 11442"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 150357.82874937725,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000015566189169493244",
-            "extra": "mean: 6.650801014603916 usec\nrounds: 56180"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "ocelotl@users.noreply.github.com",
             "name": "Diego Hurtado",
             "username": "ocelotl"
@@ -45470,6 +45432,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 4.4268258327330375e-7",
             "extra": "mean: 6.372325723861167 usec\nrounds: 56815"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3429ad3e367735438bc0270687d547c5b4d0b7da",
+          "message": "Add Owais to maintainers list (#2025)\n\nFixes #2003\r\n\r\nCo-authored-by: alrex <aboten@lightstep.com>",
+          "timestamp": "2021-08-10T10:35:24-07:00",
+          "tree_id": "84fa79bbb82bcd1dced4880e090e3a2a41daf899",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/3429ad3e367735438bc0270687d547c5b4d0b7da"
+        },
+        "date": 1628617882539,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 75356.26019549256,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000014543604604972676",
+            "extra": "mean: 13.270297615695837 usec\nrounds: 10527"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 134537.325715751,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00001659409180544393",
+            "extra": "mean: 7.432881504667255 usec\nrounds: 46947"
           }
         ]
       }
