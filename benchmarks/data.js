@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1628618194573,
+  "lastUpdate": 1628618259009,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -51990,44 +51990,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "96fd84f024adb745e8380626168184b3ac37f27d",
-          "message": "Fixed B3 Propagator (#1750)",
-          "timestamp": "2021-04-06T15:08:21-07:00",
-          "tree_id": "2008127213ed080f0c027a9e4945c6b6b0076844",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/96fd84f024adb745e8380626168184b3ac37f27d"
-        },
-        "date": 1617746973319,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 475778.2711701318,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000026208102853662917",
-            "extra": "mean: 2.1018193990671254 usec\nrounds: 66663"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 743507.2467558826,
-            "unit": "iter/sec",
-            "range": "stddev: 4.104376659441665e-7",
-            "extra": "mean: 1.3449768033375236 usec\nrounds: 90901"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "owais@users.noreply.github.com",
-            "name": "Owais Lone",
-            "username": "owais"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "87742769baba1c874405a9da8749ae0d02beafaf",
           "message": "Prototype proxy tracer/provider to enable lazy setup of tracing pipeline (#1726)",
           "timestamp": "2021-04-07T08:05:34-07:00",
@@ -55774,6 +55736,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000001934559828061756",
             "extra": "mean: 1.375325481274988 usec\nrounds: 82645"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3429ad3e367735438bc0270687d547c5b4d0b7da",
+          "message": "Add Owais to maintainers list (#2025)\n\nFixes #2003\r\n\r\nCo-authored-by: alrex <aboten@lightstep.com>",
+          "timestamp": "2021-08-10T10:35:24-07:00",
+          "tree_id": "84fa79bbb82bcd1dced4880e090e3a2a41daf899",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/3429ad3e367735438bc0270687d547c5b4d0b7da"
+        },
+        "date": 1628618244636,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 522353.8323063792,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000029317898560557065",
+            "extra": "mean: 1.9144111484444184 usec\nrounds: 63695"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 952405.3253716625,
+            "unit": "iter/sec",
+            "range": "stddev: 4.647999189262853e-7",
+            "extra": "mean: 1.049973129465491 usec\nrounds: 105264"
           }
         ]
       }
