@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1628822188100,
+  "lastUpdate": 1628822191860,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -48178,44 +48178,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "christian.neumueller@dynatrace.com",
-            "name": "Christian Neumüller",
-            "username": "Oberon00"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "6f8c077fa5349d445358b879fc83c139a0c22cff",
-          "message": "Fix eachdist.py not printing invoked commands. (#1758)\n\nI observed the following pattern:\r\n```\r\n<output of cmd 1>\r\n<output of cmd 2>\r\n>>> cmd1\r\n>>> cmd2\r\n```\r\n\r\nThe `>>> cmd` header should come immediately before the command output to facilitate debugging & progress reporting.",
-          "timestamp": "2021-04-09T11:23:24-07:00",
-          "tree_id": "47c994ef4364361ef05e198b2fa6822b4c8f6f37",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/6f8c077fa5349d445358b879fc83c139a0c22cff"
-        },
-        "date": 1617992669072,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 100735.33039843195,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000007573216454746046",
-            "extra": "mean: 9.927003723964217 usec\nrounds: 13158"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 177325.927631907,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000021269193969864147",
-            "extra": "mean: 5.639333251231029 usec\nrounds: 56819"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "aboten@lightstep.com",
             "name": "alrex",
             "username": "codeboten"
@@ -51972,6 +51934,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 3.215506002141489e-7",
             "extra": "mean: 4.954874106722813 usec\nrounds: 62108"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "emmanuel.courreges@orange.com",
+            "name": "Emmanuel Courreges",
+            "username": "ecourreges-orange"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "820c89e962613ced683d425ecbda86007c76b84e",
+          "message": "fix: documentation on \"Well known exporters\" zipkin -> zipkin_json, etc. (#2023)\n\nfix: documentation OTEL_TRACE_EXPORTER -> OTEL_TRACES_EXPORTER\r\n\r\nCo-authored-by: alrex <aboten@lightstep.com>",
+          "timestamp": "2021-08-12T20:34:59-06:00",
+          "tree_id": "ca34265371991df9ae5e7c4e3e24fc9430bcd186",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/820c89e962613ced683d425ecbda86007c76b84e"
+        },
+        "date": 1628822172991,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 82696.62040394104,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000753533108663394",
+            "extra": "mean: 12.092392592531429 usec\nrounds: 12285"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 145362.45725492912,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000026344881651430004",
+            "extra": "mean: 6.879355363718516 usec\nrounds: 50506"
           }
         ]
       }
