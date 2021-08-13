@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1628822295347,
+  "lastUpdate": 1628822338974,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -22818,44 +22818,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "christian.neumueller@dynatrace.com",
-            "name": "Christian Neumüller",
-            "username": "Oberon00"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "6f8c077fa5349d445358b879fc83c139a0c22cff",
-          "message": "Fix eachdist.py not printing invoked commands. (#1758)\n\nI observed the following pattern:\r\n```\r\n<output of cmd 1>\r\n<output of cmd 2>\r\n>>> cmd1\r\n>>> cmd2\r\n```\r\n\r\nThe `>>> cmd` header should come immediately before the command output to facilitate debugging & progress reporting.",
-          "timestamp": "2021-04-09T11:23:24-07:00",
-          "tree_id": "47c994ef4364361ef05e198b2fa6822b4c8f6f37",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/6f8c077fa5349d445358b879fc83c139a0c22cff"
-        },
-        "date": 1617992705048,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2945.9138482090057,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00003882432687760241",
-            "extra": "mean: 339.45323981825163 usec\nrounds: 221"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 4409.787015266862,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0007862093761511258",
-            "extra": "mean: 226.7683215851376 usec\nrounds: 5476"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "aboten@lightstep.com",
             "name": "alrex",
             "username": "codeboten"
@@ -26612,6 +26574,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007913901966376159",
             "extra": "mean: 163.03221843887883 usec\nrounds: 7906"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "emmanuel.courreges@orange.com",
+            "name": "Emmanuel Courreges",
+            "username": "ecourreges-orange"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "820c89e962613ced683d425ecbda86007c76b84e",
+          "message": "fix: documentation on \"Well known exporters\" zipkin -> zipkin_json, etc. (#2023)\n\nfix: documentation OTEL_TRACE_EXPORTER -> OTEL_TRACES_EXPORTER\r\n\r\nCo-authored-by: alrex <aboten@lightstep.com>",
+          "timestamp": "2021-08-12T20:34:59-06:00",
+          "tree_id": "ca34265371991df9ae5e7c4e3e24fc9430bcd186",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/820c89e962613ced683d425ecbda86007c76b84e"
+        },
+        "date": 1628822321942,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2433.4564185155728,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000043381647945148765",
+            "extra": "mean: 410.9381176466714 usec\nrounds: 34"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4630.611938824127,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008550337807501186",
+            "extra": "mean: 215.95417910444354 usec\nrounds: 6566"
           }
         ]
       }
