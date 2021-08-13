@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1628884841303,
+  "lastUpdate": 1628884852509,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -26620,44 +26620,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "lechen@microsoft.com",
-            "name": "Leighton Chen",
-            "username": "lzchen"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "71e3a7a192c0fc8a7503fac967ada36a74b79e58",
-          "message": "Change `should_sample` parameters to be spec compliant (#1764)",
-          "timestamp": "2021-04-15T08:00:08-07:00",
-          "tree_id": "12d36e05be2134920c1002c1b8008c1e700079fc",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/71e3a7a192c0fc8a7503fac967ada36a74b79e58"
-        },
-        "date": 1618498912216,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2825.9551261529864,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00005239358433572848",
-            "extra": "mean: 353.8626607144023 usec\nrounds: 224"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3754.9278644275646,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0008030467489007457",
-            "extra": "mean: 266.31670064118504 usec\nrounds: 4523"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "alertedsnake@users.noreply.github.com",
             "name": "Michael Stella",
             "username": "alertedsnake"
@@ -30414,6 +30376,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008810214288678652",
             "extra": "mean: 252.66924662054302 usec\nrounds: 6362"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaronabbott@google.com",
+            "name": "Aaron Abbott",
+            "username": "aabmass"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "240ee760a6f448fd5e836b004caebe3217cfe3b6",
+          "message": "unpin opentelemetry-api dependency in instrumentation package (#2012)\n\nCo-authored-by: alrex <aboten@lightstep.com>\r\nCo-authored-by: Owais Lone <owais@users.noreply.github.com>\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>",
+          "timestamp": "2021-08-13T15:57:01-04:00",
+          "tree_id": "618621ddd617e0e25f2474e0ada65ced299ac8e0",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/240ee760a6f448fd5e836b004caebe3217cfe3b6"
+        },
+        "date": 1628884835170,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2711.5984556592116,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000013958396642009614",
+            "extra": "mean: 368.7861666659977 usec\nrounds: 42"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4241.8631151095515,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008914242221589012",
+            "extra": "mean: 235.74546675916812 usec\nrounds: 5761"
           }
         ]
       }
