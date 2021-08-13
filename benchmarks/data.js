@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1628889444522,
+  "lastUpdate": 1628889450711,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -11412,44 +11412,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "alertedsnake@users.noreply.github.com",
-            "name": "Michael Stella",
-            "username": "alertedsnake"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "371eaa8e2d90fe418dbef163b65181736c8cfce3",
-          "message": "Add __contains__ to TraceState (#1773)",
-          "timestamp": "2021-04-16T08:29:03-07:00",
-          "tree_id": "8c2b0067b2abeeeca215cadad828789153a0a29c",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/371eaa8e2d90fe418dbef163b65181736c8cfce3"
-        },
-        "date": 1618587039345,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 16388.60901880916,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00001222621918741792",
-            "extra": "mean: 61.017991145697785 usec\nrounds: 1807"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 11456.115031672816,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000021328189066811994",
-            "extra": "mean: 87.28962630309591 usec\nrounds: 6235"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "owais@users.noreply.github.com",
             "name": "Owais Lone",
             "username": "owais"
@@ -15206,6 +15168,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000006433986729540573",
             "extra": "mean: 67.58102781939675 usec\nrounds: 6003"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nathanielruiz98@gmail.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3cdb54f6085ce7170aea05e2c99c480a6e919f34",
+          "message": "Add default and service name to get_aggregated_resource (#2013)\n\n* Add default & service name to resource aggregator\r\n\r\n* Aggregator calls Resource.create() to set default attributes\r\n\r\n* Allow get aggregated resources to remove defaults",
+          "timestamp": "2021-08-13T17:14:13-04:00",
+          "tree_id": "4d9e87c2adf21f9dd4d4732e1e8655f3e5b2be54",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/3cdb54f6085ce7170aea05e2c99c480a6e919f34"
+        },
+        "date": 1628889417076,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 15060.431487295327,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000278904921150246",
+            "extra": "mean: 66.39916000040103 usec\nrounds: 25"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 9822.687159983665,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00002399653701424919",
+            "extra": "mean: 101.8051357752559 usec\nrounds: 6334"
           }
         ]
       }
