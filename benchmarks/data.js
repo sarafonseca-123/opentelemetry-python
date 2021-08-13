@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1628822266808,
+  "lastUpdate": 1628822268449,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -7610,44 +7610,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "christian.neumueller@dynatrace.com",
-            "name": "Christian Neumüller",
-            "username": "Oberon00"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "6f8c077fa5349d445358b879fc83c139a0c22cff",
-          "message": "Fix eachdist.py not printing invoked commands. (#1758)\n\nI observed the following pattern:\r\n```\r\n<output of cmd 1>\r\n<output of cmd 2>\r\n>>> cmd1\r\n>>> cmd2\r\n```\r\n\r\nThe `>>> cmd` header should come immediately before the command output to facilitate debugging & progress reporting.",
-          "timestamp": "2021-04-09T11:23:24-07:00",
-          "tree_id": "47c994ef4364361ef05e198b2fa6822b4c8f6f37",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/6f8c077fa5349d445358b879fc83c139a0c22cff"
-        },
-        "date": 1617992727528,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 26035.786933957977,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000015831057550243149",
-            "extra": "mean: 38.40867197663687 usec\nrounds: 4771"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 18528.03313280114,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000002803946970825332",
-            "extra": "mean: 53.9722696323145 usec\nrounds: 6609"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "aboten@lightstep.com",
             "name": "alrex",
             "username": "codeboten"
@@ -11404,6 +11366,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000011310057265827789",
             "extra": "mean: 50.68327563156621 usec\nrounds: 6730"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "emmanuel.courreges@orange.com",
+            "name": "Emmanuel Courreges",
+            "username": "ecourreges-orange"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "820c89e962613ced683d425ecbda86007c76b84e",
+          "message": "fix: documentation on \"Well known exporters\" zipkin -> zipkin_json, etc. (#2023)\n\nfix: documentation OTEL_TRACE_EXPORTER -> OTEL_TRACES_EXPORTER\r\n\r\nCo-authored-by: alrex <aboten@lightstep.com>",
+          "timestamp": "2021-08-12T20:34:59-06:00",
+          "tree_id": "ca34265371991df9ae5e7c4e3e24fc9430bcd186",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/820c89e962613ced683d425ecbda86007c76b84e"
+        },
+        "date": 1628822246742,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 23064.992364599246,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000020744973981100883",
+            "extra": "mean: 43.3557481482121 usec\nrounds: 4590"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 16738.99220162099,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000026122705519763493",
+            "extra": "mean: 59.74075308447547 usec\nrounds: 6403"
           }
         ]
       }
