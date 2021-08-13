@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1628889450711,
+  "lastUpdate": 1628889482622,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -37874,44 +37874,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "alertedsnake@users.noreply.github.com",
-            "name": "Michael Stella",
-            "username": "alertedsnake"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "371eaa8e2d90fe418dbef163b65181736c8cfce3",
-          "message": "Add __contains__ to TraceState (#1773)",
-          "timestamp": "2021-04-16T08:29:03-07:00",
-          "tree_id": "8c2b0067b2abeeeca215cadad828789153a0a29c",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/371eaa8e2d90fe418dbef163b65181736c8cfce3"
-        },
-        "date": 1618587107022,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2323.1235802109522,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000750250050773001",
-            "extra": "mean: 430.45493081741034 usec\nrounds: 159"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3399.3522966854784,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0009373269569867129",
-            "extra": "mean: 294.17368743305747 usec\nrounds: 6549"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "owais@users.noreply.github.com",
             "name": "Owais Lone",
             "username": "owais"
@@ -41668,6 +41630,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007822909367552428",
             "extra": "mean: 182.4670813755037 usec\nrounds: 7705"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nathanielruiz98@gmail.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3cdb54f6085ce7170aea05e2c99c480a6e919f34",
+          "message": "Add default and service name to get_aggregated_resource (#2013)\n\n* Add default & service name to resource aggregator\r\n\r\n* Aggregator calls Resource.create() to set default attributes\r\n\r\n* Allow get aggregated resources to remove defaults",
+          "timestamp": "2021-08-13T17:14:13-04:00",
+          "tree_id": "4d9e87c2adf21f9dd4d4732e1e8655f3e5b2be54",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/3cdb54f6085ce7170aea05e2c99c480a6e919f34"
+        },
+        "date": 1628889465495,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2613.950385422908,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000053582490097562695",
+            "extra": "mean: 382.5627317093133 usec\nrounds: 41"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 5271.671562062902,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007813691464031965",
+            "extra": "mean: 189.69315296430977 usec\nrounds: 7675"
           }
         ]
       }
