@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1628884706174,
+  "lastUpdate": 1628884744398,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -51980,44 +51980,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "b73d8009904fc1693b2ba3a1e0656af376f859cf",
-          "message": "no longer pin sphinx (#1766)",
-          "timestamp": "2021-04-13T15:24:03-07:00",
-          "tree_id": "86e3eaf4c5a1ca4b4b266b61f79310ea5ef641cb",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/b73d8009904fc1693b2ba3a1e0656af376f859cf"
-        },
-        "date": 1618352755119,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 313532.5423051047,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000038646528079926684",
-            "extra": "mean: 3.1894615871384677 usec\nrounds: 46297"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 783238.2522656063,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000002655170655354391",
-            "extra": "mean: 1.2767507167933188 usec\nrounds: 89286"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "lechen@microsoft.com",
             "name": "Leighton Chen",
             "username": "lzchen"
@@ -55774,6 +55736,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00000378306940909493",
             "extra": "mean: 1.2081703870874312 usec\nrounds: 96154"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaronabbott@google.com",
+            "name": "Aaron Abbott",
+            "username": "aabmass"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "240ee760a6f448fd5e836b004caebe3217cfe3b6",
+          "message": "unpin opentelemetry-api dependency in instrumentation package (#2012)\n\nCo-authored-by: alrex <aboten@lightstep.com>\r\nCo-authored-by: Owais Lone <owais@users.noreply.github.com>\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>",
+          "timestamp": "2021-08-13T15:57:01-04:00",
+          "tree_id": "618621ddd617e0e25f2474e0ada65ced299ac8e0",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/240ee760a6f448fd5e836b004caebe3217cfe3b6"
+        },
+        "date": 1628884728823,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 529158.5829031424,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000002909606676828398",
+            "extra": "mean: 1.8897926487626016 usec\nrounds: 62112"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 1058608.9732140384,
+            "unit": "iter/sec",
+            "range": "stddev: 4.060737804823306e-7",
+            "extra": "mean: 944.6358620632595 nsec\nrounds: 117648"
           }
         ]
       }
