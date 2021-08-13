@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1628883484134,
+  "lastUpdate": 1628883494249,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -51980,44 +51980,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "christian.neumueller@dynatrace.com",
-            "name": "Christian Neumüller",
-            "username": "Oberon00"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "6f8c077fa5349d445358b879fc83c139a0c22cff",
-          "message": "Fix eachdist.py not printing invoked commands. (#1758)\n\nI observed the following pattern:\r\n```\r\n<output of cmd 1>\r\n<output of cmd 2>\r\n>>> cmd1\r\n>>> cmd2\r\n```\r\n\r\nThe `>>> cmd` header should come immediately before the command output to facilitate debugging & progress reporting.",
-          "timestamp": "2021-04-09T11:23:24-07:00",
-          "tree_id": "47c994ef4364361ef05e198b2fa6822b4c8f6f37",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/6f8c077fa5349d445358b879fc83c139a0c22cff"
-        },
-        "date": 1617992677081,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 507581.0314220221,
-            "unit": "iter/sec",
-            "range": "stddev: 2.968687100536875e-7",
-            "extra": "mean: 1.9701287835726116 usec\nrounds: 55556"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 867988.8469017252,
-            "unit": "iter/sec",
-            "range": "stddev: 1.6393284826487244e-7",
-            "extra": "mean: 1.152088536125209 usec\nrounds: 93450"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "aboten@lightstep.com",
             "name": "alrex",
             "username": "codeboten"
@@ -55774,6 +55736,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00000249928518657702",
             "extra": "mean: 1.4424622542113745 usec\nrounds: 82645"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "garcia.olais@gmail.com",
+            "name": "Antonio Garcia",
+            "username": "garciaolais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c68adab327bd6cf0fdf8964c3c4ea4f5d1160ce8",
+          "message": "Update __init__.py (#2029)",
+          "timestamp": "2021-08-13T12:35:42-07:00",
+          "tree_id": "29837181e4a48a05b4aaa4a460faf859aba77e2c",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c68adab327bd6cf0fdf8964c3c4ea4f5d1160ce8"
+        },
+        "date": 1628883476549,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 511850.2969934064,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00000303891805060122",
+            "extra": "mean: 1.9536962386734926 usec\nrounds: 56177"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 827697.8236577866,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00000378306940909493",
+            "extra": "mean: 1.2081703870874312 usec\nrounds: 96154"
           }
         ]
       }
