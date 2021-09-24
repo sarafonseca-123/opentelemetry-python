@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632492575046,
+  "lastUpdate": 1632492576716,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -48188,44 +48188,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "49c5c2fe1291bf7ab8c8733bc660b71de0821b6a",
-          "message": "fix issue in opentracing shim causing span to be wrapped unnecessarily (#1776)",
-          "timestamp": "2021-04-16T10:44:46-07:00",
-          "tree_id": "4d828085b6ca5bd15c7e7b647f6023a11313301b",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/49c5c2fe1291bf7ab8c8733bc660b71de0821b6a"
-        },
-        "date": 1618595133191,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 110412.50053164073,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000030643146864400384",
-            "extra": "mean: 9.056945501505345 usec\nrounds: 11615"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 196292.33781593308,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000037317424674418655",
-            "extra": "mean: 5.094442356368073 usec\nrounds: 58480"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "e2a5b0b7439acfc16d474fdd0adb3fca41308e80",
           "message": "OTLP exporter uses scheme from endpoint configuration (#1771)",
           "timestamp": "2021-04-16T12:38:10-07:00",
@@ -51972,6 +51934,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000011082825086925184",
             "extra": "mean: 6.164851465169156 usec\nrounds: 57468"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mario.jonke@dynatrace.com",
+            "name": "Mario Jonke",
+            "username": "mariojonke"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3cee4efcc5d0c19ecc0e31ae712ace87528b5808",
+          "message": "Fix ReadableSpan import in OTLP grpc exporter (#2146)",
+          "timestamp": "2021-09-24T14:08:11Z",
+          "tree_id": "79f8c63fe25f35d59f5a7342d65bebd1d2824984",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/3cee4efcc5d0c19ecc0e31ae712ace87528b5808"
+        },
+        "date": 1632492558657,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 137081.25616482948,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000016123618893459953",
+            "extra": "mean: 7.29494336408457 usec\nrounds: 11724"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 193466.60494920105,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001365907109160424",
+            "extra": "mean: 5.168850718513266 usec\nrounds: 61729"
           }
         ]
       }
