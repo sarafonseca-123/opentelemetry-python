@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632492578548,
+  "lastUpdate": 1632492580835,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -55792,44 +55792,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "49c5c2fe1291bf7ab8c8733bc660b71de0821b6a",
-          "message": "fix issue in opentracing shim causing span to be wrapped unnecessarily (#1776)",
-          "timestamp": "2021-04-16T10:44:46-07:00",
-          "tree_id": "4d828085b6ca5bd15c7e7b647f6023a11313301b",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/49c5c2fe1291bf7ab8c8733bc660b71de0821b6a"
-        },
-        "date": 1618595136390,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 71801.31138412515,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00011544701687294459",
-            "extra": "mean: 13.927322227447425 usec\nrounds: 8404"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 169490.92243666083,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00004379317085859435",
-            "extra": "mean: 5.900020990054511 usec\nrounds: 54645"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "e2a5b0b7439acfc16d474fdd0adb3fca41308e80",
           "message": "OTLP exporter uses scheme from endpoint configuration (#1771)",
           "timestamp": "2021-04-16T12:38:10-07:00",
@@ -59576,6 +59538,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000004041563999229116",
             "extra": "mean: 5.312487017875904 usec\nrounds: 29849"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mario.jonke@dynatrace.com",
+            "name": "Mario Jonke",
+            "username": "mariojonke"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3cee4efcc5d0c19ecc0e31ae712ace87528b5808",
+          "message": "Fix ReadableSpan import in OTLP grpc exporter (#2146)",
+          "timestamp": "2021-09-24T14:08:11Z",
+          "tree_id": "79f8c63fe25f35d59f5a7342d65bebd1d2824984",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/3cee4efcc5d0c19ecc0e31ae712ace87528b5808"
+        },
+        "date": 1632492561631,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 86579.87251638694,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000012001411447799516",
+            "extra": "mean: 11.550028556703296 usec\nrounds: 11696"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 168587.0483830358,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000073698060162388",
+            "extra": "mean: 5.931653763389725 usec\nrounds: 57143"
           }
         ]
       }
