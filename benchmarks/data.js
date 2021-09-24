@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632491475410,
+  "lastUpdate": 1632491481217,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -63418,6 +63418,46 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000008919478198871205",
             "extra": "mean: 65.84346983502334 usec\nrounds: 5702"
+          }
+        ]
+      }
+    ],
+    "OpenTelemetry Python Benchmarks - Python 3.8 - sdk": [
+      {
+        "commit": {
+          "author": {
+            "email": "mario.jonke@dynatrace.com",
+            "name": "Mario Jonke",
+            "username": "mariojonke"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e569e0ab6676f8944599418ca0b89d7a2264b6b7",
+          "message": "Add OTLP HTTP exporter as dependency to OTLP exporter package (#2147)\n\n* Add OTLP HTTP exporter as dependency to OTLP exporter package\r\n\r\n* changelog",
+          "timestamp": "2021-09-24T19:19:55+05:30",
+          "tree_id": "71aa354fe6435e6e4132e7daea5e34f94392c1f5",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/e569e0ab6676f8944599418ca0b89d7a2264b6b7"
+        },
+        "date": 1632491462908,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 21111.765731045638,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000029275523140551495",
+            "extra": "mean: 47.36695228336409 usec\nrounds: 4883"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 15087.71941621358,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003280212334703533",
+            "extra": "mean: 66.27906924921861 usec\nrounds: 7899"
           }
         ]
       }
