@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632612281907,
+  "lastUpdate": 1632612283647,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -26620,44 +26620,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "owais@users.noreply.github.com",
-            "name": "Owais Lone",
-            "username": "owais"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "6bd163f6d670319eba6693b8465a068a1828f484",
-          "message": "Added experimental HTTP backpropagators (#1762)",
-          "timestamp": "2021-04-19T10:22:37-07:00",
-          "tree_id": "e0889fbcc8a33e7a9987e3f913c30d8e704c74e5",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/6bd163f6d670319eba6693b8465a068a1828f484"
-        },
-        "date": 1618853081712,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 1902.2655411908006,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00007692023415247904",
-            "extra": "mean: 525.6889631581137 usec\nrounds: 190"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 2637.9111736891414,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0009849724046276445",
-            "extra": "mean: 379.0878214452883 usec\nrounds: 4318"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "srikanth.chekuri92@gmail.com",
             "name": "Srikanth Chekuri",
             "username": "lonewolf3739"
@@ -30414,6 +30376,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008824295078870115",
             "extra": "mean: 238.03403759898646 usec\nrounds: 5931"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e6d4b9c253db09b0a26e234cedd9f9eb16e2d383",
+          "message": "Add support for OTEL_ATTRIBUTE_COUNT_LIMIT (#2139)\n\n* Add support for OTEL_ATTRIBUTE_COUNT_LIMIT\r\n\r\nFixes #2055\r\nFixes #2111\r\n\r\n* Update opentelemetry-sdk/src/opentelemetry/sdk/trace/__init__.py\r\n\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>\r\n\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>",
+          "timestamp": "2021-09-26T04:51:55+05:30",
+          "tree_id": "52f69b321783710504e233b43f49a690412e2c51",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/e6d4b9c253db09b0a26e234cedd9f9eb16e2d383"
+        },
+        "date": 1632612264051,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2554.6175670986445,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00013581838172412554",
+            "extra": "mean: 391.4480245024424 usec\nrounds: 1306"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4437.609462096274,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008981228156821713",
+            "extra": "mean: 225.34655393663505 usec\nrounds: 7138"
           }
         ]
       }
