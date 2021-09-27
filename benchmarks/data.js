@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632757878634,
+  "lastUpdate": 1632757880987,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -63878,6 +63878,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000042007002072614296",
             "extra": "mean: 65.82646680172206 usec\nrounds: 4443"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b772c0ffeaaf649b553ae22ec3b16019ad0e7df0",
+          "message": "Fix slow batch processor test for pypy + windows (#2155)\n\n* wip\r\n\r\n* test",
+          "timestamp": "2021-09-27T08:49:57-07:00",
+          "tree_id": "7e7d3211492217af882b6c38289c3340c1f76c36",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/b772c0ffeaaf649b553ae22ec3b16019ad0e7df0"
+        },
+        "date": 1632757861291,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 20441.857562031866,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00000524944492574726",
+            "extra": "mean: 48.91923334097446 usec\nrounds: 4337"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 15099.076579525667,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000065082667179217144",
+            "extra": "mean: 66.22921572276805 usec\nrounds: 5368"
           }
         ]
       }
