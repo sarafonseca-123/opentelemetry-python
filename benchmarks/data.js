@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632612298877,
+  "lastUpdate": 1632757878634,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -63532,6 +63532,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000026046448826188906",
             "extra": "mean: 93.62417899954427 usec\nrounds: 7257"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b772c0ffeaaf649b553ae22ec3b16019ad0e7df0",
+          "message": "Fix slow batch processor test for pypy + windows (#2155)\n\n* wip\r\n\r\n* test",
+          "timestamp": "2021-09-27T08:49:57-07:00",
+          "tree_id": "7e7d3211492217af882b6c38289c3340c1f76c36",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/b772c0ffeaaf649b553ae22ec3b16019ad0e7df0"
+        },
+        "date": 1632757860554,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 17935.865827361853,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007339057250586542",
+            "extra": "mean: 55.75420833459077 usec\nrounds: 24"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 13170.426857137349,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000019829429391794182",
+            "extra": "mean: 75.92768335052692 usec\nrounds: 5814"
           }
         ]
       }
