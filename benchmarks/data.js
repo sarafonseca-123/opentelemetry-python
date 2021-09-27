@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632759065854,
+  "lastUpdate": 1632759067331,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -55782,44 +55782,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "lechen@microsoft.com",
-            "name": "Leighton Chen",
-            "username": "lzchen"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "0fb4fd1d7c63d72c9be56d884f428938b522232f",
-          "message": "[chore] Update main after 1.1.0 release (#1786)",
-          "timestamp": "2021-04-21T07:52:32-07:00",
-          "tree_id": "fb4bccc16291509b91a2374aef84e19efa9e9e48",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/0fb4fd1d7c63d72c9be56d884f428938b522232f"
-        },
-        "date": 1619016870281,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 75985.95787503719,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000073980384634248705",
-            "extra": "mean: 13.160326301927407 usec\nrounds: 12136"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 160328.9722148476,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000013265616000139355",
-            "extra": "mean: 6.23717589020628 usec\nrounds: 52908"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "ocelotl@users.noreply.github.com",
             "name": "Diego Hurtado",
             "username": "ocelotl"
@@ -59576,6 +59538,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000022876809554497724",
             "extra": "mean: 5.730796677492948 usec\nrounds: 59172"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a462f554bb7bc2d20a3780ce663f2c4904480a36",
+          "message": "update to pylint 2.11.0 (#2119)\n\n* test pylint 2.11.0\r\n\r\n* address last few pylint issues\r\n\r\n* fix mypy\r\n\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>",
+          "timestamp": "2021-09-27T16:09:22Z",
+          "tree_id": "9eceed3e47a07e6e5116855acec3b3efba2f8eb5",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a462f554bb7bc2d20a3780ce663f2c4904480a36"
+        },
+        "date": 1632759045144,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 92809.15878875667,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000008368658395307185",
+            "extra": "mean: 10.774798662663287 usec\nrounds: 10917"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 173596.16897389584,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000041279222099613836",
+            "extra": "mean: 5.760495786922423 usec\nrounds: 53761"
           }
         ]
       }
