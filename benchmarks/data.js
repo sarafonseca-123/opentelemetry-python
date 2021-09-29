@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632924726320,
+  "lastUpdate": 1632924728952,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -55792,44 +55792,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "d8ddb9bf83834e566ef2e17d097741c17f7bc774",
-          "message": "adding getting started to website docs (#1788)",
-          "timestamp": "2021-04-23T13:48:05-07:00",
-          "tree_id": "52d65621e8175169444225c9917aa7f077f5a0d8",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/d8ddb9bf83834e566ef2e17d097741c17f7bc774"
-        },
-        "date": 1619210935331,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 75369.20487892113,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000028499493371968723",
-            "extra": "mean: 13.268018438120405 usec\nrounds: 10142"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 158882.61547071725,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000026271871426864367",
-            "extra": "mean: 6.29395479824729 usec\nrounds: 60241"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "0dda25fafdd512136c22aa3bb68423cd4237d048",
           "message": "adding workflow to update website (#1789)",
           "timestamp": "2021-04-26T09:11:52-07:00",
@@ -59576,6 +59538,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000006637915315816492",
             "extra": "mean: 5.6603935277026 usec\nrounds: 51018"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "45812677+JamesJHPark@users.noreply.github.com",
+            "name": "James",
+            "username": "JamesJHPark"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "82a5be2e294ebcf6490b67d631e4070d65d7b66d",
+          "message": "add `schema_url` to `TracerProvider.get_tracer` (#2154)\n\n* add schema_url to TracerProvider.get_tracer\r\n\r\n* update CHANGELOG\r\n\r\n* fix CHANGELOG\r\n\r\n* modify tests and optional parameter in InstrumentationInfo\r\n\r\n* fixed syntax\r\n\r\n* update instrumentation_library_version typed Optional\r\n\r\n* resolve syntax error\r\n\r\n* fix lint failures\r\n\r\n* resolve lint failure",
+          "timestamp": "2021-09-29T16:10:43+02:00",
+          "tree_id": "524f0b233df5d1a5f459fc09e9b8717e9d0e5793",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/82a5be2e294ebcf6490b67d631e4070d65d7b66d"
+        },
+        "date": 1632924711123,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 111226.16660969473,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000019450645572092776",
+            "extra": "mean: 8.990690144964843 usec\nrounds: 13587"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 199592.43595496294,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001323845785064937",
+            "extra": "mean: 5.010209907081073 usec\nrounds: 60603"
           }
         ]
       }
