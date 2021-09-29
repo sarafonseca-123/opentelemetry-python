@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632940324913,
+  "lastUpdate": 1632940326781,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -48178,44 +48178,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "0dda25fafdd512136c22aa3bb68423cd4237d048",
-          "message": "adding workflow to update website (#1789)",
-          "timestamp": "2021-04-26T09:11:52-07:00",
-          "tree_id": "9ac247c98893117a4d0d5796bf84552a02351cc3",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/0dda25fafdd512136c22aa3bb68423cd4237d048"
-        },
-        "date": 1619453569086,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 83631.57542516355,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000008582068961866083",
-            "extra": "mean: 11.957206293391362 usec\nrounds: 11377"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 153759.92365433296,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00001678920503681394",
-            "extra": "mean: 6.5036452687638935 usec\nrounds: 42917"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "lechen@microsoft.com",
             "name": "Leighton Chen",
             "username": "lzchen"
@@ -51972,6 +51934,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000008420468852607607",
             "extra": "mean: 9.357805054408148 usec\nrounds: 36364"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "93e53993e73834772c90a85d3963eb11021886cc",
+          "message": "add assertTraceResponseHeaderMatchesSpan method (#2159)\n\n* add assertTraceResponseHeaderMatchesSpan method\r\n\r\n* fix lint\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2021-09-30T00:00:47+05:30",
+          "tree_id": "4d3bf37878dace54ba0c35563b190980047a4ea7",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/93e53993e73834772c90a85d3963eb11021886cc"
+        },
+        "date": 1632940309169,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 136001.83875555426,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000017470839786599463",
+            "extra": "mean: 7.352841764127695 usec\nrounds: 13423"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 206323.08961166165,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000012565143914442764",
+            "extra": "mean: 4.846767280783676 usec\nrounds: 64103"
           }
         ]
       }
