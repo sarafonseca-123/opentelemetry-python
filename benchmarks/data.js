@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632940351382,
+  "lastUpdate": 1632940384024,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -65366,6 +65366,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000002250811167168901",
             "extra": "mean: 1.4552427220425672 usec\nrounds: 102041"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "93e53993e73834772c90a85d3963eb11021886cc",
+          "message": "add assertTraceResponseHeaderMatchesSpan method (#2159)\n\n* add assertTraceResponseHeaderMatchesSpan method\r\n\r\n* fix lint\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2021-09-30T00:00:47+05:30",
+          "tree_id": "4d3bf37878dace54ba0c35563b190980047a4ea7",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/93e53993e73834772c90a85d3963eb11021886cc"
+        },
+        "date": 1632940368444,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 658589.1521091211,
+            "unit": "iter/sec",
+            "range": "stddev: 1.7987838754383212e-7",
+            "extra": "mean: 1.5183973146193754 usec\nrounds: 68966"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 956678.9814686032,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001970085806073827",
+            "extra": "mean: 1.0452827117252197 usec\nrounds: 103093"
           }
         ]
       }
