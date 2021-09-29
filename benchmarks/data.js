@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632940408819,
+  "lastUpdate": 1632940415519,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -26620,44 +26620,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "0dda25fafdd512136c22aa3bb68423cd4237d048",
-          "message": "adding workflow to update website (#1789)",
-          "timestamp": "2021-04-26T09:11:52-07:00",
-          "tree_id": "9ac247c98893117a4d0d5796bf84552a02351cc3",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/0dda25fafdd512136c22aa3bb68423cd4237d048"
-        },
-        "date": 1619453664000,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 1852.0785028117218,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000828654489431852",
-            "extra": "mean: 539.9339166681413 usec\nrounds: 192"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 2452.1229020249566,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0010377443306912016",
-            "extra": "mean: 407.8099018504344 usec\nrounds: 4269"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "lechen@microsoft.com",
             "name": "Leighton Chen",
             "username": "lzchen"
@@ -30414,6 +30376,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008703255317430695",
             "extra": "mean: 220.34869689436584 usec\nrounds: 6021"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "93e53993e73834772c90a85d3963eb11021886cc",
+          "message": "add assertTraceResponseHeaderMatchesSpan method (#2159)\n\n* add assertTraceResponseHeaderMatchesSpan method\r\n\r\n* fix lint\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2021-09-30T00:00:47+05:30",
+          "tree_id": "4d3bf37878dace54ba0c35563b190980047a4ea7",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/93e53993e73834772c90a85d3963eb11021886cc"
+        },
+        "date": 1632940397089,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2727.4009772395584,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000036070467321497944",
+            "extra": "mean: 366.649424981916 usec\nrounds: 1393"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4718.272637387346,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0009170599522339141",
+            "extra": "mean: 211.94197047369673 usec\nrounds: 6435"
           }
         ]
       }
