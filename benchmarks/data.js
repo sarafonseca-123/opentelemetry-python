@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632944408657,
+  "lastUpdate": 1632944411331,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -64104,6 +64104,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00003070224563149691",
             "extra": "mean: 59.56008858749162 usec\nrounds: 8850"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b20a6c5095717981ffba11d8244aa10a8f22890a",
+          "message": "updating bootstrap_gen (#2158)\n\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2021-09-29T19:39:03Z",
+          "tree_id": "b7a8d28a0177fb84da13eb5c275399c0644a5578",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/b20a6c5095717981ffba11d8244aa10a8f22890a"
+        },
+        "date": 1632944394584,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 24253.67722274495,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000015405792491929708",
+            "extra": "mean: 41.23086123460924 usec\nrounds: 5621"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 16236.95534233014,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00002805633649529462",
+            "extra": "mean: 61.587901113023044 usec\nrounds: 7008"
           }
         ]
       }
