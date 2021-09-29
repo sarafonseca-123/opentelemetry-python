@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632940326781,
+  "lastUpdate": 1632940328773,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -64028,6 +64028,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00001582420143437498",
             "extra": "mean: 53.058763490539526 usec\nrounds: 4114"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "93e53993e73834772c90a85d3963eb11021886cc",
+          "message": "add assertTraceResponseHeaderMatchesSpan method (#2159)\n\n* add assertTraceResponseHeaderMatchesSpan method\r\n\r\n* fix lint\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2021-09-30T00:00:47+05:30",
+          "tree_id": "4d3bf37878dace54ba0c35563b190980047a4ea7",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/93e53993e73834772c90a85d3963eb11021886cc"
+        },
+        "date": 1632940304973,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 20798.04953152296,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00016799539128834723",
+            "extra": "mean: 48.081431794088715 usec\nrounds: 2837"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 16789.766834060967,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003070224563149691",
+            "extra": "mean: 59.56008858749162 usec\nrounds: 8850"
           }
         ]
       }
