@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1633377193640,
+  "lastUpdate": 1633377195982,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -41676,44 +41676,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "hakon@aamdal.com",
-            "name": "Håkon Åmdal",
-            "username": "hawkaa"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "46c6eb58b5ae25ca5798073c62e5d167811924c8",
-          "message": "Add \"Typing :: Typed\" tags to all packages with py.types (#1798)\n\nPypi defines a typed classifer (https://pypi.org/classifiers/) that we can use\r\nfor all packages that contain types and the py.types file.",
-          "timestamp": "2021-04-28T16:02:01-07:00",
-          "tree_id": "c4b04c347c4d05081b14a2080bb63802347bbe3b",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/46c6eb58b5ae25ca5798073c62e5d167811924c8"
-        },
-        "date": 1619650970363,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 68163.04016567791,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00001546296750561472",
-            "extra": "mean: 14.670707139373299 usec\nrounds: 8376"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 127090.7445670269,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000010974754020289261",
-            "extra": "mean: 7.868393590790603 usec\nrounds: 40161"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "srikanth.chekuri92@gmail.com",
             "name": "Srikanth Chekuri",
             "username": "lonewolf3739"
@@ -45470,6 +45432,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 7.482267405615881e-7",
             "extra": "mean: 5.645697442492669 usec\nrounds: 55249"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "chalin@users.noreply.github.com",
+            "name": "Patrice Chalin",
+            "username": "chalin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9554bbc4c8e60c7bba16a7f07b2f9fadc9e75d36",
+          "message": "Delete docs-update.yml (#2171)",
+          "timestamp": "2021-10-04T12:51:55-07:00",
+          "tree_id": "ad2f1545821c2ad7692610b39bdc2aa4059774ff",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/9554bbc4c8e60c7bba16a7f07b2f9fadc9e75d36"
+        },
+        "date": 1633377179093,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 96492.60319556529,
+            "unit": "iter/sec",
+            "range": "stddev: 4.2587883094367807e-7",
+            "extra": "mean: 10.363488670455512 usec\nrounds: 10989"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 155230.29154335047,
+            "unit": "iter/sec",
+            "range": "stddev: 4.6456760205862486e-7",
+            "extra": "mean: 6.442041627685371 usec\nrounds: 53474"
           }
         ]
       }
