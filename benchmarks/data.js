@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1633435090353,
+  "lastUpdate": 1633435093886,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -66316,6 +66316,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000002110719642670904",
             "extra": "mean: 1.2142084137504088 usec\nrounds: 98030"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "81902191+oxeye-nikolay@users.noreply.github.com",
+            "name": "Nikolay Sokolik",
+            "username": "oxeye-nikolay"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c9b18c66229da61065846ba9ace25a5f5c2106b8",
+          "message": "Updated bootstrap_gen.py for pika instrumentation in the contrib (#2160)\n\nCo-authored-by: Owais Lone <owais@users.noreply.github.com>\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2021-10-05T11:55:44Z",
+          "tree_id": "9515e73819e8cd35b72b423cc9e6e9e410be21d2",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c9b18c66229da61065846ba9ace25a5f5c2106b8"
+        },
+        "date": 1633435064918,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 463499.99119538756,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000013966165424369277",
+            "extra": "mean: 2.157497344112004 usec\nrounds: 65364"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 692041.0719894489,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000004023473911193273",
+            "extra": "mean: 1.445000940659812 usec\nrounds: 91744"
           }
         ]
       }
