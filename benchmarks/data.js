@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1633435008040,
+  "lastUpdate": 1633435010514,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -59584,44 +59584,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "srikanth.chekuri92@gmail.com",
-            "name": "Srikanth Chekuri",
-            "username": "lonewolf3739"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "a4a5b0a7e8c2a404a85b8ad40c4e60d8c1dfde3b",
-          "message": "Zipkin exporter: Add timeout support and implement shutdown (#1799)\n\nCo-authored-by: alrex <aboten@lightstep.com>",
-          "timestamp": "2021-04-29T08:38:01-07:00",
-          "tree_id": "5d9b39f45c2f5d85f360abd7da7bebcc71c393bf",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a4a5b0a7e8c2a404a85b8ad40c4e60d8c1dfde3b"
-        },
-        "date": 1619710741008,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 67974.7843412653,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000002742084738183197",
-            "extra": "mean: 14.711337589237957 usec\nrounds: 9242"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 130772.85639248244,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000028892235822029724",
-            "extra": "mean: 7.646846811992443 usec\nrounds: 53764"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "ocelotl@users.noreply.github.com",
             "name": "Diego Hurtado",
             "username": "ocelotl"
@@ -63378,6 +63340,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000015770987806256193",
             "extra": "mean: 8.646595901496788 usec\nrounds: 45870"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "81902191+oxeye-nikolay@users.noreply.github.com",
+            "name": "Nikolay Sokolik",
+            "username": "oxeye-nikolay"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c9b18c66229da61065846ba9ace25a5f5c2106b8",
+          "message": "Updated bootstrap_gen.py for pika instrumentation in the contrib (#2160)\n\nCo-authored-by: Owais Lone <owais@users.noreply.github.com>\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2021-10-05T11:55:44Z",
+          "tree_id": "9515e73819e8cd35b72b423cc9e6e9e410be21d2",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c9b18c66229da61065846ba9ace25a5f5c2106b8"
+        },
+        "date": 1633434994043,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 89159.26604043477,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000015623918662426514",
+            "extra": "mean: 11.215884163363214 usec\nrounds: 7148"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 145262.4304563886,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001233215970494994",
+            "extra": "mean: 6.8840924446753275 usec\nrounds: 46947"
           }
         ]
       }
