@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1633554851207,
+  "lastUpdate": 1633554853367,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -64484,6 +64484,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000001245123354825694",
             "extra": "mean: 47.16896411048923 usec\nrounds: 7133"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "65528f7534f1f5f2e8adc7520b6e696a84569c7d",
+          "message": "update OTLP/HTTP example & test port to 4318 (#2016)\n\n* update OTLP/HTTP port to 4318\r\n\r\n* map 4318->55681 in the collector for now\r\n\r\n* update development status\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2021-10-06T21:13:03Z",
+          "tree_id": "642dad52812000b9ea9d2b760488c96202b5b3b0",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/65528f7534f1f5f2e8adc7520b6e696a84569c7d"
+        },
+        "date": 1633554833508,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 28472.915397793542,
+            "unit": "iter/sec",
+            "range": "stddev: 9.504532243581665e-7",
+            "extra": "mean: 35.121096172592615 usec\nrounds: 6166"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20973.048016858655,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001638696814236227",
+            "extra": "mean: 47.68024176534451 usec\nrounds: 7681"
           }
         ]
       }
