@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1633435120319,
+  "lastUpdate": 1633533626892,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -64370,6 +64370,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000017067813129809716",
             "extra": "mean: 46.562799235126 usec\nrounds: 6799"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "andrew.matteson@appliedbiomath.com",
+            "name": "andrew-matteson",
+            "username": "andrew-matteson"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a0d1267b3aec027b72c39296ea350fa5210332fc",
+          "message": "Update bootstrap_gen.py for jinja2 versions (#2183)",
+          "timestamp": "2021-10-06T20:49:10+05:30",
+          "tree_id": "089f6a682cd0f21695a20a965384ec726f759b08",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a0d1267b3aec027b72c39296ea350fa5210332fc"
+        },
+        "date": 1633533610754,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 29187.388982189666,
+            "unit": "iter/sec",
+            "range": "stddev: 8.618666733654132e-7",
+            "extra": "mean: 34.26137228685329 usec\nrounds: 6358"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 21200.380777020804,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001245123354825694",
+            "extra": "mean: 47.16896411048923 usec\nrounds: 7133"
           }
         ]
       }
