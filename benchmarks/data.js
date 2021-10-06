@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1633554866343,
+  "lastUpdate": 1633554890997,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -48178,44 +48178,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "ocelotl@users.noreply.github.com",
-            "name": "Diego Hurtado",
-            "username": "ocelotl"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "de8a47405ed21e2f5921f13dfe05bc8ede90790b",
-          "message": "Add example for Django with auto instrumentation (#1803)",
-          "timestamp": "2021-04-30T16:14:30-07:00",
-          "tree_id": "925f34c926f981224dfca6a856cf0ef561030e2f",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/de8a47405ed21e2f5921f13dfe05bc8ede90790b"
-        },
-        "date": 1619824522314,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 99706.96082884877,
-            "unit": "iter/sec",
-            "range": "stddev: 9.408521398309106e-7",
-            "extra": "mean: 10.029390041448986 usec\nrounds: 13737"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 165979.50179334066,
-            "unit": "iter/sec",
-            "range": "stddev: 7.135644893548684e-7",
-            "extra": "mean: 6.024840351943515 usec\nrounds: 53192"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "way@whoop.com",
             "name": "Marcus Way",
             "username": "marcusway"
@@ -51972,6 +51934,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000012286531980981733",
             "extra": "mean: 5.086107307913273 usec\nrounds: 52354"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "65528f7534f1f5f2e8adc7520b6e696a84569c7d",
+          "message": "update OTLP/HTTP example & test port to 4318 (#2016)\n\n* update OTLP/HTTP port to 4318\r\n\r\n* map 4318->55681 in the collector for now\r\n\r\n* update development status\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2021-10-06T21:13:03Z",
+          "tree_id": "642dad52812000b9ea9d2b760488c96202b5b3b0",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/65528f7534f1f5f2e8adc7520b6e696a84569c7d"
+        },
+        "date": 1633554871743,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 97680.4716996087,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000008185673032034503",
+            "extra": "mean: 10.237460800509279 usec\nrounds: 12092"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 150104.21123090977,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000030430382794422352",
+            "extra": "mean: 6.6620382719420865 usec\nrounds: 48077"
           }
         ]
       }
