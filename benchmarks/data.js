@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1633533633361,
+  "lastUpdate": 1633533637659,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -41686,44 +41686,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "d598ab434be3e69207dd359fc6ee5115252df0ee",
-          "message": "Explain usage of --noreload (#1795)",
-          "timestamp": "2021-04-30T10:04:15-07:00",
-          "tree_id": "2f7fd9f3fbce0180f1c6627f392693a4d203a677",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/d598ab434be3e69207dd359fc6ee5115252df0ee"
-        },
-        "date": 1619802300517,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 83619.15786966021,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000020296589771845553",
-            "extra": "mean: 11.958981954335526 usec\nrounds: 12690"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 152698.09236705347,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000014394284420134354",
-            "extra": "mean: 6.548870287103616 usec\nrounds: 56494"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "ocelotl@users.noreply.github.com",
-            "name": "Diego Hurtado",
-            "username": "ocelotl"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "de8a47405ed21e2f5921f13dfe05bc8ede90790b",
           "message": "Add example for Django with auto instrumentation (#1803)",
           "timestamp": "2021-04-30T16:14:30-07:00",
@@ -45470,6 +45432,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00001692615323965513",
             "extra": "mean: 8.7012196003053 usec\nrounds: 43479"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "andrew.matteson@appliedbiomath.com",
+            "name": "andrew-matteson",
+            "username": "andrew-matteson"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a0d1267b3aec027b72c39296ea350fa5210332fc",
+          "message": "Update bootstrap_gen.py for jinja2 versions (#2183)",
+          "timestamp": "2021-10-06T20:49:10+05:30",
+          "tree_id": "089f6a682cd0f21695a20a965384ec726f759b08",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a0d1267b3aec027b72c39296ea350fa5210332fc"
+        },
+        "date": 1633533618161,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 94299.21325734013,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000015210459974862037",
+            "extra": "mean: 10.604542344070524 usec\nrounds: 13532"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 152135.34123412566,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000012094038614075166",
+            "extra": "mean: 6.573094666156957 usec\nrounds: 48539"
           }
         ]
       }
