@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1633533651126,
+  "lastUpdate": 1633533694474,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -66010,6 +66010,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00004023653842313435",
             "extra": "mean: 5.239971431582936 usec\nrounds: 119048"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "andrew.matteson@appliedbiomath.com",
+            "name": "andrew-matteson",
+            "username": "andrew-matteson"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a0d1267b3aec027b72c39296ea350fa5210332fc",
+          "message": "Update bootstrap_gen.py for jinja2 versions (#2183)",
+          "timestamp": "2021-10-06T20:49:10+05:30",
+          "tree_id": "089f6a682cd0f21695a20a965384ec726f759b08",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a0d1267b3aec027b72c39296ea350fa5210332fc"
+        },
+        "date": 1633533675877,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 252426.0215603869,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003262890306748188",
+            "extra": "mean: 3.961556712015817 usec\nrounds: 175439"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 154788.9002752524,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000044254692962401104",
+            "extra": "mean: 6.460411555491099 usec\nrounds: 104167"
           }
         ]
       }
