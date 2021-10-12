@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634063483989,
+  "lastUpdate": 1634071370903,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -64674,6 +64674,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000005937028370307895",
             "extra": "mean: 48.15367835104311 usec\nrounds: 7617"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaronabbott@google.com",
+            "name": "Aaron Abbott",
+            "username": "aabmass"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "78672025f7fb49737356e5c50f7cb33992a3da55",
+          "message": "Fix race in `set_tracer_provider()` (#2182)\n\n* Fix race in set_tracer_provider\r\n\r\n* refactor _reset_globals to a test util\r\n\r\n* get rid of \"Mixin\" name and simplify code a bit\r\n\r\n* add some comments to concurrency_test.py\r\n\r\n* actually respect log option\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>\r\nCo-authored-by: Owais Lone <owais@users.noreply.github.com>",
+          "timestamp": "2021-10-12T20:41:35Z",
+          "tree_id": "1147bc1ba9c83ea6ae370401354691b8500799fd",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/78672025f7fb49737356e5c50f7cb33992a3da55"
+        },
+        "date": 1634071354739,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 29285.077628450494,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001129422977052713",
+            "extra": "mean: 34.14708380450044 usec\nrounds: 6014"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 21206.447954180752,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000014166803132212515",
+            "extra": "mean: 47.15546904227564 usec\nrounds: 7268"
           }
         ]
       }
