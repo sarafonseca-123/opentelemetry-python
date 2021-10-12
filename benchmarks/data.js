@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634071372842,
+  "lastUpdate": 1634071374497,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -59584,44 +59584,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "owais@users.noreply.github.com",
-            "name": "Owais Lone",
-            "username": "owais"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "4fd46819bd7550d201a2642b962ccc38018ec123",
-          "message": "Added `eachdist.py format` command (#1812)",
-          "timestamp": "2021-05-05T15:36:45-07:00",
-          "tree_id": "0dcacf430ab59122417d6428105ea5af813b4f7c",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/4fd46819bd7550d201a2642b962ccc38018ec123"
-        },
-        "date": 1620254268251,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 43073.12010980266,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000053316521530717134",
-            "extra": "mean: 23.216335325854843 usec\nrounds: 6859"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 87125.41826885394,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00017759661394076872",
-            "extra": "mean: 11.477706734378861 usec\nrounds: 42736"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "hairmare@purplehaze.ch",
             "name": "Lucas Bickel",
             "username": "hairmare"
@@ -63378,6 +63340,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000010212450155701158",
             "extra": "mean: 9.66100023761796 usec\nrounds: 37878"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaronabbott@google.com",
+            "name": "Aaron Abbott",
+            "username": "aabmass"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "78672025f7fb49737356e5c50f7cb33992a3da55",
+          "message": "Fix race in `set_tracer_provider()` (#2182)\n\n* Fix race in set_tracer_provider\r\n\r\n* refactor _reset_globals to a test util\r\n\r\n* get rid of \"Mixin\" name and simplify code a bit\r\n\r\n* add some comments to concurrency_test.py\r\n\r\n* actually respect log option\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>\r\nCo-authored-by: Owais Lone <owais@users.noreply.github.com>",
+          "timestamp": "2021-10-12T20:41:35Z",
+          "tree_id": "1147bc1ba9c83ea6ae370401354691b8500799fd",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/78672025f7fb49737356e5c50f7cb33992a3da55"
+        },
+        "date": 1634071356680,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 74618.71401621017,
+            "unit": "iter/sec",
+            "range": "stddev: 4.6720063572837033e-7",
+            "extra": "mean: 13.401463871151144 usec\nrounds: 10684"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 122891.81106139919,
+            "unit": "iter/sec",
+            "range": "stddev: 3.6132268229768983e-7",
+            "extra": "mean: 8.137238692823724 usec\nrounds: 43667"
           }
         ]
       }
