@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634071451272,
+  "lastUpdate": 1634071519227,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -30422,44 +30422,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "owais@users.noreply.github.com",
-            "name": "Owais Lone",
-            "username": "owais"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "4fd46819bd7550d201a2642b962ccc38018ec123",
-          "message": "Added `eachdist.py format` command (#1812)",
-          "timestamp": "2021-05-05T15:36:45-07:00",
-          "tree_id": "0dcacf430ab59122417d6428105ea5af813b4f7c",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/4fd46819bd7550d201a2642b962ccc38018ec123"
-        },
-        "date": 1620254358812,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2107.1716269346616,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000423964400672015",
-            "extra": "mean: 474.5697916665274 usec\nrounds: 96"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 2855.3976723416963,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0009605665505236088",
-            "extra": "mean: 350.21391580105393 usec\nrounds: 4525"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "hairmare@purplehaze.ch",
             "name": "Lucas Bickel",
             "username": "hairmare"
@@ -34216,6 +34178,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008173667759142167",
             "extra": "mean: 212.89170303201587 usec\nrounds: 7058"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaronabbott@google.com",
+            "name": "Aaron Abbott",
+            "username": "aabmass"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "78672025f7fb49737356e5c50f7cb33992a3da55",
+          "message": "Fix race in `set_tracer_provider()` (#2182)\n\n* Fix race in set_tracer_provider\r\n\r\n* refactor _reset_globals to a test util\r\n\r\n* get rid of \"Mixin\" name and simplify code a bit\r\n\r\n* add some comments to concurrency_test.py\r\n\r\n* actually respect log option\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>\r\nCo-authored-by: Owais Lone <owais@users.noreply.github.com>",
+          "timestamp": "2021-10-12T20:41:35Z",
+          "tree_id": "1147bc1ba9c83ea6ae370401354691b8500799fd",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/78672025f7fb49737356e5c50f7cb33992a3da55"
+        },
+        "date": 1634071501233,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3241.976235921844,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007178110867360618",
+            "extra": "mean: 308.4538340903827 usec\nrounds: 1320"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 6046.877210249449,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007207527866140616",
+            "extra": "mean: 165.37461655497177 usec\nrounds: 6113"
           }
         ]
       }
