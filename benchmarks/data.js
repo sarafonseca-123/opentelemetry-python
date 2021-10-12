@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634056799482,
+  "lastUpdate": 1634056801623,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -41676,44 +41676,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "way@whoop.com",
-            "name": "Marcus Way",
-            "username": "marcusway"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "300ce1bc601440e5560523296b426592f54bf7c5",
-          "message": "Update example collector-config.yaml (#1805)\n\nIt seems that there have been some changes to the open-telemetry collector image that cause issues in running this example. I updated the config file to avoid these, but an alternative would be to pin the image to a specific version rather than using the `latest` tag.\r\n\r\nAnyway, the issues I ran into running the image with the given yaml file were:\r\n\r\n1.  Empty configuration for the OLTP receiver\r\n```Error: cannot load configuration: error reading receivers configuration for otlp: empty config for OTLP receiver```, which is fixed by adding the \r\n```protocols:\r\n    grpc:\r\n    http:\r\n```\r\nbit.\r\n\r\n2.  `unknown processors type \"queued_retry\" for queued_retry`. It looks like this processor was [removed](https://github.com/open-telemetry/opentelemetry-operator/issues/18) from the collector, so I just dropped the references to it.",
-          "timestamp": "2021-05-02T15:28:39-07:00",
-          "tree_id": "6a947f2bae4d0864fbafa8aeb36a84e73a67fd80",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/300ce1bc601440e5560523296b426592f54bf7c5"
-        },
-        "date": 1619994577783,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 77761.70803469389,
-            "unit": "iter/sec",
-            "range": "stddev: 7.574933821168842e-7",
-            "extra": "mean: 12.859799833021201 usec\nrounds: 10776"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 140738.85092933974,
-            "unit": "iter/sec",
-            "range": "stddev: 3.882663309000537e-7",
-            "extra": "mean: 7.105358565859447 usec\nrounds: 52908"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "aboten@lightstep.com",
             "name": "alrex",
             "username": "codeboten"
@@ -45470,6 +45432,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 4.6056472344078575e-7",
             "extra": "mean: 5.643631911956934 usec\nrounds: 54055"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2a94c3d556f456160c4734be4bbd11fb34693d7c",
+          "message": "Update RELEASING.md (#2177)",
+          "timestamp": "2021-10-12T09:38:36-07:00",
+          "tree_id": "4abeb297fb74858bdfe34171fa37b351a0c71bf3",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/2a94c3d556f456160c4734be4bbd11fb34693d7c"
+        },
+        "date": 1634056781958,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 96500.81222237121,
+            "unit": "iter/sec",
+            "range": "stddev: 3.833593923182626e-7",
+            "extra": "mean: 10.36260708040109 usec\nrounds: 12005"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 155051.55045008124,
+            "unit": "iter/sec",
+            "range": "stddev: 3.4537392007775144e-7",
+            "extra": "mean: 6.449467916297615 usec\nrounds: 53189"
           }
         ]
       }
