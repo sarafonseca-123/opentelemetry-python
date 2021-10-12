@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634063377326,
+  "lastUpdate": 1634063382785,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -59584,44 +59584,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "cc519287703e861f030874b22a3074bb2a596a9f",
-          "message": "fix otlp grpc exporter bug when no scheme is passed in (#1806)",
-          "timestamp": "2021-05-04T11:28:33-07:00",
-          "tree_id": "57d5b944e0b953daa79cb83aab52277c8ad78218",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/cc519287703e861f030874b22a3074bb2a596a9f"
-        },
-        "date": 1620152968623,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 62289.80329700526,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000023155487052032837",
-            "extra": "mean: 16.053991938807066 usec\nrounds: 9552"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 117514.9083784293,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000017734661440466527",
-            "extra": "mean: 8.509558606638517 usec\nrounds: 48544"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "owais@users.noreply.github.com",
             "name": "Owais Lone",
             "username": "owais"
@@ -63378,6 +63340,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00001651592147313263",
             "extra": "mean: 9.325732552842773 usec\nrounds: 44248"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0770fcd72f3dce435904e17e99a3795af5d64a08",
+          "message": "Update contrib SHA for Github Actions workflow (#2191)",
+          "timestamp": "2021-10-12T18:28:27Z",
+          "tree_id": "5b118a97f1d8b19799cfed4c8a23b96f754a937e",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/0770fcd72f3dce435904e17e99a3795af5d64a08"
+        },
+        "date": 1634063363532,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 61216.90893208189,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000024799620651865094",
+            "extra": "mean: 16.335355989788155 usec\nrounds: 9416"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 103508.95097861651,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000010212450155701158",
+            "extra": "mean: 9.66100023761796 usec\nrounds: 37878"
           }
         ]
       }
