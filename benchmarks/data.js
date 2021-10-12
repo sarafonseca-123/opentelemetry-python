@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634063479060,
+  "lastUpdate": 1634063481908,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -30422,44 +30422,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "cc519287703e861f030874b22a3074bb2a596a9f",
-          "message": "fix otlp grpc exporter bug when no scheme is passed in (#1806)",
-          "timestamp": "2021-05-04T11:28:33-07:00",
-          "tree_id": "57d5b944e0b953daa79cb83aab52277c8ad78218",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/cc519287703e861f030874b22a3074bb2a596a9f"
-        },
-        "date": 1620153021498,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2900.708764877497,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000009607001603733657",
-            "extra": "mean: 344.74333035713505 usec\nrounds: 112"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3536.150641915522,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0008539978716628601",
-            "extra": "mean: 282.7933822011335 usec\nrounds: 4461"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "owais@users.noreply.github.com",
             "name": "Owais Lone",
             "username": "owais"
@@ -34216,6 +34178,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008746490170254377",
             "extra": "mean: 234.83202154853984 usec\nrounds: 5708"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0770fcd72f3dce435904e17e99a3795af5d64a08",
+          "message": "Update contrib SHA for Github Actions workflow (#2191)",
+          "timestamp": "2021-10-12T18:28:27Z",
+          "tree_id": "5b118a97f1d8b19799cfed4c8a23b96f754a937e",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/0770fcd72f3dce435904e17e99a3795af5d64a08"
+        },
+        "date": 1634063463616,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2177.802284633394,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00012402966230932492",
+            "extra": "mean: 459.1785062657043 usec\nrounds: 1197"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4697.223920697436,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008173667759142167",
+            "extra": "mean: 212.89170303201587 usec\nrounds: 7058"
           }
         ]
       }
