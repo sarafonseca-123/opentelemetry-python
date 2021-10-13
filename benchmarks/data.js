@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634162411457,
+  "lastUpdate": 1634162413314,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -65588,6 +65588,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000022131593857153013",
             "extra": "mean: 80.78709430712205 usec\nrounds: 5217"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "benjaminsky@gmail.com",
+            "name": "Ben Campbell",
+            "username": "benjaminsky"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e74e1f630118fad8e98e900854d4c51fdadd2bf0",
+          "message": "Adding BatchSpanProcessor thread name (#2186)\n\n* Adding thread name\r\n\r\n* Updating CHANGELOG",
+          "timestamp": "2021-10-13T21:59:06Z",
+          "tree_id": "e51c9d153bfdd9fa4dbea679d1f2573edcc70dde",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/e74e1f630118fad8e98e900854d4c51fdadd2bf0"
+        },
+        "date": 1634162396690,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 21978.5596472163,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001249058126897648",
+            "extra": "mean: 45.49888691758085 usec\nrounds: 5129"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 16332.168018686843,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000029682955435351957",
+            "extra": "mean: 61.22885821746543 usec\nrounds: 5981"
           }
         ]
       }
