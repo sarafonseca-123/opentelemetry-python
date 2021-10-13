@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634162427870,
+  "lastUpdate": 1634162431683,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -48188,44 +48188,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "3a0d38f0bc2af7467d4bec8d5e501d7a172a3154",
-          "message": "adding documentation for using opentelemetry-distro (#1813)",
-          "timestamp": "2021-05-07T08:48:36-07:00",
-          "tree_id": "5cece6e69d5586966c4b25b3f1696ad55c2f888f",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/3a0d38f0bc2af7467d4bec8d5e501d7a172a3154"
-        },
-        "date": 1620402582998,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 86760.2405015005,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000008347802711434476",
-            "extra": "mean: 11.526016919958922 usec\nrounds: 12707"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 160271.33155023595,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000024207253911310716",
-            "extra": "mean: 6.239419054720694 usec\nrounds: 54055"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "64d0426f3b810f6a6f253b2bc646cd4b16e16f9a",
           "message": "various fixes to the documentation (#1828)",
           "timestamp": "2021-05-07T14:10:44-07:00",
@@ -51972,6 +51934,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000005412627038310754",
             "extra": "mean: 6.490585999293719 usec\nrounds: 57140"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "benjaminsky@gmail.com",
+            "name": "Ben Campbell",
+            "username": "benjaminsky"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e74e1f630118fad8e98e900854d4c51fdadd2bf0",
+          "message": "Adding BatchSpanProcessor thread name (#2186)\n\n* Adding thread name\r\n\r\n* Updating CHANGELOG",
+          "timestamp": "2021-10-13T21:59:06Z",
+          "tree_id": "e51c9d153bfdd9fa4dbea679d1f2573edcc70dde",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/e74e1f630118fad8e98e900854d4c51fdadd2bf0"
+        },
+        "date": 1634162410698,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 100183.2543294931,
+            "unit": "iter/sec",
+            "range": "stddev: 5.057701453533805e-7",
+            "extra": "mean: 9.981708087771796 usec\nrounds: 11709"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 158451.87641512573,
+            "unit": "iter/sec",
+            "range": "stddev: 4.6544927563394465e-7",
+            "extra": "mean: 6.3110644229931046 usec\nrounds: 54049"
           }
         ]
       }
