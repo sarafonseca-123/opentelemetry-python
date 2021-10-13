@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634162426360,
+  "lastUpdate": 1634162427870,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -59594,44 +59594,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "3a0d38f0bc2af7467d4bec8d5e501d7a172a3154",
-          "message": "adding documentation for using opentelemetry-distro (#1813)",
-          "timestamp": "2021-05-07T08:48:36-07:00",
-          "tree_id": "5cece6e69d5586966c4b25b3f1696ad55c2f888f",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/3a0d38f0bc2af7467d4bec8d5e501d7a172a3154"
-        },
-        "date": 1620402576069,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 61956.46572088611,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000002454323969592294",
-            "extra": "mean: 16.140365470570902 usec\nrounds: 9615"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 116919.60880350375,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000001618773185468217",
-            "extra": "mean: 8.552885270772757 usec\nrounds: 54049"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "64d0426f3b810f6a6f253b2bc646cd4b16e16f9a",
           "message": "various fixes to the documentation (#1828)",
           "timestamp": "2021-05-07T14:10:44-07:00",
@@ -63378,6 +63340,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00004288528683735117",
             "extra": "mean: 11.250940075691773 usec\nrounds: 29070"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "benjaminsky@gmail.com",
+            "name": "Ben Campbell",
+            "username": "benjaminsky"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e74e1f630118fad8e98e900854d4c51fdadd2bf0",
+          "message": "Adding BatchSpanProcessor thread name (#2186)\n\n* Adding thread name\r\n\r\n* Updating CHANGELOG",
+          "timestamp": "2021-10-13T21:59:06Z",
+          "tree_id": "e51c9d153bfdd9fa4dbea679d1f2573edcc70dde",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/e74e1f630118fad8e98e900854d4c51fdadd2bf0"
+        },
+        "date": 1634162402231,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 57326.652564754855,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000011437790917084088",
+            "extra": "mean: 17.443893115343222 usec\nrounds: 8439"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 97553.65648465087,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000009029962563374969",
+            "extra": "mean: 10.250769023274287 usec\nrounds: 30029"
           }
         ]
       }
