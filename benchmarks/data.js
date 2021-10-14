@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634244417896,
+  "lastUpdate": 1634244437911,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -69508,6 +69508,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000026393313370545573",
             "extra": "mean: 1.1519766737328758 usec\nrounds: 94340"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3ef7cb50c8cb0117b39078192824f007efe7b932",
+          "message": "Move instrumentation and distro to contrib (#2196)\n\nNow that SDK does not depend on opentelemetry-instrumentation\r\nanymore and opentelemetry-instrumentation has actual build time\r\ndependencies on the contrib repo, it makes maintanence a lot\r\neasier if we move opentelemetry-instrumentation to contrib repo.\r\nopentelemetry-distro depends on opentelemetry-instrumentation\r\nand is being moved as well. Neither of the two packages are\r\nreally part of \"core\" Otel python anyway.",
+          "timestamp": "2021-10-15T02:14:54+05:30",
+          "tree_id": "02e29c8034b5109a3c3bb3840dd734e52337bfc7",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/3ef7cb50c8cb0117b39078192824f007efe7b932"
+        },
+        "date": 1634244417884,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 508443.67692337837,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000033204766377995263",
+            "extra": "mean: 1.9667861857404598 usec\nrounds: 74633"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 727240.1956360443,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000033804370655910566",
+            "extra": "mean: 1.3750615078768724 usec\nrounds: 92593"
           }
         ]
       }
