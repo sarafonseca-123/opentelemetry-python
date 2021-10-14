@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634177914480,
+  "lastUpdate": 1634177916006,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -65130,6 +65130,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000024482699700852624",
             "extra": "mean: 68.09046478485826 usec\nrounds: 9882"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a746d577ebc98b1b0b4e97c3d1b3df6826091e93",
+          "message": "Move _SUPPRESS_INTRUMENTATION key from instrumentation to api (#2187)\n\nThis will continue to be part of the internal API but live in the API\r\ncontext package.",
+          "timestamp": "2021-10-14T02:17:28Z",
+          "tree_id": "f0601e888d8b3f156388e380aeb8febbc8ca4cf5",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a746d577ebc98b1b0b4e97c3d1b3df6826091e93"
+        },
+        "date": 1634177899121,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 29672.06610265862,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010335569388701642",
+            "extra": "mean: 33.701731336814454 usec\nrounds: 5345"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 21630.616250451374,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000011597578513977158",
+            "extra": "mean: 46.23076792734153 usec\nrounds: 7028"
           }
         ]
       }
