@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634178044764,
+  "lastUpdate": 1634220891413,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -65206,6 +65206,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000011597578513977158",
             "extra": "mean: 46.23076792734153 usec\nrounds: 7028"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nathanielruiz98@gmail.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b0a9ee3d5a95c17547e79d62450cffca17fe6f71",
+          "message": "Add AWS Lambda Instrumentation to boostrap_gen.py (#2197)",
+          "timestamp": "2021-10-14T19:43:33+05:30",
+          "tree_id": "1d42d1b3976a18f82815c23490e4707077041030",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/b0a9ee3d5a95c17547e79d62450cffca17fe6f71"
+        },
+        "date": 1634220873192,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 29215.460422009055,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000014876985203137284",
+            "extra": "mean: 34.22845252326279 usec\nrounds: 4855"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20997.082578861795,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000018417477359896393",
+            "extra": "mean: 47.625664005661484 usec\nrounds: 8643"
           }
         ]
       }
