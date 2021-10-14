@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634177937169,
+  "lastUpdate": 1634177961168,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -68786,6 +68786,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000022089195860894757",
             "extra": "mean: 1.1003653747834623 usec\nrounds: 109891"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a746d577ebc98b1b0b4e97c3d1b3df6826091e93",
+          "message": "Move _SUPPRESS_INTRUMENTATION key from instrumentation to api (#2187)\n\nThis will continue to be part of the internal API but live in the API\r\ncontext package.",
+          "timestamp": "2021-10-14T02:17:28Z",
+          "tree_id": "f0601e888d8b3f156388e380aeb8febbc8ca4cf5",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a746d577ebc98b1b0b4e97c3d1b3df6826091e93"
+        },
+        "date": 1634177944043,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 627884.4677216319,
+            "unit": "iter/sec",
+            "range": "stddev: 2.2477104612161996e-7",
+            "extra": "mean: 1.5926496854248546 usec\nrounds: 68028"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 982261.4393217302,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000002488918889703965",
+            "extra": "mean: 1.018058899563972 usec\nrounds: 107539"
           }
         ]
       }
