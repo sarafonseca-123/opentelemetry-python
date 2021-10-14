@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634235587875,
+  "lastUpdate": 1634235589835,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -68290,6 +68290,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000012045050908668507",
             "extra": "mean: 5.548795797138818 usec\nrounds: 113637"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "chalin@users.noreply.github.com",
+            "name": "Patrice Chalin",
+            "username": "chalin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3bf379da512fe6645c8d6b0391448da014f4c0ca",
+          "message": "Remove redundant title from Getting started page (#2204)",
+          "timestamp": "2021-10-14T18:17:58Z",
+          "tree_id": "bd6d3076f08bdbdd79ecd1b25d2346f177005f74",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/3bf379da512fe6645c8d6b0391448da014f4c0ca"
+        },
+        "date": 1634235569354,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 267453.94855948695,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000021642316159716256",
+            "extra": "mean: 3.7389614376083413 usec\nrounds: 43475"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 160604.99765520229,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003925256803960516",
+            "extra": "mean: 6.226456303351581 usec\nrounds: 140846"
           }
         ]
       }
