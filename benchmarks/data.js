@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634244369474,
+  "lastUpdate": 1634244371993,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -48178,44 +48178,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "owais@users.noreply.github.com",
-            "name": "Owais Lone",
-            "username": "owais"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "f7358e981916f35fbb8ca6a740ce94fcdd7068b6",
-          "message": "Add support for OTEL_SERVICE_NAME env var. (#1829)\n\nSpec PR: https://github.com/open-telemetry/opentelemetry-specification/pull/1677",
-          "timestamp": "2021-05-10T13:15:02-07:00",
-          "tree_id": "57c617166d8f67bc8edc5e38d1cbe89472621be8",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/f7358e981916f35fbb8ca6a740ce94fcdd7068b6"
-        },
-        "date": 1620677747107,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 125742.27357499283,
-            "unit": "iter/sec",
-            "range": "stddev: 4.385099845708982e-7",
-            "extra": "mean: 7.95277492261661 usec\nrounds: 17123"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 196848.20563649718,
-            "unit": "iter/sec",
-            "range": "stddev: 3.495500495121803e-7",
-            "extra": "mean: 5.080056466689946 usec\nrounds: 57804"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "kristian@spritelink.net",
             "name": "Kristian Larsson",
             "username": "plajjan"
@@ -51972,6 +51934,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 3.4470197779141537e-7",
             "extra": "mean: 5.189643707245208 usec\nrounds: 58480"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3ef7cb50c8cb0117b39078192824f007efe7b932",
+          "message": "Move instrumentation and distro to contrib (#2196)\n\nNow that SDK does not depend on opentelemetry-instrumentation\r\nanymore and opentelemetry-instrumentation has actual build time\r\ndependencies on the contrib repo, it makes maintanence a lot\r\neasier if we move opentelemetry-instrumentation to contrib repo.\r\nopentelemetry-distro depends on opentelemetry-instrumentation\r\nand is being moved as well. Neither of the two packages are\r\nreally part of \"core\" Otel python anyway.",
+          "timestamp": "2021-10-15T02:14:54+05:30",
+          "tree_id": "02e29c8034b5109a3c3bb3840dd734e52337bfc7",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/3ef7cb50c8cb0117b39078192824f007efe7b932"
+        },
+        "date": 1634244356555,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 139132.07317464106,
+            "unit": "iter/sec",
+            "range": "stddev: 4.672652141694076e-7",
+            "extra": "mean: 7.187415361408309 usec\nrounds: 14556"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 216042.46620073277,
+            "unit": "iter/sec",
+            "range": "stddev: 5.612447901207731e-7",
+            "extra": "mean: 4.628719610480952 usec\nrounds: 68494"
           }
         ]
       }
