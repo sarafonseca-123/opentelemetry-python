@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634178014670,
+  "lastUpdate": 1634178025267,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -30422,44 +30422,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "mario.jonke@dynatrace.com",
-            "name": "Mario Jonke",
-            "username": "mariojonke"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "8a1cbf7cea2abe35bb68b8d02786a42ab19621d6",
-          "message": "Make propagators conform to spec (#1811)\n\n* do not modify / set an invalid span in the passed context in case\r\n  a propagator did not manage to extract\r\n* in case no context is passed to propagator.extract assume the root\r\n  context as default so that a new trace is started instead of continung\r\n  the current active trace in case extraction fails\r\n* fix also jaeger propagator which compared int with str trace/span ids\r\n  when checking for validity in extract",
-          "timestamp": "2021-05-07T17:50:59-07:00",
-          "tree_id": "d84c37beb92094ea00da87b230ada2f15b300b7a",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/8a1cbf7cea2abe35bb68b8d02786a42ab19621d6"
-        },
-        "date": 1620435183362,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 1880.919541164272,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00004263424797470166",
-            "extra": "mean: 531.6548518502865 usec\nrounds: 27"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 2556.908055568817,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0009971043755813219",
-            "extra": "mean: 391.09736379532706 usec\nrounds: 4005"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "jcchavezs@gmail.com",
             "name": "José Carlos Chávez",
             "username": "jcchavezs"
@@ -34216,6 +34178,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000960397050428252",
             "extra": "mean: 248.7209592239968 usec\nrounds: 6597"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a746d577ebc98b1b0b4e97c3d1b3df6826091e93",
+          "message": "Move _SUPPRESS_INTRUMENTATION key from instrumentation to api (#2187)\n\nThis will continue to be part of the internal API but live in the API\r\ncontext package.",
+          "timestamp": "2021-10-14T02:17:28Z",
+          "tree_id": "f0601e888d8b3f156388e380aeb8febbc8ca4cf5",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a746d577ebc98b1b0b4e97c3d1b3df6826091e93"
+        },
+        "date": 1634178005048,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2633.2994902497635,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00006577584515086414",
+            "extra": "mean: 379.75171593761706 usec\nrounds: 1211"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4978.524839899586,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008889930290448547",
+            "extra": "mean: 200.8627117787303 usec\nrounds: 7123"
           }
         ]
       }
