@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634173058404,
+  "lastUpdate": 1634173086038,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -68368,6 +68368,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000031307184879262337",
             "extra": "mean: 1.281181296377427 usec\nrounds: 104167"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ade44b17da64f00624d9a3bd3f161f68280d6653",
+          "message": "Move BaseConfigurator to SDK (#2188)\n\n* Move _SUPPRESS_INTRUMENTATION key from instrumentation to api\r\n\r\nThis will continue to be part of the internal API but live in the API\r\ncontext package.\r\n\r\n* Move BaseConfigurator from isntrumentation to SDK\r\n\r\nThis allows SDK to not depend on instrumentation package anymore.",
+          "timestamp": "2021-10-14T00:55:44Z",
+          "tree_id": "e529bad51f86a55b1c062fbb1219cb34c7deb30d",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/ade44b17da64f00624d9a3bd3f161f68280d6653"
+        },
+        "date": 1634173065690,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 392617.02529453835,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000006135771503286524",
+            "extra": "mean: 2.5470113000061927 usec\nrounds: 63292"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 601152.5733743648,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000058221988715934175",
+            "extra": "mean: 1.6634712122862134 usec\nrounds: 100001"
           }
         ]
       }
