@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634244437911,
+  "lastUpdate": 1634244490569,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -37874,44 +37874,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "owais@users.noreply.github.com",
-            "name": "Owais Lone",
-            "username": "owais"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "f7358e981916f35fbb8ca6a740ce94fcdd7068b6",
-          "message": "Add support for OTEL_SERVICE_NAME env var. (#1829)\n\nSpec PR: https://github.com/open-telemetry/opentelemetry-specification/pull/1677",
-          "timestamp": "2021-05-10T13:15:02-07:00",
-          "tree_id": "57c617166d8f67bc8edc5e38d1cbe89472621be8",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/f7358e981916f35fbb8ca6a740ce94fcdd7068b6"
-        },
-        "date": 1620677821449,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 1870.9900624565653,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0002873112399325149",
-            "extra": "mean: 534.4763823528939 usec\nrounds: 34"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3160.538817364323,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0009837651498493338",
-            "extra": "mean: 316.4017459636622 usec\nrounds: 4893"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "kristian@spritelink.net",
             "name": "Kristian Larsson",
             "username": "plajjan"
@@ -41668,6 +41630,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007071507957159992",
             "extra": "mean: 142.24513827731423 usec\nrounds: 8765"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3ef7cb50c8cb0117b39078192824f007efe7b932",
+          "message": "Move instrumentation and distro to contrib (#2196)\n\nNow that SDK does not depend on opentelemetry-instrumentation\r\nanymore and opentelemetry-instrumentation has actual build time\r\ndependencies on the contrib repo, it makes maintanence a lot\r\neasier if we move opentelemetry-instrumentation to contrib repo.\r\nopentelemetry-distro depends on opentelemetry-instrumentation\r\nand is being moved as well. Neither of the two packages are\r\nreally part of \"core\" Otel python anyway.",
+          "timestamp": "2021-10-15T02:14:54+05:30",
+          "tree_id": "02e29c8034b5109a3c3bb3840dd734e52337bfc7",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/3ef7cb50c8cb0117b39078192824f007efe7b932"
+        },
+        "date": 1634244473720,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3670.3342598631034,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000011309525356636662",
+            "extra": "mean: 272.4547491315677 usec\nrounds: 1439"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7574.283649899009,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000627666137424018",
+            "extra": "mean: 132.02568668171455 usec\nrounds: 8710"
           }
         ]
       }
