@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634173053628,
+  "lastUpdate": 1634173058404,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -67530,6 +67530,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00003625802950539466",
             "extra": "mean: 4.548050158037901 usec\nrounds: 136987"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ade44b17da64f00624d9a3bd3f161f68280d6653",
+          "message": "Move BaseConfigurator to SDK (#2188)\n\n* Move _SUPPRESS_INTRUMENTATION key from instrumentation to api\r\n\r\nThis will continue to be part of the internal API but live in the API\r\ncontext package.\r\n\r\n* Move BaseConfigurator from isntrumentation to SDK\r\n\r\nThis allows SDK to not depend on instrumentation package anymore.",
+          "timestamp": "2021-10-14T00:55:44Z",
+          "tree_id": "e529bad51f86a55b1c062fbb1219cb34c7deb30d",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/ade44b17da64f00624d9a3bd3f161f68280d6653"
+        },
+        "date": 1634173041595,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 300947.6359042952,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003793274177158267",
+            "extra": "mean: 3.3228372005487743 usec\nrounds: 188680"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 196377.65263851322,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000037337024694945604",
+            "extra": "mean: 5.092229113466253 usec\nrounds: 119048"
           }
         ]
       }
