@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634177918236,
+  "lastUpdate": 1634177922503,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -55782,44 +55782,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "mario.jonke@dynatrace.com",
-            "name": "Mario Jonke",
-            "username": "mariojonke"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "8a1cbf7cea2abe35bb68b8d02786a42ab19621d6",
-          "message": "Make propagators conform to spec (#1811)\n\n* do not modify / set an invalid span in the passed context in case\r\n  a propagator did not manage to extract\r\n* in case no context is passed to propagator.extract assume the root\r\n  context as default so that a new trace is started instead of continung\r\n  the current active trace in case extraction fails\r\n* fix also jaeger propagator which compared int with str trace/span ids\r\n  when checking for validity in extract",
-          "timestamp": "2021-05-07T17:50:59-07:00",
-          "tree_id": "d84c37beb92094ea00da87b230ada2f15b300b7a",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/8a1cbf7cea2abe35bb68b8d02786a42ab19621d6"
-        },
-        "date": 1620435104118,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 105756.0620990821,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000039620261783040105",
-            "extra": "mean: 9.45572272786696 usec\nrounds: 15822"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 187567.97459766644,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000013327724274039665",
-            "extra": "mean: 5.331400534366281 usec\nrounds: 54642"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "jcchavezs@gmail.com",
             "name": "José Carlos Chávez",
             "username": "jcchavezs"
@@ -59576,6 +59538,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000010804392303703076",
             "extra": "mean: 5.647187605028402 usec\nrounds: 59524"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a746d577ebc98b1b0b4e97c3d1b3df6826091e93",
+          "message": "Move _SUPPRESS_INTRUMENTATION key from instrumentation to api (#2187)\n\nThis will continue to be part of the internal API but live in the API\r\ncontext package.",
+          "timestamp": "2021-10-14T02:17:28Z",
+          "tree_id": "f0601e888d8b3f156388e380aeb8febbc8ca4cf5",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a746d577ebc98b1b0b4e97c3d1b3df6826091e93"
+        },
+        "date": 1634177905534,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 112800.29349001836,
+            "unit": "iter/sec",
+            "range": "stddev: 3.968432490910804e-7",
+            "extra": "mean: 8.865225160859085 usec\nrounds: 11534"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 203170.37395322396,
+            "unit": "iter/sec",
+            "range": "stddev: 6.92487620976514e-7",
+            "extra": "mean: 4.921977454401056 usec\nrounds: 63292"
           }
         ]
       }
