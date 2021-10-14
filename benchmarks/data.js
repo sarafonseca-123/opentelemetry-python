@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634220975014,
+  "lastUpdate": 1634220992624,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -37874,44 +37874,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "jcchavezs@gmail.com",
-            "name": "José Carlos Chávez",
-            "username": "jcchavezs"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "684f57d64f50d98d65926ff417bf275208b62caf",
-          "message": "chore: improves logs for warning (#1810)\n\nCo-authored-by: alrex <aboten@lightstep.com>",
-          "timestamp": "2021-05-10T09:11:51-07:00",
-          "tree_id": "e1c5e789646f139f48aa40e18fa83ed06ac5e183",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/684f57d64f50d98d65926ff417bf275208b62caf"
-        },
-        "date": 1620663277861,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2128.6725413145355,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00007432864976975209",
-            "extra": "mean: 469.776342105894 usec\nrounds: 38"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3281.031015094369,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0009554237420261549",
-            "extra": "mean: 304.7822453977132 usec\nrounds: 5758"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "aboten@lightstep.com",
             "name": "alrex",
             "username": "codeboten"
@@ -41668,6 +41630,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007877302287130281",
             "extra": "mean: 189.33400392075353 usec\nrounds: 8164"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nathanielruiz98@gmail.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b0a9ee3d5a95c17547e79d62450cffca17fe6f71",
+          "message": "Add AWS Lambda Instrumentation to boostrap_gen.py (#2197)",
+          "timestamp": "2021-10-14T19:43:33+05:30",
+          "tree_id": "1d42d1b3976a18f82815c23490e4707077041030",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/b0a9ee3d5a95c17547e79d62450cffca17fe6f71"
+        },
+        "date": 1634220971172,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2936.2122705525107,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00004416234112563874",
+            "extra": "mean: 340.5748317412449 usec\nrounds: 1361"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 5421.599354471569,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008681435526617201",
+            "extra": "mean: 184.44741756419728 usec\nrounds: 7800"
           }
         ]
       }
