@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634220893901,
+  "lastUpdate": 1634220895909,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -64292,6 +64292,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00004116753612986172",
             "extra": "mean: 84.89480500300513 usec\nrounds: 6636"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nathanielruiz98@gmail.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b0a9ee3d5a95c17547e79d62450cffca17fe6f71",
+          "message": "Add AWS Lambda Instrumentation to boostrap_gen.py (#2197)",
+          "timestamp": "2021-10-14T19:43:33+05:30",
+          "tree_id": "1d42d1b3976a18f82815c23490e4707077041030",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/b0a9ee3d5a95c17547e79d62450cffca17fe6f71"
+        },
+        "date": 1634220874221,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 17834.040874209662,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000008961598713332844",
+            "extra": "mean: 56.07254166643353 usec\nrounds: 24"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 13052.80136766479,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000002124198758431027",
+            "extra": "mean: 76.61190665762079 usec\nrounds: 5828"
           }
         ]
       }
