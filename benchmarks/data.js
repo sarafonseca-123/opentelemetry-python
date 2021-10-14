@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634220900505,
+  "lastUpdate": 1634220905329,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -48178,44 +48178,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "jcchavezs@gmail.com",
-            "name": "José Carlos Chávez",
-            "username": "jcchavezs"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "684f57d64f50d98d65926ff417bf275208b62caf",
-          "message": "chore: improves logs for warning (#1810)\n\nCo-authored-by: alrex <aboten@lightstep.com>",
-          "timestamp": "2021-05-10T09:11:51-07:00",
-          "tree_id": "e1c5e789646f139f48aa40e18fa83ed06ac5e183",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/684f57d64f50d98d65926ff417bf275208b62caf"
-        },
-        "date": 1620663215724,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 113733.77080416832,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000011690071015468396",
-            "extra": "mean: 8.792463249300358 usec\nrounds: 15197"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 182667.3108454062,
-            "unit": "iter/sec",
-            "range": "stddev: 8.477926640638731e-7",
-            "extra": "mean: 5.474433249013631 usec\nrounds: 54943"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "aboten@lightstep.com",
             "name": "alrex",
             "username": "codeboten"
@@ -51972,6 +51934,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000013950930173896133",
             "extra": "mean: 5.939416457228731 usec\nrounds: 56498"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nathanielruiz98@gmail.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b0a9ee3d5a95c17547e79d62450cffca17fe6f71",
+          "message": "Add AWS Lambda Instrumentation to boostrap_gen.py (#2197)",
+          "timestamp": "2021-10-14T19:43:33+05:30",
+          "tree_id": "1d42d1b3976a18f82815c23490e4707077041030",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/b0a9ee3d5a95c17547e79d62450cffca17fe6f71"
+        },
+        "date": 1634220884461,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 138674.74788983868,
+            "unit": "iter/sec",
+            "range": "stddev: 9.239382334954216e-7",
+            "extra": "mean: 7.2111182116183565 usec\nrounds: 13755"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 222051.20807182803,
+            "unit": "iter/sec",
+            "range": "stddev: 9.134531541442897e-7",
+            "extra": "mean: 4.503465703625107 usec\nrounds: 64103"
           }
         ]
       }
