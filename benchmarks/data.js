@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634263520553,
+  "lastUpdate": 1634263593976,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -37874,44 +37874,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "kristian@spritelink.net",
-            "name": "Kristian Larsson",
-            "username": "plajjan"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "cc18b730f9bb7c3ddfa396e06bf91c32a354b405",
-          "message": "Include parent span in Jaeger gRPC export (#1809)\n\nThis extracts the parent span and adds it as a CHILD_OF reference in the\r\ngRPC export, so that we get the expected hierarchy of spans.\r\n\r\nTest case is updated to cover this case.",
-          "timestamp": "2021-05-10T14:05:19-07:00",
-          "tree_id": "598f509ec219a2883043583941df1ba3329b84d2",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/cc18b730f9bb7c3ddfa396e06bf91c32a354b405"
-        },
-        "date": 1620680865478,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2480.2544715676554,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00004577526607002868",
-            "extra": "mean: 403.18443589699314 usec\nrounds: 39"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3828.374908801384,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0008667355226121271",
-            "extra": "mean: 261.20743757384184 usec\nrounds: 5935"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "aboten@lightstep.com",
             "name": "alrex",
             "username": "codeboten"
@@ -41668,6 +41630,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000627666137424018",
             "extra": "mean: 132.02568668171455 usec\nrounds: 8710"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaronabbott@google.com",
+            "name": "Aaron Abbott",
+            "username": "aabmass"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "39fe4dbc7a5b7f125fa9988ecdb7b26dc638cc9f",
+          "message": "Upgrade GRPC/protobuf related dependency, regenerate otlp protobufs (#2201)\n\nCo-authored-by: Owais Lone <owais@users.noreply.github.com>",
+          "timestamp": "2021-10-14T22:03:13-04:00",
+          "tree_id": "b85d75cc6e5c4f6f6c3ca64f09af33857acf106e",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/39fe4dbc7a5b7f125fa9988ecdb7b26dc638cc9f"
+        },
+        "date": 1634263577271,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2711.9460137942237,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00009544968537831713",
+            "extra": "mean: 368.7389036926005 usec\nrounds: 1381"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 6180.908458361279,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007218192345052886",
+            "extra": "mean: 161.78851486584324 usec\nrounds: 9653"
           }
         ]
       }
