@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634263489882,
+  "lastUpdate": 1634263514182,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -68670,6 +68670,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00004447394526048947",
             "extra": "mean: 7.169117875343775 usec\nrounds: 113637"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaronabbott@google.com",
+            "name": "Aaron Abbott",
+            "username": "aabmass"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "39fe4dbc7a5b7f125fa9988ecdb7b26dc638cc9f",
+          "message": "Upgrade GRPC/protobuf related dependency, regenerate otlp protobufs (#2201)\n\nCo-authored-by: Owais Lone <owais@users.noreply.github.com>",
+          "timestamp": "2021-10-14T22:03:13-04:00",
+          "tree_id": "b85d75cc6e5c4f6f6c3ca64f09af33857acf106e",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/39fe4dbc7a5b7f125fa9988ecdb7b26dc638cc9f"
+        },
+        "date": 1634263494318,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 243700.12190878132,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00004484982186942185",
+            "extra": "mean: 4.103403774144631 usec\nrounds: 192308"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 164207.04774994738,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000011372578645692767",
+            "extra": "mean: 6.08987259501059 usec\nrounds: 135136"
           }
         ]
       }
