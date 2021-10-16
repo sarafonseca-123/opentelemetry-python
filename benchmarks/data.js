@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634263625629,
+  "lastUpdate": 1634353401346,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -67642,6 +67642,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000014647218826400567",
             "extra": "mean: 56.263674160527174 usec\nrounds: 7028"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "software@nmarier.com",
+            "name": "Nicolas Marier",
+            "username": "marier-nico"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "73230b66c5497eef834d36dd7f15fa029316b5ce",
+          "message": "fix(baggage): oversized header warn only with a header (#2212)\n\nThis commit makes sure that warnings about the baggage header length are\r\nonly emitted when the header is actually present, since it does not make\r\nsense to warn about a missing header's length.",
+          "timestamp": "2021-10-16T08:32:07+05:30",
+          "tree_id": "2189930798618e257fe97320dc550ece9cb4d983",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/73230b66c5497eef834d36dd7f15fa029316b5ce"
+        },
+        "date": 1634353383200,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 28195.860439449123,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001207483396531436",
+            "extra": "mean: 35.466199094988056 usec\nrounds: 4862"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20295.98667358766,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007468944329195688",
+            "extra": "mean: 49.27082462570582 usec\nrounds: 6278"
           }
         ]
       }
