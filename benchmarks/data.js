@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634353410572,
+  "lastUpdate": 1634353412432,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -55782,44 +55782,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "8e75cfc04224caa84425bec81112abb4a4468415",
-          "message": "adding script to automatically generate otel website docs (#1837)",
-          "timestamp": "2021-05-11T08:04:49-07:00",
-          "tree_id": "274e6afa381e24c1a1455c0ad03b731f86c684b4",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/8e75cfc04224caa84425bec81112abb4a4468415"
-        },
-        "date": 1620745536679,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 113038.99825586616,
-            "unit": "iter/sec",
-            "range": "stddev: 5.752939361082414e-7",
-            "extra": "mean: 8.846504440321374 usec\nrounds: 15314"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 202211.44016903243,
-            "unit": "iter/sec",
-            "range": "stddev: 2.4047432069098474e-7",
-            "extra": "mean: 4.9453186187887335 usec\nrounds: 68028"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "lechen@microsoft.com",
             "name": "Leighton Chen",
             "username": "lzchen"
@@ -59576,6 +59538,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000003835803275161812",
             "extra": "mean: 5.84994872467483 usec\nrounds: 58137"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "software@nmarier.com",
+            "name": "Nicolas Marier",
+            "username": "marier-nico"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "73230b66c5497eef834d36dd7f15fa029316b5ce",
+          "message": "fix(baggage): oversized header warn only with a header (#2212)\n\nThis commit makes sure that warnings about the baggage header length are\r\nonly emitted when the header is actually present, since it does not make\r\nsense to warn about a missing header's length.",
+          "timestamp": "2021-10-16T08:32:07+05:30",
+          "tree_id": "2189930798618e257fe97320dc550ece9cb4d983",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/73230b66c5497eef834d36dd7f15fa029316b5ce"
+        },
+        "date": 1634353391173,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 84483.24752490409,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00002510969934410442",
+            "extra": "mean: 11.836666194741374 usec\nrounds: 11300"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 163423.93911989743,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007154941767466606",
+            "extra": "mean: 6.119054560705094 usec\nrounds: 46297"
           }
         ]
       }
