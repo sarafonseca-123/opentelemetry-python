@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634353448567,
+  "lastUpdate": 1634353520570,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -22818,44 +22818,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "8e75cfc04224caa84425bec81112abb4a4468415",
-          "message": "adding script to automatically generate otel website docs (#1837)",
-          "timestamp": "2021-05-11T08:04:49-07:00",
-          "tree_id": "274e6afa381e24c1a1455c0ad03b731f86c684b4",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/8e75cfc04224caa84425bec81112abb4a4468415"
-        },
-        "date": 1620745600993,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2242.9473324798446,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000050382781155058735",
-            "extra": "mean: 445.84194444475935 usec\nrounds: 36"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3497.857432595218,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0009144367606453714",
-            "extra": "mean: 285.8892963107576 usec\nrounds: 5150"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "lechen@microsoft.com",
             "name": "Leighton Chen",
             "username": "lzchen"
@@ -26612,6 +26574,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007450085803808076",
             "extra": "mean: 168.07819628418835 usec\nrounds: 9150"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "software@nmarier.com",
+            "name": "Nicolas Marier",
+            "username": "marier-nico"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "73230b66c5497eef834d36dd7f15fa029316b5ce",
+          "message": "fix(baggage): oversized header warn only with a header (#2212)\n\nThis commit makes sure that warnings about the baggage header length are\r\nonly emitted when the header is actually present, since it does not make\r\nsense to warn about a missing header's length.",
+          "timestamp": "2021-10-16T08:32:07+05:30",
+          "tree_id": "2189930798618e257fe97320dc550ece9cb4d983",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/73230b66c5497eef834d36dd7f15fa029316b5ce"
+        },
+        "date": 1634353503354,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3778.985674646177,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000006286733040818765",
+            "extra": "mean: 264.62127303343885 usec\nrounds: 1487"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7472.869692505061,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007138110422026158",
+            "extra": "mean: 133.81740096484666 usec\nrounds: 8497"
           }
         ]
       }
