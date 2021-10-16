@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634423897409,
+  "lastUpdate": 1634423899667,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -66728,6 +66728,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00009851603938299871",
             "extra": "mean: 88.48520657468337 usec\nrounds: 6753"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "owais@users.noreply.github.com",
+            "name": "Owais Lone",
+            "username": "owais"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1e001868e3eafade5974f0fe6d67986cbf4e2d2a",
+          "message": "Remove left-over bootstrap_gen.py file (#2213)\n\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>",
+          "timestamp": "2021-10-17T04:07:20+05:30",
+          "tree_id": "d18722489dc44731b2def980573223f7aeab9717",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/1e001868e3eafade5974f0fe6d67986cbf4e2d2a"
+        },
+        "date": 1634423879902,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 21365.590314436864,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000005704344927199414",
+            "extra": "mean: 46.80422985197342 usec\nrounds: 4864"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 15700.918811830583,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007482195363878743",
+            "extra": "mean: 63.690540151478515 usec\nrounds: 5280"
           }
         ]
       }
