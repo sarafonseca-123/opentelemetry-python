@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634495331166,
+  "lastUpdate": 1634495334153,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -68060,6 +68060,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000001739088791929529",
             "extra": "mean: 48.85459843599875 usec\nrounds: 6649"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "thanos@diacakis.com",
+            "name": "Thanos Diacakis",
+            "username": "thanosd"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a1feaf4709a456b108b45b1cb23acfe9f927a445",
+          "message": "Fixing typo (#2216)",
+          "timestamp": "2021-10-17T18:27:39Z",
+          "tree_id": "05fe779ad808e1cbf78231f395595d6c43cf991f",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a1feaf4709a456b108b45b1cb23acfe9f927a445"
+        },
+        "date": 1634495311557,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 23150.13882151104,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000018476948169203326",
+            "extra": "mean: 43.196285245201345 usec\nrounds: 5483"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 16272.719522566029,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00005008430556950763",
+            "extra": "mean: 61.45254323429222 usec\nrounds: 9009"
           }
         ]
       }
