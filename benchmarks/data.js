@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634495358726,
+  "lastUpdate": 1634495365206,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -70420,6 +70420,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000003381642626863123",
             "extra": "mean: 1.2950906979080705 usec\nrounds: 108696"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "thanos@diacakis.com",
+            "name": "Thanos Diacakis",
+            "username": "thanosd"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a1feaf4709a456b108b45b1cb23acfe9f927a445",
+          "message": "Fixing typo (#2216)",
+          "timestamp": "2021-10-17T18:27:39Z",
+          "tree_id": "05fe779ad808e1cbf78231f395595d6c43cf991f",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a1feaf4709a456b108b45b1cb23acfe9f927a445"
+        },
+        "date": 1634495345167,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 562376.7602037027,
+            "unit": "iter/sec",
+            "range": "stddev: 3.148822534379061e-7",
+            "extra": "mean: 1.7781673617483524 usec\nrounds: 69440"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 882084.1820072411,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000021684762513291036",
+            "extra": "mean: 1.133678644734958 usec\nrounds: 112347"
           }
         ]
       }
