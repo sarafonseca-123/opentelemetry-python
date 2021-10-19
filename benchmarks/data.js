@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634665805414,
+  "lastUpdate": 1634665807162,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -55782,44 +55782,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "srikanth.chekuri92@gmail.com",
-            "name": "Srikanth Chekuri",
-            "username": "lonewolf3739"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "f816287e5ff0e2d18a1001e11fd0ad7e070e3b2e",
-          "message": "Update transient errors retry timeout and retryable status codes (#1842)",
-          "timestamp": "2021-05-14T09:38:38-07:00",
-          "tree_id": "97ff8dfdbb66a35afe06c2400fbcfa2d5ed5d8d1",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/f816287e5ff0e2d18a1001e11fd0ad7e070e3b2e"
-        },
-        "date": 1621010383944,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 98750.06193039347,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000011431515664093115",
-            "extra": "mean: 10.126575927667528 usec\nrounds: 13908"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 175590.38121039415,
-            "unit": "iter/sec",
-            "range": "stddev: 9.260397996995274e-7",
-            "extra": "mean: 5.695072777373778 usec\nrounds: 55553"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "elindy26@gmail.com",
             "name": "Eddy Lin",
             "username": "eddyleelin"
@@ -59576,6 +59538,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 2.9711492068456483e-7",
             "extra": "mean: 4.970815418425426 usec\nrounds: 57140"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "robertsben@users.noreply.github.com",
+            "name": "Ben Roberts",
+            "username": "robertsben"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9b25d7422432d4e14a164440a46d83b8f37afc13",
+          "message": "Fix opentracing shim references (#2180)",
+          "timestamp": "2021-10-19T17:48:40Z",
+          "tree_id": "57516728b4943d2416c30f82bbda1bdca17c38ce",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/9b25d7422432d4e14a164440a46d83b8f37afc13"
+        },
+        "date": 1634665781727,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 83555.31093246986,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00008567833251344994",
+            "extra": "mean: 11.96812014508819 usec\nrounds: 8548"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 159218.54912451303,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000013642380122935091",
+            "extra": "mean: 6.280675244804387 usec\nrounds: 54946"
           }
         ]
       }
