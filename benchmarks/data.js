@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634627986645,
+  "lastUpdate": 1634664961153,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -64634,6 +64634,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00006119710022815599",
             "extra": "mean: 93.61263634838217 usec\nrounds: 5992"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "chalin@users.noreply.github.com",
+            "name": "Patrice Chalin",
+            "username": "chalin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6b386896ededae6e5db81b78e1d25594a4b859f3",
+          "message": "Website: support GH page links to canonical src, and aliases (#2224)",
+          "timestamp": "2021-10-19T17:33:59Z",
+          "tree_id": "b48a5a9a7946658354aaf6e1a7ff7115b8862724",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/6b386896ededae6e5db81b78e1d25594a4b859f3"
+        },
+        "date": 1634664943773,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 20997.091906868525,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000004867047958565737",
+            "extra": "mean: 47.6256428478499 usec\nrounds: 28"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 14881.03754342451,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000014989668599904546",
+            "extra": "mean: 67.19961542210277 usec\nrounds: 6147"
           }
         ]
       }
