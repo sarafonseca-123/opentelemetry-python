@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634669133250,
+  "lastUpdate": 1634669134968,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -55782,44 +55782,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "elindy26@gmail.com",
-            "name": "Eddy Lin",
-            "username": "eddyleelin"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "2098c5644588cd4e766eb8e31a1ca26c4e00ea46",
-          "message": "Change AttributeValue sequences from optional to nonoptional (#1855)",
-          "timestamp": "2021-05-21T13:15:12-07:00",
-          "tree_id": "ef1aa5379043deef6a2713f10f164c02fed1930f",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/2098c5644588cd4e766eb8e31a1ca26c4e00ea46"
-        },
-        "date": 1621628153294,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 107337.88624859363,
-            "unit": "iter/sec",
-            "range": "stddev: 4.0141962945266164e-7",
-            "extra": "mean: 9.316375000007067 usec\nrounds: 13624"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 205304.38258578564,
-            "unit": "iter/sec",
-            "range": "stddev: 2.9745551995949776e-7",
-            "extra": "mean: 4.870816625564015 usec\nrounds: 55553"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "33990804+c-kruse@users.noreply.github.com",
             "name": "Christian Kruse",
             "username": "c-kruse"
@@ -59576,6 +59538,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000013333505054449825",
             "extra": "mean: 6.37027788122185 usec\nrounds: 48312"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "alrex",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f6e793aed73b7dc97cf372ee82c8851444bb2fbf",
+          "message": "update changelog to note the rename of entrypoints in 1.6.0 (#2228)",
+          "timestamp": "2021-10-19T18:44:20Z",
+          "tree_id": "a08bbc09ee44343873165ecb03b0aa9830f86540",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/f6e793aed73b7dc97cf372ee82c8851444bb2fbf"
+        },
+        "date": 1634669110761,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 105186.53171469591,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000015989861551556551",
+            "extra": "mean: 9.506920550554545 usec\nrounds: 12788"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 178946.3967625372,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010898935037963666",
+            "extra": "mean: 5.588265637597639 usec\nrounds: 53189"
           }
         ]
       }
