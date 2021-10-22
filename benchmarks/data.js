@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634925930512,
+  "lastUpdate": 1634925935679,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -64824,6 +64824,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000014315110112130188",
             "extra": "mean: 67.05214452072482 usec\nrounds: 6698"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tkern@arnatious.com",
+            "name": "Ted Kern",
+            "username": "Arnatious"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a002f7aedcf48c5329645182bbcf82efc037a3fa",
+          "message": "ReadableSpan events and links now return a tuple (#2215)\n\n* ReadableSpan events and links now return a tuple\r\n\r\nRemoved MappingProxy since events and links are not mappings\r\n\r\nSigned-off-by: Ted Kern <tkern@arnatious.com>\r\n\r\n* fix lint\r\n\r\nSigned-off-by: Ted Kern <tkern@arnatious.com>\r\n\r\n* fix lint\r\n\r\n* fix lint\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>",
+          "timestamp": "2021-10-22T23:34:21+05:30",
+          "tree_id": "c635467f31d666c7ac9929d7e225646a9e7fc19c",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a002f7aedcf48c5329645182bbcf82efc037a3fa"
+        },
+        "date": 1634925914462,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 13360.3561046708,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000049249558749140965",
+            "extra": "mean: 74.84830435398338 usec\nrounds: 23"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 10211.8111477909,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00007120915421969931",
+            "extra": "mean: 97.92582192594973 usec\nrounds: 4195"
           }
         ]
       }
