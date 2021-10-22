@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634926003800,
+  "lastUpdate": 1634926037378,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -22818,44 +22818,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "srikanth.chekuri92@gmail.com",
-            "name": "Srikanth Chekuri",
-            "username": "lonewolf3739"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "eda57f7705333fa58c0e0422b809e1b683d0a2cf",
-          "message": "Apply validation of attributes to `Resource`, move attribute related logic to util package (#1834)",
-          "timestamp": "2021-05-24T15:22:50-07:00",
-          "tree_id": "d1b4c3374a93dafae42e55d7c73e049ee4e27895",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/eda57f7705333fa58c0e0422b809e1b683d0a2cf"
-        },
-        "date": 1621895088199,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2624.055252153129,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000012616873872091494",
-            "extra": "mean: 381.08953657872297 usec\nrounds: 41"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3616.3114328223,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000906291427426778",
-            "extra": "mean: 276.52485649433237 usec\nrounds: 5066"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "owais@users.noreply.github.com",
             "name": "Owais Lone",
             "username": "owais"
@@ -26612,6 +26574,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0006515828141500007",
             "extra": "mean: 130.171449209226 usec\nrounds: 9234"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tkern@arnatious.com",
+            "name": "Ted Kern",
+            "username": "Arnatious"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a002f7aedcf48c5329645182bbcf82efc037a3fa",
+          "message": "ReadableSpan events and links now return a tuple (#2215)\n\n* ReadableSpan events and links now return a tuple\r\n\r\nRemoved MappingProxy since events and links are not mappings\r\n\r\nSigned-off-by: Ted Kern <tkern@arnatious.com>\r\n\r\n* fix lint\r\n\r\nSigned-off-by: Ted Kern <tkern@arnatious.com>\r\n\r\n* fix lint\r\n\r\n* fix lint\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>",
+          "timestamp": "2021-10-22T23:34:21+05:30",
+          "tree_id": "c635467f31d666c7ac9929d7e225646a9e7fc19c",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a002f7aedcf48c5329645182bbcf82efc037a3fa"
+        },
+        "date": 1634926015216,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2468.5435879493657,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00007904810210803047",
+            "extra": "mean: 405.0971612904377 usec\nrounds: 1302"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 5256.661149968981,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008274582920210021",
+            "extra": "mean: 190.23482234648148 usec\nrounds: 8404"
           }
         ]
       }
