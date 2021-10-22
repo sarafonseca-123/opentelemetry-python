@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1634925943067,
+  "lastUpdate": 1634925945836,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -55782,44 +55782,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "srikanth.chekuri92@gmail.com",
-            "name": "Srikanth Chekuri",
-            "username": "lonewolf3739"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "eda57f7705333fa58c0e0422b809e1b683d0a2cf",
-          "message": "Apply validation of attributes to `Resource`, move attribute related logic to util package (#1834)",
-          "timestamp": "2021-05-24T15:22:50-07:00",
-          "tree_id": "d1b4c3374a93dafae42e55d7c73e049ee4e27895",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/eda57f7705333fa58c0e0422b809e1b683d0a2cf"
-        },
-        "date": 1621895026792,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 96240.5764377599,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000008830032595568068",
-            "extra": "mean: 10.390627706253545 usec\nrounds: 13441"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 182156.62586111977,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000008760045200194869",
-            "extra": "mean: 5.48978108961253 usec\nrounds: 56498"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "owais@users.noreply.github.com",
             "name": "Owais Lone",
             "username": "owais"
@@ -59576,6 +59538,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000001049375067928373",
             "extra": "mean: 5.764273282543613 usec\nrounds: 57468"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tkern@arnatious.com",
+            "name": "Ted Kern",
+            "username": "Arnatious"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a002f7aedcf48c5329645182bbcf82efc037a3fa",
+          "message": "ReadableSpan events and links now return a tuple (#2215)\n\n* ReadableSpan events and links now return a tuple\r\n\r\nRemoved MappingProxy since events and links are not mappings\r\n\r\nSigned-off-by: Ted Kern <tkern@arnatious.com>\r\n\r\n* fix lint\r\n\r\nSigned-off-by: Ted Kern <tkern@arnatious.com>\r\n\r\n* fix lint\r\n\r\n* fix lint\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>",
+          "timestamp": "2021-10-22T23:34:21+05:30",
+          "tree_id": "c635467f31d666c7ac9929d7e225646a9e7fc19c",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a002f7aedcf48c5329645182bbcf82efc037a3fa"
+        },
+        "date": 1634925922986,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 80785.08868128064,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000005697160272337501",
+            "extra": "mean: 12.378522030783111 usec\nrounds: 10030"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 153718.97649037658,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00000971304836995935",
+            "extra": "mean: 6.505377688763131 usec\nrounds: 51021"
           }
         ]
       }
