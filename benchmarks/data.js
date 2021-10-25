@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1635186374635,
+  "lastUpdate": 1635186385082,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -37874,44 +37874,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "owais@users.noreply.github.com",
-            "name": "Owais Lone",
-            "username": "owais"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "3dbbd1b7b2574a4c51254b6d7abb76f8097869d8",
-          "message": "Allow users to \"unset\" SDK limits and evaluate default limits lazily instead of on import (#1839)",
-          "timestamp": "2021-05-24T20:59:59-07:00",
-          "tree_id": "e8995362be1c11460d913f78336be47e8808f5df",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/3dbbd1b7b2574a4c51254b6d7abb76f8097869d8"
-        },
-        "date": 1621915713724,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2380.947874887465,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00005962398409970296",
-            "extra": "mean: 420.0007948713555 usec\nrounds: 39"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3196.1762059117455,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0010517351184486424",
-            "extra": "mean: 312.87386413501525 usec\nrounds: 4740"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "ocelotl@users.noreply.github.com",
             "name": "Diego Hurtado",
             "username": "ocelotl"
@@ -41668,6 +41630,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007102119872035321",
             "extra": "mean: 144.4617042621482 usec\nrounds: 9150"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "10231d127f5bef6d1e9bc88a7cbd455c2e560c0d",
+          "message": "adding CI testing for python 3.10 (#2207)",
+          "timestamp": "2021-10-25T11:17:33-07:00",
+          "tree_id": "667aeaae601c0fd3d45e79f0671e642141ed85c2",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/10231d127f5bef6d1e9bc88a7cbd455c2e560c0d"
+        },
+        "date": 1635186363160,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2598.230877403567,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00006711748604694002",
+            "extra": "mean: 384.87726733480594 usec\nrounds: 1298"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 5213.520011112972,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007654092559990431",
+            "extra": "mean: 191.80898852760365 usec\nrounds: 8368"
           }
         ]
       }
