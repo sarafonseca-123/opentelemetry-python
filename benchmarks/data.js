@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1635186080294,
+  "lastUpdate": 1635186084952,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -59584,44 +59584,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "owais@users.noreply.github.com",
-            "name": "Owais Lone",
-            "username": "owais"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "3dbbd1b7b2574a4c51254b6d7abb76f8097869d8",
-          "message": "Allow users to \"unset\" SDK limits and evaluate default limits lazily instead of on import (#1839)",
-          "timestamp": "2021-05-24T20:59:59-07:00",
-          "tree_id": "e8995362be1c11460d913f78336be47e8808f5df",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/3dbbd1b7b2574a4c51254b6d7abb76f8097869d8"
-        },
-        "date": 1621915615108,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 73376.78911865903,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000002722612840365299",
-            "extra": "mean: 13.62828780069513 usec\nrounds: 12804"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 121812.87763765409,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000016868764770699588",
-            "extra": "mean: 8.209312671970618 usec\nrounds: 46512"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "ocelotl@users.noreply.github.com",
             "name": "Diego Hurtado",
             "username": "ocelotl"
@@ -63378,6 +63340,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000012864531627750302",
             "extra": "mean: 10.189091791759287 usec\nrounds: 32051"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "10231d127f5bef6d1e9bc88a7cbd455c2e560c0d",
+          "message": "adding CI testing for python 3.10 (#2207)",
+          "timestamp": "2021-10-25T11:17:33-07:00",
+          "tree_id": "667aeaae601c0fd3d45e79f0671e642141ed85c2",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/10231d127f5bef6d1e9bc88a7cbd455c2e560c0d"
+        },
+        "date": 1635186062524,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 59775.078207409875,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00000723560493427014",
+            "extra": "mean: 16.72938003577614 usec\nrounds: 7273"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 98054.66339007564,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007567766201947832",
+            "extra": "mean: 10.198393074094348 usec\nrounds: 31447"
           }
         ]
       }
