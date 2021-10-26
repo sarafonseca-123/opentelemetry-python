@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1635262239980,
+  "lastUpdate": 1635262268448,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -22818,44 +22818,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "ocelotl@users.noreply.github.com",
-            "name": "Diego Hurtado",
-            "username": "ocelotl"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "1470a8c1ad8b4f7138ab98f7d366cf0dc155e6b0",
-          "message": "Add public symbols checker script (#1816)",
-          "timestamp": "2021-05-25T13:15:27-07:00",
-          "tree_id": "9ec37e978259a7da52692fe87a4b2ba6fe5064fa",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/1470a8c1ad8b4f7138ab98f7d366cf0dc155e6b0"
-        },
-        "date": 1621973904341,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2222.1711945836173,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00009655154362302572",
-            "extra": "mean: 450.01033333409606 usec\nrounds: 39"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3422.1370864469063,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000962953425762339",
-            "extra": "mean: 292.21506174034295 usec\nrounds: 5102"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "ell22@duke.edu",
             "name": "Eddy Lin",
             "username": "eddyleelin"
@@ -26612,6 +26574,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007314237242779371",
             "extra": "mean: 147.45921794501177 usec\nrounds: 6988"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "45812677+JamesJHPark@users.noreply.github.com",
+            "name": "James",
+            "username": "JamesJHPark"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "210963395fa67b3b10de98dbff43c6bc80173652",
+          "message": "remove `X-B3-ParentSpanId` for B3 propagator as per OpenTelemetry Specification (#2237)\n\n* remove X-B3-ParentSpanId for B3 propagator as per OpenTelemetry specification\r\n\r\n* revert changes - run tests\r\n\r\n* re-commit changes\r\n\r\n* add entry to CHANGELOG\r\n\r\n* remove ParentSpanId in B3SingleFormat",
+          "timestamp": "2021-10-26T20:58:32+05:30",
+          "tree_id": "3f5275a39aa6b5ca3e4bb49b1a86552118c980c1",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/210963395fa67b3b10de98dbff43c6bc80173652"
+        },
+        "date": 1635262249056,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2962.4696043985814,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00005985715243375263",
+            "extra": "mean: 337.55620598274885 usec\nrounds: 1170"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 6325.325643712604,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007214539343172018",
+            "extra": "mean: 158.09462726934916 usec\nrounds: 10246"
           }
         ]
       }
