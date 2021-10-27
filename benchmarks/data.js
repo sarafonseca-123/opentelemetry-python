@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1635366519430,
+  "lastUpdate": 1635366521627,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -72968,6 +72968,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000007356929542444516",
             "extra": "mean: 4.78372192038763 usec\nrounds: 48781"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nathanielruiz98@gmail.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "05e9fe171fdfd6a4d7d2336f6ac41bab69c8a71f",
+          "message": "Remove lingering distro pkg files (#2241)",
+          "timestamp": "2021-10-27T13:27:12-07:00",
+          "tree_id": "ffbb45c360e18c0f163822b86bb86ceb85980cca",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/05e9fe171fdfd6a4d7d2336f6ac41bab69c8a71f"
+        },
+        "date": 1635366499217,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 104519.4764862628,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000014231488858145411",
+            "extra": "mean: 9.567594802595782 usec\nrounds: 11429"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 196575.5049682481,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003108257702869253",
+            "extra": "mean: 5.0871038085926585 usec\nrounds: 61729"
           }
         ]
       }
