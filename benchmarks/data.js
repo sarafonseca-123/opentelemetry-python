@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1635366579602,
+  "lastUpdate": 1635366590808,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -37874,44 +37874,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "ell22@duke.edu",
-            "name": "Eddy Lin",
-            "username": "eddyleelin"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "038bd2499f48671ba293ab16be8b0bb0dc33464d",
-          "message": "Update otel-exporter OTLP headers parsing to match format specs (#1869)",
-          "timestamp": "2021-05-26T09:56:53-07:00",
-          "tree_id": "7ea677de6191898af0fca5683ca714acf10b8b26",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/038bd2499f48671ba293ab16be8b0bb0dc33464d"
-        },
-        "date": 1622048328390,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2429.5528588420625,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00003990468289597675",
-            "extra": "mean: 411.5983714289736 usec\nrounds: 35"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3323.6313265945178,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0010467794248994681",
-            "extra": "mean: 300.8757295065656 usec\nrounds: 4843"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "aboten@lightstep.com",
             "name": "alrex",
             "username": "codeboten"
@@ -41668,6 +41630,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007127440600996474",
             "extra": "mean: 139.74388055779576 usec\nrounds: 8439"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nathanielruiz98@gmail.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "05e9fe171fdfd6a4d7d2336f6ac41bab69c8a71f",
+          "message": "Remove lingering distro pkg files (#2241)",
+          "timestamp": "2021-10-27T13:27:12-07:00",
+          "tree_id": "ffbb45c360e18c0f163822b86bb86ceb85980cca",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/05e9fe171fdfd6a4d7d2336f6ac41bab69c8a71f"
+        },
+        "date": 1635366570548,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2789.1350981601304,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00004814595105069981",
+            "extra": "mean: 358.5340848708462 usec\nrounds: 1355"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 5861.151047970317,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007492201490835919",
+            "extra": "mean: 170.61495119568607 usec\nrounds: 6106"
           }
         ]
       }
