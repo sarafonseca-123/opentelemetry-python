@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1635856064258,
+  "lastUpdate": 1635856066196,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -73312,6 +73312,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000004907674655410778",
             "extra": "mean: 50.50515975121797 usec\nrounds: 7881"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaronabbott@google.com",
+            "name": "Aaron Abbott",
+            "username": "aabmass"
+          },
+          "committer": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "distinct": true,
+          "id": "5bc91c85985c4ce67317a94483c2fede8f3e0fcd",
+          "message": "Make metrics envvar constants private (#2255)",
+          "timestamp": "2021-11-02T13:26:24+01:00",
+          "tree_id": "83d19bf148d5ccb041e048078fc247ac9e446d87",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/5bc91c85985c4ce67317a94483c2fede8f3e0fcd"
+        },
+        "date": 1635856043489,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 27186.74814987576,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000014925811016947212",
+            "extra": "mean: 36.782626391621974 usec\nrounds: 4850"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 17058.024598881995,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00010785854032944607",
+            "extra": "mean: 58.623435216850446 usec\nrounds: 7610"
           }
         ]
       }
