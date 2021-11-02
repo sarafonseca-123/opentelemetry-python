@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1635856171518,
+  "lastUpdate": 1635856175104,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -22828,44 +22828,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "cec5c077f96c76c3768d9e2210e6289e4cefc060",
-          "message": "update base version of python to 3.9 (#1874)",
-          "timestamp": "2021-05-27T15:19:55-07:00",
-          "tree_id": "171e2e8f75beba72d86ffbadeb156f2ce24b5d87",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/cec5c077f96c76c3768d9e2210e6289e4cefc060"
-        },
-        "date": 1622154132065,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2521.3698097876513,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00002951016279721958",
-            "extra": "mean: 396.6098095242203 usec\nrounds: 42"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3813.6918790769573,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0008602098825565266",
-            "extra": "mean: 262.2131078512913 usec\nrounds: 5999"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "7f18221a40f1daaf27c0a88584bae53baa2f828a",
           "message": "use correct label in github action (#1876)\n\nThe label is \"Approve Public API check\" not \"Skip Public API check\".",
           "timestamp": "2021-05-27T15:42:34-07:00",
@@ -26612,6 +26574,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0006513336992072314",
             "extra": "mean: 141.37879023957726 usec\nrounds: 10102"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaronabbott@google.com",
+            "name": "Aaron Abbott",
+            "username": "aabmass"
+          },
+          "committer": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "distinct": true,
+          "id": "5bc91c85985c4ce67317a94483c2fede8f3e0fcd",
+          "message": "Make metrics envvar constants private (#2255)",
+          "timestamp": "2021-11-02T13:26:24+01:00",
+          "tree_id": "83d19bf148d5ccb041e048078fc247ac9e446d87",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/5bc91c85985c4ce67317a94483c2fede8f3e0fcd"
+        },
+        "date": 1635856156660,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3707.7488992242465,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000006409238779024259",
+            "extra": "mean: 269.70542698002686 usec\nrounds: 1616"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7741.267537793628,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00065118446535878",
+            "extra": "mean: 129.17781165912453 usec\nrounds: 8628"
           }
         ]
       }
