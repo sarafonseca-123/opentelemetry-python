@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1635978316785,
+  "lastUpdate": 1635978321065,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -59584,44 +59584,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "5293167+marcosflobo@users.noreply.github.com",
-            "name": "Marcos F. Lobo",
-            "username": "marcosflobo"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "0ecfeb70893845c5083dfe0ba434c110a3df9d6c",
-          "message": "Fix link to instrumentation (#1826)\n\nCo-authored-by: Leighton Chen <lechen@microsoft.com>\r\nCo-authored-by: alrex <aboten@lightstep.com>",
-          "timestamp": "2021-05-27T16:00:02-07:00",
-          "tree_id": "6e4654858fec93bb942103e4f0e896742a36c552",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/0ecfeb70893845c5083dfe0ba434c110a3df9d6c"
-        },
-        "date": 1622156453184,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 59442.93861715281,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000021988202001158578",
-            "extra": "mean: 16.822856057648547 usec\nrounds: 9747"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 101022.7048446341,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000012509784764616787",
-            "extra": "mean: 9.898764852296624 usec\nrounds: 45044"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "ocelotl@users.noreply.github.com",
             "name": "Diego Hurtado",
             "username": "ocelotl"
@@ -63378,6 +63340,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000007829196778453989",
             "extra": "mean: 8.446531786254667 usec\nrounds: 48307"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c7c249fe05a57fd15f888722b9d663021dd263bb",
+          "message": "Revert \"Add logging signal to main (#2251)\" (#2260)",
+          "timestamp": "2021-11-03T15:23:57-07:00",
+          "tree_id": "83d19bf148d5ccb041e048078fc247ac9e446d87",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c7c249fe05a57fd15f888722b9d663021dd263bb"
+        },
+        "date": 1635978296930,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 54486.201276507716,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000011079229150279793",
+            "extra": "mean: 18.353270673526662 usec\nrounds: 7038"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 107820.08418657437,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000009783178415463794",
+            "extra": "mean: 9.274709879372537 usec\nrounds: 42017"
           }
         ]
       }
