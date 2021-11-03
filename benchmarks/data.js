@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1635970962169,
+  "lastUpdate": 1635970964714,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -59584,44 +59584,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "7f18221a40f1daaf27c0a88584bae53baa2f828a",
-          "message": "use correct label in github action (#1876)\n\nThe label is \"Approve Public API check\" not \"Skip Public API check\".",
-          "timestamp": "2021-05-27T15:42:34-07:00",
-          "tree_id": "ab0b51e920bb3db715f9d5b293dc6f506626f90b",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/7f18221a40f1daaf27c0a88584bae53baa2f828a"
-        },
-        "date": 1622155398216,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 74478.67530841328,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000002684644399421932",
-            "extra": "mean: 13.426662005722298 usec\nrounds: 10799"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 126021.5397064722,
-            "unit": "iter/sec",
-            "range": "stddev: 2.9836331979905367e-7",
-            "extra": "mean: 7.935151421964749 usec\nrounds: 54642"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "5293167+marcosflobo@users.noreply.github.com",
             "name": "Marcos F. Lobo",
             "username": "marcosflobo"
@@ -63378,6 +63340,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 5.464987085933825e-7",
             "extra": "mean: 7.743869694790258 usec\nrounds: 52354"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7c90cf4052e86e1a77e4a645eb5a902b49e781bf",
+          "message": "Add logging signal to main (#2251)\n\n* Add initial overall structure and classes for logs sdk (#1894)\r\n\r\n* Add global LogEmitterProvider and convenience function get_log_emitter (#1901)\r\n\r\n* Add OTLPHandler for standard library logging module (#1903)\r\n\r\n* Add LogProcessors implementation (#1916)\r\n\r\n* Fix typos in test_handler.py (#1953)\r\n\r\n* Add support for OTLP Log exporter (#1943)\r\n\r\n* Add support for user defined attributes in OTLPHandler (#1952)\r\n\r\n* use timeout in force_flush (#2118)\r\n\r\n* use timeout in force_flush\r\n\r\n* fix lint\r\n\r\n* Update opentelemetry-sdk/src/opentelemetry/sdk/logs/export/__init__.py\r\n\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>\r\n\r\n* fix lint\r\n\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>\r\n\r\n* add a ConsoleExporter for logging (#2099)\r\n\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>\r\n\r\n* Update SDK docs and Add example with OTEL collector logging (debug) exporter (#2050)\r\n\r\n* Fix exception in severity number transformation (#2208)\r\n\r\n* Fix exception with warning message transformation\r\n\r\n* Fix lint\r\n\r\n* Fix lint\r\n\r\n* fstring\r\n\r\n* Demonstrate how to set the Resource for LogEmitterProvider (#2209)\r\n\r\n* Demonstrate how to set the Resource for LogEmitterProvider\r\n\r\nAdded a Resource to the logs example to make it more complete.\r\nPreviously it was using the built-in Resource. Now it adds the\r\nservice.name and service.instance.id attributes.\r\n\r\nThe resulting emitted log records look like this:\r\n```\r\nResource labels:\r\n     -> telemetry.sdk.language: STRING(python)\r\n     -> telemetry.sdk.name: STRING(opentelemetry)\r\n     -> telemetry.sdk.version: STRING(1.5.0)\r\n     -> service.name: STRING(shoppingcart)\r\n     -> service.instance.id: STRING(instance-12)\r\nInstrumentationLibraryLogs #0\r\nInstrumentationLibrary __main__ 0.1\r\nLogRecord #0\r\nTimestamp: 2021-10-14 18:33:43.425820928 +0000 UTC\r\nSeverity: ERROR\r\nShortName:\r\nBody: Hyderabad, we have a major problem.\r\nTrace ID: ce1577e4a703f42d569e72593ad71888\r\nSpan ID: f8908ac4258ceff6\r\nFlags: 1\r\n```\r\n\r\n* Fix linting\r\n\r\n* Use batch processor in example (#2225)\r\n\r\n* move logs to _logs (#2240)\r\n\r\n* move logs to _logs\r\n\r\n* fix lint\r\n\r\n* move log_exporter to _log_exporter as it's still experimental (#2252)\r\n\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>\r\nCo-authored-by: Adrian Garcia Badaracco <1755071+adriangb@users.noreply.github.com>\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>\r\nCo-authored-by: Tigran Najaryan <4194920+tigrannajaryan@users.noreply.github.com>\r\nCo-authored-by: Owais Lone <owais@users.noreply.github.com>",
+          "timestamp": "2021-11-04T01:51:15+05:30",
+          "tree_id": "893bf2287e5282d97a8efa6f14140fc2338967b2",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/7c90cf4052e86e1a77e4a645eb5a902b49e781bf"
+        },
+        "date": 1635970937891,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 62388.131710093636,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000014073545232171244",
+            "extra": "mean: 16.028689633579976 usec\nrounds: 7968"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 118391.7879320995,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007829196778453989",
+            "extra": "mean: 8.446531786254667 usec\nrounds: 48307"
           }
         ]
       }
