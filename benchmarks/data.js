@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1636138071496,
+  "lastUpdate": 1636138110724,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -22818,44 +22818,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "jlisee@gmail.com",
-            "name": "Joseph Lisee",
-            "username": "jlisee"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "82b2e87de2c41b43248a2bccdc75c0066ec2ef49",
-          "message": "Correct SDK PEP 564 nanosecond time reference (#1867)",
-          "timestamp": "2021-06-01T09:43:47-07:00",
-          "tree_id": "f92e046931f561c2e5ef79e328a0c1237fc9d5df",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/82b2e87de2c41b43248a2bccdc75c0066ec2ef49"
-        },
-        "date": 1622566350845,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2078.694076734246,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00007355018287082609",
-            "extra": "mean: 481.0712702713139 usec\nrounds: 37"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3122.169313289271,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0009708353650390669",
-            "extra": "mean: 320.2901251202418 usec\nrounds: 5195"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "aboten@lightstep.com",
             "name": "alrex",
             "username": "codeboten"
@@ -26612,6 +26574,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0006589155387249593",
             "extra": "mean: 134.0569212780396 usec\nrounds: 9921"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "29e4bab54b6bfcf1d3d540bd4a41706d2395deb3",
+          "message": "Make batch processor fork aware and reinit when needed (#2242)\n\nSince 3.7 python provides register_at_fork which can be used to make our batch processor fork-safe.",
+          "timestamp": "2021-11-06T00:13:23+05:30",
+          "tree_id": "0d38a2906c027e67318606a1e8bf69091901925d",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/29e4bab54b6bfcf1d3d540bd4a41706d2395deb3"
+        },
+        "date": 1636138091814,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3701.0673596728025,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000006846762796727441",
+            "extra": "mean: 270.1923263802489 usec\nrounds: 1630"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7797.197717559531,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0006720019614334468",
+            "extra": "mean: 128.2512046280382 usec\nrounds: 9075"
           }
         ]
       }
