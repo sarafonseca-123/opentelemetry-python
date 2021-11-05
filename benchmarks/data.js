@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1636138061555,
+  "lastUpdate": 1636138065215,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -68894,6 +68894,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00005746517612251293",
             "extra": "mean: 82.33309882643266 usec\nrounds: 7073"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "29e4bab54b6bfcf1d3d540bd4a41706d2395deb3",
+          "message": "Make batch processor fork aware and reinit when needed (#2242)\n\nSince 3.7 python provides register_at_fork which can be used to make our batch processor fork-safe.",
+          "timestamp": "2021-11-06T00:13:23+05:30",
+          "tree_id": "0d38a2906c027e67318606a1e8bf69091901925d",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/29e4bab54b6bfcf1d3d540bd4a41706d2395deb3"
+        },
+        "date": 1636138045796,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 21562.97380163394,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000012118623909084817",
+            "extra": "mean: 46.37579255994017 usec\nrounds: 4758"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 16257.7165211704,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001485209613023845",
+            "extra": "mean: 61.50925307978057 usec\nrounds: 5682"
           }
         ]
       }
