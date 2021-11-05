@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1636138110724,
+  "lastUpdate": 1636138117208,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -74486,6 +74486,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000003444829409493038",
             "extra": "mean: 1.177415175573188 usec\nrounds: 101011"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "29e4bab54b6bfcf1d3d540bd4a41706d2395deb3",
+          "message": "Make batch processor fork aware and reinit when needed (#2242)\n\nSince 3.7 python provides register_at_fork which can be used to make our batch processor fork-safe.",
+          "timestamp": "2021-11-06T00:13:23+05:30",
+          "tree_id": "0d38a2906c027e67318606a1e8bf69091901925d",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/29e4bab54b6bfcf1d3d540bd4a41706d2395deb3"
+        },
+        "date": 1636138097753,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 593289.5909163707,
+            "unit": "iter/sec",
+            "range": "stddev: 2.711783886839628e-7",
+            "extra": "mean: 1.6855175201294894 usec\nrounds: 69931"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 1032200.1292255054,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000017394136589978245",
+            "extra": "mean: 968.8043739643263 nsec\nrounds: 111112"
           }
         ]
       }
