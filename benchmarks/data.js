@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1636164719012,
+  "lastUpdate": 1636164723949,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -75326,6 +75326,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00004381994169809033",
             "extra": "mean: 67.00204399814193 usec\nrounds: 8614"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a1903c939917c7a6129476f12c9f50a587b479e5",
+          "message": "Populate `auto.version` in Resource if using autoinstrumentation (#2243)",
+          "timestamp": "2021-11-05T19:10:50-07:00",
+          "tree_id": "b73cba3be4711d815c82faad0fe219812fb5ba1c",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a1903c939917c7a6129476f12c9f50a587b479e5"
+        },
+        "date": 1636164700121,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 21269.468439846747,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000029366669746711666",
+            "extra": "mean: 47.01574949219583 usec\nrounds: 4922"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 14904.411524197505,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003327265652184376",
+            "extra": "mean: 67.09422900572002 usec\nrounds: 8157"
           }
         ]
       }
