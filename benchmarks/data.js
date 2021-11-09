@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1636498856371,
+  "lastUpdate": 1636498858151,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -67258,6 +67258,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000018461419222553629",
             "extra": "mean: 49.115484527802636 usec\nrounds: 6334"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "nathanielruiz98@gmail.com",
+            "name": "(Eliseo) Nathaniel Ruiz Nowell",
+            "username": "NathanielRN"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9ed60ea600cd0ffda6b614fc30b62117a84aeea7",
+          "message": "Filter invalid resource attribute pairs (#2256)",
+          "timestamp": "2021-11-09T22:59:37Z",
+          "tree_id": "0e0de68eeab5b05ef1825a41d537384e92d26e9e",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/9ed60ea600cd0ffda6b614fc30b62117a84aeea7"
+        },
+        "date": 1636498832448,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 24997.16218961704,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000023089314812484604",
+            "extra": "mean: 40.004541012073986 usec\nrounds: 3438"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 18182.77587603821,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000003026024260894398",
+            "extra": "mean: 54.997103127571904 usec\nrounds: 6235"
           }
         ]
       }
