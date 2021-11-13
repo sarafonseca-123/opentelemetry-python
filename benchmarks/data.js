@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1636762342874,
+  "lastUpdate": 1636762348815,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -65508,6 +65508,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00007486439138295543",
             "extra": "mean: 100.84871639979714 usec\nrounds: 5744"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "chalin@users.noreply.github.com",
+            "name": "Patrice Chalin",
+            "username": "chalin"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c991c1c4adee7f2e76859096050fc80a9f7fc1ff",
+          "message": "[website_docs] Link to website spec pages (#2276)\n\nCo-authored-by: Leighton Chen <lechen@microsoft.com>",
+          "timestamp": "2021-11-13T05:40:38+05:30",
+          "tree_id": "a199d793b842677c2d93949c427628841cd80f45",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c991c1c4adee7f2e76859096050fc80a9f7fc1ff"
+        },
+        "date": 1636762325383,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 20277.9469520922,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000004343426823806865",
+            "extra": "mean: 49.31465706871395 usec\nrounds: 3855"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 13494.387732421568,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000004649030761513546",
+            "extra": "mean: 74.10488121646331 usec\nrounds: 4866"
           }
         ]
       }
