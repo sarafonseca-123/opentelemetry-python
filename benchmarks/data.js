@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1637599236218,
+  "lastUpdate": 1637599268263,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -77222,6 +77222,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000027862137066018623",
             "extra": "mean: 1.145748067281138 usec\nrounds: 103093"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "80f5a20ba8f3a71450fe3020fecf362fedb76bff",
+          "message": "Improve log message in OTLP exporters (#2285)",
+          "timestamp": "2021-11-22T10:38:54-06:00",
+          "tree_id": "b11c1e7e7e8b4985f6ce0420e6d9b7ba14aac220",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/80f5a20ba8f3a71450fe3020fecf362fedb76bff"
+        },
+        "date": 1637599244243,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 546641.7504816006,
+            "unit": "iter/sec",
+            "range": "stddev: 3.319776541123404e-7",
+            "extra": "mean: 1.8293516715819251 usec\nrounds: 83334"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 1043375.2954616586,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000015618978531776097",
+            "extra": "mean: 958.4279063817887 nsec\nrounds: 156251"
           }
         ]
       }
