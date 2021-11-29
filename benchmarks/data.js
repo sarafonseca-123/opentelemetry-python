@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1638223636740,
+  "lastUpdate": 1638223659488,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -80420,6 +80420,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0006667356526714252",
             "extra": "mean: 119.84530394918423 usec\nrounds: 9597"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "morgan_mclean@hotmail.com",
+            "name": "Morgan McLean",
+            "username": "mtwo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5added0261a8a55f13f1f803ca051845a51f6b2c",
+          "message": "Remove hardcoded Zoom link (#2287)",
+          "timestamp": "2021-11-29T22:05:16Z",
+          "tree_id": "4e2d5d7d298008b083a9f28a78e711ac5c1d5ca1",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/5added0261a8a55f13f1f803ca051845a51f6b2c"
+        },
+        "date": 1638223636661,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3670.773908690036,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000030203439988821204",
+            "extra": "mean: 272.42211720875594 usec\nrounds: 1476"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7668.312775120681,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0006869206031238648",
+            "extra": "mean: 130.40678299461544 usec\nrounds: 8562"
           }
         ]
       }
