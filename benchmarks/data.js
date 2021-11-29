@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1638210572640,
+  "lastUpdate": 1638210574608,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -59584,44 +59584,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "32b83a03a707d11e0b3385e207bc572f9d5425e8",
-          "message": "make immutable attributes consistent (#1909)",
-          "timestamp": "2021-06-14T14:41:57-07:00",
-          "tree_id": "85d22082491f5709195942dd63b364ed992750e8",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/32b83a03a707d11e0b3385e207bc572f9d5425e8"
-        },
-        "date": 1623706970570,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 87814.19682871191,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000002178919215397685",
-            "extra": "mean: 11.387680308123457 usec\nrounds: 10776"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 136654.00565915465,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000014169890975942958",
-            "extra": "mean: 7.317751098304585 usec\nrounds: 50759"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "mohanjishnu@gmail.com",
             "name": "Jishnu Mohan",
             "username": "JishnuM"
@@ -63378,6 +63340,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 7.337130171713519e-7",
             "extra": "mean: 5.95633312239287 usec\nrounds: 58477"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7a8ef3633dd84f2ceae220c6ea9086cc16f71541",
+          "message": "opentelemetry-api: update OTEL_METRICS_EXPORTER variable (#2303)\n\n* opentelemetry-api: update OTEL_METRICS_EXPORTER variable\r\n\r\nFixes #2302\r\n\r\n* Update CHANGELOG.md\r\n\r\n* fix lint",
+          "timestamp": "2021-11-29T12:27:56-06:00",
+          "tree_id": "50cad18b26b224262f9e2a0bd8004e70acddeb52",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/7a8ef3633dd84f2ceae220c6ea9086cc16f71541"
+        },
+        "date": 1638210550432,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 75428.2459679027,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000014927725813009289",
+            "extra": "mean: 13.257632961868612 usec\nrounds: 11037"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 147530.67468999347,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000011269818601614384",
+            "extra": "mean: 6.778251384678489 usec\nrounds: 55246"
           }
         ]
       }
