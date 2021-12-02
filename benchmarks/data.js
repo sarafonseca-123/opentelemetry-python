@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1638474770917,
+  "lastUpdate": 1638474792190,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -77906,6 +77906,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000016362326209144488",
             "extra": "mean: 845.2991453027861 nsec\nrounds: 135136"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "46f77d0dee69dd9781fd9fae9280a12317b51606",
+          "message": "Adding support for entrypoint loading of log exporters (#2253)",
+          "timestamp": "2021-12-02T14:51:00-05:00",
+          "tree_id": "cabaf4bbe02df0b5dd587fb402486182d6a15aab",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/46f77d0dee69dd9781fd9fae9280a12317b51606"
+        },
+        "date": 1638474770493,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 654407.8688581106,
+            "unit": "iter/sec",
+            "range": "stddev: 2.1831013618043426e-7",
+            "extra": "mean: 1.528098984727835 usec\nrounds: 74069"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 1156195.3780743112,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000015387918693676121",
+            "extra": "mean: 864.9057235166791 nsec\nrounds: 126583"
           }
         ]
       }
