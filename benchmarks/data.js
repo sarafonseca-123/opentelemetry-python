@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1638997921909,
+  "lastUpdate": 1638997926649,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -26620,44 +26620,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "nathanielruiz98@gmail.com",
-            "name": "(Eliseo) Nathaniel Ruiz Nowell",
-            "username": "NathanielRN"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "1e600f385a81e340a2a4bbb7d10075f113149a21",
-          "message": "Update Zoom meeting link to match calendar (#1920)",
-          "timestamp": "2021-06-22T17:06:26-07:00",
-          "tree_id": "6456cf9943990f258013b4a1b130117b0a1c0408",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/1e600f385a81e340a2a4bbb7d10075f113149a21"
-        },
-        "date": 1624406878439,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2657.7668524716755,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000108316595539971",
-            "extra": "mean: 376.25572727345065 usec\nrounds: 44"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3555.408417991309,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0008014085101391915",
-            "extra": "mean: 281.2616392928967 usec\nrounds: 4469"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "aboten@lightstep.com",
             "name": "alrex",
             "username": "codeboten"
@@ -30414,6 +30376,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008996516860062066",
             "extra": "mean: 212.29139117419876 usec\nrounds: 6685"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9ef6829b23a6bc59154ed0c644c72833d0a0e46f",
+          "message": "Refactor Meter and MeterProvider (#2296)\n\n* Refactor Meter and MeterProvider\r\n\r\nFixes #2292\r\n\r\n* Remove synchronous instruments list\r\n\r\n* Undo changes to _time.py\r\n\r\n* Make lint pass\r\n\r\n* Remove unnecesary docstring\r\n\r\n* Remove _create_instrument\r\n\r\n* Add missing callback\r\n\r\n* Remove instrument creating methods from MeterProvider\r\n\r\n* Remove views and other attributes\r\n\r\n* Removed dataclass dependency\r\n\r\n* Add warning\r\n\r\n* Add export directory\r\n\r\n* Add missing callbacks",
+          "timestamp": "2021-12-08T15:09:07-06:00",
+          "tree_id": "48c8c14a37999be37abbb4950edf2aa4a38c5c57",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/9ef6829b23a6bc59154ed0c644c72833d0a0e46f"
+        },
+        "date": 1638997899447,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2745.984610248779,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000019626650519610487",
+            "extra": "mean: 364.1681006760641 usec\nrounds: 1331"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4741.281874011148,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008932910392674643",
+            "extra": "mean: 210.91342522396693 usec\nrounds: 5804"
           }
         ]
       }
