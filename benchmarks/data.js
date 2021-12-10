@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1639154592202,
+  "lastUpdate": 1639154599161,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -55792,44 +55792,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "01c6954c556149fa7881414c5f50050b9322a138",
-          "message": "use BoundedAttributes for attributes in link, event, resource, spans (#1915)",
-          "timestamp": "2021-06-25T09:21:11-07:00",
-          "tree_id": "d0458d87ddf43afe81966a7d515e891fde21bc4b",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/01c6954c556149fa7881414c5f50050b9322a138"
-        },
-        "date": 1624638119543,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 85483.35253379784,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00010516787593790469",
-            "extra": "mean: 11.698184153512543 usec\nrounds: 8292"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 165892.0697241325,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00001537497016943776",
-            "extra": "mean: 6.028015695162123 usec\nrounds: 54348"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "d724573ef91abb880f0e1bd3c4431eb2a5ab0313",
           "message": "Report dropped attributes/events/links for otlp/jaeger/zipkin exporters (#1893)",
           "timestamp": "2021-06-30T15:46:07-07:00",
@@ -59576,6 +59538,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000014089299671270415",
             "extra": "mean: 4.717828420161077 usec\nrounds: 57804"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "robb@thekidds.org",
+            "name": "Robb Kidd",
+            "username": "robbkidd"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "af862eb3292edf97a7cd5eae03f58bb6e27f97c8",
+          "message": "[docs] Include opentelemetry-distro as dep for auto-instrumentation example (#2317)",
+          "timestamp": "2021-12-10T11:41:49-05:00",
+          "tree_id": "b41af67bddbea7d451981bede668498cfb7dbb06",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/af862eb3292edf97a7cd5eae03f58bb6e27f97c8"
+        },
+        "date": 1639154570794,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 100214.65956347484,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000016975657685864252",
+            "extra": "mean: 9.978580023680182 usec\nrounds: 10122"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 214746.44611235018,
+            "unit": "iter/sec",
+            "range": "stddev: 9.1979906639718e-7",
+            "extra": "mean: 4.656654478355484 usec\nrounds: 63695"
           }
         ]
       }
