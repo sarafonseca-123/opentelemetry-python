@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1639507476611,
+  "lastUpdate": 1639507479227,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -48178,44 +48178,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "lechen@microsoft.com",
-            "name": "Leighton Chen",
-            "username": "lzchen"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "a10faaf37e32e51959796747805444d655ab61c3",
-          "message": "Add excerpt for hotfixes (#1925)",
-          "timestamp": "2021-07-01T14:27:55-07:00",
-          "tree_id": "286d7c62cb6e267dc86a0f525065a509144d54d8",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a10faaf37e32e51959796747805444d655ab61c3"
-        },
-        "date": 1625174924959,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 96776.13998896701,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000019261645189540507",
-            "extra": "mean: 10.333125500913813 usec\nrounds: 13227"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 158813.19018174332,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000014676336959633842",
-            "extra": "mean: 6.296706204664837 usec\nrounds: 53476"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "srikanth.chekuri92@gmail.com",
             "name": "Srikanth Chekuri",
             "username": "lonewolf3739"
@@ -51972,6 +51934,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 6.191322830105047e-7",
             "extra": "mean: 4.8959765192273 usec\nrounds: 64095"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "636262db3afa9f43e449f759c566c704da772a4c",
+          "message": "Refactor metrics instrument (#2297)\n\n* Refactor instrument\r\n\r\nFixes #2294\r\n\r\n* Add Callback type back to API\r\n\r\n* Create instrument with meter\r\n\r\n* Make default_aggregation public\r\n\r\n* Use right import\r\n\r\n* Remove default aggregations",
+          "timestamp": "2021-12-14T12:43:13-06:00",
+          "tree_id": "e6853600935980f2b232a4d4fc7fe66b9ed304c1",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/636262db3afa9f43e449f759c566c704da772a4c"
+        },
+        "date": 1639507457155,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 120199.33337100857,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000014157529006297697",
+            "extra": "mean: 8.31951369408505 usec\nrounds: 11976"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 238355.8316149607,
+            "unit": "iter/sec",
+            "range": "stddev: 6.012854743450868e-7",
+            "extra": "mean: 4.195408156052155 usec\nrounds: 64517"
           }
         ]
       }
