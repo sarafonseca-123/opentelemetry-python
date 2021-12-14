@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1639509086651,
+  "lastUpdate": 1639509089473,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -55782,44 +55782,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "srikanth.chekuri92@gmail.com",
-            "name": "Srikanth Chekuri",
-            "username": "lonewolf3739"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "0e126544fba25c0f937a09e7c8cfbc7b6e6e518a",
-          "message": "Use BatchSpanProcessor in examples (#1928)",
-          "timestamp": "2021-07-01T15:53:17-07:00",
-          "tree_id": "3cabfd767322315ea28189e45206a005b19a0585",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/0e126544fba25c0f937a09e7c8cfbc7b6e6e518a"
-        },
-        "date": 1625180066941,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 118582.55174745903,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000018709932577594207",
-            "extra": "mean: 8.43294384598557 usec\nrounds: 15974"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 208835.20653162984,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000001314012036643867",
-            "extra": "mean: 4.788464630117535 usec\nrounds: 60603"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "robertsben@users.noreply.github.com",
             "name": "Ben Roberts",
             "username": "robertsben"
@@ -59576,6 +59538,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 4.43354676380127e-7",
             "extra": "mean: 4.087854840532069 usec\nrounds: 70922"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a00a1e4b9f49a771f5f5fcfc9b3f6499c65cb573",
+          "message": "`tests`: added missing tests (#2325)\n\nA couple of the exporters were not being tested by the opentelemetry-exporter-otlp package tests.\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2021-12-14T19:10:10Z",
+          "tree_id": "cbf1707dadaf062082feeff527732cf701273c2f",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a00a1e4b9f49a771f5f5fcfc9b3f6499c65cb573"
+        },
+        "date": 1639509066583,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 111492.68956221193,
+            "unit": "iter/sec",
+            "range": "stddev: 5.796592192285308e-7",
+            "extra": "mean: 8.969197926129578 usec\nrounds: 12151"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 246176.81165804176,
+            "unit": "iter/sec",
+            "range": "stddev: 4.4818587563203186e-7",
+            "extra": "mean: 4.062121014830088 usec\nrounds: 60976"
           }
         ]
       }
