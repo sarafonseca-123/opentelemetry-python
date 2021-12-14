@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1639509098694,
+  "lastUpdate": 1639509108496,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -81482,6 +81482,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000010611050155974214",
             "extra": "mean: 46.05852341786312 usec\nrounds: 7174"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a00a1e4b9f49a771f5f5fcfc9b3f6499c65cb573",
+          "message": "`tests`: added missing tests (#2325)\n\nA couple of the exporters were not being tested by the opentelemetry-exporter-otlp package tests.\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2021-12-14T19:10:10Z",
+          "tree_id": "cbf1707dadaf062082feeff527732cf701273c2f",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a00a1e4b9f49a771f5f5fcfc9b3f6499c65cb573"
+        },
+        "date": 1639509085864,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 28831.69291554304,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001322781774413554",
+            "extra": "mean: 34.68405420830853 usec\nrounds: 4907"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 21015.637172809118,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000015716843631148463",
+            "extra": "mean: 47.58361556098049 usec\nrounds: 6979"
           }
         ]
       }
