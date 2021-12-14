@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1639507506402,
+  "lastUpdate": 1639507536732,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -76460,6 +76460,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000008991107651826576",
             "extra": "mean: 5.72611093657443 usec\nrounds: 113637"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "636262db3afa9f43e449f759c566c704da772a4c",
+          "message": "Refactor metrics instrument (#2297)\n\n* Refactor instrument\r\n\r\nFixes #2294\r\n\r\n* Add Callback type back to API\r\n\r\n* Create instrument with meter\r\n\r\n* Make default_aggregation public\r\n\r\n* Use right import\r\n\r\n* Remove default aggregations",
+          "timestamp": "2021-12-14T12:43:13-06:00",
+          "tree_id": "e6853600935980f2b232a4d4fc7fe66b9ed304c1",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/636262db3afa9f43e449f759c566c704da772a4c"
+        },
+        "date": 1639507514572,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 253935.5173176387,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000017093015129638004",
+            "extra": "mean: 3.9380076113935045 usec\nrounds: 35460"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 166662.05416479264,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000043201560407319795",
+            "extra": "mean: 6.00016605466303 usec\nrounds: 117648"
           }
         ]
       }
