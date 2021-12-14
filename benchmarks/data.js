@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1639509146928,
+  "lastUpdate": 1639509158218,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -22818,44 +22818,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "srikanth.chekuri92@gmail.com",
-            "name": "Srikanth Chekuri",
-            "username": "lonewolf3739"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "0e126544fba25c0f937a09e7c8cfbc7b6e6e518a",
-          "message": "Use BatchSpanProcessor in examples (#1928)",
-          "timestamp": "2021-07-01T15:53:17-07:00",
-          "tree_id": "3cabfd767322315ea28189e45206a005b19a0585",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/0e126544fba25c0f937a09e7c8cfbc7b6e6e518a"
-        },
-        "date": 1625180107539,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2478.2926348109395,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00003046255418048139",
-            "extra": "mean: 403.5036000001213 usec\nrounds: 40"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3606.2966109680056,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0009153027973263392",
-            "extra": "mean: 277.2927764617728 usec\nrounds: 5319"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "robertsben@users.noreply.github.com",
             "name": "Ben Roberts",
             "username": "robertsben"
@@ -26612,6 +26574,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007181354347377703",
             "extra": "mean: 133.5122726166587 usec\nrounds: 9042"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a00a1e4b9f49a771f5f5fcfc9b3f6499c65cb573",
+          "message": "`tests`: added missing tests (#2325)\n\nA couple of the exporters were not being tested by the opentelemetry-exporter-otlp package tests.\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2021-12-14T19:10:10Z",
+          "tree_id": "cbf1707dadaf062082feeff527732cf701273c2f",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a00a1e4b9f49a771f5f5fcfc9b3f6499c65cb573"
+        },
+        "date": 1639509136318,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3690.8055468249477,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000005795506262587056",
+            "extra": "mean: 270.94356159192944 usec\nrounds: 1583"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7914.181527620112,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0006746191182852925",
+            "extra": "mean: 126.35545400494647 usec\nrounds: 9251"
           }
         ]
       }
