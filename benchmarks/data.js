@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1639507457372,
+  "lastUpdate": 1639507465693,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -68550,6 +68550,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000004534979607375569",
             "extra": "mean: 49.19904955170555 usec\nrounds: 6135"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "636262db3afa9f43e449f759c566c704da772a4c",
+          "message": "Refactor metrics instrument (#2297)\n\n* Refactor instrument\r\n\r\nFixes #2294\r\n\r\n* Add Callback type back to API\r\n\r\n* Create instrument with meter\r\n\r\n* Make default_aggregation public\r\n\r\n* Use right import\r\n\r\n* Remove default aggregations",
+          "timestamp": "2021-12-14T12:43:13-06:00",
+          "tree_id": "e6853600935980f2b232a4d4fc7fe66b9ed304c1",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/636262db3afa9f43e449f759c566c704da772a4c"
+        },
+        "date": 1639507444348,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 29383.2005805774,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000011079997377060983",
+            "extra": "mean: 34.03305222852443 usec\nrounds: 5093"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20845.61805204624,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000016583659013026027",
+            "extra": "mean: 47.971712688165574 usec\nrounds: 6707"
           }
         ]
       }
