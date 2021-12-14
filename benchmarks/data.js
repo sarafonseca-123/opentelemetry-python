@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1639507498129,
+  "lastUpdate": 1639507499842,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -79008,6 +79008,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000021277684412793938",
             "extra": "mean: 1.009628180963039 usec\nrounds: 113637"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "636262db3afa9f43e449f759c566c704da772a4c",
+          "message": "Refactor metrics instrument (#2297)\n\n* Refactor instrument\r\n\r\nFixes #2294\r\n\r\n* Add Callback type back to API\r\n\r\n* Create instrument with meter\r\n\r\n* Make default_aggregation public\r\n\r\n* Use right import\r\n\r\n* Remove default aggregations",
+          "timestamp": "2021-12-14T12:43:13-06:00",
+          "tree_id": "e6853600935980f2b232a4d4fc7fe66b9ed304c1",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/636262db3afa9f43e449f759c566c704da772a4c"
+        },
+        "date": 1639507475849,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 641001.4113178985,
+            "unit": "iter/sec",
+            "range": "stddev: 2.178826848706165e-7",
+            "extra": "mean: 1.5600589676456071 usec\nrounds: 71429"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 1188551.344263149,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000015711459648008736",
+            "extra": "mean: 841.3603710323289 nsec\nrounds: 135136"
           }
         ]
       }
