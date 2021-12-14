@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1639154710494,
+  "lastUpdate": 1639505246128,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -80798,6 +80798,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000002015857669074357",
             "extra": "mean: 53.17081512183131 usec\nrounds: 6150"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8d4a804b49ac36d1cc629931960168dacde4d2ab",
+          "message": "add OTEL_LOGS_EXPORTER env variable (#2320)\n\nAs per the change in the specification, adding the variable. There will be a follow up PR to use the variable.",
+          "timestamp": "2021-12-14T12:06:16-06:00",
+          "tree_id": "0228fd5413791df9b2e0a9427917c2077dcdb037",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/8d4a804b49ac36d1cc629931960168dacde4d2ab"
+        },
+        "date": 1639505224336,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 29200.373227413955,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001928915780514148",
+            "extra": "mean: 34.24613761652806 usec\nrounds: 4934"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 21373.070131807428,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000016147398942255046",
+            "extra": "mean: 46.78785002964075 usec\nrounds: 6748"
           }
         ]
       }
