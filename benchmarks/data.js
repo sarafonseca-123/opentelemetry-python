@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1639604516286,
+  "lastUpdate": 1639604523317,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -68740,6 +68740,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000025201151069681427",
             "extra": "mean: 55.293877463999074 usec\nrounds: 6798"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dfb5c66ae310001bb40326f6286345b7fa252aba",
+          "message": "add `otlp` entrypoint for logs (#2322)\n\n* add `otlp` entrypoint for logs\r\n\r\nTo be in-line with the trace exporter.\r\n\r\n* update changelog\r\n\r\n* add newline",
+          "timestamp": "2021-12-15T15:40:13-06:00",
+          "tree_id": "711e04ef70040f3f1f24a007404276cb42e87857",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/dfb5c66ae310001bb40326f6286345b7fa252aba"
+        },
+        "date": 1639604494586,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 26352.54741228153,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000008866460020522837",
+            "extra": "mean: 37.94699557333698 usec\nrounds: 3388"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 17912.85891175277,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000012037693198417542",
+            "extra": "mean: 55.825817918093016 usec\nrounds: 8584"
           }
         ]
       }
