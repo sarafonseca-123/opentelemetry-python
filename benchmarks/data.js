@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1639509262143,
+  "lastUpdate": 1639604491521,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -80530,6 +80530,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 2.829155706003171e-7",
             "extra": "mean: 4.123290821053298 usec\nrounds: 67110"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dfb5c66ae310001bb40326f6286345b7fa252aba",
+          "message": "add `otlp` entrypoint for logs (#2322)\n\n* add `otlp` entrypoint for logs\r\n\r\nTo be in-line with the trace exporter.\r\n\r\n* update changelog\r\n\r\n* add newline",
+          "timestamp": "2021-12-15T15:40:13-06:00",
+          "tree_id": "711e04ef70040f3f1f24a007404276cb42e87857",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/dfb5c66ae310001bb40326f6286345b7fa252aba"
+        },
+        "date": 1639604463261,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 133654.90864267523,
+            "unit": "iter/sec",
+            "range": "stddev: 4.344833492211777e-7",
+            "extra": "mean: 7.481954910264371 usec\nrounds: 14327"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 246490.86647242293,
+            "unit": "iter/sec",
+            "range": "stddev: 2.8034228149821985e-7",
+            "extra": "mean: 4.056945453238035 usec\nrounds: 69445"
           }
         ]
       }
