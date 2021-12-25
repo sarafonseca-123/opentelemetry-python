@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1640469235914,
+  "lastUpdate": 1640469241836,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -41676,44 +41676,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "ocelotl@users.noreply.github.com",
-            "name": "Diego Hurtado",
-            "username": "ocelotl"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "12fe4c9d56b9b43b9e6d12c1e7665737ad782bbe",
-          "message": "Do not check every string character (#1942)",
-          "timestamp": "2021-07-12T12:55:23-07:00",
-          "tree_id": "17e1a20c743cbc276f454d33bf5e6ddbed444920",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/12fe4c9d56b9b43b9e6d12c1e7665737ad782bbe"
-        },
-        "date": 1626120384353,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 97331.36698529332,
-            "unit": "iter/sec",
-            "range": "stddev: 5.55429353780711e-7",
-            "extra": "mean: 10.274180163842752 usec\nrounds: 13793"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 157334.84158966175,
-            "unit": "iter/sec",
-            "range": "stddev: 4.510913594238484e-7",
-            "extra": "mean: 6.355871273624548 usec\nrounds: 54946"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "nathanielruiz98@gmail.com",
             "name": "(Eliseo) Nathaniel Ruiz Nowell",
             "username": "NathanielRN"
@@ -45470,6 +45432,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000006687250905293708",
             "extra": "mean: 5.166602476850208 usec\nrounds: 64517"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "matt.r.oberle@gmail.com",
+            "name": "Matt Oberle",
+            "username": "mattoberle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d432153b9c615a6d5cf2f3c9d79791881de8856c",
+          "message": "Add setuptools runtime requirement (#2334)\n\n* Add setuptools runtime requirement\r\n\r\nThe `pkg_resources` module is provided by `setuptools`.\r\nThe `setuptools` package is not part of the Python stdlib but is often\r\navailable in the system environment as a build-time requirement.\r\n\r\nExplicitly listing `setuptools` as a requirement protects\r\n`opentelemetry-python` from breaking with import errors in cases where\r\n`setuptools` is not available system-wide.\r\n\r\nThis commit pins the version to `setuptools >= 16.0` which is the first\r\nrelease that includes the required imports (2015).\r\n\r\n* Update CHANGELOG",
+          "timestamp": "2021-12-25T21:52:39Z",
+          "tree_id": "48c82a7387b9d4be4dc66aeabd69bdd83bb0d5bd",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/d432153b9c615a6d5cf2f3c9d79791881de8856c"
+        },
+        "date": 1640469212944,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 95555.71179033988,
+            "unit": "iter/sec",
+            "range": "stddev: 4.460169304295801e-7",
+            "extra": "mean: 10.465099168473715 usec\nrounds: 13351"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 195293.2650755416,
+            "unit": "iter/sec",
+            "range": "stddev: 5.145498401270715e-7",
+            "extra": "mean: 5.1205042816668 usec\nrounds: 60607"
           }
         ]
       }
