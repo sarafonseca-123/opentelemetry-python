@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1640468391565,
+  "lastUpdate": 1640469230838,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -81328,6 +81328,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000024800547443900612",
             "extra": "mean: 5.466639471526731 usec\nrounds: 54348"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "matt.r.oberle@gmail.com",
+            "name": "Matt Oberle",
+            "username": "mattoberle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d432153b9c615a6d5cf2f3c9d79791881de8856c",
+          "message": "Add setuptools runtime requirement (#2334)\n\n* Add setuptools runtime requirement\r\n\r\nThe `pkg_resources` module is provided by `setuptools`.\r\nThe `setuptools` package is not part of the Python stdlib but is often\r\navailable in the system environment as a build-time requirement.\r\n\r\nExplicitly listing `setuptools` as a requirement protects\r\n`opentelemetry-python` from breaking with import errors in cases where\r\n`setuptools` is not available system-wide.\r\n\r\nThis commit pins the version to `setuptools >= 16.0` which is the first\r\nrelease that includes the required imports (2015).\r\n\r\n* Update CHANGELOG",
+          "timestamp": "2021-12-25T21:52:39Z",
+          "tree_id": "48c82a7387b9d4be4dc66aeabd69bdd83bb0d5bd",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/d432153b9c615a6d5cf2f3c9d79791881de8856c"
+        },
+        "date": 1640469202795,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 147833.08831829941,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010629801898801067",
+            "extra": "mean: 6.764385506490265 usec\nrounds: 12516"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 289583.4601718115,
+            "unit": "iter/sec",
+            "range": "stddev: 8.16388351285785e-7",
+            "extra": "mean: 3.4532358975429545 usec\nrounds: 71938"
           }
         ]
       }
