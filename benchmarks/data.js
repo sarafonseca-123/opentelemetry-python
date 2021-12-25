@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1640469313541,
+  "lastUpdate": 1640469322695,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -30422,44 +30422,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "ocelotl@users.noreply.github.com",
-            "name": "Diego Hurtado",
-            "username": "ocelotl"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "12fe4c9d56b9b43b9e6d12c1e7665737ad782bbe",
-          "message": "Do not check every string character (#1942)",
-          "timestamp": "2021-07-12T12:55:23-07:00",
-          "tree_id": "17e1a20c743cbc276f454d33bf5e6ddbed444920",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/12fe4c9d56b9b43b9e6d12c1e7665737ad782bbe"
-        },
-        "date": 1626120422678,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2343.281140362161,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00004137031017746444",
-            "extra": "mean: 426.75203703702715 usec\nrounds: 27"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3587.696758819256,
-            "unit": "iter/sec",
-            "range": "stddev: 0.001010122578914331",
-            "extra": "mean: 278.73035744779867 usec\nrounds: 5391"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "nathanielruiz98@gmail.com",
             "name": "(Eliseo) Nathaniel Ruiz Nowell",
             "username": "NathanielRN"
@@ -34216,6 +34178,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007100242500896075",
             "extra": "mean: 178.11147959475213 usec\nrounds: 7008"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "matt.r.oberle@gmail.com",
+            "name": "Matt Oberle",
+            "username": "mattoberle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d432153b9c615a6d5cf2f3c9d79791881de8856c",
+          "message": "Add setuptools runtime requirement (#2334)\n\n* Add setuptools runtime requirement\r\n\r\nThe `pkg_resources` module is provided by `setuptools`.\r\nThe `setuptools` package is not part of the Python stdlib but is often\r\navailable in the system environment as a build-time requirement.\r\n\r\nExplicitly listing `setuptools` as a requirement protects\r\n`opentelemetry-python` from breaking with import errors in cases where\r\n`setuptools` is not available system-wide.\r\n\r\nThis commit pins the version to `setuptools >= 16.0` which is the first\r\nrelease that includes the required imports (2015).\r\n\r\n* Update CHANGELOG",
+          "timestamp": "2021-12-25T21:52:39Z",
+          "tree_id": "48c82a7387b9d4be4dc66aeabd69bdd83bb0d5bd",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/d432153b9c615a6d5cf2f3c9d79791881de8856c"
+        },
+        "date": 1640469291855,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3168.4525094903743,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007423211005138612",
+            "extra": "mean: 315.6114844722239 usec\nrounds: 1288"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 5973.373825923252,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007503222691078047",
+            "extra": "mean: 167.4095794340209 usec\nrounds: 7138"
           }
         ]
       }
