@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1640469253108,
+  "lastUpdate": 1640469267472,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -66154,6 +66154,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00007746513395630496",
             "extra": "mean: 99.6621976862809 usec\nrounds: 4927"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "matt.r.oberle@gmail.com",
+            "name": "Matt Oberle",
+            "username": "mattoberle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d432153b9c615a6d5cf2f3c9d79791881de8856c",
+          "message": "Add setuptools runtime requirement (#2334)\n\n* Add setuptools runtime requirement\r\n\r\nThe `pkg_resources` module is provided by `setuptools`.\r\nThe `setuptools` package is not part of the Python stdlib but is often\r\navailable in the system environment as a build-time requirement.\r\n\r\nExplicitly listing `setuptools` as a requirement protects\r\n`opentelemetry-python` from breaking with import errors in cases where\r\n`setuptools` is not available system-wide.\r\n\r\nThis commit pins the version to `setuptools >= 16.0` which is the first\r\nrelease that includes the required imports (2015).\r\n\r\n* Update CHANGELOG",
+          "timestamp": "2021-12-25T21:52:39Z",
+          "tree_id": "48c82a7387b9d4be4dc66aeabd69bdd83bb0d5bd",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/d432153b9c615a6d5cf2f3c9d79791881de8856c"
+        },
+        "date": 1640469239240,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 21687.22875454622,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000011364754546135203",
+            "extra": "mean: 46.1100867850796 usec\nrounds: 4056"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 14930.023733522765,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000018522012341844197",
+            "extra": "mean: 66.97912996311415 usec\nrounds: 5163"
           }
         ]
       }
