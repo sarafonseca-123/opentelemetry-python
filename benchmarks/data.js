@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1641236659411,
+  "lastUpdate": 1641236661500,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -83268,6 +83268,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000001109802189398011",
             "extra": "mean: 46.80985958277348 usec\nrounds: 7143"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "438d8371288867f55797e5be97e6c6a024af6e4f",
+          "message": "helpful propagator entry point loading error message (#2344)",
+          "timestamp": "2022-01-03T19:01:58Z",
+          "tree_id": "7f68ff8410ca8215daba8845ffd8270dfd5206c7",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/438d8371288867f55797e5be97e6c6a024af6e4f"
+        },
+        "date": 1641236627029,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 22855.877122864695,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000026730672473450694",
+            "extra": "mean: 43.75242282868305 usec\nrounds: 5423"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 15021.763491546695,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00017282665199093542",
+            "extra": "mean: 66.57008017485678 usec\nrounds: 3430"
           }
         ]
       }
