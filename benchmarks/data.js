@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1641236242285,
+  "lastUpdate": 1641236244018,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -48178,44 +48178,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "nathanielruiz98@gmail.com",
-            "name": "(Eliseo) Nathaniel Ruiz Nowell",
-            "username": "NathanielRN"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "0f6699d966677c86fc7ad658c60e6a497bdc3434",
-          "message": "Generate semconv constants update for OTel Spec 1.5.0 (#1946)",
-          "timestamp": "2021-07-13T08:37:47-07:00",
-          "tree_id": "c075d8d78c0e2db9b48b85e5d79ca44ccb290863",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/0f6699d966677c86fc7ad658c60e6a497bdc3434"
-        },
-        "date": 1626191034946,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 108060.47288342817,
-            "unit": "iter/sec",
-            "range": "stddev: 5.712424337048357e-7",
-            "extra": "mean: 9.254077585601209 usec\nrounds: 14165"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 170762.27024307055,
-            "unit": "iter/sec",
-            "range": "stddev: 7.325875067868667e-7",
-            "extra": "mean: 5.856094549320266 usec\nrounds: 51021"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "60111015+kuerbis-martin@users.noreply.github.com",
             "name": "kuerbis-martin",
             "username": "kuerbis-martin"
@@ -51972,6 +51934,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000004290934783789409",
             "extra": "mean: 4.9724198446893 usec\nrounds: 29499"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pcarter@fastmail.com",
+            "name": "Phillip Carter",
+            "username": "cartermp"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d3e569c941e01170b13d863e135bdd033399a008",
+          "message": "Add section in FAQ/cookbook for nested spans (#2333)",
+          "timestamp": "2022-01-03T13:55:51-05:00",
+          "tree_id": "a08633a139edc3ad4e4ec7116413dc9a80e77a37",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/d3e569c941e01170b13d863e135bdd033399a008"
+        },
+        "date": 1641236214625,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 126810.08525678788,
+            "unit": "iter/sec",
+            "range": "stddev: 3.9580482976752417e-7",
+            "extra": "mean: 7.885808119874852 usec\nrounds: 16208"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 238552.02379185724,
+            "unit": "iter/sec",
+            "range": "stddev: 2.2141883645607639e-7",
+            "extra": "mean: 4.191957729407174 usec\nrounds: 65790"
           }
         ]
       }
