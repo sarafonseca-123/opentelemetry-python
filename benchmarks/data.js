@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1641236792045,
+  "lastUpdate": 1641236795855,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -77790,6 +77790,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00004807824290413865",
             "extra": "mean: 7.001808539513089 usec\nrounds: 112360"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "438d8371288867f55797e5be97e6c6a024af6e4f",
+          "message": "helpful propagator entry point loading error message (#2344)",
+          "timestamp": "2022-01-03T19:01:58Z",
+          "tree_id": "7f68ff8410ca8215daba8845ffd8270dfd5206c7",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/438d8371288867f55797e5be97e6c6a024af6e4f"
+        },
+        "date": 1641236762677,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 223697.03705242314,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00004460965253507044",
+            "extra": "mean: 4.470331897000724 usec\nrounds: 161291"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 143659.67060901294,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000541056189596379",
+            "extra": "mean: 6.960895815511231 usec\nrounds: 107516"
           }
         ]
       }
