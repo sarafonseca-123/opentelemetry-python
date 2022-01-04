@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1641322243127,
+  "lastUpdate": 1641322254795,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -85208,6 +85208,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0006458004416700823",
             "extra": "mean: 120.12775494840237 usec\nrounds: 9700"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "moberle@ocrolus.com",
+            "name": "Matt Oberle",
+            "username": "mattoberle"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d8bebdd5f7c3f08dd565a71be5d84c5ab500c32b",
+          "message": "Decode URL-encoded headers in environment vars (#2312)",
+          "timestamp": "2022-01-04T13:47:26-05:00",
+          "tree_id": "27b1f0c315fb6a531198c40322892aeb4cd1141f",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/d8bebdd5f7c3f08dd565a71be5d84c5ab500c32b"
+        },
+        "date": 1641322221411,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3446.021875228626,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000015743271477822286",
+            "extra": "mean: 290.18968428157615 usec\nrounds: 1476"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7359.962401906615,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007150731654255417",
+            "extra": "mean: 135.87025930199692 usec\nrounds: 8681"
           }
         ]
       }
