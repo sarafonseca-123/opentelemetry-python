@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1641599820216,
+  "lastUpdate": 1641599822989,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -85474,6 +85474,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007150731654255417",
             "extra": "mean: 135.87025930199692 usec\nrounds: 8681"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f5d872050204685b5ef831d02ec593956820ebe6",
+          "message": "[otlp-exporter] refactor _translate_attributes (#2355)\n\n* [otlp-exporter] refactor _translate_attributes\r\n\r\nThe method to translate attributes is common across signals, rafactoring the code to make it so.\r\n\r\n* fix lint",
+          "timestamp": "2022-01-07T17:52:52-06:00",
+          "tree_id": "a2009d857284954fb352eb39dc4bd5d76449a07a",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/f5d872050204685b5ef831d02ec593956820ebe6"
+        },
+        "date": 1641599791951,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2451.6907500790353,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00019019160665837193",
+            "extra": "mean: 407.88178524055814 usec\nrounds: 1206"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 5907.4216639918905,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008475398361544828",
+            "extra": "mean: 169.2785883383612 usec\nrounds: 6826"
           }
         ]
       }
