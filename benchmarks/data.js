@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1641599699497,
+  "lastUpdate": 1641599713143,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -83876,6 +83876,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000035068883637632805",
             "extra": "mean: 54.43179061981215 usec\nrounds: 6887"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f5d872050204685b5ef831d02ec593956820ebe6",
+          "message": "[otlp-exporter] refactor _translate_attributes (#2355)\n\n* [otlp-exporter] refactor _translate_attributes\r\n\r\nThe method to translate attributes is common across signals, rafactoring the code to make it so.\r\n\r\n* fix lint",
+          "timestamp": "2022-01-07T17:52:52-06:00",
+          "tree_id": "a2009d857284954fb352eb39dc4bd5d76449a07a",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/f5d872050204685b5ef831d02ec593956820ebe6"
+        },
+        "date": 1641599679348,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 24197.77665195293,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000004227272472231511",
+            "extra": "mean: 41.32611083999294 usec\nrounds: 4917"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 17607.66575923583,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000006428920488806775",
+            "extra": "mean: 56.793445177448646 usec\nrounds: 6366"
           }
         ]
       }
