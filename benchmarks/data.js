@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1641599959854,
+  "lastUpdate": 1641599962209,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -81098,6 +81098,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000023788948285401335",
             "extra": "mean: 1.1136746144446603 usec\nrounds: 98040"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f5d872050204685b5ef831d02ec593956820ebe6",
+          "message": "[otlp-exporter] refactor _translate_attributes (#2355)\n\n* [otlp-exporter] refactor _translate_attributes\r\n\r\nThe method to translate attributes is common across signals, rafactoring the code to make it so.\r\n\r\n* fix lint",
+          "timestamp": "2022-01-07T17:52:52-06:00",
+          "tree_id": "a2009d857284954fb352eb39dc4bd5d76449a07a",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/f5d872050204685b5ef831d02ec593956820ebe6"
+        },
+        "date": 1641599926470,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 434064.3484379522,
+            "unit": "iter/sec",
+            "range": "stddev: 9.807105168146801e-7",
+            "extra": "mean: 2.3038058840783466 usec\nrounds: 58140"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 766823.6194636404,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000003629187834865245",
+            "extra": "mean: 1.3040808532990615 usec\nrounds: 103083"
           }
         ]
       }
