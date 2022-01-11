@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1641929158739,
+  "lastUpdate": 1641929179914,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -86614,6 +86614,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0006665632579596767",
             "extra": "mean: 122.47840719355462 usec\nrounds: 9175"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6b655ce2d3826daef8f0c80c3fc0863d145f77e7",
+          "message": "Refactor aggregations (#2308)",
+          "timestamp": "2022-01-11T11:23:04-08:00",
+          "tree_id": "65c1b0af21fc4084809e202bc72c428b68b91361",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/6b655ce2d3826daef8f0c80c3fc0863d145f77e7"
+        },
+        "date": 1641929150512,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3746.3178764318736,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007060455729478535",
+            "extra": "mean: 266.9287639180356 usec\nrounds: 1419"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 8066.232985732347,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0006690744273994953",
+            "extra": "mean: 123.97360723014229 usec\nrounds: 9018"
           }
         ]
       }
