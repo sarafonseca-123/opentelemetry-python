@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1641838203675,
+  "lastUpdate": 1641928017692,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -82924,6 +82924,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000004913125349470431",
             "extra": "mean: 4.922330970428132 usec\nrounds: 58827"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "523379342b43ef3e0bb41611e982ce10f9dd6fc0",
+          "message": "[api/sdk] add entrypoint for meter provider (#2354)\n\n* [api/sdk] add entrypoint for meter provider\r\n\r\nAdding the opentelemtry_meter_provider entrypoints default_meter_provider & sdk_meter_provider.\r\n\r\n* update sha\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2022-01-11T13:05:16-06:00",
+          "tree_id": "3bf881f9f061f010468a3c1c3b7ad9fc98bcd157",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/523379342b43ef3e0bb41611e982ce10f9dd6fc0"
+        },
+        "date": 1641927987117,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 128497.51575560153,
+            "unit": "iter/sec",
+            "range": "stddev: 6.218493568086153e-7",
+            "extra": "mean: 7.782251618793708 usec\nrounds: 8803"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 240506.2016928774,
+            "unit": "iter/sec",
+            "range": "stddev: 3.967595766404964e-7",
+            "extra": "mean: 4.157896939709622 usec\nrounds: 49505"
           }
         ]
       }
