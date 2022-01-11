@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1641928092382,
+  "lastUpdate": 1641928094610,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -69424,6 +69424,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000019338452922851164",
             "extra": "mean: 49.054098403023104 usec\nrounds: 6575"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "523379342b43ef3e0bb41611e982ce10f9dd6fc0",
+          "message": "[api/sdk] add entrypoint for meter provider (#2354)\n\n* [api/sdk] add entrypoint for meter provider\r\n\r\nAdding the opentelemtry_meter_provider entrypoints default_meter_provider & sdk_meter_provider.\r\n\r\n* update sha\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2022-01-11T13:05:16-06:00",
+          "tree_id": "3bf881f9f061f010468a3c1c3b7ad9fc98bcd157",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/523379342b43ef3e0bb41611e982ce10f9dd6fc0"
+        },
+        "date": 1641928064284,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 28431.662112309663,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000011691126785858518",
+            "extra": "mean: 35.172055578384345 usec\nrounds: 4876"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20839.89614634383,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000019537100911115054",
+            "extra": "mean: 47.984884040578144 usec\nrounds: 5821"
           }
         ]
       }
