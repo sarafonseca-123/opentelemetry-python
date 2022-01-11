@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1641929119615,
+  "lastUpdate": 1641929123884,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -81706,6 +81706,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000016005144665427691",
             "extra": "mean: 821.022553888372 nsec\nrounds: 133334"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6b655ce2d3826daef8f0c80c3fc0863d145f77e7",
+          "message": "Refactor aggregations (#2308)",
+          "timestamp": "2022-01-11T11:23:04-08:00",
+          "tree_id": "65c1b0af21fc4084809e202bc72c428b68b91361",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/6b655ce2d3826daef8f0c80c3fc0863d145f77e7"
+        },
+        "date": 1641929092725,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 604772.3552407589,
+            "unit": "iter/sec",
+            "range": "stddev: 2.3830128948211742e-7",
+            "extra": "mean: 1.6535147338239606 usec\nrounds: 70423"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 1181228.9186240383,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000015899722459966038",
+            "extra": "mean: 846.5759551205875 nsec\nrounds: 133334"
           }
         ]
       }
