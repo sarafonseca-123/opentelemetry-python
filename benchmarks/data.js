@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1641932385752,
+  "lastUpdate": 1641932390327,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -78930,6 +78930,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00005016090336993507",
             "extra": "mean: 5.489548992844972 usec\nrounds: 119048"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "13fa2201f5b3a97c08b0d7bbd48e31f76aadd14f",
+          "message": "Remove metric exporters from MeterProvider (#2359)",
+          "timestamp": "2022-01-11T12:17:03-08:00",
+          "tree_id": "506803d2f9fa869f001b3a56f0689d1d3048f7c8",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/13fa2201f5b3a97c08b0d7bbd48e31f76aadd14f"
+        },
+        "date": 1641932360065,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 259908.07930019245,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00004164039708047996",
+            "extra": "mean: 3.847514100725608 usec\nrounds: 178572"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 170455.3081512319,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000009834458274266243",
+            "extra": "mean: 5.866640416459057 usec\nrounds: 113637"
           }
         ]
       }
