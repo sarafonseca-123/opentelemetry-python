@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642013208248,
+  "lastUpdate": 1642013211667,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -69728,6 +69728,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00005492075321328104",
             "extra": "mean: 65.3424957186132 usec\nrounds: 7474"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaronabbott@google.com",
+            "name": "Aaron Abbott",
+            "username": "aabmass"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9e78bcb029f40c5801a13a38368b56dd71658cac",
+          "message": "Complete metric exporter format and update OTLP exporter (#2364)",
+          "timestamp": "2022-01-12T10:45:25-08:00",
+          "tree_id": "1b96ff089b5b40338b1cbae93656a3799f2b59ff",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/9e78bcb029f40c5801a13a38368b56dd71658cac"
+        },
+        "date": 1642013180906,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 32537.580263243144,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000015001579602973113",
+            "extra": "mean: 30.733692914763978 usec\nrounds: 5702"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 23746.816170532114,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000002722577458835667",
+            "extra": "mean: 42.110908376884616 usec\nrounds: 7640"
           }
         ]
       }
