@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642013390317,
+  "lastUpdate": 1642103775251,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -84254,6 +84254,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000001575203691468508",
             "extra": "mean: 3.9870889821247175 usec\nrounds: 72464"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6a8898783dd784476735e02a1c6e909e5574a9a4",
+          "message": "Add measurement consumer (#2339)\n\n* Add measurement consumer\r\n\r\n* Fix lint\r\n\r\n* Address comments\r\n\r\n* Update opentelemetry-sdk/src/opentelemetry/sdk/_metrics/instrument.py\r\n\r\nCo-authored-by: Aaron Abbott <aaronabbott@google.com>\r\n\r\n* Rename Serial to Synchronous\r\n\r\n* Fix asynchronous instrument registering bug\r\n\r\n* Fix type\r\n\r\n* Use right path\r\n\r\n* Fix lint\r\n\r\n* Fix circular import\r\n\r\n* Pass name first\r\n\r\n* Implement different fix for circular import\r\n\r\nCo-authored-by: Aaron Abbott <aaronabbott@google.com>",
+          "timestamp": "2022-01-13T13:54:09-06:00",
+          "tree_id": "6ab2ee788dcb0ad78ca5de2f0f55946c29e4c5b2",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/6a8898783dd784476735e02a1c6e909e5574a9a4"
+        },
+        "date": 1642103747571,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 132559.1874341373,
+            "unit": "iter/sec",
+            "range": "stddev: 3.866994183194936e-7",
+            "extra": "mean: 7.543800013838006 usec\nrounds: 14451"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 248570.19987868157,
+            "unit": "iter/sec",
+            "range": "stddev: 3.407708562653937e-7",
+            "extra": "mean: 4.0230083915451855 usec\nrounds: 67568"
           }
         ]
       }
