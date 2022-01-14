@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642121222288,
+  "lastUpdate": 1642121250863,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -79690,6 +79690,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00005912931968121619",
             "extra": "mean: 8.17192611866351 usec\nrounds: 104167"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9a87b4930a5e6f2e7b3de957abfb9c2f9c6d8b9b",
+          "message": "Use binary search for histogram values (#2351)\n\n* Use binary search for histogram values\r\n\r\nFixes #2336\r\n\r\n* Refactor Histogram aggregation data structures",
+          "timestamp": "2022-01-14T00:44:38Z",
+          "tree_id": "6d6cb2f1e84b24cc2f893e27e01e6f98226d163d",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/9a87b4930a5e6f2e7b3de957abfb9c2f9c6d8b9b"
+        },
+        "date": 1642121214942,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 216534.19240421779,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00004747060716095413",
+            "extra": "mean: 4.618208278779538 usec\nrounds: 161291"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 150080.599993752,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000012299414431581128",
+            "extra": "mean: 6.663086368535513 usec\nrounds: 97078"
           }
         ]
       }
