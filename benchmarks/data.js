@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642121200147,
+  "lastUpdate": 1642121222288,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -82922,6 +82922,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000002649851775445329",
             "extra": "mean: 1.0048035134808606 usec\nrounds: 131579"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9a87b4930a5e6f2e7b3de957abfb9c2f9c6d8b9b",
+          "message": "Use binary search for histogram values (#2351)\n\n* Use binary search for histogram values\r\n\r\nFixes #2336\r\n\r\n* Refactor Histogram aggregation data structures",
+          "timestamp": "2022-01-14T00:44:38Z",
+          "tree_id": "6d6cb2f1e84b24cc2f893e27e01e6f98226d163d",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/9a87b4930a5e6f2e7b3de957abfb9c2f9c6d8b9b"
+        },
+        "date": 1642121183960,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 569869.8495185876,
+            "unit": "iter/sec",
+            "range": "stddev: 3.395455283412941e-7",
+            "extra": "mean: 1.7547866426777836 usec\nrounds: 71938"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 930112.0786220665,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000020426276261153026",
+            "extra": "mean: 1.075139247176955 usec\nrounds: 138889"
           }
         ]
       }
