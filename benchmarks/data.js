@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642121168361,
+  "lastUpdate": 1642121170273,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -59584,44 +59584,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "nathanielruiz98@gmail.com",
-            "name": "(Eliseo) Nathaniel Ruiz Nowell",
-            "username": "NathanielRN"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "191a55ce0478822cb054c48495a4ed227a4579d8",
-          "message": "Default configurators do more for distros (#1937)",
-          "timestamp": "2021-07-23T10:40:08-07:00",
-          "tree_id": "77efa28fe6bf96de07ee251c0fa29ef5f004608e",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/191a55ce0478822cb054c48495a4ed227a4579d8"
-        },
-        "date": 1627062639031,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 59333.45498729289,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00002664330508864499",
-            "extra": "mean: 16.853898027919733 usec\nrounds: 10091"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 102497.73868537818,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000005400807252827666",
-            "extra": "mean: 9.756312800905286 usec\nrounds: 42372"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "aboten@lightstep.com",
             "name": "alrex",
             "username": "codeboten"
@@ -63378,6 +63340,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000006136363747400663",
             "extra": "mean: 7.78642797112606 usec\nrounds: 48307"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9a87b4930a5e6f2e7b3de957abfb9c2f9c6d8b9b",
+          "message": "Use binary search for histogram values (#2351)\n\n* Use binary search for histogram values\r\n\r\nFixes #2336\r\n\r\n* Refactor Histogram aggregation data structures",
+          "timestamp": "2022-01-14T00:44:38Z",
+          "tree_id": "6d6cb2f1e84b24cc2f893e27e01e6f98226d163d",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/9a87b4930a5e6f2e7b3de957abfb9c2f9c6d8b9b"
+        },
+        "date": 1642121138584,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 73588.01283441634,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00000316121491757308",
+            "extra": "mean: 13.589169777557991 usec\nrounds: 10661"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 145503.73676385856,
+            "unit": "iter/sec",
+            "range": "stddev: 2.979753871145901e-7",
+            "extra": "mean: 6.872675728066858 usec\nrounds: 58821"
           }
         ]
       }
