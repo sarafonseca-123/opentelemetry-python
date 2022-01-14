@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642179705808,
+  "lastUpdate": 1642179727326,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -26620,44 +26620,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "aboten@lightstep.com",
-            "name": "alrex",
-            "username": "codeboten"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "c6a0e3eeac3adb852910e2da4b48f8d177eb532d",
-          "message": "fix opentelemetry-bootstrap bug (#1987)\n\n* fix opentelemetry-bootstrap bug\r\n\r\n* Update CHANGELOG.md",
-          "timestamp": "2021-07-26T15:48:36-06:00",
-          "tree_id": "bfc8fc9f6bb74c8f606fe6e699e6caa875c8aec3",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c6a0e3eeac3adb852910e2da4b48f8d177eb532d"
-        },
-        "date": 1627336232024,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 3103.666700070225,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000009488003669648855",
-            "extra": "mean: 322.199545452923 usec\nrounds: 44"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 5268.957336561784,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0007382663478454064",
-            "extra": "mean: 189.79087058855217 usec\nrounds: 2550"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "srikanth.chekuri92@gmail.com",
             "name": "Srikanth Chekuri",
             "username": "lonewolf3739"
@@ -30414,6 +30376,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007964105967360857",
             "extra": "mean: 214.38457658512795 usec\nrounds: 7397"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "54d36c326c900b66138d7879b3208a812b6ad675",
+          "message": "[docs] fix logs example (#2372)\n\nThe collector configuration needed updating in the logs example. The root logger also needed fixing.\r\n\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>",
+          "timestamp": "2022-01-14T10:57:50-06:00",
+          "tree_id": "927cb180bb6ba73c6eb245293d7987bee453dfd9",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/54d36c326c900b66138d7879b3208a812b6ad675"
+        },
+        "date": 1642179690324,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2250.1870487270344,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00011450551314185884",
+            "extra": "mean: 444.40749961907187 usec\nrounds: 1313"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4534.70325320569,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007849996627685793",
+            "extra": "mean: 220.52159626830624 usec\nrounds: 5038"
           }
         ]
       }
