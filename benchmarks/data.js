@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642179593576,
+  "lastUpdate": 1642179600414,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -69918,6 +69918,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000021966529408513067",
             "extra": "mean: 54.4585817184153 usec\nrounds: 6192"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "54d36c326c900b66138d7879b3208a812b6ad675",
+          "message": "[docs] fix logs example (#2372)\n\nThe collector configuration needed updating in the logs example. The root logger also needed fixing.\r\n\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>",
+          "timestamp": "2022-01-14T10:57:50-06:00",
+          "tree_id": "927cb180bb6ba73c6eb245293d7987bee453dfd9",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/54d36c326c900b66138d7879b3208a812b6ad675"
+        },
+        "date": 1642179565268,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 20666.26294170683,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000016327735938958592",
+            "extra": "mean: 48.388042038402986 usec\nrounds: 4258"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 14233.730502321352,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003013647213758844",
+            "extra": "mean: 70.25565081739548 usec\nrounds: 8013"
           }
         ]
       }
