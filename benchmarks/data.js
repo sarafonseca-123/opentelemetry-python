@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642189722530,
+  "lastUpdate": 1642189737984,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -89008,6 +89008,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000867506614922403",
             "extra": "mean: 164.5908095646995 usec\nrounds: 3471"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8ff97ea4473f4665eb08a8cc25801c21b01d6cdb",
+          "message": "[docs] add metrics examples (#2371)",
+          "timestamp": "2022-01-14T11:45:40-08:00",
+          "tree_id": "7e10d9b87c0bb5d0deeb23a527fb9160629a7a7f",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/8ff97ea4473f4665eb08a8cc25801c21b01d6cdb"
+        },
+        "date": 1642189709479,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 4328.284769071726,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007950870297501224",
+            "extra": "mean: 231.03840282081694 usec\nrounds: 1703"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 8982.128708964581,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0006267155598140305",
+            "extra": "mean: 111.33218331662891 usec\nrounds: 10010"
           }
         ]
       }
