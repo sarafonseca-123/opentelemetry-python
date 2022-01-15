@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642207480850,
+  "lastUpdate": 1642207483542,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -83606,6 +83606,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000032156407520172517",
             "extra": "mean: 1.241746744127402 usec\nrounds: 108696"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fb1063ce89543b87a0d35be2e97f3f0a1a83dc8b",
+          "message": "Handle duplicate meters (#2373)",
+          "timestamp": "2022-01-14T16:40:44-08:00",
+          "tree_id": "30ee42390421cc30d55ee08a36e131d549da6b52",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/fb1063ce89543b87a0d35be2e97f3f0a1a83dc8b"
+        },
+        "date": 1642207453281,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 653185.8526578743,
+            "unit": "iter/sec",
+            "range": "stddev: 2.019605871088493e-7",
+            "extra": "mean: 1.5309578367793881 usec\nrounds: 70922"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 1248741.4323158602,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001431138906003001",
+            "extra": "mean: 800.8062951395883 nsec\nrounds: 135136"
           }
         ]
       }
