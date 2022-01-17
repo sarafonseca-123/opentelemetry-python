@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642447985040,
+  "lastUpdate": 1642448012416,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -87524,6 +87524,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000001182272279994585",
             "extra": "mean: 40.973281734136705 usec\nrounds: 7681"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1a52e9df1c10a42da7562f8b4d11f43576ed0aed",
+          "message": "Add NoOpTracer and NoOpTracerProvider classes (#2363)\n\n* Add _NoOpTracer and _NoOpTracerProvider classes\r\n\r\nAdd `_NoOpTracer` and `_NoOpTracerProvider`. Marking `_DefaultTracer` and `_DefaultTracerProvider` as deprecated.\r\n\r\nFixes #2362\r\n\r\n* update changelog\r\n\r\n* update class\r\n\r\n* fix lint",
+          "timestamp": "2022-01-17T13:30:53-06:00",
+          "tree_id": "a8d5e86358a6ad22308d47ac6ff98b7b9831ea85",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/1a52e9df1c10a42da7562f8b4d11f43576ed0aed"
+        },
+        "date": 1642447982226,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 25072.394299925665,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000022826421071860062",
+            "extra": "mean: 39.884503571442515 usec\nrounds: 5600"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 17534.687895662082,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000024083673788565906",
+            "extra": "mean: 57.02981461377426 usec\nrounds: 7924"
           }
         ]
       }
