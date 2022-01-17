@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642448065150,
+  "lastUpdate": 1642448068475,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -89502,6 +89502,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0006547508715778119",
             "extra": "mean: 129.84820355012226 usec\nrounds: 6873"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1a52e9df1c10a42da7562f8b4d11f43576ed0aed",
+          "message": "Add NoOpTracer and NoOpTracerProvider classes (#2363)\n\n* Add _NoOpTracer and _NoOpTracerProvider classes\r\n\r\nAdd `_NoOpTracer` and `_NoOpTracerProvider`. Marking `_DefaultTracer` and `_DefaultTracerProvider` as deprecated.\r\n\r\nFixes #2362\r\n\r\n* update changelog\r\n\r\n* update class\r\n\r\n* fix lint",
+          "timestamp": "2022-01-17T13:30:53-06:00",
+          "tree_id": "a8d5e86358a6ad22308d47ac6ff98b7b9831ea85",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/1a52e9df1c10a42da7562f8b4d11f43576ed0aed"
+        },
+        "date": 1642448034685,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3815.340387413922,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000013128966627598396",
+            "extra": "mean: 262.0998124567885 usec\nrounds: 1445"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7786.493554473503,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007139387062472012",
+            "extra": "mean: 128.42751271854314 usec\nrounds: 9042"
           }
         ]
       }
