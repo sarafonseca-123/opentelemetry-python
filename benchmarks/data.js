@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642448226248,
+  "lastUpdate": 1642448291030,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -83834,6 +83834,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000001431138906003001",
             "extra": "mean: 800.8062951395883 nsec\nrounds: 135136"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1a52e9df1c10a42da7562f8b4d11f43576ed0aed",
+          "message": "Add NoOpTracer and NoOpTracerProvider classes (#2363)\n\n* Add _NoOpTracer and _NoOpTracerProvider classes\r\n\r\nAdd `_NoOpTracer` and `_NoOpTracerProvider`. Marking `_DefaultTracer` and `_DefaultTracerProvider` as deprecated.\r\n\r\nFixes #2362\r\n\r\n* update changelog\r\n\r\n* update class\r\n\r\n* fix lint",
+          "timestamp": "2022-01-17T13:30:53-06:00",
+          "tree_id": "a8d5e86358a6ad22308d47ac6ff98b7b9831ea85",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/1a52e9df1c10a42da7562f8b4d11f43576ed0aed"
+        },
+        "date": 1642448261104,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 615458.6754097034,
+            "unit": "iter/sec",
+            "range": "stddev: 2.04075632543816e-7",
+            "extra": "mean: 1.6248044587791504 usec\nrounds: 68023"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 1183743.2647291706,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000017526347901156149",
+            "extra": "mean: 844.7777738603395 nsec\nrounds: 133334"
           }
         ]
       }
