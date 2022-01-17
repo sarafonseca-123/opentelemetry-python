@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642448068475,
+  "lastUpdate": 1642448071200,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -41676,44 +41676,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "christian.neumueller@dynatrace.com",
-            "name": "Christian Neumüller",
-            "username": "Oberon00"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "13f09db172f41d5f92b52a0fc4e602175a2474af",
-          "message": "Make test deterministic. (#1984)",
-          "timestamp": "2021-07-30T09:00:28-07:00",
-          "tree_id": "4eddf6ad389aae7df3334eeaf5fe3739b8fa5ff6",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/13f09db172f41d5f92b52a0fc4e602175a2474af"
-        },
-        "date": 1627661830511,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 70466.95165552128,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00001588924735030999",
-            "extra": "mean: 14.191049513373512 usec\nrounds: 10583"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 114391.90491624777,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000020075406159841017",
-            "extra": "mean: 8.741877327177582 usec\nrounds: 43669"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "145104+ymotongpoo@users.noreply.github.com",
             "name": "Yoshi Yamaguchi",
             "username": "ymotongpoo"
@@ -45470,6 +45432,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 2.6957868208117084e-7",
             "extra": "mean: 5.069237871612279 usec\nrounds: 59881"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1a52e9df1c10a42da7562f8b4d11f43576ed0aed",
+          "message": "Add NoOpTracer and NoOpTracerProvider classes (#2363)\n\n* Add _NoOpTracer and _NoOpTracerProvider classes\r\n\r\nAdd `_NoOpTracer` and `_NoOpTracerProvider`. Marking `_DefaultTracer` and `_DefaultTracerProvider` as deprecated.\r\n\r\nFixes #2362\r\n\r\n* update changelog\r\n\r\n* update class\r\n\r\n* fix lint",
+          "timestamp": "2022-01-17T13:30:53-06:00",
+          "tree_id": "a8d5e86358a6ad22308d47ac6ff98b7b9831ea85",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/1a52e9df1c10a42da7562f8b4d11f43576ed0aed"
+        },
+        "date": 1642448040325,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 92566.02220683344,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00000640697910370319",
+            "extra": "mean: 10.803100059388504 usec\nrounds: 11793"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 190219.72331664374,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000005876113346401642",
+            "extra": "mean: 5.257078406824192 usec\nrounds: 62112"
           }
         ]
       }
