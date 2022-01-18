@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642524056217,
+  "lastUpdate": 1642524077158,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -84062,6 +84062,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000017526347901156149",
             "extra": "mean: 844.7777738603395 nsec\nrounds: 133334"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "06aa56489b646a8b20f05944d1839d1eb7143160",
+          "message": "[exporter/otlp] add support for Sum (#2370)\n\n* [exporter/otlp] add support for Sum\r\n\r\nAdding support for exporting Sum datapoints.\r\n\r\n* update based on feedback\r\n\r\n* update changelog\r\n\r\n* clean up imports\r\n\r\n* fix lint\r\n\r\n* fix lint\r\n\r\n* feedback update",
+          "timestamp": "2022-01-18T10:34:02-06:00",
+          "tree_id": "13dee599c7a87e0501802d89694f8d82ad1ad317",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/06aa56489b646a8b20f05944d1839d1eb7143160"
+        },
+        "date": 1642524040931,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 533496.5774448178,
+            "unit": "iter/sec",
+            "range": "stddev: 3.1361898041176604e-7",
+            "extra": "mean: 1.8744262705292483 usec\nrounds: 68023"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 900659.8063483896,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000019891140397804447",
+            "extra": "mean: 1.1102971321155874 usec\nrounds: 135117"
           }
         ]
       }
