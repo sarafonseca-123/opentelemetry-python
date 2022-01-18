@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642540452975,
+  "lastUpdate": 1642540455501,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -88778,6 +88778,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000001374750153921853",
             "extra": "mean: 46.77422484266324 usec\nrounds: 7463"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaronabbott@google.com",
+            "name": "Aaron Abbott",
+            "username": "aabmass"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7d076cc682b8294ebd218c4975c5654760238a06",
+          "message": "Fix a few ExplicitBucketHistogram issues (#2377)\n\n* Fix a few ExplicitBucketHistogram issues\r\n\r\n* make default boundaries floats\r\n\r\n* Update helper func name\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2022-01-18T15:11:50-06:00",
+          "tree_id": "845a6bc598f678c6d89f9e731dfeb1ac84b158d3",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/7d076cc682b8294ebd218c4975c5654760238a06"
+        },
+        "date": 1642540418070,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 23300.31950743682,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000031972609133809675",
+            "extra": "mean: 42.9178664129832 usec\nrounds: 4993"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 17208.849275571578,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003943069072189996",
+            "extra": "mean: 58.10963789540111 usec\nrounds: 7716"
           }
         ]
       }
