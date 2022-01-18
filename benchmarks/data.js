@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642523908399,
+  "lastUpdate": 1642523912316,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -66800,6 +66800,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000008130059305111223",
             "extra": "mean: 69.43433291631847 usec\nrounds: 4794"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "06aa56489b646a8b20f05944d1839d1eb7143160",
+          "message": "[exporter/otlp] add support for Sum (#2370)\n\n* [exporter/otlp] add support for Sum\r\n\r\nAdding support for exporting Sum datapoints.\r\n\r\n* update based on feedback\r\n\r\n* update changelog\r\n\r\n* clean up imports\r\n\r\n* fix lint\r\n\r\n* fix lint\r\n\r\n* feedback update",
+          "timestamp": "2022-01-18T10:34:02-06:00",
+          "tree_id": "13dee599c7a87e0501802d89694f8d82ad1ad317",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/06aa56489b646a8b20f05944d1839d1eb7143160"
+        },
+        "date": 1642523875089,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 14818.421007327393,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00003405124579910637",
+            "extra": "mean: 67.48357328392285 usec\nrounds: 3234"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 9281.080719820691,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00005263222128010947",
+            "extra": "mean: 107.74607291846931 usec\nrounds: 5801"
           }
         ]
       }
