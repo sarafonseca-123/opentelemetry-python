@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642527340333,
+  "lastUpdate": 1642527345880,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -59594,44 +59594,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "e2eb73c3cbfca9180def85eb7639f22d3a7a77b7",
-          "message": "Remove unused imports (#2007)\n\nFixes #2006\r\n\r\nCo-authored-by: alrex <aboten@lightstep.com>",
-          "timestamp": "2021-08-04T09:13:42-06:00",
-          "tree_id": "3b512de99a18621865df1d001ab9264343ce6984",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/e2eb73c3cbfca9180def85eb7639f22d3a7a77b7"
-        },
-        "date": 1628090092906,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 59474.20201583246,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000007400790303042088",
-            "extra": "mean: 16.8140129014895 usec\nrounds: 7441"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 102609.48858533191,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00000611354831536546",
-            "extra": "mean: 9.745687399741612 usec\nrounds: 38023"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "ocelotl@users.noreply.github.com",
-            "name": "Diego Hurtado",
-            "username": "ocelotl"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "93aad21a097a7b8740c9e8345f4fcf5d2e55a0e2",
           "message": "Add Nathaniel to approvers list (#2028)\n\nCo-authored-by: alrex <aboten@lightstep.com>\r\nCo-authored-by: (Eliseo) Nathaniel Ruiz Nowell <enruizno@uwaterloo.ca>",
           "timestamp": "2021-08-10T10:29:30-07:00",
@@ -63378,6 +63340,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000006707126761837928",
             "extra": "mean: 8.792494273766417 usec\nrounds: 44445"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a995e179ef3cd68c69e2cdd9ba48093352313bec",
+          "message": "rename _DefaultMeter & _DefaultMeterProvider to NoOp* (#2383)\n\n* rename _DefaultMeter & _DefaultMeterProvider to NoOp*\r\n\r\n* update changelog",
+          "timestamp": "2022-01-18T11:34:09-06:00",
+          "tree_id": "8cc8922a167b3575df0d8311eeac1c16310f5a1d",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a995e179ef3cd68c69e2cdd9ba48093352313bec"
+        },
+        "date": 1642527312968,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 68381.25634092934,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000013317512159485213",
+            "extra": "mean: 14.623890427141127 usec\nrounds: 10112"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 131083.8555756535,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000008758971715209929",
+            "extra": "mean: 7.628704508335596 usec\nrounds: 49020"
           }
         ]
       }
