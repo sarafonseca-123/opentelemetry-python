@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642532221951,
+  "lastUpdate": 1642540394265,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -86648,6 +86648,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000023701846679097",
             "extra": "mean: 5.427148145440408 usec\nrounds: 54946"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaronabbott@google.com",
+            "name": "Aaron Abbott",
+            "username": "aabmass"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7d076cc682b8294ebd218c4975c5654760238a06",
+          "message": "Fix a few ExplicitBucketHistogram issues (#2377)\n\n* Fix a few ExplicitBucketHistogram issues\r\n\r\n* make default boundaries floats\r\n\r\n* Update helper func name\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2022-01-18T15:11:50-06:00",
+          "tree_id": "845a6bc598f678c6d89f9e731dfeb1ac84b158d3",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/7d076cc682b8294ebd218c4975c5654760238a06"
+        },
+        "date": 1642540364517,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 133357.50999975973,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000004970891627229678",
+            "extra": "mean: 7.498640309059474 usec\nrounds: 12166"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 262896.0933992455,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000053181262760563895",
+            "extra": "mean: 3.8037841759837647 usec\nrounds: 62500"
           }
         ]
       }
