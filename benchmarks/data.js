@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642523891784,
+  "lastUpdate": 1642523908399,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -41676,44 +41676,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "145104+ymotongpoo@users.noreply.github.com",
-            "name": "Yoshi Yamaguchi",
-            "username": "ymotongpoo"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "65670cfcf4c2ce23fb9b655fa5b7ad0f50a18f4e",
-          "message": "Add validation for Trace ID (#1992)",
-          "timestamp": "2021-08-02T09:42:13-07:00",
-          "tree_id": "636d4831604507fdfcdf98a0f50c7d9d9cf36ee9",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/65670cfcf4c2ce23fb9b655fa5b7ad0f50a18f4e"
-        },
-        "date": 1627922839183,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 78293.62299299636,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000005669022504020916",
-            "extra": "mean: 12.77243231022089 usec\nrounds: 12151"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 132349.8191381037,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000005329348819144794",
-            "extra": "mean: 7.555733785752477 usec\nrounds: 55553"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "ocelotl@users.noreply.github.com",
             "name": "Diego Hurtado",
             "username": "ocelotl"
@@ -45470,6 +45432,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000005876113346401642",
             "extra": "mean: 5.257078406824192 usec\nrounds: 62112"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "06aa56489b646a8b20f05944d1839d1eb7143160",
+          "message": "[exporter/otlp] add support for Sum (#2370)\n\n* [exporter/otlp] add support for Sum\r\n\r\nAdding support for exporting Sum datapoints.\r\n\r\n* update based on feedback\r\n\r\n* update changelog\r\n\r\n* clean up imports\r\n\r\n* fix lint\r\n\r\n* fix lint\r\n\r\n* feedback update",
+          "timestamp": "2022-01-18T10:34:02-06:00",
+          "tree_id": "13dee599c7a87e0501802d89694f8d82ad1ad317",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/06aa56489b646a8b20f05944d1839d1eb7143160"
+        },
+        "date": 1642523878017,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 96952.68771662236,
+            "unit": "iter/sec",
+            "range": "stddev: 5.767581000663771e-7",
+            "extra": "mean: 10.314309211549087 usec\nrounds: 12658"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 192807.45781454156,
+            "unit": "iter/sec",
+            "range": "stddev: 3.0731299191593824e-7",
+            "extra": "mean: 5.186521368700811 usec\nrounds: 66663"
           }
         ]
       }
