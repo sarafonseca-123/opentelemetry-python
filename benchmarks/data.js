@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642540445088,
+  "lastUpdate": 1642540448171,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -59584,44 +59584,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "ocelotl@users.noreply.github.com",
-            "name": "Diego Hurtado",
-            "username": "ocelotl"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "3429ad3e367735438bc0270687d547c5b4d0b7da",
-          "message": "Add Owais to maintainers list (#2025)\n\nFixes #2003\r\n\r\nCo-authored-by: alrex <aboten@lightstep.com>",
-          "timestamp": "2021-08-10T10:35:24-07:00",
-          "tree_id": "84fa79bbb82bcd1dced4880e090e3a2a41daf899",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/3429ad3e367735438bc0270687d547c5b4d0b7da"
-        },
-        "date": 1628617827763,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 59319.413471484775,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000010058447072828276",
-            "extra": "mean: 16.857887519078496 usec\nrounds: 9166"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 96282.05903620429,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000005903839866400945",
-            "extra": "mean: 10.386150961146114 usec\nrounds: 42554"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "aboten@lightstep.com",
             "name": "alrex",
             "username": "codeboten"
@@ -63378,6 +63340,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 5.935807585641011e-7",
             "extra": "mean: 7.692271181291597 usec\nrounds: 49749"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aaronabbott@google.com",
+            "name": "Aaron Abbott",
+            "username": "aabmass"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7d076cc682b8294ebd218c4975c5654760238a06",
+          "message": "Fix a few ExplicitBucketHistogram issues (#2377)\n\n* Fix a few ExplicitBucketHistogram issues\r\n\r\n* make default boundaries floats\r\n\r\n* Update helper func name\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2022-01-18T15:11:50-06:00",
+          "tree_id": "845a6bc598f678c6d89f9e731dfeb1ac84b158d3",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/7d076cc682b8294ebd218c4975c5654760238a06"
+        },
+        "date": 1642540415401,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 67754.96641630767,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000006781136334390805",
+            "extra": "mean: 14.759065687608608 usec\nrounds: 9941"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 142948.31166762373,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000004148138009014764",
+            "extra": "mean: 6.9955355773991235 usec\nrounds: 48781"
           }
         ]
       }
