@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642791062451,
+  "lastUpdate": 1642791067011,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -85658,6 +85658,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000021526347932865426",
             "extra": "mean: 966.8679940407249 nsec\nrounds: 136987"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tkern@arnatious.com",
+            "name": "Ted Kern",
+            "username": "Arnatious"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "60a3b5236f7167a1a923a4e04bf508259ec283e7",
+          "message": "add support for 0 global attribute limit and tests (#2398)\n\n* add support for 0 global attribute limit and tests\r\n\r\n* add PR number to changelog",
+          "timestamp": "2022-01-21T18:48:49Z",
+          "tree_id": "6a29ad92064fffd5e5d2b2bb152208ad06c6675f",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/60a3b5236f7167a1a923a4e04bf508259ec283e7"
+        },
+        "date": 1642791035300,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 635155.4106507107,
+            "unit": "iter/sec",
+            "range": "stddev: 2.0610190748061368e-7",
+            "extra": "mean: 1.5744178247265737 usec\nrounds: 68966"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 1207789.685984986,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000014646254638626574",
+            "extra": "mean: 827.9587179820771 nsec\nrounds: 136987"
           }
         ]
       }
