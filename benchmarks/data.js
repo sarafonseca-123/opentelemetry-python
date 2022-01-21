@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642791055464,
+  "lastUpdate": 1642791059758,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -74480,6 +74480,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000015756771588160806",
             "extra": "mean: 61.12245860433517 usec\nrounds: 5689"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tkern@arnatious.com",
+            "name": "Ted Kern",
+            "username": "Arnatious"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "60a3b5236f7167a1a923a4e04bf508259ec283e7",
+          "message": "add support for 0 global attribute limit and tests (#2398)\n\n* add support for 0 global attribute limit and tests\r\n\r\n* add PR number to changelog",
+          "timestamp": "2022-01-21T18:48:49Z",
+          "tree_id": "6a29ad92064fffd5e5d2b2bb152208ad06c6675f",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/60a3b5236f7167a1a923a4e04bf508259ec283e7"
+        },
+        "date": 1642791021674,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 19166.33194440835,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000017144501884813218",
+            "extra": "mean: 52.17482421260806 usec\nrounds: 4477"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 14361.134393233198,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000004905260194072195",
+            "extra": "mean: 69.6323822769313 usec\nrounds: 5033"
           }
         ]
       }
