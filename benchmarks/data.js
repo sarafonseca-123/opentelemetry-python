@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642783643515,
+  "lastUpdate": 1642783660183,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -55782,44 +55782,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "emmanuel.courreges@orange.com",
-            "name": "Emmanuel Courreges",
-            "username": "ecourreges-orange"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "820c89e962613ced683d425ecbda86007c76b84e",
-          "message": "fix: documentation on \"Well known exporters\" zipkin -> zipkin_json, etc. (#2023)\n\nfix: documentation OTEL_TRACE_EXPORTER -> OTEL_TRACES_EXPORTER\r\n\r\nCo-authored-by: alrex <aboten@lightstep.com>",
-          "timestamp": "2021-08-12T20:34:59-06:00",
-          "tree_id": "ca34265371991df9ae5e7c4e3e24fc9430bcd186",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/820c89e962613ced683d425ecbda86007c76b84e"
-        },
-        "date": 1628822163686,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 90970.80245809942,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000004460646178879844",
-            "extra": "mean: 10.99253796799906 usec\nrounds: 13090"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 160369.7304143412,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000015953269156997388",
-            "extra": "mean: 6.235590702910942 usec\nrounds: 59524"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "garcia.olais@gmail.com",
             "name": "Antonio Garcia",
             "username": "garciaolais"
@@ -59576,6 +59538,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000010926462873253566",
             "extra": "mean: 4.625981928366564 usec\nrounds: 63691"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "83e6e17a4756698084895f07556d2043b4b0e7e8",
+          "message": "Add periodic exporting metric reader (#2340)\n\n* Add periodic exporting metric reader\r\n\r\n* Fix lint\r\n\r\n* Fix typing and env\r\n\r\n* lint: black format\r\n\r\n* formatting\r\n\r\n* lot of changes\r\n\r\n* Fix lint\r\n\r\n* Lint again\r\n\r\n* Pylint fix\r\n\r\n* Review suggestions\r\n\r\n* fix failures\r\n\r\n* Address review suggestions\r\n\r\n* Once wrapper, set callback, refactor, and more\r\n\r\n* Apply suggestions from code review\r\n\r\nCo-authored-by: Aaron Abbott <aaronabbott@google.com>\r\n\r\n* Add preferred_temporality to exporter; update doc string\r\n\r\n* Fix lint\r\n\r\nCo-authored-by: Aaron Abbott <aaronabbott@google.com>",
+          "timestamp": "2022-01-21T11:42:53-05:00",
+          "tree_id": "503ba22a56d500aa6b5dc1b9d6da35024106fc84",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/83e6e17a4756698084895f07556d2043b4b0e7e8"
+        },
+        "date": 1642783623872,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 87586.00345845008,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000006993497854069357",
+            "extra": "mean: 11.417349353934044 usec\nrounds: 12151"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 198472.59135023193,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000044628943482091565",
+            "extra": "mean: 5.038479082662672 usec\nrounds: 56819"
           }
         ]
       }
