@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642798775231,
+  "lastUpdate": 1642798816984,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -22818,44 +22818,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "aaronabbott@google.com",
-            "name": "Aaron Abbott",
-            "username": "aabmass"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "240ee760a6f448fd5e836b004caebe3217cfe3b6",
-          "message": "unpin opentelemetry-api dependency in instrumentation package (#2012)\n\nCo-authored-by: alrex <aboten@lightstep.com>\r\nCo-authored-by: Owais Lone <owais@users.noreply.github.com>\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>",
-          "timestamp": "2021-08-13T15:57:01-04:00",
-          "tree_id": "618621ddd617e0e25f2474e0ada65ced299ac8e0",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/240ee760a6f448fd5e836b004caebe3217cfe3b6"
-        },
-        "date": 1628884835433,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2837.80236529492,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00004787968976532336",
-            "extra": "mean: 352.38535714451507 usec\nrounds: 42"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 5467.949837827374,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0007649367228944924",
-            "extra": "mean: 182.8839015826338 usec\nrounds: 6950"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "nathanielruiz98@gmail.com",
             "name": "(Eliseo) Nathaniel Ruiz Nowell",
             "username": "NathanielRN"
@@ -26612,6 +26574,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008411675724158851",
             "extra": "mean: 200.777019283157 usec\nrounds: 7364"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "67ef457d3a611efb59eee81188ec29ee151c0ffc",
+          "message": "Add Python version support policy (#2397)\n\n* Add Python version support policy\n\nFixes #2395\n\n* Address comments\n\n* Fix a mistake",
+          "timestamp": "2022-01-21T14:56:40-06:00",
+          "tree_id": "ff13280b8cb6e24b3900e2214696d72f7183cb25",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/67ef457d3a611efb59eee81188ec29ee151c0ffc"
+        },
+        "date": 1642798785378,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3735.870168237345,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000008890561321251732",
+            "extra": "mean: 267.67525501878436 usec\nrounds: 1345"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7541.06188887979,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0006671174835597884",
+            "extra": "mean: 132.60731906664515 usec\nrounds: 9042"
           }
         ]
       }
