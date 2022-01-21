@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642712593320,
+  "lastUpdate": 1642783464109,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -89614,6 +89614,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000018793554763617712",
             "extra": "mean: 59.34952235491329 usec\nrounds: 9461"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "83e6e17a4756698084895f07556d2043b4b0e7e8",
+          "message": "Add periodic exporting metric reader (#2340)\n\n* Add periodic exporting metric reader\r\n\r\n* Fix lint\r\n\r\n* Fix typing and env\r\n\r\n* lint: black format\r\n\r\n* formatting\r\n\r\n* lot of changes\r\n\r\n* Fix lint\r\n\r\n* Lint again\r\n\r\n* Pylint fix\r\n\r\n* Review suggestions\r\n\r\n* fix failures\r\n\r\n* Address review suggestions\r\n\r\n* Once wrapper, set callback, refactor, and more\r\n\r\n* Apply suggestions from code review\r\n\r\nCo-authored-by: Aaron Abbott <aaronabbott@google.com>\r\n\r\n* Add preferred_temporality to exporter; update doc string\r\n\r\n* Fix lint\r\n\r\nCo-authored-by: Aaron Abbott <aaronabbott@google.com>",
+          "timestamp": "2022-01-21T11:42:53-05:00",
+          "tree_id": "503ba22a56d500aa6b5dc1b9d6da35024106fc84",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/83e6e17a4756698084895f07556d2043b4b0e7e8"
+        },
+        "date": 1642783429816,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 24253.59583539874,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000012329680740327215",
+            "extra": "mean: 41.23099959225323 usec\nrounds: 4905"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 17022.3712914228,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000020233264897563948",
+            "extra": "mean: 58.74622183243518 usec\nrounds: 9408"
           }
         ]
       }
