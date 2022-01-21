@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642783565435,
+  "lastUpdate": 1642783573783,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -91858,6 +91858,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0006521788532107934",
             "extra": "mean: 124.31740869476323 usec\nrounds: 9408"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "83e6e17a4756698084895f07556d2043b4b0e7e8",
+          "message": "Add periodic exporting metric reader (#2340)\n\n* Add periodic exporting metric reader\r\n\r\n* Fix lint\r\n\r\n* Fix typing and env\r\n\r\n* lint: black format\r\n\r\n* formatting\r\n\r\n* lot of changes\r\n\r\n* Fix lint\r\n\r\n* Lint again\r\n\r\n* Pylint fix\r\n\r\n* Review suggestions\r\n\r\n* fix failures\r\n\r\n* Address review suggestions\r\n\r\n* Once wrapper, set callback, refactor, and more\r\n\r\n* Apply suggestions from code review\r\n\r\nCo-authored-by: Aaron Abbott <aaronabbott@google.com>\r\n\r\n* Add preferred_temporality to exporter; update doc string\r\n\r\n* Fix lint\r\n\r\nCo-authored-by: Aaron Abbott <aaronabbott@google.com>",
+          "timestamp": "2022-01-21T11:42:53-05:00",
+          "tree_id": "503ba22a56d500aa6b5dc1b9d6da35024106fc84",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/83e6e17a4756698084895f07556d2043b4b0e7e8"
+        },
+        "date": 1642783542382,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3764.3798213990895,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000009970825543783402",
+            "extra": "mean: 265.6480077582433 usec\nrounds: 1289"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7770.486479719308,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007041270244138266",
+            "extra": "mean: 128.69207128922548 usec\nrounds: 8711"
           }
         ]
       }
