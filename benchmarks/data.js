@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1642783781212,
+  "lastUpdate": 1642783790715,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -22818,44 +22818,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "emmanuel.courreges@orange.com",
-            "name": "Emmanuel Courreges",
-            "username": "ecourreges-orange"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "820c89e962613ced683d425ecbda86007c76b84e",
-          "message": "fix: documentation on \"Well known exporters\" zipkin -> zipkin_json, etc. (#2023)\n\nfix: documentation OTEL_TRACE_EXPORTER -> OTEL_TRACES_EXPORTER\r\n\r\nCo-authored-by: alrex <aboten@lightstep.com>",
-          "timestamp": "2021-08-12T20:34:59-06:00",
-          "tree_id": "ca34265371991df9ae5e7c4e3e24fc9430bcd186",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/820c89e962613ced683d425ecbda86007c76b84e"
-        },
-        "date": 1628822321942,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2433.4564185155728,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000043381647945148765",
-            "extra": "mean: 410.9381176466714 usec\nrounds: 34"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 4630.611938824127,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0008550337807501186",
-            "extra": "mean: 215.95417910444354 usec\nrounds: 6566"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "garcia.olais@gmail.com",
             "name": "Antonio Garcia",
             "username": "garciaolais"
@@ -26612,6 +26574,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007739152233057818",
             "extra": "mean: 169.3919413568537 usec\nrounds: 10112"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "lonewolf3739"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "83e6e17a4756698084895f07556d2043b4b0e7e8",
+          "message": "Add periodic exporting metric reader (#2340)\n\n* Add periodic exporting metric reader\r\n\r\n* Fix lint\r\n\r\n* Fix typing and env\r\n\r\n* lint: black format\r\n\r\n* formatting\r\n\r\n* lot of changes\r\n\r\n* Fix lint\r\n\r\n* Lint again\r\n\r\n* Pylint fix\r\n\r\n* Review suggestions\r\n\r\n* fix failures\r\n\r\n* Address review suggestions\r\n\r\n* Once wrapper, set callback, refactor, and more\r\n\r\n* Apply suggestions from code review\r\n\r\nCo-authored-by: Aaron Abbott <aaronabbott@google.com>\r\n\r\n* Add preferred_temporality to exporter; update doc string\r\n\r\n* Fix lint\r\n\r\nCo-authored-by: Aaron Abbott <aaronabbott@google.com>",
+          "timestamp": "2022-01-21T11:42:53-05:00",
+          "tree_id": "503ba22a56d500aa6b5dc1b9d6da35024106fc84",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/83e6e17a4756698084895f07556d2043b4b0e7e8"
+        },
+        "date": 1642783754683,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3126.312824735491,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000011189167967900274",
+            "extra": "mean: 319.8656231993058 usec\nrounds: 1319"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 6434.865982176383,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007353295983420026",
+            "extra": "mean: 155.40339189189808 usec\nrounds: 7252"
           }
         ]
       }
