@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1643142191659,
+  "lastUpdate": 1643142226317,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -93226,6 +93226,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007093961327220014",
             "extra": "mean: 117.29420760289734 usec\nrounds: 9470"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1b7e161fd3bd871095436ff4e5bab4863120991a",
+          "message": "Make shutdown function be called always (#2405)\n\n* Make shutdown function be called always\r\n\r\nFixes #2404\r\n\r\n* Fix warning handling\r\n\r\n* Log specific metric reader\r\n\r\nCo-authored-by: Alex Boten <aboten@lightstep.com>",
+          "timestamp": "2022-01-25T14:20:30-06:00",
+          "tree_id": "5100fdace7e70180b7678da03a3af036aadd5db3",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/1b7e161fd3bd871095436ff4e5bab4863120991a"
+        },
+        "date": 1643142194881,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 4288.798448374291,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000066314292762586056",
+            "extra": "mean: 233.1655385622188 usec\nrounds: 1530"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 8813.182304647242,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0006625396809693049",
+            "extra": "mean: 113.46639221030232 usec\nrounds: 9166"
           }
         ]
       }
