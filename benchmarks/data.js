@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1643142136251,
+  "lastUpdate": 1643142163461,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -82406,44 +82406,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "e569e0ab6676f8944599418ca0b89d7a2264b6b7",
-          "message": "Add OTLP HTTP exporter as dependency to OTLP exporter package (#2147)\n\n* Add OTLP HTTP exporter as dependency to OTLP exporter package\r\n\r\n* changelog",
-          "timestamp": "2021-09-24T19:19:55+05:30",
-          "tree_id": "71aa354fe6435e6e4132e7daea5e34f94392c1f5",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/e569e0ab6676f8944599418ca0b89d7a2264b6b7"
-        },
-        "date": 1632491532622,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 547240.1424055988,
-            "unit": "iter/sec",
-            "range": "stddev: 2.7974987125715566e-7",
-            "extra": "mean: 1.8273513262461454 usec\nrounds: 72988"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 849113.5998915978,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000022025457747901758",
-            "extra": "mean: 1.17769872032168 usec\nrounds: 107527"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "mario.jonke@dynatrace.com",
-            "name": "Mario Jonke",
-            "username": "mariojonke"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "3cee4efcc5d0c19ecc0e31ae712ace87528b5808",
           "message": "Fix ReadableSpan import in OTLP grpc exporter (#2146)",
           "timestamp": "2021-09-24T14:08:11Z",
@@ -86190,6 +86152,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000016167248877213247",
             "extra": "mean: 945.5916984966054 nsec\nrounds: 114943"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1b7e161fd3bd871095436ff4e5bab4863120991a",
+          "message": "Make shutdown function be called always (#2405)\n\n* Make shutdown function be called always\r\n\r\nFixes #2404\r\n\r\n* Fix warning handling\r\n\r\n* Log specific metric reader\r\n\r\nCo-authored-by: Alex Boten <aboten@lightstep.com>",
+          "timestamp": "2022-01-25T14:20:30-06:00",
+          "tree_id": "5100fdace7e70180b7678da03a3af036aadd5db3",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/1b7e161fd3bd871095436ff4e5bab4863120991a"
+        },
+        "date": 1643142135163,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 676648.1944579926,
+            "unit": "iter/sec",
+            "range": "stddev: 1.9453819940385011e-7",
+            "extra": "mean: 1.4778728565159345 usec\nrounds: 77514"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 1392978.0825466341,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000014055565219940851",
+            "extra": "mean: 717.8863849542761 nsec\nrounds: 149254"
           }
         ]
       }
