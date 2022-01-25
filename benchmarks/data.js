@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1643137034518,
+  "lastUpdate": 1643137048218,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -26620,44 +26620,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "nathanielruiz98@gmail.com",
-            "name": "(Eliseo) Nathaniel Ruiz Nowell",
-            "username": "NathanielRN"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "3cdb54f6085ce7170aea05e2c99c480a6e919f34",
-          "message": "Add default and service name to get_aggregated_resource (#2013)\n\n* Add default & service name to resource aggregator\r\n\r\n* Aggregator calls Resource.create() to set default attributes\r\n\r\n* Allow get aggregated resources to remove defaults",
-          "timestamp": "2021-08-13T17:14:13-04:00",
-          "tree_id": "4d9e87c2adf21f9dd4d4732e1e8655f3e5b2be54",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/3cdb54f6085ce7170aea05e2c99c480a6e919f34"
-        },
-        "date": 1628889489814,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2106.3552599848113,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00008209879958359442",
-            "extra": "mean: 474.75372222215304 usec\nrounds: 36"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 3793.783281547001,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0008804823816498626",
-            "extra": "mean: 263.5891208820519 usec\nrounds: 3855"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "mario.jonke@dynatrace.com",
             "name": "Mario Jonke",
             "username": "mariojonke"
@@ -30414,6 +30376,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008187432422040094",
             "extra": "mean: 183.4532413451495 usec\nrounds: 7048"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f0583e37ebf87e67bce6f344cacc26b540c5698f",
+          "message": "Adding implementation for Gauge (#2408)\n\n* Adding implementation for Gauge\r\n\r\nFixes #2385\r\n\r\n* update changelog\r\n\r\n* Update exporter/opentelemetry-exporter-otlp-proto-grpc/tests/metrics/test_otlp_metrics_exporter.py\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2022-01-25T12:52:53-06:00",
+          "tree_id": "bfc7a4e036bcaab8f2bd6be063b731a2315e5623",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/f0583e37ebf87e67bce6f344cacc26b540c5698f"
+        },
+        "date": 1643137010756,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2041.4595770227231,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0002527808260381102",
+            "extra": "mean: 489.8456042212729 usec\nrounds: 1137"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 4173.773318177707,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008714224240543161",
+            "extra": "mean: 239.5913538583369 usec\nrounds: 6350"
           }
         ]
       }
