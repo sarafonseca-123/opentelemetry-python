@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1643142129219,
+  "lastUpdate": 1643142130887,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -67198,44 +67198,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "e569e0ab6676f8944599418ca0b89d7a2264b6b7",
-          "message": "Add OTLP HTTP exporter as dependency to OTLP exporter package (#2147)\n\n* Add OTLP HTTP exporter as dependency to OTLP exporter package\r\n\r\n* changelog",
-          "timestamp": "2021-09-24T19:19:55+05:30",
-          "tree_id": "71aa354fe6435e6e4132e7daea5e34f94392c1f5",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/e569e0ab6676f8944599418ca0b89d7a2264b6b7"
-        },
-        "date": 1632491462908,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 21111.765731045638,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000029275523140551495",
-            "extra": "mean: 47.36695228336409 usec\nrounds: 4883"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 15087.71941621358,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00003280212334703533",
-            "extra": "mean: 66.27906924921861 usec\nrounds: 7899"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "mario.jonke@dynatrace.com",
-            "name": "Mario Jonke",
-            "username": "mariojonke"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "3cee4efcc5d0c19ecc0e31ae712ace87528b5808",
           "message": "Fix ReadableSpan import in OTLP grpc exporter (#2146)",
           "timestamp": "2021-09-24T14:08:11Z",
@@ -70982,6 +70944,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000014841244939508092",
             "extra": "mean: 47.78216153515802 usec\nrounds: 7113"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1b7e161fd3bd871095436ff4e5bab4863120991a",
+          "message": "Make shutdown function be called always (#2405)\n\n* Make shutdown function be called always\r\n\r\nFixes #2404\r\n\r\n* Fix warning handling\r\n\r\n* Log specific metric reader\r\n\r\nCo-authored-by: Alex Boten <aboten@lightstep.com>",
+          "timestamp": "2022-01-25T14:20:30-06:00",
+          "tree_id": "5100fdace7e70180b7678da03a3af036aadd5db3",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/1b7e161fd3bd871095436ff4e5bab4863120991a"
+        },
+        "date": 1643142089613,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 26869.601704807457,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000005312049155344318",
+            "extra": "mean: 37.21677794059307 usec\nrounds: 4778"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20069.688493564925,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000006297008280284771",
+            "extra": "mean: 49.82638371894195 usec\nrounds: 5921"
           }
         ]
       }
