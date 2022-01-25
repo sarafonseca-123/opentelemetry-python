@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1643137048218,
+  "lastUpdate": 1643142120955,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -90830,6 +90830,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00005345434310633855",
             "extra": "mean: 64.52561323105091 usec\nrounds: 9644"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1b7e161fd3bd871095436ff4e5bab4863120991a",
+          "message": "Make shutdown function be called always (#2405)\n\n* Make shutdown function be called always\r\n\r\nFixes #2404\r\n\r\n* Fix warning handling\r\n\r\n* Log specific metric reader\r\n\r\nCo-authored-by: Alex Boten <aboten@lightstep.com>",
+          "timestamp": "2022-01-25T14:20:30-06:00",
+          "tree_id": "5100fdace7e70180b7678da03a3af036aadd5db3",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/1b7e161fd3bd871095436ff4e5bab4863120991a"
+        },
+        "date": 1643142089204,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 29534.08462964205,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000011889362951543595",
+            "extra": "mean: 33.85918380542407 usec\nrounds: 5261"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 21665.11706300962,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000014515413180386492",
+            "extra": "mean: 46.15714732081325 usec\nrounds: 7073"
           }
         ]
       }
