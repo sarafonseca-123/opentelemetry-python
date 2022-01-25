@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1643142269941,
+  "lastUpdate": 1643142282626,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -30432,44 +30432,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "e569e0ab6676f8944599418ca0b89d7a2264b6b7",
-          "message": "Add OTLP HTTP exporter as dependency to OTLP exporter package (#2147)\n\n* Add OTLP HTTP exporter as dependency to OTLP exporter package\r\n\r\n* changelog",
-          "timestamp": "2021-09-24T19:19:55+05:30",
-          "tree_id": "71aa354fe6435e6e4132e7daea5e34f94392c1f5",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/e569e0ab6676f8944599418ca0b89d7a2264b6b7"
-        },
-        "date": 1632491619205,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2890.6150465778524,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00002674090883161083",
-            "extra": "mean: 345.94713716165086 usec\nrounds: 1254"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 5525.152084008845,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0007854434660984566",
-            "extra": "mean: 180.9904930751584 usec\nrounds: 6354"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "mario.jonke@dynatrace.com",
-            "name": "Mario Jonke",
-            "username": "mariojonke"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "3cee4efcc5d0c19ecc0e31ae712ace87528b5808",
           "message": "Fix ReadableSpan import in OTLP grpc exporter (#2146)",
           "timestamp": "2021-09-24T14:08:11Z",
@@ -34216,6 +34178,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000776434092861513",
             "extra": "mean: 157.08094157247774 usec\nrounds: 6983"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1b7e161fd3bd871095436ff4e5bab4863120991a",
+          "message": "Make shutdown function be called always (#2405)\n\n* Make shutdown function be called always\r\n\r\nFixes #2404\r\n\r\n* Fix warning handling\r\n\r\n* Log specific metric reader\r\n\r\nCo-authored-by: Alex Boten <aboten@lightstep.com>",
+          "timestamp": "2022-01-25T14:20:30-06:00",
+          "tree_id": "5100fdace7e70180b7678da03a3af036aadd5db3",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/1b7e161fd3bd871095436ff4e5bab4863120991a"
+        },
+        "date": 1643142246960,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 2797.2819532753497,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000017616584571185494",
+            "extra": "mean: 357.4898836454779 usec\nrounds: 1229"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 5289.478368805404,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0008464300192433126",
+            "extra": "mean: 189.05455893297164 usec\nrounds: 6711"
           }
         ]
       }
