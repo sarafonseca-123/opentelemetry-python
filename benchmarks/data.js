@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1643136867505,
+  "lastUpdate": 1643136871079,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -59584,44 +59584,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "nathanielruiz98@gmail.com",
-            "name": "(Eliseo) Nathaniel Ruiz Nowell",
-            "username": "NathanielRN"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "3cdb54f6085ce7170aea05e2c99c480a6e919f34",
-          "message": "Add default and service name to get_aggregated_resource (#2013)\n\n* Add default & service name to resource aggregator\r\n\r\n* Aggregator calls Resource.create() to set default attributes\r\n\r\n* Allow get aggregated resources to remove defaults",
-          "timestamp": "2021-08-13T17:14:13-04:00",
-          "tree_id": "4d9e87c2adf21f9dd4d4732e1e8655f3e5b2be54",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/3cdb54f6085ce7170aea05e2c99c480a6e919f34"
-        },
-        "date": 1628889322451,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 70730.41306535462,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000017130081040733144",
-            "extra": "mean: 14.138189735665817 usec\nrounds: 10288"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 116120.07649478383,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000001306032550659415",
-            "extra": "mean: 8.611775243232126 usec\nrounds: 47389"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "mario.jonke@dynatrace.com",
             "name": "Mario Jonke",
             "username": "mariojonke"
@@ -63378,6 +63340,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 4.01542379426849e-7",
             "extra": "mean: 6.856470884533596 usec\nrounds: 51021"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f0583e37ebf87e67bce6f344cacc26b540c5698f",
+          "message": "Adding implementation for Gauge (#2408)\n\n* Adding implementation for Gauge\r\n\r\nFixes #2385\r\n\r\n* update changelog\r\n\r\n* Update exporter/opentelemetry-exporter-otlp-proto-grpc/tests/metrics/test_otlp_metrics_exporter.py\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>",
+          "timestamp": "2022-01-25T12:52:53-06:00",
+          "tree_id": "bfc7a4e036bcaab8f2bd6be063b731a2315e5623",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/f0583e37ebf87e67bce6f344cacc26b540c5698f"
+        },
+        "date": 1643136835620,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 70251.40729861565,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001466902855075044",
+            "extra": "mean: 14.234590287271093 usec\nrounds: 11037"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 139052.17790831524,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000014582891188284166",
+            "extra": "mean: 7.191545037571112 usec\nrounds: 54943"
           }
         ]
       }
