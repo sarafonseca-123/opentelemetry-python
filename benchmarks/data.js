@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1643216351471,
+  "lastUpdate": 1643216359357,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -93454,6 +93454,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0008645566867408268",
             "extra": "mean: 160.84296593591392 usec\nrounds: 6840"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "44e9b5531d91c8c52f58cd4ea3930cda5c1ed662",
+          "message": "[logs] prevent None from causing problems (#2410)\n\n* [logs] prevent None from causing problems\r\n\r\nIf the trace or span ID is None for a log entry, the result would raise an error, this change prevents that.\r\n\r\n* update changelog\r\n\r\n* Apply suggestions from code review\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>\r\n\r\n* add unit test\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>",
+          "timestamp": "2022-01-26T16:54:48Z",
+          "tree_id": "71bc00ad4cb96b24004bc84cae9749c95476148f",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/44e9b5531d91c8c52f58cd4ea3930cda5c1ed662"
+        },
+        "date": 1643216322837,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3557.441676621388,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000026541249742705512",
+            "extra": "mean: 281.10088397843555 usec\nrounds: 1086"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7439.337615587129,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0007753027724344722",
+            "extra": "mean: 134.4205696357656 usec\nrounds: 7252"
           }
         ]
       }
