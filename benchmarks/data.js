@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1643216231052,
+  "lastUpdate": 1643216251519,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -91020,6 +91020,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000043363268890771246",
             "extra": "mean: 57.659080059235244 usec\nrounds: 9443"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "44e9b5531d91c8c52f58cd4ea3930cda5c1ed662",
+          "message": "[logs] prevent None from causing problems (#2410)\n\n* [logs] prevent None from causing problems\r\n\r\nIf the trace or span ID is None for a log entry, the result would raise an error, this change prevents that.\r\n\r\n* update changelog\r\n\r\n* Apply suggestions from code review\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>\r\n\r\n* add unit test\r\n\r\nCo-authored-by: Diego Hurtado <ocelotl@users.noreply.github.com>\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>",
+          "timestamp": "2022-01-26T16:54:48Z",
+          "tree_id": "71bc00ad4cb96b24004bc84cae9749c95476148f",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/44e9b5531d91c8c52f58cd4ea3930cda5c1ed662"
+        },
+        "date": 1643216214718,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 20435.17740602235,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000028361566254580133",
+            "extra": "mean: 48.935224790624765 usec\nrounds: 5018"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 14690.547174276306,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00002915120159544437",
+            "extra": "mean: 68.07098388758706 usec\nrounds: 7758"
           }
         ]
       }
