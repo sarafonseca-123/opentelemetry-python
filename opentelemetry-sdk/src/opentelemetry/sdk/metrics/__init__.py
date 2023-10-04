@@ -24,6 +24,7 @@ from opentelemetry.sdk.metrics._internal.exceptions import (  # noqa: F401
 from opentelemetry.sdk.metrics._internal.instrument import (  # noqa: F401
     Counter,
     Histogram,
+    Gauge,
     ObservableCounter,
     ObservableGauge,
     ObservableUpDownCounter,

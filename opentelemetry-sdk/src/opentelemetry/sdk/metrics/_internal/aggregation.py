@@ -24,6 +24,7 @@ from opentelemetry.metrics import (
     Asynchronous,
     Counter,
     Histogram,
+    Gauge,
     Instrument,
     ObservableCounter,
     ObservableGauge,
@@ -32,7 +33,7 @@ from opentelemetry.metrics import (
     UpDownCounter,
 )
 from opentelemetry.sdk.metrics._internal.measurement import Measurement
-from opentelemetry.sdk.metrics._internal.point import Gauge
+from opentelemetry.sdk.metrics._internal.point import Gauge as GaugePoint
 from opentelemetry.sdk.metrics._internal.point import (
     Histogram as HistogramPoint,
 )
@@ -181,7 +182,7 @@ class _SumAggregation(_Aggregation[Sum]):
         return current_point
 
 
-class _LastValueAggregation(_Aggregation[Gauge]):
+class _LastValueAggregation(_Aggregation[GaugePoint]):
     def __init__(self, attributes: Attributes):
         super().__init__(attributes)
         self._value = None
@@ -379,6 +380,7 @@ class DefaultAggregation(Aggregation):
     `opentelemetry.sdk.metrics.ObservableCounter`        `SumAggregation`
     `opentelemetry.sdk.metrics.ObservableUpDownCounter`  `SumAggregation`
     `opentelemetry.sdk.metrics.Histogram`                `ExplicitBucketHistogramAggregation`
+    `opentelemetry.sdk.metrics.Gauge`                    `LastValueAggregation`
     `opentelemetry.sdk.metrics.ObservableGauge`          `LastValueAggregation`
     ==================================================== ====================================
     """
@@ -428,6 +430,9 @@ class DefaultAggregation(Aggregation):
             )
 
         if isinstance(instrument, ObservableGauge):
+            return _LastValueAggregation(attributes)
+        
+        if isinstance(instrument, Gauge):
             return _LastValueAggregation(attributes)
 
         raise Exception(f"Invalid instrument type {type(instrument)} found")

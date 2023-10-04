@@ -43,6 +43,7 @@ from opentelemetry.sdk.environment_variables import (
 from opentelemetry.sdk.metrics import (
     Counter,
     Histogram,
+    Gauge,
     ObservableCounter,
     ObservableGauge,
     ObservableUpDownCounter,
@@ -51,7 +52,7 @@ from opentelemetry.sdk.metrics import (
 from opentelemetry.sdk.metrics.export import (
     AggregationTemporality,
     DataPointT,
-    Gauge,
+    Gauge as GaugeType,
     Histogram as HistogramType,
     Metric,
     MetricExporter,
@@ -132,6 +133,7 @@ class OTLPMetricExporter(
                 Counter: AggregationTemporality.DELTA,
                 UpDownCounter: AggregationTemporality.CUMULATIVE,
                 Histogram: AggregationTemporality.DELTA,
+                Gauge: AggregationTemporality.CUMULATIVE,
                 ObservableCounter: AggregationTemporality.DELTA,
                 ObservableUpDownCounter: AggregationTemporality.CUMULATIVE,
                 ObservableGauge: AggregationTemporality.CUMULATIVE,
@@ -141,6 +143,7 @@ class OTLPMetricExporter(
                 Counter: AggregationTemporality.CUMULATIVE,
                 UpDownCounter: AggregationTemporality.CUMULATIVE,
                 Histogram: AggregationTemporality.CUMULATIVE,
+                Gauge: AggregationTemporality.CUMULATIVE,
                 ObservableCounter: AggregationTemporality.CUMULATIVE,
                 ObservableUpDownCounter: AggregationTemporality.CUMULATIVE,
                 ObservableGauge: AggregationTemporality.CUMULATIVE,
@@ -205,7 +208,7 @@ class OTLPMetricExporter(
                         unit=metric.unit,
                     )
 
-                    if isinstance(metric.data, Gauge):
+                    if isinstance(metric.data, GaugeType):
                         for data_point in metric.data.data_points:
                             pt = pb2.NumberDataPoint(
                                 attributes=self._translate_attributes(
