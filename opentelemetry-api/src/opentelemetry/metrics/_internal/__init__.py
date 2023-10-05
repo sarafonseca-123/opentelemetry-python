@@ -391,7 +391,7 @@ class Meter(ABC):
         unit: str = "",
         description: str = "",
     ) -> Gauge:
-        """Creates an `Gauge` instrument
+        """Creates a `Gauge` instrument
 
         Args:
             name: The name of the instrument to be created

@@ -12,8 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-<<<<<<< HEAD
 __version__ = "1.21.0.dev"
-=======
-__version__ = "1.14.0-dev0"
->>>>>>> ad714a7ab (Add synchronous gauge)
