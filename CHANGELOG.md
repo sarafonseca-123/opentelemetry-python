@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+- Add Synchronous Gauge instrument
+  ([#3462](https://github.com/open-telemetry/opentelemetry-python/pull/3462))
 - Fix handling of empty metric collection cycles
   ([#3335](https://github.com/open-telemetry/opentelemetry-python/pull/3335))
 - Fix error when no LoggerProvider configured for LoggingHandler
