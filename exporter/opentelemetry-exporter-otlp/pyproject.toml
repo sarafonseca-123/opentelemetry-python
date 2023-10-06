@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "opentelemetry-exporter-otlp"
+name = "data-opentelemetry-exporter-otlp"
 dynamic = ["version"]
 description = "OpenTelemetry Collector Exporters"
 readme = "README.rst"
@@ -26,8 +26,8 @@ classifiers = [
   "Typing :: Typed",
 ]
 dependencies = [
-  "opentelemetry-exporter-otlp-proto-grpc == 1.21.0.dev",
-  "opentelemetry-exporter-otlp-proto-http == 1.21.0.dev",
+  "data-opentelemetry-exporter-otlp-proto-grpc == 1.21.0.dev",
+  "data-opentelemetry-exporter-otlp-proto-http == 1.21.0.dev",
 ]
 
 [project.entry-points.opentelemetry_logs_exporter]

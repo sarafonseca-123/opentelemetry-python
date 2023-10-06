@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "opentelemetry-exporter-otlp-proto-grpc"
+name = "data-opentelemetry-exporter-otlp-proto-grpc"
 dynamic = ["version"]
 description = "OpenTelemetry Collector Protobuf over gRPC Exporter"
 readme = "README.rst"
@@ -30,10 +30,10 @@ dependencies = [
   "backoff >= 1.10.0, < 3.0.0; python_version>='3.7'",
   "googleapis-common-protos ~= 1.52",
   "grpcio >= 1.0.0, < 2.0.0",
-  "opentelemetry-api ~= 1.15",
-  "opentelemetry-proto == 1.21.0.dev",
-  "opentelemetry-sdk ~= 1.21.0.dev",
-  "opentelemetry-exporter-otlp-proto-common == 1.21.0.dev",
+  "data-opentelemetry-api == 1.21.0.dev",
+  "data-opentelemetry-proto == 1.21.0.dev",
+  "data-opentelemetry-sdk  == 1.21.0.dev",
+  "data-opentelemetry-exporter-otlp-proto-common == 1.21.0.dev",
 ]
 
 [project.optional-dependencies]
